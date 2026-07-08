@@ -1,5 +1,9 @@
-import type { OrderableItem, OrderChannel } from "@/lib/order-actions";
-import { getOrderActions } from "@/lib/order-actions";
+import type {
+  MessengerChannel,
+  OrderableItem,
+  OrderChannel,
+} from "@/lib/order-actions";
+import { getOrderActions, isMessengerAction } from "@/lib/order-actions";
 import { siteConfig } from "@/lib/site-config";
 
 type ActionButtonsProps = {
@@ -16,7 +20,7 @@ const actionIconPaths: Record<OrderChannel, string> = {
   viber: "/images/cta-viber.svg",
 };
 
-const messengerLabels: Record<Exclude<OrderChannel, "phone">, string> = {
+const messengerLabels: Record<MessengerChannel, string> = {
   telegram: "Telegram",
   whatsapp: "WhatsApp",
   viber: "Viber",
@@ -56,7 +60,7 @@ export function ActionButtons({
       : "border-border bg-card text-foreground hover:border-primary hover:bg-primary hover:text-primary-foreground";
 
   const phoneAction = actions.find((action) => action.channel === "phone");
-  const messengerActions = actions.filter((action) => action.channel !== "phone");
+  const messengerActions = actions.filter(isMessengerAction);
 
   return (
     <div className={compact ? "space-y-2" : "space-y-3"}>

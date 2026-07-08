@@ -11,11 +11,16 @@ export type OrderableItem = {
 };
 
 export type OrderChannel = "phone" | "telegram" | "whatsapp" | "viber";
+export type MessengerChannel = Exclude<OrderChannel, "phone">;
 
 export type OrderAction = {
   channel: OrderChannel;
   label: string;
   href: string;
+};
+
+export type MessengerOrderAction = OrderAction & {
+  channel: MessengerChannel;
 };
 
 const kindLabels: Record<OrderableKind, string> = {
@@ -53,6 +58,12 @@ export function getOrderActions(item: OrderableItem): OrderAction[] {
       href: `viber://chat?number=${encodeURIComponent(siteConfig.viber)}&text=${encodedMessage}`,
     },
   ];
+}
+
+export function isMessengerAction(
+  action: OrderAction,
+): action is MessengerOrderAction {
+  return action.channel !== "phone";
 }
 
 export function productToOrderable(item: {

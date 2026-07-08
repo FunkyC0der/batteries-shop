@@ -1,11 +1,16 @@
-import { getOrderActions, serviceToOrderable } from "@/lib/order-actions";
+import type { MessengerChannel } from "@/lib/order-actions";
+import {
+  getOrderActions,
+  isMessengerAction,
+  serviceToOrderable,
+} from "@/lib/order-actions";
 import { siteConfig } from "@/lib/site-config";
 
-const messengerLabels = {
+const messengerLabels: Record<MessengerChannel, string> = {
   telegram: "Telegram",
   whatsapp: "WhatsApp",
   viber: "Viber",
-} as const;
+};
 
 const iconPaths = {
   phone: "/images/cta-phone.svg",
@@ -44,7 +49,7 @@ export function Footer() {
   });
   const actions = getOrderActions(contactItem);
   const phoneAction = actions.find((action) => action.channel === "phone");
-  const messengerActions = actions.filter((action) => action.channel !== "phone");
+  const messengerActions = actions.filter(isMessengerAction);
 
   return (
     <footer className="border-t border-border bg-muted/40">
