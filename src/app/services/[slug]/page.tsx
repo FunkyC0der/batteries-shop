@@ -66,9 +66,6 @@ export default async function ServicePage({ params }: ServicePageProps) {
               {getStatusLabel(service.status)}
             </span>
             <span className="rounded-full bg-muted px-3 py-1 text-xs font-semibold text-muted-foreground">
-              {service.priceFrom}
-            </span>
-            <span className="rounded-full bg-muted px-3 py-1 text-xs font-semibold text-muted-foreground">
               {service.duration}
             </span>
           </div>

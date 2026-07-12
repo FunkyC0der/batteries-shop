@@ -1,6 +1,10 @@
 export type ProductCategory = "lithium" | "meter-modules" | "accessories";
 
-export type ServiceCategory = "replacement" | "diagnostics" | "consulting";
+export type ServiceCategory =
+  | "battery-service"
+  | "verification"
+  | "installation"
+  | "plumbing";
 
 export type AvailabilityStatus = "in-stock" | "preorder" | "consult";
 
@@ -24,7 +28,6 @@ export type Service = {
   slug: string;
   title: string;
   category: ServiceCategory;
-  priceFrom: string;
   status: AvailabilityStatus;
   shortDescription: string;
   description: string;

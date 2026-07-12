@@ -23,14 +23,14 @@ describe("catalog helpers", () => {
 
   it("filters services by category and included work", () => {
     const results = filterServices({
-      category: "replacement",
-      query: "пайка",
+      category: "battery-service",
+      query: "батарейки",
     });
 
     expect(results.length).toBeGreaterThan(0);
-    expect(results.every((service) => service.category === "replacement")).toBe(
-      true,
-    );
+    expect(
+      results.every((service) => service.category === "battery-service"),
+    ).toBe(true);
   });
 
   it("returns featured catalog items for the homepage", () => {

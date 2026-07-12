@@ -45,11 +45,11 @@ export default function Home() {
 
         <div className="relative overflow-hidden rounded-3xl border border-border bg-card">
           <Image
-            alt="Батарейки й лічильник на сервісному столі"
+            alt="Заміна батарейки у теплолічильнику на сервісному столі"
             className="h-full min-h-80 w-full object-cover"
             height={900}
             priority
-            src="/images/hero-batteries-meter.png"
+            src="/images/hero-heat-meter-battery-service.png"
             width={1600}
           />
         </div>
@@ -77,7 +77,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
           <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
             <SectionHeading
-              description="Послуги мають таку ж структуру, як товари: каталог, категорії, детальні сторінки та CTA."
+              description="Заміна батарейок, повірка та встановлення лічильників, монтаж бойлерів, радіаторів і сантехнічні роботи."
               eyebrow="Сервіс"
               title="Послуги для лічильників"
             />

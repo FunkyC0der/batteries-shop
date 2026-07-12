@@ -7,7 +7,7 @@ export type OrderableItem = {
   slug: string;
   title: string;
   kind: OrderableKind;
-  priceLabel: string;
+  priceLabel?: string;
 };
 
 export type OrderChannel = "phone" | "telegram" | "whatsapp" | "viber";
@@ -29,7 +29,9 @@ const kindLabels: Record<OrderableKind, string> = {
 };
 
 export function createOrderMessage(item: OrderableItem) {
-  return `Вітаю! Хочу уточнити або замовити ${kindLabels[item.kind]}: ${item.title} (${item.priceLabel}). Код: ${item.id}.`;
+  const price = item.priceLabel ? ` (${item.priceLabel})` : "";
+
+  return `Вітаю! Хочу уточнити або замовити ${kindLabels[item.kind]}: ${item.title}${price}. Код: ${item.id}.`;
 }
 
 export function getOrderActions(item: OrderableItem): OrderAction[] {
@@ -85,14 +87,12 @@ export function serviceToOrderable(item: {
   id: string;
   slug: string;
   title: string;
-  priceFrom: string;
 }): OrderableItem {
   return {
     id: item.id,
     slug: item.slug,
     title: item.title,
     kind: "service",
-    priceLabel: item.priceFrom,
   };
 }
 

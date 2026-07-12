@@ -7,7 +7,8 @@ import { serviceCategories, services } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Послуги",
-  description: "Каталог сервісних послуг для батарейок і лічильників.",
+  description:
+    "Заміна батарейок, повірка та встановлення лічильників тепла й води, монтаж бойлерів, радіаторів і сантехнічні роботи.",
 };
 
 export default function ServicesPage() {

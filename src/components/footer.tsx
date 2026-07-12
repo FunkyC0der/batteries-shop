@@ -45,7 +45,6 @@ export function Footer() {
     id: "footer-contact",
     slug: "footer-contact",
     title: "Консультація щодо батарейки або послуги",
-    priceFrom: "уточнити",
   });
   const actions = getOrderActions(contactItem);
   const phoneAction = actions.find((action) => action.channel === "phone");

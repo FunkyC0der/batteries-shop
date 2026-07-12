@@ -27,9 +27,6 @@ export function ServiceCard({ service }: { service: Service }) {
             <span className="rounded-full bg-success/10 px-3 py-1 text-xs font-semibold text-success">
               {getStatusLabel(service.status)}
             </span>
-            <span className="rounded-full bg-muted px-3 py-1 text-xs font-semibold text-muted-foreground">
-              {service.priceFrom}
-            </span>
           </div>
           <Link href={`/services/${service.slug}`}>
             <h3 className="text-lg font-semibold text-foreground hover:text-primary">

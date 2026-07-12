@@ -15,9 +15,9 @@ export function CtaPanel() {
             Не впевнені, яка батарейка потрібна?
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-6 opacity-90">
-            Надішліть модель лічильника або фото старої батарейки. Це
-            плейсхолдерний CTA, але логіка вже винесена так, щоб потім додати
-            кошик чи онлайн-оплату.
+            Надішліть модель лічильника, фото старої батарейки або коротко
+            опишіть потрібну роботу. Допоможемо підібрати товар чи погодити
+            виїзд спеціаліста.
           </p>
         </div>
         <div className="[--card:var(--primary)] [--foreground:var(--primary-foreground)] [--muted-foreground:var(--primary-foreground)] [--border:color-mix(in_srgb,var(--primary-foreground)_35%,transparent)]">
@@ -27,7 +27,6 @@ export function CtaPanel() {
               slug: "general-consultation",
               title: "Консультація щодо батарейки або послуги",
               kind: "service",
-              priceLabel: "уточнити",
             }}
             variant="inverse"
           />

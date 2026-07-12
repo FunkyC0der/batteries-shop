@@ -87,7 +87,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
               placeholder={
                 props.kind === "products"
                   ? "Наприклад: теплолічильник, 3.6 V, конектор"
-                  : "Наприклад: пайка, діагностика, підбір"
+                  : "Наприклад: повірка, бойлер, теплолічильник"
               }
               value={query}
             />
