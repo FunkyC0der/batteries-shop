@@ -63,13 +63,19 @@ export function ActionButtons({
   const messengerActions = actions.filter(isMessengerAction);
 
   return (
-    <div className={compact ? "space-y-2" : "space-y-3"}>
+    <div
+      className={
+        compact
+          ? "space-y-2"
+          : "flex items-center gap-3 overflow-x-auto pb-1"
+      }
+    >
       {phoneAction ? (
         <a
           className={
             compact
               ? `inline-flex min-h-11 items-center justify-center gap-2 rounded-full border px-3 transition ${toneClass}`
-              : `inline-flex min-h-14 items-center justify-center gap-3 rounded-full border px-4 transition ${toneClass}`
+              : `inline-flex min-h-14 shrink-0 items-center justify-center gap-3 rounded-full border px-4 transition ${toneClass}`
           }
           href={phoneAction.href}
           aria-label={`${phoneAction.label}: ${siteConfig.phoneLabel}`}
@@ -81,7 +87,11 @@ export function ActionButtons({
         </a>
       ) : null}
 
-      <div className={compact ? "flex flex-wrap gap-2" : "flex flex-wrap gap-3"}>
+      <div
+        className={
+          compact ? "flex flex-wrap gap-2" : "flex shrink-0 items-center gap-3"
+        }
+      >
         {messengerActions.map((action) => (
           <a
             className={

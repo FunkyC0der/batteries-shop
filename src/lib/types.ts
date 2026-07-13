@@ -13,7 +13,8 @@ export type Product = {
   slug: string;
   title: string;
   category: ProductCategory;
-  price: string;
+  price?: string;
+  showPrice: boolean;
   status: AvailabilityStatus;
   shortDescription: string;
   description: string;
@@ -28,6 +29,8 @@ export type Service = {
   slug: string;
   title: string;
   category: ServiceCategory;
+  price?: string;
+  showPrice: boolean;
   status: AvailabilityStatus;
   shortDescription: string;
   description: string;

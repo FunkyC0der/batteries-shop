@@ -6,7 +6,6 @@ import { ProductCard } from "@/components/product-card";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceCard } from "@/components/service-card";
 import { getFeaturedProducts, getFeaturedServices } from "@/lib/catalog";
-import { siteConfig } from "@/lib/site-config";
 
 export default function Home() {
   const featuredProducts = getFeaturedProducts();
@@ -16,10 +15,7 @@ export default function Home() {
     <>
       <section className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-6 md:grid-cols-[1fr_0.9fr] md:items-center lg:px-8 lg:py-16">
         <div>
-          <p className="inline-flex rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-primary">
-            {siteConfig.tagline}
-          </p>
-          <h1 className="mt-6 max-w-3xl text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+          <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
             Батарейки для лічильників і сервіс без зайвих кроків
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-muted-foreground">

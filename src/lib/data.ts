@@ -22,6 +22,7 @@ export const products: Product[] = [
     title: "Saft LS14250 для теплолічильників",
     category: "lithium",
     price: "від 390 грн",
+    showPrice: false,
     status: "in-stock",
     shortDescription:
       "Компактна літієва батарейка 1/2 AA для теплолічильників, модулів пам'яті та промислової автоматики.",
@@ -47,6 +48,7 @@ export const products: Product[] = [
     title: "Літієва AA батарейка для лічильників",
     category: "lithium",
     price: "від 450 грн",
+    showPrice: false,
     status: "in-stock",
     shortDescription:
       "Універсальна літієва батарейка формату AA для приладів обліку з довгим циклом роботи.",
@@ -68,7 +70,8 @@ export const products: Product[] = [
     title: "Батарейний блок з конектором",
     category: "meter-modules",
     price: "від 620 грн",
-    status: "preorder",
+    showPrice: false,
+    status: "in-stock",
     shortDescription:
       "Готовий батарейний блок для заміни у модулі лічильника з підготовленим конектором.",
     description:
@@ -89,7 +92,8 @@ export const products: Product[] = [
     title: "Батарейка з пелюстками під пайку",
     category: "accessories",
     price: "від 520 грн",
-    status: "consult",
+    showPrice: false,
+    status: "in-stock",
     shortDescription:
       "Позиція для випадків, коли потрібна батарейка з виводами для акуратного монтажу.",
     description:
@@ -112,6 +116,7 @@ export const services: Service[] = [
     slug: "battery-replacement-workshop",
     title: "Заміна батарейки в стаціонарних умовах",
     category: "battery-service",
+    showPrice: false,
     status: "consult",
     shortDescription:
       "Замінимо елемент живлення теплолічильника на обладнаному робочому місці та перевіримо запуск приладу.",
@@ -124,7 +129,7 @@ export const services: Service[] = [
       "контроль напруги, контактів і запуску дисплея",
     ],
     duration: "зазвичай протягом 1 робочого дня",
-    image: "/images/services/battery-replacement-workshop.png",
+    image: "/images/services/generated-archive/battery-replacement-workshop.png",
     featured: true,
   },
   {
@@ -132,6 +137,7 @@ export const services: Service[] = [
     slug: "battery-replacement-onsite",
     title: "Заміна батарейки на місці експлуатації з виїздом спеціаліста",
     category: "battery-service",
+    showPrice: false,
     status: "consult",
     shortDescription:
       "Майстер приїде до об’єкта, перевірить живлення й замінить батарейку без перевезення лічильника до сервісу.",
@@ -144,7 +150,7 @@ export const services: Service[] = [
       "заміна батарейки та контроль роботи приладу",
     ],
     duration: "орієнтовно 30–90 хв на об’єкті",
-    image: "/images/services/battery-replacement-onsite.png",
+    image: "/images/services/generated-archive/battery-replacement-onsite.png",
     featured: true,
   },
   {
@@ -152,6 +158,7 @@ export const services: Service[] = [
     slug: "heat-meter-verification",
     title: "Повірка лічильника тепла",
     category: "verification",
+    showPrice: false,
     status: "consult",
     shortDescription:
       "Перевірка точності теплолічильника з оформленням результатів і підготовкою приладу до повторного введення в експлуатацію.",
@@ -164,7 +171,7 @@ export const services: Service[] = [
       "оформлення результатів повірки",
     ],
     duration: "строк залежить від моделі та процедури повірки",
-    image: "/images/services/heat-meter-verification.png",
+    image: "/images/services/heat-meter-verification-v2.png",
     featured: true,
   },
   {
@@ -172,6 +179,7 @@ export const services: Service[] = [
     slug: "hot-water-meter-verification",
     title: "Повірка лічильника ГВП",
     category: "verification",
+    showPrice: false,
     status: "consult",
     shortDescription:
       "Перевіримо точність лічильника гарячої води на місці або з демонтажем та підготуємо результати повірки.",
@@ -184,7 +192,7 @@ export const services: Service[] = [
       "оформлення результату повірки",
     ],
     duration: "залежить від способу повірки",
-    image: "/images/services/hot-water-meter-verification.png",
+    image: "/images/services/hot-water-meter-verification-v2.png",
     featured: false,
   },
   {
@@ -192,6 +200,7 @@ export const services: Service[] = [
     slug: "cold-water-meter-verification",
     title: "Повірка лічильника ХВП",
     category: "verification",
+    showPrice: false,
     status: "consult",
     shortDescription:
       "Перевіримо лічильник холодної води без демонтажу або в лабораторії та оформимо результат процедури.",
@@ -204,7 +213,7 @@ export const services: Service[] = [
       "оформлення результату повірки",
     ],
     duration: "залежить від способу повірки",
-    image: "/images/services/cold-water-meter-verification.png",
+    image: "/images/services/cold-water-meter-verification-v2.png",
     featured: false,
   },
   {
@@ -212,6 +221,7 @@ export const services: Service[] = [
     slug: "boiler-installation-replacement",
     title: "Встановлення і заміна водонагрівача (бойлера)",
     category: "installation",
+    showPrice: false,
     status: "consult",
     shortDescription:
       "Встановимо новий бойлер або замінимо старий, підключимо водопостачання та перевіримо безпечну роботу.",
@@ -224,7 +234,7 @@ export const services: Service[] = [
       "заповнення, перевірка герметичності та запуск",
     ],
     duration: "від кількох годин залежно від підготовки місця",
-    image: "/images/services/boiler-installation.png",
+    image: "/images/services/boiler-installation-v3.png",
     featured: false,
   },
   {
@@ -232,6 +242,7 @@ export const services: Service[] = [
     slug: "radiator-installation-replacement",
     title: "Заміна та встановлення радіаторів опалення (батарей)",
     category: "installation",
+    showPrice: false,
     status: "consult",
     shortDescription:
       "Демонтуємо старий радіатор, встановимо новий і під’єднаємо його до системи опалення з перевіркою вузлів.",
@@ -244,7 +255,7 @@ export const services: Service[] = [
       "перевірка герметичності та видалення повітря",
     ],
     duration: "залежить від стану труб і способу підключення",
-    image: "/images/services/radiator-installation.png",
+    image: "/images/services/radiator-installation-v4.png",
     featured: false,
   },
   {
@@ -252,6 +263,7 @@ export const services: Service[] = [
     slug: "plumbing-works",
     title: "Різні сантехнічні роботи",
     category: "plumbing",
+    showPrice: false,
     status: "consult",
     shortDescription:
       "Виконаємо ремонт і монтаж водопроводу, арматури, сифонів, змішувачів та інших сантехнічних вузлів.",
@@ -264,7 +276,7 @@ export const services: Service[] = [
       "перевірка з’єднань після виконання робіт",
     ],
     duration: "визначається після оцінки завдання",
-    image: "/images/services/plumbing-works.png",
+    image: "/images/services/plumbing-works-v3.png",
     featured: false,
   },
   {
@@ -272,6 +284,7 @@ export const services: Service[] = [
     slug: "heat-meter-installation-replacement",
     title: "Встановлення і заміна лічильників тепла",
     category: "installation",
+    showPrice: false,
     status: "consult",
     shortDescription:
       "Встановимо або замінимо квартирний теплолічильник, перевіримо вузол і підготуємо прилад до опломбування.",
@@ -284,7 +297,7 @@ export const services: Service[] = [
       "перевірка роботи та підготовка до опломбування",
     ],
     duration: "визначається після огляду вузла",
-    image: "/images/services/heat-meter-installation.png",
+    image: "/images/services/heat-meter-installation-v3.png",
     featured: false,
   },
   {
@@ -292,6 +305,7 @@ export const services: Service[] = [
     slug: "hot-water-meter-installation-replacement",
     title: "Встановлення і заміна лічильника ГВП",
     category: "installation",
+    showPrice: false,
     status: "consult",
     shortDescription:
       "Встановимо або замінимо лічильник гарячої води з новими ущільненнями та перевіркою герметичності.",
@@ -304,7 +318,7 @@ export const services: Service[] = [
       "перевірка герметичності та обертання механізму",
     ],
     duration: "орієнтовно 1–2 години за справного вузла",
-    image: "/images/services/hot-water-meter-installation.png",
+    image: "/images/services/hot-water-meter-installation-v5.png",
     featured: false,
   },
   {
@@ -312,6 +326,7 @@ export const services: Service[] = [
     slug: "cold-water-meter-installation-replacement",
     title: "Встановлення і заміна лічильника ХВП",
     category: "installation",
+    showPrice: false,
     status: "consult",
     shortDescription:
       "Встановимо або замінимо лічильник холодної води та перевіримо правильність монтажу й відсутність протікань.",
@@ -324,7 +339,7 @@ export const services: Service[] = [
       "контроль герметичності та працездатності",
     ],
     duration: "орієнтовно 1–2 години за справного вузла",
-    image: "/images/services/cold-water-meter-installation.png",
+    image: "/images/services/cold-water-meter-installation-v5.png",
     featured: false,
   },
 ];

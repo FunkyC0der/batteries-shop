@@ -4,6 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
+import { BrandMark } from "@/components/brand-mark";
+import { BrandName } from "@/components/brand-name";
 import { navigation, siteConfig } from "@/lib/site-config";
 
 export function Header() {
@@ -11,20 +13,18 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-border bg-[#f7faf9]">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link
           className="flex items-center gap-3 font-semibold text-foreground"
           href="/"
           onClick={() => setOpen(false)}
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-sm font-bold text-primary-foreground">
-            BM
-          </span>
+          <BrandMark className="size-10 shrink-0" />
           <span className="leading-tight">
-            <span className="block">{siteConfig.name}</span>
-            <span className="block text-xs font-medium text-muted-foreground">
-              placeholder brand
+            <BrandName className="block text-lg" />
+            <span className="block text-[0.625rem] font-semibold uppercase tracking-[0.1em] text-[#5b6c68]">
+              Тепло під контролем
             </span>
           </span>
         </Link>

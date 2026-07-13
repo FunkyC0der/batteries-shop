@@ -1,4 +1,5 @@
 import type { MessengerChannel } from "@/lib/order-actions";
+import { BrandName } from "@/components/brand-name";
 import {
   getOrderActions,
   isMessengerAction,
@@ -54,8 +55,8 @@ export function Footer() {
     <footer className="border-t border-border bg-muted/40">
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-8">
         <div>
-          <p className="text-lg font-semibold text-foreground">
-            {siteConfig.name}
+          <p>
+            <BrandName className="text-xl" />
           </p>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">
             {siteConfig.description}

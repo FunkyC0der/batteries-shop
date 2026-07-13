@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 
 import { ActionButtons } from "@/components/action-buttons";
 import { CtaPanel } from "@/components/cta-panel";
-import { getServiceBySlug, getStatusLabel } from "@/lib/catalog";
+import { getServiceBySlug } from "@/lib/catalog";
 import { services } from "@/lib/data";
 import { serviceToOrderable } from "@/lib/order-actions";
 
@@ -45,48 +45,47 @@ export default async function ServicePage({ params }: ServicePageProps) {
 
   return (
     <>
-      <article className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
-        <div className="overflow-hidden rounded-3xl border border-border bg-card">
+      <article className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
+        <Link className="text-sm font-semibold text-primary" href="/services">
+          ← До послуг
+        </Link>
+
+        <h1 className="mt-5 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
+          {service.title}
+        </h1>
+
+        <div className="relative mt-8 aspect-square overflow-hidden rounded-3xl border border-border bg-card">
           <Image
             alt={service.title}
-            className="h-full min-h-80 w-full object-cover"
-            height={1024}
+            className="object-cover"
+            fill
             priority
             src={service.image}
-            width={1024}
+            sizes="(min-width: 1024px) 960px, 100vw"
           />
         </div>
 
-        <div>
-          <Link className="text-sm font-semibold text-primary" href="/services">
-            ← До послуг
-          </Link>
-          <div className="mt-5 flex flex-wrap gap-2">
-            <span className="rounded-full bg-success/10 px-3 py-1 text-xs font-semibold text-success">
-              {getStatusLabel(service.status)}
-            </span>
-            <span className="rounded-full bg-muted px-3 py-1 text-xs font-semibold text-muted-foreground">
-              {service.duration}
-            </span>
-          </div>
-          <h1 className="mt-5 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
-            {service.title}
-          </h1>
-          <p className="mt-5 text-lg leading-8 text-muted-foreground">
-            {service.description}
-          </p>
+        <p className="mt-8 text-lg leading-8 text-muted-foreground">
+          {service.description}
+        </p>
 
-          <div className="mt-8 rounded-2xl border border-border bg-card p-5">
-            <h2 className="text-lg font-semibold text-foreground">
-              Замовити або уточнити
-            </h2>
-            <p className="mt-2 text-sm leading-6 text-muted-foreground">
-              Оберіть канал звʼязку. Текст звернення буде підготовлений
-              автоматично.
-            </p>
-            <div className="mt-5">
-              <ActionButtons item={serviceToOrderable(service)} />
+        <div className="mt-8 rounded-2xl border border-border bg-card p-5">
+          {service.showPrice && service.price ? (
+            <div className="mb-5">
+              <span className="rounded-full bg-muted px-3 py-1 text-xs font-semibold text-muted-foreground">
+                {service.price}
+              </span>
             </div>
+          ) : null}
+          <h2 className="text-lg font-semibold text-foreground">
+            Замовити або уточнити
+          </h2>
+          <p className="mt-2 text-sm leading-6 text-muted-foreground">
+            Оберіть канал звʼязку. Текст звернення буде підготовлений
+            автоматично.
+          </p>
+          <div className="mt-5">
+            <ActionButtons item={serviceToOrderable(service)} />
           </div>
         </div>
       </article>

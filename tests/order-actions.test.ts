@@ -11,14 +11,19 @@ const item: OrderableItem = {
   slug: "saft-ls14250",
   title: "Saft LS14250 для лічильників",
   kind: "product",
-  priceLabel: "від 390 грн",
 };
 
 describe("order actions", () => {
   it("creates a readable Ukrainian order message with item identity", () => {
     expect(createOrderMessage(item)).toBe(
-      "Вітаю! Хочу уточнити або замовити товар: Saft LS14250 для лічильників (від 390 грн). Код: battery-ls14250.",
+      "Вітаю! Хочу уточнити або замовити товар: Saft LS14250 для лічильників. Код: battery-ls14250.",
     );
+  });
+
+  it("adds a price to the message only when it is supplied", () => {
+    expect(
+      createOrderMessage({ ...item, priceLabel: "390 грн" }),
+    ).toContain("(390 грн)");
   });
 
   it("builds phone and messenger links from one action layer", () => {

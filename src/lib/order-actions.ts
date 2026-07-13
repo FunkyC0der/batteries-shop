@@ -72,14 +72,15 @@ export function productToOrderable(item: {
   id: string;
   slug: string;
   title: string;
-  price: string;
+  price?: string;
+  showPrice?: boolean;
 }): OrderableItem {
   return {
     id: item.id,
     slug: item.slug,
     title: item.title,
     kind: "product",
-    priceLabel: item.price,
+    priceLabel: item.showPrice ? item.price : undefined,
   };
 }
 
@@ -87,12 +88,15 @@ export function serviceToOrderable(item: {
   id: string;
   slug: string;
   title: string;
+  price?: string;
+  showPrice?: boolean;
 }): OrderableItem {
   return {
     id: item.id,
     slug: item.slug,
     title: item.title,
     kind: "service",
+    priceLabel: item.showPrice ? item.price : undefined,
   };
 }
 
