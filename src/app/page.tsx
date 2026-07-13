@@ -16,12 +16,12 @@ export default function Home() {
       <section className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-6 md:grid-cols-[1fr_0.9fr] md:items-center lg:px-8 lg:py-16">
         <div>
           <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Батарейки для лічильників і сервіс без зайвих кроків
+            Батарейки, повірка та сервіс лічильників тепла й води
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-muted-foreground">
-            Каталог плейсхолдерних товарів і послуг для майбутнього магазину:
-            оберіть позицію, відкрийте деталі й замовте телефоном або через
-            месенджер.
+            Підбираємо та продаємо батарейки й готові батарейні блоки.
+            Проводимо повірку, встановлення, заміну та обслуговування
+            теплолічильників і водолічильників.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link

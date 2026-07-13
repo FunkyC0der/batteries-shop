@@ -12,12 +12,12 @@ export function CtaPanel() {
             Швидке замовлення
           </p>
           <h2 className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
-            Не впевнені, яка батарейка потрібна?
+            Потрібна батарейка чи сервіс для лічильника?
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-6 opacity-90">
-            Надішліть модель лічильника, фото старої батарейки або коротко
-            опишіть потрібну роботу. Допоможемо підібрати товар чи погодити
-            виїзд спеціаліста.
+            Надішліть модель приладу, фото батарейки або коротко опишіть
+            завдання. Підберемо товар, проконсультуємо щодо повірки чи заміни
+            лічильника та погодимо роботи у сервісі або з виїздом.
           </p>
         </div>
         <div className="[--card:var(--primary)] [--foreground:var(--primary-foreground)] [--muted-foreground:var(--primary-foreground)] [--border:color-mix(in_srgb,var(--primary-foreground)_35%,transparent)]">
