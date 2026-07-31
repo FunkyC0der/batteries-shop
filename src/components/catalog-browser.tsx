@@ -258,7 +258,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
         className="rounded-2xl border border-border bg-card p-4 sm:p-5"
         onSubmit={handleSearchSubmit}
       >
-        <div className="grid gap-4 lg:grid-cols-[1fr_auto] lg:items-end">
+        <div className="grid gap-4">
           <label className="grid gap-2">
             <span className="text-sm font-semibold text-foreground">
               {props.kind === "services"
@@ -291,14 +291,17 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
           </label>
 
           {props.kind === "products" || direction !== "all" ? (
-            <div aria-label="Категорія" className="flex flex-wrap gap-2">
+            <div
+              aria-label="Категорія"
+              className="flex gap-2 overflow-x-auto pb-1"
+            >
               {visibleCategories.map((option) => (
                 <button
                   aria-pressed={category === option.value}
                   className={
                     category === option.value
-                      ? "min-h-12 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground"
-                      : "min-h-12 rounded-full border border-border bg-background px-4 py-2 text-sm font-semibold text-muted-foreground transition hover:border-primary hover:text-primary"
+                      ? "min-h-12 shrink-0 whitespace-nowrap rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground"
+                      : "min-h-12 shrink-0 whitespace-nowrap rounded-full border border-border bg-background px-4 py-2 text-sm font-semibold text-muted-foreground transition hover:border-primary hover:text-primary"
                   }
                   key={option.value}
                   onClick={() => setCategory(option.value)}
