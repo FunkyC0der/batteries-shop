@@ -67,7 +67,7 @@ export function ActionButtons({
       className={
         compact
           ? "space-y-2"
-          : "flex items-center gap-3 overflow-x-auto pb-1"
+          : "flex flex-wrap items-center gap-3"
       }
     >
       {phoneAction ? (
