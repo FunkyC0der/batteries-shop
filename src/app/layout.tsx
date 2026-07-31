@@ -9,7 +9,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.name} | Батарейки для лічильників`,
+    default: `${siteConfig.name} | Інженерні та енергетичні рішення`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,

@@ -24,7 +24,7 @@ export function Header() {
           <span className="leading-tight">
             <BrandName className="block text-lg" />
             <span className="block text-[0.625rem] font-semibold uppercase tracking-[0.1em] text-[#5b6c68]">
-              Тепло під контролем
+              Інженерні та енергетичні рішення
             </span>
           </span>
         </Link>

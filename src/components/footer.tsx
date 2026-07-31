@@ -45,7 +45,7 @@ export function Footer() {
   const contactItem = serviceToOrderable({
     id: "footer-contact",
     slug: "footer-contact",
-    title: "Консультація щодо батарейки або послуги",
+    title: "Консультація щодо товару, сервісу або енергетичного рішення",
   });
   const actions = getOrderActions(contactItem);
   const phoneAction = actions.find((action) => action.channel === "phone");
