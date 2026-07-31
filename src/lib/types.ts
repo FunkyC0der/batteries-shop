@@ -1,4 +1,11 @@
-export type ProductCategory = "lithium" | "meter-modules" | "accessories";
+export type ProductCategory =
+  | "lithium"
+  | "meter-modules"
+  | "accessories"
+  | "solar-stations"
+  | "backup-power"
+  | "energy-storage"
+  | "ev-charging";
 
 export type ServiceDirection = "metering-and-comfort" | "energy-solutions";
 
@@ -18,6 +25,7 @@ export type Product = {
   id: string;
   slug: string;
   title: string;
+  direction: ServiceDirection;
   category: ProductCategory;
   price?: string;
   showPrice: boolean;
@@ -26,6 +34,12 @@ export type Product = {
   description: string;
   specs: Array<{ label: string; value: string }>;
   compatibility: string[];
+  compatibilityTitle?: string;
+  configurations?: Array<{
+    label: string;
+    equipment: string[];
+  }>;
+  notice?: string;
   image: string;
   featured: boolean;
 };

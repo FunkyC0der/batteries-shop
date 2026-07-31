@@ -38,6 +38,21 @@ export function ProductCard({ product }: { product: Product }) {
               {product.title}
             </h3>
           </Link>
+          {product.configurations?.length ? (
+            <div
+              aria-label="Доступні конфігурації"
+              className="mt-3 flex flex-wrap gap-2"
+            >
+              {product.configurations.map((configuration) => (
+                <span
+                  className="rounded-full border border-primary/20 bg-primary/5 px-2.5 py-1 text-xs font-semibold text-primary"
+                  key={configuration.label}
+                >
+                  {configuration.label}
+                </span>
+              ))}
+            </div>
+          ) : null}
           <p className="mt-2 text-sm leading-6 text-muted-foreground">
             {product.shortDescription}
           </p>

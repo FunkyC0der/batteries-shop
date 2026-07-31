@@ -27,6 +27,9 @@ type ProductCatalogProps = {
   kind: "products";
   items: Product[];
   categories: readonly CategoryOption[];
+  directions: readonly DirectionOption[];
+  initialDirection?: ServiceDirection | "all";
+  initialQuery?: string;
 };
 
 type ServiceCatalogProps = {
@@ -47,25 +50,17 @@ function normalize(value: string) {
 export function CatalogBrowser(props: CatalogBrowserProps) {
   const [category, setCategory] = useState("all");
   const [direction, setDirection] = useState<ServiceDirection | "all">(
-    props.kind === "services" ? (props.initialDirection ?? "all") : "all",
+    props.initialDirection ?? "all",
   );
-  const [query, setQuery] = useState(
-    props.kind === "services" ? (props.initialQuery ?? "") : "",
-  );
+  const [query, setQuery] = useState(props.initialQuery ?? "");
   const resultSummaryRef = useRef<HTMLParagraphElement>(null);
-  const directions = props.kind === "services" ? props.directions : [];
-  const serviceDirections =
-    props.kind === "services" ? props.directions : undefined;
+  const directions = props.directions;
 
   useEffect(() => {
-    if (props.kind !== "services") {
-      return;
-    }
-
     const syncFromUrl = () => {
       const searchParams = new URLSearchParams(window.location.search);
       const nextDirection = searchParams.get("direction");
-      const validDirection = serviceDirections?.some(
+      const validDirection = directions.some(
         (option) => option.value === nextDirection,
       );
 
@@ -80,17 +75,13 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
 
     window.addEventListener("popstate", syncFromUrl);
     return () => window.removeEventListener("popstate", syncFromUrl);
-  }, [props.kind, serviceDirections]);
+  }, [directions]);
 
-  function updateServiceUrl(
+  function updateCatalogUrl(
     nextDirection: ServiceDirection | "all",
     nextQuery: string,
     mode: "push" | "replace",
   ) {
-    if (props.kind !== "services") {
-      return;
-    }
-
     const url = new URL(window.location.href);
     const normalizedQuery = nextQuery.trim();
 
@@ -115,7 +106,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
   }
 
   const visibleCategories = useMemo(() => {
-    if (props.kind !== "services" || direction === "all") {
+    if (direction === "all") {
       return props.categories;
     }
 
@@ -123,13 +114,15 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
       (option) =>
         option.value === "all" || option.direction === direction,
     );
-  }, [direction, props.categories, props.kind]);
+  }, [direction, props.categories]);
 
   const filtered = useMemo(() => {
     const normalizedQuery = normalize(query);
 
     if (props.kind === "products") {
       return props.items.filter((item) => {
+        const directionMatches =
+          direction === "all" || item.direction === direction;
         const categoryMatches =
           category === "all" || item.category === category;
         const text = [
@@ -137,10 +130,15 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
           item.shortDescription,
           item.description,
           ...item.compatibility,
+          ...(item.configurations?.flatMap((configuration) => [
+            configuration.label,
+            ...configuration.equipment,
+          ]) ?? []),
           ...item.specs.map((spec) => `${spec.label} ${spec.value}`),
         ].join(" ");
 
         return (
+          directionMatches &&
           categoryMatches &&
           (!normalizedQuery || normalize(text).includes(normalizedQuery))
         );
@@ -170,34 +168,35 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
   const activeDirection = directions.find(
     (option) => option.value === direction,
   );
-  const directionLabel = activeDirection?.label ?? "Усі послуги";
+  const directionLabel =
+    activeDirection?.label ??
+    (props.kind === "products" ? "Усі товари" : "Усі послуги");
 
   function handleSearchSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    updateServiceUrl(direction, query, "replace");
+    updateCatalogUrl(direction, query, "replace");
     resultSummaryRef.current?.focus();
   }
 
   function selectDirection(nextDirection: ServiceDirection | "all") {
     setDirection(nextDirection);
     setCategory("all");
-    updateServiceUrl(nextDirection, query, "push");
+    updateCatalogUrl(nextDirection, query, "push");
   }
 
-  function searchAllServices() {
+  function searchAllItems() {
     selectDirection("all");
     resultSummaryRef.current?.focus();
   }
 
   return (
     <div className="space-y-8">
-      {props.kind === "services" ? (
-        <fieldset>
-          <legend className="text-sm font-semibold text-foreground">
-            Напрям послуг
-          </legend>
-          <div className="mt-3 grid gap-3 md:grid-cols-3">
-            {directions.map((option) => {
+      <fieldset>
+        <legend className="text-sm font-semibold text-foreground">
+          {props.kind === "products" ? "Напрям товарів" : "Напрям послуг"}
+        </legend>
+        <div className="mt-3 grid gap-3 md:grid-cols-3">
+          {directions.map((option) => {
               const count =
                 option.value === "all"
                   ? props.items.length
@@ -211,7 +210,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
                   <input
                     checked={selected}
                     className="peer sr-only"
-                    name="service-direction"
+                    name={`${props.kind}-direction`}
                     onChange={() => selectDirection(option.value)}
                     type="radio"
                     value={option.value}
@@ -249,10 +248,9 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
                   </span>
                 </label>
               );
-            })}
-          </div>
-        </fieldset>
-      ) : null}
+          })}
+        </div>
+      </fieldset>
 
       <form
         className="rounded-2xl border border-border bg-card p-4 sm:p-5"
@@ -261,9 +259,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
         <div className="grid gap-4">
           <label className="grid gap-2">
             <span className="text-sm font-semibold text-foreground">
-              {props.kind === "services"
-                ? `Пошук у: ${directionLabel}`
-                : "Пошук"}
+              {`Пошук у: ${directionLabel}`}
             </span>
             <span className="flex gap-2">
               <input
@@ -271,11 +267,11 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
                 onChange={(event) => {
                   const nextQuery = event.target.value;
                   setQuery(nextQuery);
-                  updateServiceUrl(direction, nextQuery, "replace");
+                  updateCatalogUrl(direction, nextQuery, "replace");
                 }}
                 placeholder={
                   props.kind === "products"
-                    ? "Наприклад: теплолічильник, 3.6 V, конектор"
+                    ? "Наприклад: 10 кВт, Deye, сонячна станція"
                     : "Наприклад: енергоаудит, СЕС, повірка"
                 }
                 type="search"
@@ -290,7 +286,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
             </span>
           </label>
 
-          {props.kind === "products" || direction !== "all" ? (
+          {direction !== "all" ? (
             <div
               aria-label="Категорія"
               className="flex gap-2 overflow-x-auto pb-1"
@@ -322,7 +318,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
         tabIndex={-1}
       >
         {props.kind === "products"
-          ? `Знайдено товарів: ${filtered.length}`
+          ? `Знайдено товарів: ${filtered.length}. Напрям — «${directionLabel}»`
           : `Знайдено послуг: ${filtered.length}. Напрям — «${directionLabel}»`}
       </p>
 
@@ -344,13 +340,14 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
           <p className="mt-2 text-sm text-muted-foreground">
             Спробуйте змінити категорію або пошуковий запит.
           </p>
-          {props.kind === "services" && direction !== "all" && query ? (
+          {direction !== "all" && query ? (
             <button
               className="mt-5 min-h-12 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground"
-              onClick={searchAllServices}
+              onClick={searchAllItems}
               type="button"
             >
-              Шукати серед усіх {props.items.length} послуг
+              Шукати серед усіх {props.items.length}{" "}
+              {props.kind === "products" ? "товарів" : "послуг"}
             </button>
           ) : null}
         </div>

@@ -22,12 +22,17 @@ function matchesQuery(values: string[], query?: string) {
 
 export function filterProducts(search: CatalogSearch = {}): Product[] {
   return products.filter((product) => {
+    const directionMatches =
+      !search.direction ||
+      search.direction === "all" ||
+      product.direction === search.direction;
     const categoryMatches =
       !search.category ||
       search.category === "all" ||
       product.category === search.category;
 
     return (
+      directionMatches &&
       categoryMatches &&
       matchesQuery(
         [
@@ -35,6 +40,10 @@ export function filterProducts(search: CatalogSearch = {}): Product[] {
           product.shortDescription,
           product.description,
           ...product.compatibility,
+          ...(product.configurations?.flatMap((configuration) => [
+            configuration.label,
+            ...configuration.equipment,
+          ]) ?? []),
           ...product.specs.map((spec) => `${spec.label} ${spec.value}`),
         ],
         search.query,
@@ -71,8 +80,14 @@ export function filterServices(search: CatalogSearch = {}): Service[] {
   });
 }
 
-export function getFeaturedProducts() {
-  return products.filter((product) => product.featured).slice(0, 3);
+export function getFeaturedProducts(direction?: ServiceDirection) {
+  return products
+    .filter(
+      (product) =>
+        product.featured &&
+        (!direction || product.direction === direction),
+    )
+    .slice(0, 3);
 }
 
 export function getFeaturedServices(direction?: ServiceDirection) {

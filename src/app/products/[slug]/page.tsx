@@ -54,7 +54,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           {product.title}
         </h1>
 
-        <div className="relative mt-8 aspect-square overflow-hidden rounded-3xl border border-border bg-card">
+        <div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-3xl border border-border bg-card">
           <Image
             alt={product.title}
             className="object-cover"
@@ -68,6 +68,55 @@ export default async function ProductPage({ params }: ProductPageProps) {
         <p className="mt-8 text-lg leading-8 text-muted-foreground">
           {product.description}
         </p>
+
+        {product.configurations?.length ? (
+          <section className="mt-8" aria-labelledby="configurations-title">
+            <div className="flex flex-wrap items-end justify-between gap-3">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">
+                  Один тип — кілька потужностей
+                </p>
+                <h2
+                  className="mt-2 text-2xl font-semibold text-foreground"
+                  id="configurations-title"
+                >
+                  Доступні конфігурації
+                </h2>
+              </div>
+              <p className="max-w-xl text-sm leading-6 text-muted-foreground">
+                Комплектація показана окремо для кожної потужності, щоб не
+                приховувати різницю між моделями обладнання.
+              </p>
+            </div>
+            <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {product.configurations.map((configuration) => (
+                <article
+                  className="rounded-2xl border border-border bg-card p-5"
+                  key={configuration.label}
+                >
+                  <h3 className="text-lg font-semibold text-foreground">
+                    {configuration.label}
+                  </h3>
+                  <ul className="mt-4 grid gap-2 text-sm leading-6 text-muted-foreground">
+                    {configuration.equipment.map((item) => (
+                      <li className="flex gap-2" key={item}>
+                        <span aria-hidden="true" className="text-primary">
+                          •
+                        </span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+            {product.notice ? (
+              <p className="mt-4 rounded-2xl bg-muted px-5 py-4 text-sm leading-6 text-muted-foreground">
+                {product.notice}
+              </p>
+            ) : null}
+          </section>
+        ) : null}
 
         <div className="mt-8 rounded-2xl border border-border bg-card p-5">
           <div className="mb-5 flex flex-wrap gap-2">
@@ -114,7 +163,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
         </div>
 
         <div className="rounded-2xl border border-border bg-card p-6">
-          <h2 className="text-xl font-semibold text-foreground">Сумісність</h2>
+          <h2 className="text-xl font-semibold text-foreground">
+            {product.compatibilityTitle ?? "Сумісність"}
+          </h2>
           <ul className="mt-5 grid gap-3">
             {product.compatibility.map((item) => (
               <li className="rounded-xl bg-muted px-4 py-3 text-sm" key={item}>

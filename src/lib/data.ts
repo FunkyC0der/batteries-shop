@@ -2,9 +2,59 @@ import type { Product, Service } from "./types";
 
 export const productCategories = [
   { value: "all", label: "Усі товари" },
-  { value: "lithium", label: "Літієві батарейки" },
-  { value: "meter-modules", label: "Для модулів лічильників" },
-  { value: "accessories", label: "Аксесуари" },
+  {
+    value: "solar-stations",
+    label: "Сонячні електростанції",
+    direction: "energy-solutions",
+  },
+  {
+    value: "backup-power",
+    label: "Резервне живлення",
+    direction: "energy-solutions",
+  },
+  {
+    value: "energy-storage",
+    label: "Накопичення енергії",
+    direction: "energy-solutions",
+  },
+  {
+    value: "ev-charging",
+    label: "Заряджання EV",
+    direction: "energy-solutions",
+  },
+  {
+    value: "lithium",
+    label: "Літієві батарейки",
+    direction: "metering-and-comfort",
+  },
+  {
+    value: "meter-modules",
+    label: "Для модулів лічильників",
+    direction: "metering-and-comfort",
+  },
+  {
+    value: "accessories",
+    label: "Аксесуари",
+    direction: "metering-and-comfort",
+  },
+] as const;
+
+export const productDirections = [
+  {
+    value: "all",
+    label: "Усі товари",
+    description: "Повний каталог обладнання та енергетичних систем",
+  },
+  {
+    value: "metering-and-comfort",
+    label: "Опалення, тепло та облік",
+    description: "Батарейки й комплектуючі для приладів обліку",
+  },
+  {
+    value: "energy-solutions",
+    label: "Енергетичні рішення",
+    description: "Сонячні станції, резерв, накопичення та заряджання EV",
+  },
 ] as const;
 
 export const serviceCategories = [
@@ -74,6 +124,7 @@ export const products: Product[] = [
     id: "battery-ls14250",
     slug: "saft-ls14250",
     title: "Saft LS14250 для теплолічильників",
+    direction: "metering-and-comfort",
     category: "lithium",
     price: "від 390 грн",
     showPrice: false,
@@ -100,6 +151,7 @@ export const products: Product[] = [
     id: "battery-aa-meter",
     slug: "lithium-aa-meter",
     title: "Літієва AA батарейка для лічильників",
+    direction: "metering-and-comfort",
     category: "lithium",
     price: "від 450 грн",
     showPrice: false,
@@ -122,6 +174,7 @@ export const products: Product[] = [
     id: "battery-pack-connector",
     slug: "battery-pack-connector",
     title: "Батарейний блок з конектором",
+    direction: "metering-and-comfort",
     category: "meter-modules",
     price: "від 620 грн",
     showPrice: false,
@@ -144,6 +197,7 @@ export const products: Product[] = [
     id: "battery-tabs",
     slug: "lithium-battery-tabs",
     title: "Батарейка з пелюстками під пайку",
+    direction: "metering-and-comfort",
     category: "accessories",
     price: "від 520 грн",
     showPrice: false,
@@ -161,6 +215,293 @@ export const products: Product[] = [
     compatibility: ["плати живлення", "модулі пам'яті", "контролери обліку"],
     image: "/images/product-lithium-batteries.png",
     featured: false,
+  },
+  {
+    id: "autonomous-solar-station",
+    slug: "autonomous-solar-station",
+    title: "Автономна сонячна електростанція",
+    direction: "energy-solutions",
+    category: "solar-stations",
+    showPrice: false,
+    status: "consult",
+    shortDescription:
+      "Система для обʼєктів без стабільної мережі: сонячні панелі, автономний інвертор і акумулятори в одному рішенні.",
+    description:
+      "Автономна СЕС накопичує сонячну енергію та живить підключені навантаження незалежно від зовнішньої мережі. Остаточну кількість панелей, ємність батарей і схему захисту визначаємо після аналізу добового споживання та пікових навантажень.",
+    specs: [
+      { label: "Потужність", value: "3 / 5 / 10 кВт" },
+      { label: "Панелі", value: "JA Solar 595 Вт" },
+      { label: "Інвертори", value: "LuxPower SNA5000 Wide PV або Deye SUN-10K" },
+      { label: "Акумулятори", value: "Dyness DL5.0C / Dyness 5,1 кВт·год" },
+    ],
+    compatibilityTitle: "Підходить для",
+    compatibility: [
+      "будинків і дач без стабільної електромережі",
+      "критичних побутових та офісних навантажень",
+      "обʼєктів, де важлива енергетична автономність",
+    ],
+    configurations: [
+      {
+        label: "3 кВт",
+        equipment: [
+          "сонячні панелі JA Solar 595 Вт",
+          "інвертор LuxPower SNA5000 Wide PV",
+          "акумулятор Dyness DL5.0C",
+        ],
+      },
+      {
+        label: "5 кВт",
+        equipment: [
+          "сонячні панелі JA Solar 595 Вт",
+          "інвертор LuxPower SNA5000 Wide PV",
+          "акумулятор Dyness DL5.0C",
+        ],
+      },
+      {
+        label: "10 кВт",
+        equipment: [
+          "сонячні панелі JA Solar 595 Вт",
+          "інвертор Deye SUN-10K",
+          "2 × акумулятори Dyness 5,1 кВт·год",
+        ],
+      },
+    ],
+    notice:
+      "Кількість панелей, захист і монтажні матеріали розраховуються під конкретний обʼєкт.",
+    image: "/images/products/autonomous-solar-station.png",
+    featured: true,
+  },
+  {
+    id: "hybrid-solar-station",
+    slug: "hybrid-solar-station",
+    title: "Гібридна сонячна електростанція",
+    direction: "energy-solutions",
+    category: "solar-stations",
+    showPrice: false,
+    status: "consult",
+    shortDescription:
+      "Сонячна генерація, акумуляторний резерв і робота з мережею в єдиній керованій системі.",
+    description:
+      "Гібридна СЕС поєднує сонячні панелі, інвертор і акумулятори, автоматично розподіляючи енергію між споживанням, зарядом батарей і мережею. Конфігурацію підбираємо за потужністю вводу, фазністю та переліком резервних навантажень.",
+    specs: [
+      { label: "Потужність", value: "3 / 5 / 10 кВт" },
+      { label: "Панелі", value: "JA Solar 595 Вт" },
+      { label: "Інвертори", value: "Deye SUN-5K / SUN-10K або LuxPower SNA5000" },
+      { label: "Акумулятори", value: "Dyness 5,1 кВт·год" },
+    ],
+    compatibilityTitle: "Підходить для",
+    compatibility: [
+      "будинків із резервуванням критичних ліній",
+      "офісів і малих комерційних обʼєктів",
+      "збільшення власного споживання сонячної енергії",
+    ],
+    configurations: [
+      {
+        label: "3 кВт",
+        equipment: [
+          "сонячні панелі JA Solar 595 Вт",
+          "гібридний інвертор Deye SUN-5K",
+          "акумулятор Dyness 5,1 кВт·год",
+        ],
+      },
+      {
+        label: "5 кВт",
+        equipment: [
+          "сонячні панелі JA Solar 595 Вт",
+          "інвертор LuxPower SNA5000",
+          "акумулятор Dyness 5,1 кВт·год",
+        ],
+      },
+      {
+        label: "10 кВт",
+        equipment: [
+          "сонячні панелі JA Solar 595 Вт",
+          "гібридний інвертор Deye SUN-10K",
+          "2 × акумулятори Dyness 5,1 кВт·год",
+        ],
+      },
+    ],
+    notice:
+      "Фазність, резервні лінії та режим взаємодії з мережею погоджуються після обстеження.",
+    image: "/images/products/hybrid-solar-station.png",
+    featured: false,
+  },
+  {
+    id: "grid-tied-solar-station",
+    slug: "grid-tied-solar-station",
+    title: "Мережева сонячна електростанція для дому",
+    direction: "energy-solutions",
+    category: "solar-stations",
+    showPrice: false,
+    status: "consult",
+    shortDescription:
+      "Система без акумуляторів для зменшення споживання з мережі та ефективного використання сонячної генерації.",
+    description:
+      "Мережева СЕС синхронізується з електромережею та передає сонячну енергію безпосередньо споживачам обʼєкта. Потужність станції, модель інвертора й кількість панелей уточнюємо за профілем споживання, доступною площею та технічними умовами приєднання.",
+    specs: [
+      { label: "Потужність", value: "3 / 5 / 10 / 15 / 30 кВт" },
+      { label: "Панелі", value: "JA Solar 565 Вт" },
+      { label: "Інвертор", value: "мережева серія Sungrow" },
+      { label: "Акумулятори", value: "не передбачені" },
+    ],
+    compatibilityTitle: "Підходить для",
+    compatibility: [
+      "приватних будинків зі стабільною мережею",
+      "денного споживання без акумуляторного резерву",
+      "обʼєктів із можливістю розміщення панелей на даху або землі",
+    ],
+    configurations: [
+      { label: "3 кВт", equipment: ["панелі JA Solar 565 Вт", "мережевий інвертор Sungrow", "система моніторингу"] },
+      { label: "5 кВт", equipment: ["панелі JA Solar 565 Вт", "мережевий інвертор Sungrow", "система моніторингу"] },
+      { label: "10 кВт", equipment: ["панелі JA Solar 565 Вт", "мережевий інвертор Sungrow", "система моніторингу"] },
+      { label: "15 кВт", equipment: ["панелі JA Solar 565 Вт", "мережевий інвертор Sungrow", "система моніторингу"] },
+      { label: "30 кВт", equipment: ["панелі JA Solar 565 Вт", "мережевий інвертор Sungrow", "система моніторингу"] },
+    ],
+    notice:
+      "Точна модель інвертора та схема підключення залежать від фазності й технічних умов обʼєкта.",
+    image: "/images/products/grid-tied-solar-station.png",
+    featured: false,
+  },
+  {
+    id: "backup-power-system",
+    slug: "backup-power-system",
+    title: "Система резервного живлення",
+    direction: "energy-solutions",
+    category: "backup-power",
+    showPrice: false,
+    status: "consult",
+    shortDescription:
+      "Інвертор і LiFePO4-акумулятори для автоматичного живлення критичних споживачів під час відключень.",
+    description:
+      "Система резервного живлення автоматично підтримує вибрані лінії під час зникнення мережі. Ємність батарей і потужність інвертора визначаємо за сумарним навантаженням та потрібною тривалістю автономної роботи.",
+    specs: [
+      { label: "Ємність", value: "5 / 10 кВт·год" },
+      { label: "Інвертори", value: "LuxPower 6 кВт або Deye 10 кВт" },
+      { label: "Акумулятори", value: "Pylontech LiFePO4, 5 кВт·год" },
+      { label: "Перемикання", value: "автоматичне" },
+    ],
+    compatibilityTitle: "Підходить для",
+    compatibility: [
+      "котлів, насосів, освітлення та звʼязку",
+      "квартир, будинків і невеликих офісів",
+      "масштабованого акумуляторного резерву",
+    ],
+    configurations: [
+      {
+        label: "5 кВт·год",
+        equipment: ["інвертор LuxPower 6 кВт", "акумулятор Pylontech LiFePO4 5 кВт·год", "захист і автоматика"],
+      },
+      {
+        label: "10 кВт·год",
+        equipment: ["інвертор Deye 10 кВт", "2 × акумулятори Pylontech 5 кВт·год", "захист і автоматика"],
+      },
+    ],
+    notice:
+      "Точні моделі акумуляторів і час автономії підтверджуються після розрахунку навантаження.",
+    image: "/images/products/backup-power-system.png",
+    featured: true,
+  },
+  {
+    id: "industrial-solar-station",
+    slug: "industrial-solar-station",
+    title: "Промислова сонячна електростанція",
+    direction: "energy-solutions",
+    category: "solar-stations",
+    showPrice: false,
+    status: "consult",
+    shortDescription:
+      "Проєктне рішення для підприємств: від 100 кВт до 1 МВт із промисловими інверторами та моніторингом.",
+    description:
+      "Промислова СЕС проєктується за графіком навантаження підприємства, доступною площею та умовами приєднання. До складу входять фотомодулі, інверторне обладнання, захист, диспетчеризація та конструкції; кількість одиниць визначається проєктом.",
+    specs: [
+      { label: "Потужність", value: "100 / 300 / 500 кВт / 1 МВт" },
+      { label: "Панелі", value: "JA Solar JAM72D40-595" },
+      { label: "Інвертори", value: "Huawei SUN2000 або Sungrow SG125HX" },
+      { label: "Моніторинг", value: "проєктна система диспетчеризації" },
+    ],
+    compatibilityTitle: "Підходить для",
+    compatibility: [
+      "виробничих і складських комплексів",
+      "логістичних та аграрних підприємств",
+      "самоспоживання й проєктів із мережевою генерацією",
+    ],
+    configurations: [
+      { label: "100 кВт", equipment: ["панелі JA Solar JAM72D40-595", "інвертори Huawei SUN2000", "моніторинг і захист"] },
+      { label: "300 кВт", equipment: ["панелі JA Solar 595 Вт", "інвертори Huawei SUN2000", "моніторинг і захист"] },
+      { label: "500 кВт", equipment: ["панелі JA Solar 595 Вт", "інвертори Huawei SUN2000", "моніторинг і захист"] },
+      { label: "1 МВт", equipment: ["панелі JA Solar JAM72D40-595", "інвертори Sungrow SG125HX", "моніторинг і захист"] },
+    ],
+    notice:
+      "Кількість інверторів, панелей і допоміжного обладнання визначається робочим проєктом.",
+    image: "/images/products/industrial-solar-station.png",
+    featured: false,
+  },
+  {
+    id: "energy-storage-system",
+    slug: "energy-storage-system",
+    title: "Система накопичення енергії",
+    direction: "energy-solutions",
+    category: "energy-storage",
+    showPrice: false,
+    status: "consult",
+    shortDescription:
+      "Модульна система акумуляторів, інвертора та керування для резерву, балансування й роботи з сонячною генерацією.",
+    description:
+      "Система накопичення енергії зберігає електроенергію та віддає її за заданим сценарієм: під час відключень, пікових навантажень або нестачі сонячної генерації. Конкретні бренди, напруга батарейної шини та архітектура визначаються після технічного розрахунку.",
+    specs: [
+      { label: "Ємність", value: "5 / 10 / 20+ кВт·год" },
+      { label: "Хімія", value: "LiFePO4" },
+      { label: "Архітектура", value: "модульна, з можливістю масштабування" },
+      { label: "Керування", value: "BMS та енергетичний контролер" },
+    ],
+    compatibilityTitle: "Підходить для",
+    compatibility: [
+      "резервного живлення будинку або бізнесу",
+      "накопичення надлишку сонячної генерації",
+      "масштабування ємності під зростання споживання",
+    ],
+    configurations: [
+      { label: "5 кВт·год", equipment: ["LiFePO4-модуль", "сумісний інвертор", "BMS і захист"] },
+      { label: "10 кВт·год", equipment: ["2 × LiFePO4-модулі", "сумісний інвертор", "BMS і захист"] },
+      { label: "20+ кВт·год", equipment: ["масштабований батарейний стелаж", "інвертор/PCS", "контролер і захист"] },
+    ],
+    notice:
+      "Виробник і точні моделі обладнання погоджуються після перевірки сумісності та режимів роботи.",
+    image: "/images/products/energy-storage-system.png",
+    featured: false,
+  },
+  {
+    id: "solar-ev-carport",
+    slug: "solar-ev-carport",
+    title: "Сонячний навіс із зарядкою для електромобіля",
+    direction: "energy-solutions",
+    category: "ev-charging",
+    showPrice: false,
+    status: "consult",
+    shortDescription:
+      "Навіс із сонячними панелями, зарядною станцією та опційним накопичувачем для одного або двох авто.",
+    description:
+      "Сонячний навіс поєднує захист паркомісця, локальну генерацію та заряджання електромобіля. Геометрію конструкції, кількість панелей, потужність зарядної станції й потребу в акумуляторах визначаємо за майданчиком та електричним вводом.",
+    specs: [
+      { label: "Паркомісця", value: "1 / 2 авто" },
+      { label: "Заряджання", value: "до 22 кВт" },
+      { label: "Генерація", value: "сонячні панелі на даху навісу" },
+      { label: "Накопичення", value: "LiFePO4 — опційно" },
+    ],
+    compatibilityTitle: "Підходить для",
+    compatibility: [
+      "приватних будинків і паркінгів",
+      "офісних та комерційних майданчиків",
+      "заряджання від сонячної генерації й мережі",
+    ],
+    configurations: [
+      { label: "1 авто", equipment: ["металевий навіс", "сонячні панелі", "зарядна станція до 22 кВт", "інвертор і захист"] },
+      { label: "2 авто", equipment: ["подвійний металевий навіс", "сонячні панелі", "одна або дві точки заряджання", "інвертор і захист"] },
+    ],
+    notice:
+      "Моделі зарядної станції, інвертора й акумуляторів погоджуються після перевірки потужності вводу.",
+    image: "/images/products/solar-ev-carport.png",
+    featured: true,
   },
 ];
 
