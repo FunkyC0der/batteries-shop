@@ -33,8 +33,31 @@ describe("catalog helpers", () => {
     ).toBe(true);
   });
 
+  it("filters services by the energy-solutions direction", () => {
+    const results = filterServices({
+      direction: "energy-solutions",
+    });
+
+    expect(results).toHaveLength(8);
+    expect(
+      results.every((service) => service.direction === "energy-solutions"),
+    ).toBe(true);
+  });
+
+  it("finds a new energy service by Ukrainian search text", () => {
+    const results = filterServices({
+      direction: "energy-solutions",
+      query: "дистанційний моніторинг",
+    });
+
+    expect(results.map((service) => service.id)).toContain(
+      "service-energy-automation",
+    );
+  });
+
   it("returns featured catalog items for the homepage", () => {
     expect(getFeaturedProducts()).toHaveLength(3);
-    expect(getFeaturedServices()).toHaveLength(3);
+    expect(getFeaturedServices("metering-and-comfort")).toHaveLength(3);
+    expect(getFeaturedServices("energy-solutions")).toHaveLength(3);
   });
 });

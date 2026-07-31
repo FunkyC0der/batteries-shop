@@ -1,10 +1,16 @@
 export type ProductCategory = "lithium" | "meter-modules" | "accessories";
 
+export type ServiceDirection = "metering-and-comfort" | "energy-solutions";
+
 export type ServiceCategory =
   | "battery-service"
   | "verification"
   | "installation"
-  | "plumbing";
+  | "plumbing"
+  | "energy-analysis-design"
+  | "energy-supply-construction"
+  | "energy-storage-integration"
+  | "energy-control-service";
 
 export type AvailabilityStatus = "in-stock" | "preorder" | "consult";
 
@@ -28,6 +34,7 @@ export type Service = {
   id: string;
   slug: string;
   title: string;
+  direction: ServiceDirection;
   category: ServiceCategory;
   price?: string;
   showPrice: boolean;
@@ -41,6 +48,7 @@ export type Service = {
 };
 
 export type CatalogSearch = {
+  direction?: ServiceDirection | "all";
   category?: ProductCategory | ServiceCategory | "all";
   query?: string;
 };

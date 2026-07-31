@@ -1,5 +1,10 @@
 import { products, services } from "./data";
-import type { CatalogSearch, Product, Service } from "./types";
+import type {
+  CatalogSearch,
+  Product,
+  Service,
+  ServiceDirection,
+} from "./types";
 
 function normalize(value: string) {
   return value.trim().toLocaleLowerCase("uk-UA");
@@ -40,12 +45,17 @@ export function filterProducts(search: CatalogSearch = {}): Product[] {
 
 export function filterServices(search: CatalogSearch = {}): Service[] {
   return services.filter((service) => {
+    const directionMatches =
+      !search.direction ||
+      search.direction === "all" ||
+      service.direction === search.direction;
     const categoryMatches =
       !search.category ||
       search.category === "all" ||
       service.category === search.category;
 
     return (
+      directionMatches &&
       categoryMatches &&
       matchesQuery(
         [
@@ -65,8 +75,14 @@ export function getFeaturedProducts() {
   return products.filter((product) => product.featured).slice(0, 3);
 }
 
-export function getFeaturedServices() {
-  return services.filter((service) => service.featured).slice(0, 3);
+export function getFeaturedServices(direction?: ServiceDirection) {
+  return services
+    .filter(
+      (service) =>
+        service.featured &&
+        (!direction || service.direction === direction),
+    )
+    .slice(0, 3);
 }
 
 export function getProductBySlug(slug: string) {

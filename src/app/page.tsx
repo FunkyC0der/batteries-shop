@@ -9,19 +9,21 @@ import { getFeaturedProducts, getFeaturedServices } from "@/lib/catalog";
 
 export default function Home() {
   const featuredProducts = getFeaturedProducts();
-  const featuredServices = getFeaturedServices();
+  const featuredServices = getFeaturedServices("metering-and-comfort");
+  const featuredEnergyServices = getFeaturedServices("energy-solutions");
 
   return (
     <>
       <section className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-6 md:grid-cols-[1fr_0.9fr] md:items-center lg:px-8 lg:py-16">
         <div>
           <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Батарейки, повірка та сервіс лічильників тепла й води
+            Облік, сервіс та енергетичні рішення для дому й бізнесу
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-8 text-muted-foreground">
             Підбираємо та продаємо батарейки й готові батарейні блоки.
             Проводимо повірку, встановлення, заміну та обслуговування
-            теплолічильників і водолічильників.
+            лічильників. Проєктуємо й монтуємо сонячні електростанції,
+            накопичення енергії та системи резервного живлення.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
@@ -86,6 +88,27 @@ export default function Home() {
               <ServiceCard key={service.id} service={service} />
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+        <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+          <SectionHeading
+            description="Від аналізу споживання й проєктування до монтажу, автоматизації та подальшого обслуговування енергетичного обладнання."
+            eyebrow="Новий напрям"
+            title="Енергетичні рішення"
+          />
+          <Link
+            className="font-semibold text-primary"
+            href="/services?direction=energy-solutions"
+          >
+            Усі енергетичні послуги
+          </Link>
+        </div>
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {featuredEnergyServices.map((service) => (
+            <ServiceCard key={service.id} service={service} />
+          ))}
         </div>
       </section>
 
