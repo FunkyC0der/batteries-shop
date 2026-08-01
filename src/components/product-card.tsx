@@ -14,7 +14,11 @@ export function ProductCard({ product }: { product: Product }) {
         <div className="relative aspect-[4/3] overflow-hidden bg-muted">
           <Image
             alt={product.title}
-            className="object-cover transition duration-500 group-hover:scale-105"
+            className={
+              product.images?.length
+                ? "object-contain p-4 transition duration-500 group-hover:scale-105"
+                : "object-cover transition duration-500 group-hover:scale-105"
+            }
             fill
             sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
             src={product.image}

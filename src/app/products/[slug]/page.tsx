@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { ActionButtons } from "@/components/action-buttons";
 import { CtaPanel } from "@/components/cta-panel";
+import { ProductGallery } from "@/components/product-gallery";
 import { getProductBySlug, getStatusLabel } from "@/lib/catalog";
 import { products } from "@/lib/data";
 import { productToOrderable } from "@/lib/order-actions";
@@ -54,20 +54,20 @@ export default async function ProductPage({ params }: ProductPageProps) {
           {product.title}
         </h1>
 
-        <div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-3xl border border-border bg-card">
-          <Image
-            alt={product.title}
-            className="object-cover"
-            fill
-            priority
-            src={product.image}
-            sizes="(min-width: 1024px) 960px, 100vw"
-          />
-        </div>
+        <ProductGallery
+          images={product.images?.length ? product.images : [product.image]}
+          title={product.title}
+        />
 
         <p className="mt-8 text-lg leading-8 text-muted-foreground">
           {product.description}
         </p>
+
+        {product.notice && !product.configurations?.length ? (
+          <p className="mt-4 rounded-2xl bg-muted px-5 py-4 text-sm leading-6 text-muted-foreground">
+            {product.notice}
+          </p>
+        ) : null}
 
         {product.configurations?.length ? (
           <section className="mt-8" aria-labelledby="configurations-title">

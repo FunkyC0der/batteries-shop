@@ -8,6 +8,14 @@ import {
 } from "../src/lib/catalog";
 
 describe("catalog helpers", () => {
+  it("keeps every product slug unique", () => {
+    const allProducts = filterProducts({});
+
+    expect(new Set(allProducts.map((product) => product.slug)).size).toBe(
+      allProducts.length,
+    );
+  });
+
   it("filters products by category and Ukrainian search text", () => {
     const results = filterProducts({
       category: "lithium",
@@ -60,7 +68,7 @@ describe("catalog helpers", () => {
     });
 
     expect(heatProducts).toHaveLength(4);
-    expect(energyProducts).toHaveLength(7);
+    expect(energyProducts).toHaveLength(328);
     expect(
       heatProducts.every(
         (product) => product.direction === "metering-and-comfort",
@@ -71,6 +79,52 @@ describe("catalog helpers", () => {
         (product) => product.direction === "energy-solutions",
       ),
     ).toBe(true);
+  });
+
+  it("lists imported systems in a dedicated category with a price warning", () => {
+    const systems = filterProducts({
+      category: "energy-storage-systems",
+    });
+
+    expect(systems).toHaveLength(147);
+    expect(
+      systems.every(
+        (product) =>
+          product.showPrice && product.price?.includes("Ціну уточнюйте"),
+      ),
+    ).toBe(true);
+    expect(
+      systems.every(
+        (product) =>
+          product.images?.length && product.image === product.images[0],
+      ),
+    ).toBe(true);
+  });
+
+  it("lists imported Solarverse equipment in dedicated categories", () => {
+    const expectedCounts = {
+      inverters: 65,
+      "solar-batteries": 72,
+      "solar-panels": 24,
+      "solar-accessories": 13,
+    } as const;
+
+    for (const [category, expectedCount] of Object.entries(expectedCounts)) {
+      const importedProducts = filterProducts({
+        category: category as keyof typeof expectedCounts,
+      });
+
+      expect(importedProducts).toHaveLength(expectedCount);
+      expect(
+        importedProducts.every(
+          (product) =>
+            product.showPrice &&
+            product.price?.includes("Ціну уточнюйте") &&
+            product.images?.length &&
+            product.image === product.images[0],
+        ),
+      ).toBe(true);
+    }
   });
 
   it("filters services by the energy-solutions direction", () => {

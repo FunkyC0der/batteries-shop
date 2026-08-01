@@ -1,10 +1,32 @@
 import type { Product, Service } from "./types";
+import { solarverseEnergyStorageProducts } from "./solarverse-products";
+import { solarverseEquipmentProducts } from "./solarverse-equipment-products";
 
 export const productCategories = [
   { value: "all", label: "Усі товари" },
   {
     value: "solar-stations",
     label: "Сонячні електростанції",
+    direction: "energy-solutions",
+  },
+  {
+    value: "solar-panels",
+    label: "Сонячні панелі",
+    direction: "energy-solutions",
+  },
+  {
+    value: "inverters",
+    label: "Інвертори",
+    direction: "energy-solutions",
+  },
+  {
+    value: "solar-batteries",
+    label: "Акумуляторні батареї",
+    direction: "energy-solutions",
+  },
+  {
+    value: "solar-accessories",
+    label: "Аксесуари для енергосистем",
     direction: "energy-solutions",
   },
   {
@@ -15,6 +37,11 @@ export const productCategories = [
   {
     value: "energy-storage",
     label: "Накопичення енергії",
+    direction: "energy-solutions",
+  },
+  {
+    value: "energy-storage-systems",
+    label: "Готові системи зберігання енергії",
     direction: "energy-solutions",
   },
   {
@@ -503,6 +530,8 @@ export const products: Product[] = [
     image: "/images/products/solar-ev-carport.png",
     featured: true,
   },
+  ...solarverseEnergyStorageProducts,
+  ...solarverseEquipmentProducts,
 ];
 
 export const services: Service[] = [

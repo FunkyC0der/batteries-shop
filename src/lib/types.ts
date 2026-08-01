@@ -3,8 +3,13 @@ export type ProductCategory =
   | "meter-modules"
   | "accessories"
   | "solar-stations"
+  | "solar-panels"
+  | "inverters"
+  | "solar-batteries"
+  | "solar-accessories"
   | "backup-power"
   | "energy-storage"
+  | "energy-storage-systems"
   | "ev-charging";
 
 export type ServiceDirection = "metering-and-comfort" | "energy-solutions";
@@ -41,6 +46,7 @@ export type Product = {
   }>;
   notice?: string;
   image: string;
+  images?: string[];
   featured: boolean;
 };
 

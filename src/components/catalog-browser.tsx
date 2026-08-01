@@ -9,7 +9,14 @@ import type {
 } from "@/lib/types";
 
 import { ProductCard } from "./product-card";
+import { ProductFacetControls } from "./product-facet-controls";
 import { ServiceCard } from "./service-card";
+import {
+  buildProductFacetModels,
+  filterProductsByFacets,
+  getProductFacetConfig,
+  type ProductFacetSelection,
+} from "@/lib/product-facets";
 
 type CategoryOption = {
   value: string;
@@ -53,8 +60,11 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
     props.initialDirection ?? "all",
   );
   const [query, setQuery] = useState(props.initialQuery ?? "");
+  const [facetSelection, setFacetSelection] =
+    useState<ProductFacetSelection>({});
   const resultSummaryRef = useRef<HTMLParagraphElement>(null);
   const directions = props.directions;
+  const categories = props.categories;
 
   useEffect(() => {
     const syncFromUrl = () => {
@@ -63,24 +73,33 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
       const validDirection = directions.some(
         (option) => option.value === nextDirection,
       );
-
-      setDirection(
-        validDirection
-          ? (nextDirection as ServiceDirection | "all")
-          : "all",
+      const resolvedDirection = validDirection
+        ? (nextDirection as ServiceDirection | "all")
+        : "all";
+      const nextCategory = searchParams.get("category");
+      const validCategory = categories.some(
+        (option) =>
+          option.value === nextCategory &&
+          option.value !== "all" &&
+          option.direction === resolvedDirection,
       );
+
+      setDirection(resolvedDirection);
       setQuery(searchParams.get("q") ?? "");
-      setCategory("all");
+      setCategory(validCategory ? (nextCategory ?? "all") : "all");
+      setFacetSelection({});
     };
 
+    syncFromUrl();
     window.addEventListener("popstate", syncFromUrl);
     return () => window.removeEventListener("popstate", syncFromUrl);
-  }, [directions]);
+  }, [categories, directions]);
 
   function updateCatalogUrl(
     nextDirection: ServiceDirection | "all",
     nextQuery: string,
     mode: "push" | "replace",
+    nextCategory = category,
   ) {
     const url = new URL(window.location.href);
     const normalizedQuery = nextQuery.trim();
@@ -95,6 +114,12 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
       url.searchParams.set("q", normalizedQuery);
     } else {
       url.searchParams.delete("q");
+    }
+
+    if (nextDirection !== "all" && nextCategory !== "all") {
+      url.searchParams.set("category", nextCategory);
+    } else {
+      url.searchParams.delete("category");
     }
 
     const nextUrl = `${url.pathname}${url.search}${url.hash}`;
@@ -116,7 +141,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
     );
   }, [direction, props.categories]);
 
-  const filtered = useMemo(() => {
+  const baseFiltered = useMemo(() => {
     const normalizedQuery = normalize(query);
 
     if (props.kind === "products") {
@@ -165,12 +190,48 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
     });
   }, [category, direction, props.items, props.kind, query]);
 
+  const facetConfig =
+    props.kind === "products" ? getProductFacetConfig(category) : undefined;
+  const facetModels = useMemo(
+    () =>
+      props.kind === "products" && facetConfig
+        ? buildProductFacetModels(
+            baseFiltered as Product[],
+            facetConfig.facets,
+            facetSelection,
+          )
+        : [],
+    [baseFiltered, facetConfig, facetSelection, props.kind],
+  );
+  const filtered = useMemo(
+    () =>
+      props.kind === "products" && facetConfig
+        ? filterProductsByFacets(
+            baseFiltered as Product[],
+            facetConfig.facets,
+            facetSelection,
+          )
+        : baseFiltered,
+    [baseFiltered, facetConfig, facetSelection, props.kind],
+  );
+  const activeFacetCount = Object.values(facetSelection).reduce(
+    (count, values) => count + values.length,
+    0,
+  );
+
   const activeDirection = directions.find(
     (option) => option.value === direction,
+  );
+  const activeCategory = visibleCategories.find(
+    (option) => option.value === category,
   );
   const directionLabel =
     activeDirection?.label ??
     (props.kind === "products" ? "Усі товари" : "Усі послуги");
+  const categoryPath =
+    category !== "all" && activeCategory
+      ? `${directionLabel} — ${activeCategory.label}`
+      : directionLabel;
 
   function handleSearchSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -181,12 +242,87 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
   function selectDirection(nextDirection: ServiceDirection | "all") {
     setDirection(nextDirection);
     setCategory("all");
-    updateCatalogUrl(nextDirection, query, "push");
+    setFacetSelection({});
+    updateCatalogUrl(nextDirection, query, "push", "all");
+  }
+
+  function selectCategory(nextCategory: string) {
+    setCategory(nextCategory);
+    setFacetSelection({});
+    updateCatalogUrl(direction, query, "push", nextCategory);
+  }
+
+  function toggleFacetValue(facetId: string, value: string) {
+    setFacetSelection((current) => {
+      const selectedValues = current[facetId] ?? [];
+      const nextValues = selectedValues.includes(value)
+        ? selectedValues.filter((selectedValue) => selectedValue !== value)
+        : [...selectedValues, value];
+
+      if (nextValues.length === 0) {
+        const nextSelection = { ...current };
+        delete nextSelection[facetId];
+        return nextSelection;
+      }
+
+      return { ...current, [facetId]: nextValues };
+    });
   }
 
   function searchAllItems() {
     selectDirection("all");
     resultSummaryRef.current?.focus();
+  }
+
+  function renderResults() {
+    if (filtered.length > 0) {
+      return (
+        <div
+          className={
+            facetConfig
+              ? "grid gap-5 sm:grid-cols-2 xl:grid-cols-3"
+              : "grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+          }
+        >
+          {props.kind === "products"
+            ? filtered.map((item) => (
+                <ProductCard key={item.id} product={item as Product} />
+              ))
+            : filtered.map((item) => (
+                <ServiceCard key={item.id} service={item as Service} />
+              ))}
+        </div>
+      );
+    }
+
+    return (
+      <div className="rounded-2xl border border-border bg-muted p-8 text-center">
+        <p className="text-lg font-semibold text-foreground">
+          Нічого не знайдено
+        </p>
+        <p className="mt-2 text-sm text-muted-foreground">
+          Спробуйте змінити категорію, характеристики або пошуковий запит.
+        </p>
+        {activeFacetCount ? (
+          <button
+            className="mt-5 min-h-12 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground"
+            onClick={() => setFacetSelection({})}
+            type="button"
+          >
+            Очистити фільтри характеристик
+          </button>
+        ) : direction !== "all" && query ? (
+          <button
+            className="mt-5 min-h-12 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground"
+            onClick={searchAllItems}
+            type="button"
+          >
+            Шукати серед усіх {props.items.length}{" "}
+            {props.kind === "products" ? "товарів" : "послуг"}
+          </button>
+        ) : null}
+      </div>
+    );
   }
 
   return (
@@ -253,15 +389,17 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
       </fieldset>
 
       <form
-        className="rounded-2xl border border-border bg-card p-4 sm:p-5"
+        className="min-w-0 overflow-hidden rounded-2xl border border-border bg-card p-4 sm:p-5"
         onSubmit={handleSearchSubmit}
       >
-        <div className="grid gap-4">
-          <label className="grid gap-2">
-            <span className="text-sm font-semibold text-foreground">
-              {`Пошук у: ${directionLabel}`}
+        <div className="grid min-w-0 gap-4">
+          <label className="grid min-w-0 gap-2">
+            <span className="sr-only">
+              {props.kind === "products"
+                ? "Пошук товарів"
+                : "Пошук послуг"}
             </span>
-            <span className="flex gap-2">
+            <span className="flex min-w-0 gap-2">
               <input
                 className="min-h-12 min-w-0 flex-1 rounded-full border border-border bg-background px-4 text-base outline-none transition placeholder:text-muted-foreground focus:border-primary"
                 onChange={(event) => {
@@ -278,7 +416,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
                 value={query}
               />
               <button
-                className="min-h-12 rounded-full bg-foreground px-5 text-sm font-semibold text-background transition hover:bg-primary"
+                className="min-h-12 shrink-0 rounded-full bg-foreground px-4 text-sm font-semibold text-background transition hover:bg-primary sm:px-5"
                 type="submit"
               >
                 Знайти
@@ -287,25 +425,31 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
           </label>
 
           {direction !== "all" ? (
-            <div
-              aria-label="Категорія"
-              className="flex gap-2 overflow-x-auto pb-1"
-            >
-              {visibleCategories.map((option) => (
-                <button
-                  aria-pressed={category === option.value}
-                  className={
-                    category === option.value
-                      ? "min-h-12 shrink-0 whitespace-nowrap rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground"
-                      : "min-h-12 shrink-0 whitespace-nowrap rounded-full border border-border bg-background px-4 py-2 text-sm font-semibold text-muted-foreground transition hover:border-primary hover:text-primary"
-                  }
-                  key={option.value}
-                  onClick={() => setCategory(option.value)}
-                  type="button"
-                >
-                  {option.label}
-                </button>
-              ))}
+            <div className="min-w-0 max-w-full overflow-hidden rounded-2xl border border-border bg-background p-3 sm:p-4">
+              <span className="text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground">
+                Підкатегорія
+              </span>
+
+              <div
+                aria-label="Підкатегорія"
+                className="mt-3 flex w-full min-w-0 max-w-full gap-2 overflow-x-auto pb-1"
+              >
+                {visibleCategories.map((option) => (
+                  <button
+                    aria-pressed={category === option.value}
+                    className={
+                      category === option.value
+                        ? "min-h-12 shrink-0 whitespace-nowrap rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-sm"
+                        : "min-h-12 shrink-0 whitespace-nowrap rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold text-muted-foreground transition hover:border-primary hover:text-primary"
+                    }
+                    key={option.value}
+                    onClick={() => selectCategory(option.value)}
+                    type="button"
+                  >
+                    {option.label}
+                  </button>
+                ))}
+              </div>
             </div>
           ) : null}
         </div>
@@ -313,44 +457,32 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
 
       <p
         aria-live="polite"
-        className="text-sm font-semibold text-muted-foreground outline-none"
+        className="grid gap-1 text-sm font-semibold text-muted-foreground outline-none"
         ref={resultSummaryRef}
         tabIndex={-1}
       >
-        {props.kind === "products"
-          ? `Знайдено товарів: ${filtered.length}. Напрям — «${directionLabel}»`
-          : `Знайдено послуг: ${filtered.length}. Напрям — «${directionLabel}»`}
+        <span>
+          {props.kind === "products"
+            ? `Знайдено товарів: ${filtered.length}`
+            : `Знайдено послуг: ${filtered.length}`}
+        </span>
+        <span>{categoryPath}</span>
       </p>
 
-      {filtered.length > 0 ? (
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {props.kind === "products"
-            ? filtered.map((item) => (
-                <ProductCard key={item.id} product={item as Product} />
-              ))
-            : filtered.map((item) => (
-                <ServiceCard key={item.id} service={item as Service} />
-              ))}
+      {props.kind === "products" && facetConfig ? (
+        <div className="grid items-start gap-6 lg:grid-cols-[18rem_minmax(0,1fr)]">
+          <ProductFacetControls
+            config={facetConfig}
+            models={facetModels}
+            onReset={() => setFacetSelection({})}
+            onToggle={toggleFacetValue}
+            resultCount={filtered.length}
+            selection={facetSelection}
+          />
+          <div className="min-w-0">{renderResults()}</div>
         </div>
       ) : (
-        <div className="rounded-2xl border border-border bg-muted p-8 text-center">
-          <p className="text-lg font-semibold text-foreground">
-            Нічого не знайдено
-          </p>
-          <p className="mt-2 text-sm text-muted-foreground">
-            Спробуйте змінити категорію або пошуковий запит.
-          </p>
-          {direction !== "all" && query ? (
-            <button
-              className="mt-5 min-h-12 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground"
-              onClick={searchAllItems}
-              type="button"
-            >
-              Шукати серед усіх {props.items.length}{" "}
-              {props.kind === "products" ? "товарів" : "послуг"}
-            </button>
-          ) : null}
-        </div>
+        renderResults()
       )}
     </div>
   );
