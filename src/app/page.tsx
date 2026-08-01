@@ -5,7 +5,12 @@ import { CtaPanel } from "@/components/cta-panel";
 import { ProductCard } from "@/components/product-card";
 import { SectionHeading } from "@/components/section-heading";
 import { ServiceCard } from "@/components/service-card";
-import { getFeaturedProducts, getFeaturedServices } from "@/lib/catalog";
+import {
+  filterProducts,
+  formatProductCount,
+  getFeaturedProducts,
+  getFeaturedServices,
+} from "@/lib/catalog";
 
 const deliverySteps = [
   {
@@ -43,6 +48,12 @@ export default function Home() {
     "metering-and-comfort",
   );
   const featuredEnergyServices = getFeaturedServices("energy-solutions");
+  const meteringProductCount = filterProducts({
+    direction: "metering-and-comfort",
+  }).length;
+  const energyProductCount = filterProducts({
+    direction: "energy-solutions",
+  }).length;
   const directionGroups = [
     {
       id: "product-directions",
@@ -52,7 +63,7 @@ export default function Home() {
         "Готові позиції й системні рішення з окремим складом для кожної конфігурації.",
       items: [
         {
-          eyebrow: "4 товари",
+          eyebrow: formatProductCount(meteringProductCount),
           title: "Опалення, тепло та облік",
           description:
             "Батарейки, батарейні блоки та комплектуючі для лічильників і автоматики.",
@@ -64,7 +75,7 @@ export default function Home() {
           imageAlt: "Батарейки й комплектуючі для приладів обліку",
         },
         {
-          eyebrow: "7 товарів",
+          eyebrow: formatProductCount(energyProductCount),
           title: "Енергетичні рішення",
           description:
             "Сонячні станції, резервне живлення, накопичення енергії та заряджання EV.",

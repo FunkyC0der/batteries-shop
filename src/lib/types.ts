@@ -30,6 +30,9 @@ export type Product = {
   id: string;
   slug: string;
   title: string;
+  sourceUrl?: string;
+  sourceUrls?: string[];
+  legacySlugs?: string[];
   direction: ServiceDirection;
   category: ProductCategory;
   price?: string;
@@ -43,6 +46,7 @@ export type Product = {
   configurations?: Array<{
     label: string;
     equipment: string[];
+    price?: string;
   }>;
   notice?: string;
   image: string;

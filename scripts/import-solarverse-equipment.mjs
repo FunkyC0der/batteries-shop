@@ -406,6 +406,7 @@ export const solarverseEquipmentProducts: Product[] = importedProducts.map(
       id: \`solarverse-equipment-\${index + 1}\`,
       slug: product.slug,
       title: product.title,
+      sourceUrl: \`https://solarverse.ua/product/\${product.slug}\`,
       direction: "energy-solutions",
       category: definition.category,
       price: product.price

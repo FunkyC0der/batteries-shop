@@ -117,4 +117,133 @@ describe("product facets", () => {
 
     expect(filtered).toHaveLength(147);
   });
+
+  it("configures useful filters for every imported equipment category", () => {
+    const expectedFacets = {
+      inverters: [
+        "brand",
+        "inverter-type",
+        "nominal-power",
+        "battery-voltage",
+        "phase-count",
+        "warranty",
+      ],
+      "solar-batteries": [
+        "brand",
+        "battery-technology",
+        "battery-capacity",
+        "battery-energy",
+        "cycle-life",
+        "nominal-voltage",
+        "max-charge-current",
+        "warranty",
+      ],
+      "solar-panels": [
+        "brand",
+        "panel-power",
+        "protection-rating",
+        "warranty",
+      ],
+      "solar-accessories": [
+        "brand",
+        "purpose",
+        "compatibility",
+        "warranty",
+      ],
+    } as const;
+
+    for (const [category, facetIds] of Object.entries(expectedFacets)) {
+      const categoryConfig = getProductFacetConfig(category);
+      const categoryProducts = products.filter(
+        (product) => product.category === category,
+      );
+
+      expect(categoryConfig).toBeDefined();
+      expect(categoryConfig?.facets.map((facet) => facet.id)).toEqual(facetIds);
+
+      const models = buildProductFacetModels(
+        categoryProducts,
+        categoryConfig?.facets ?? [],
+        {},
+      );
+      expect(models.every((model) => model.options.length > 1)).toBe(true);
+    }
+  });
+
+  it("filters imported categories by their source characteristics", () => {
+    const cases = [
+      {
+        category: "inverters",
+        facetId: "inverter-type",
+        value: "Гібридний",
+      },
+      {
+        category: "solar-batteries",
+        facetId: "battery-technology",
+        value: "Літій-залізо-фосфатна (LiFePO4)",
+      },
+      {
+        category: "solar-panels",
+        facetId: "protection-rating",
+        value: "IP68",
+      },
+      {
+        category: "solar-accessories",
+        facetId: "purpose",
+        value: "Для встановлення акумуляторних батарей",
+      },
+    ] as const;
+
+    for (const testCase of cases) {
+      const categoryConfig = getProductFacetConfig(testCase.category);
+      const categoryProducts = products.filter(
+        (product) => product.category === testCase.category,
+      );
+      const filtered = filterProductsByFacets(
+        categoryProducts,
+        categoryConfig?.facets ?? [],
+        { [testCase.facetId]: [testCase.value] },
+      );
+
+      expect(filtered.length).toBeGreaterThan(0);
+      expect(filtered.length).toBeLessThan(categoryProducts.length);
+    }
+  });
+
+  it("merges inconsistent source casing into one brand option", () => {
+    const inverterConfig = getProductFacetConfig("inverters");
+    const inverters = products.filter(
+      (product) => product.category === "inverters",
+    );
+    const brandModel = buildProductFacetModels(
+      inverters,
+      inverterConfig?.facets ?? [],
+      {},
+    ).find((model) => model.definition.id === "brand");
+
+    expect(brandModel?.options.some((option) => option.value === "Deye")).toBe(
+      true,
+    );
+    expect(brandModel?.options.some((option) => option.value === "DEYE")).toBe(
+      false,
+    );
+  });
+
+  it("enables declarative filters for Namato backup and station categories", () => {
+    for (const category of ["backup-power", "solar-stations"] as const) {
+      const categoryConfig = getProductFacetConfig(category);
+      const categoryProducts = products.filter(
+        (product) => product.category === category,
+      );
+      const models = buildProductFacetModels(
+        categoryProducts,
+        categoryConfig?.facets ?? [],
+        {},
+      );
+
+      expect(categoryConfig).toBeDefined();
+      expect(categoryProducts.length).toBeGreaterThan(0);
+      expect(models.filter((model) => model.options.length > 0).length).toBeGreaterThanOrEqual(2);
+    }
+  });
 });

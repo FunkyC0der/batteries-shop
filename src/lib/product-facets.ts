@@ -33,6 +33,39 @@ export type ProductFacetModel = {
 export const productFacetConfigs: Partial<
   Record<ProductCategory, ProductFacetConfig>
 > = {
+  "solar-stations": {
+    category: "solar-stations",
+    title: "Характеристики сонячної станції",
+    description:
+      "Оберіть потужність станції, запас енергії та кількість фаз.",
+    mobileFacetLimit: 4,
+    facets: [
+      {
+        id: "brand",
+        label: "Виробник (бренд)",
+        specLabels: ["Бренд", "Виробник (бренд)"],
+        sort: "count",
+      },
+      {
+        id: "station-power",
+        label: "Потужність станції",
+        specLabels: ["Потужність станції", "Потужність"],
+        sort: "natural",
+      },
+      {
+        id: "stored-energy",
+        label: "Запас енергії батарей",
+        specLabels: ["Запас енергії батарей"],
+        sort: "natural",
+      },
+      {
+        id: "phase-count",
+        label: "Кількість фаз",
+        specLabels: ["Кількість фаз"],
+        sort: "natural",
+      },
+    ],
+  },
   "energy-storage-systems": {
     category: "energy-storage-systems",
     title: "Характеристики системи",
@@ -79,6 +112,253 @@ export const productFacetConfigs: Partial<
         label: "Кількість фаз",
         specLabels: ["Кількість фаз"],
         sort: "natural",
+      },
+    ],
+  },
+  inverters: {
+    category: "inverters",
+    title: "Характеристики інвертора",
+    description:
+      "Оберіть тип, потужність і параметри акумуляторної системи.",
+    mobileFacetLimit: 4,
+    facets: [
+      {
+        id: "brand",
+        label: "Виробник (бренд)",
+        specLabels: ["Бренд", "Виробник (бренд)"],
+        sort: "count",
+        valueAliases: {
+          DEYE: "Deye",
+          GROWATT: "Growatt",
+        },
+      },
+      {
+        id: "inverter-type",
+        label: "Тип інвертора",
+        specLabels: ["Тип"],
+        sort: "count",
+      },
+      {
+        id: "nominal-power",
+        label: "Номінальна потужність",
+        specLabels: ["Номінальна потужність"],
+        sort: "natural",
+        initialValueLimit: 8,
+      },
+      {
+        id: "battery-voltage",
+        label: "Вихідна напруга АКБ",
+        specLabels: ["Вихідна напруга АКБ"],
+        sort: "natural",
+        initialValueLimit: 8,
+      },
+      {
+        id: "phase-count",
+        label: "Кількість фаз",
+        specLabels: ["Кількість фаз"],
+        sort: "natural",
+      },
+      {
+        id: "warranty",
+        label: "Гарантія",
+        specLabels: ["Гарантія"],
+        sort: "natural",
+      },
+    ],
+  },
+  "solar-batteries": {
+    category: "solar-batteries",
+    title: "Характеристики акумулятора",
+    description:
+      "Звузьте вибір за технологією, запасом енергії, напругою та ресурсом.",
+    mobileFacetLimit: 4,
+    facets: [
+      {
+        id: "brand",
+        label: "Виробник (бренд)",
+        specLabels: ["Бренд", "Виробник (бренд)"],
+        sort: "count",
+      },
+      {
+        id: "battery-technology",
+        label: "Технологія",
+        specLabels: ["Технологія"],
+        sort: "count",
+      },
+      {
+        id: "battery-capacity",
+        label: "Ємність батареї",
+        specLabels: ["Ємність батареї"],
+        sort: "natural",
+      },
+      {
+        id: "battery-energy",
+        label: "Енергія батареї",
+        specLabels: ["Енергія батареї"],
+        sort: "natural",
+        initialValueLimit: 8,
+      },
+      {
+        id: "cycle-life",
+        label: "Цикл життя",
+        specLabels: ["Цикл життя"],
+        sort: "natural",
+      },
+      {
+        id: "nominal-voltage",
+        label: "Номінальна напруга",
+        specLabels: ["Номінальна напруга"],
+        sort: "natural",
+        initialValueLimit: 8,
+      },
+      {
+        id: "max-charge-current",
+        label: "Максимальний зарядний струм",
+        specLabels: ["Зарядний струм (макс.)"],
+        sort: "natural",
+        initialValueLimit: 8,
+      },
+      {
+        id: "warranty",
+        label: "Гарантія",
+        specLabels: ["Гарантія"],
+        sort: "natural",
+      },
+    ],
+  },
+  "solar-panels": {
+    category: "solar-panels",
+    title: "Характеристики сонячної панелі",
+    description:
+      "Порівняйте панелі за виробником, потужністю, захистом і гарантією.",
+    mobileFacetLimit: 4,
+    facets: [
+      {
+        id: "brand",
+        label: "Виробник (бренд)",
+        specLabels: ["Бренд", "Виробник (бренд)"],
+        sort: "count",
+      },
+      {
+        id: "panel-power",
+        label: "Потужність",
+        specLabels: ["Потужність"],
+        sort: "natural",
+        initialValueLimit: 8,
+      },
+      {
+        id: "protection-rating",
+        label: "Захист від вологи та пилу",
+        specLabels: ["Ступінь захисту від вологи та пилу"],
+        sort: "natural",
+      },
+      {
+        id: "warranty",
+        label: "Гарантія",
+        specLabels: ["Гарантія"],
+        sort: "natural",
+      },
+    ],
+  },
+  "solar-accessories": {
+    category: "solar-accessories",
+    title: "Характеристики аксесуара",
+    description:
+      "Оберіть аксесуар за виробником, призначенням і сумісністю.",
+    mobileFacetLimit: 4,
+    facets: [
+      {
+        id: "brand",
+        label: "Виробник (бренд)",
+        specLabels: ["Бренд", "Виробник (бренд)"],
+        sort: "count",
+        valueAliases: {
+          DEYE: "Deye",
+        },
+      },
+      {
+        id: "purpose",
+        label: "Призначення",
+        specLabels: ["Призначення"],
+        sort: "count",
+      },
+      {
+        id: "compatibility",
+        label: "Сумісність",
+        specLabels: ["Сумісність"],
+        sort: "count",
+      },
+      {
+        id: "warranty",
+        label: "Гарантія",
+        specLabels: ["Гарантія"],
+        sort: "natural",
+      },
+    ],
+  },
+  "backup-power": {
+    category: "backup-power",
+    title: "Характеристики резервного живлення",
+    description:
+      "Оберіть потужність інвертора, запас енергії та кількість фаз.",
+    mobileFacetLimit: 4,
+    facets: [
+      {
+        id: "brand",
+        label: "Виробник (бренд)",
+        specLabels: ["Бренд", "Виробник (бренд)"],
+        sort: "count",
+      },
+      {
+        id: "inverter-power",
+        label: "Потужність інвертора",
+        specLabels: ["Потужність інвертора"],
+        sort: "natural",
+      },
+      {
+        id: "stored-energy",
+        label: "Запас енергії батарей",
+        specLabels: ["Запас енергії батарей"],
+        sort: "natural",
+      },
+      {
+        id: "phase-count",
+        label: "Кількість фаз",
+        specLabels: ["Кількість фаз"],
+        sort: "natural",
+      },
+    ],
+  },
+  "ev-charging": {
+    category: "ev-charging",
+    title: "Характеристики зарядної станції",
+    description:
+      "Порівняйте зарядні станції за брендом, потужністю, фазністю та роз’ємом.",
+    mobileFacetLimit: 4,
+    facets: [
+      {
+        id: "brand",
+        label: "Виробник (бренд)",
+        specLabels: ["Бренд", "Виробник (бренд)"],
+        sort: "count",
+      },
+      {
+        id: "charging-power",
+        label: "Потужність",
+        specLabels: ["Потужність"],
+        sort: "natural",
+      },
+      {
+        id: "phase-count",
+        label: "Кількість фаз",
+        specLabels: ["Кількість фаз"],
+        sort: "natural",
+      },
+      {
+        id: "connector-type",
+        label: "Тип роз’єму",
+        specLabels: ["Тип роз’єму"],
+        sort: "count",
       },
     ],
   },

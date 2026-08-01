@@ -264,6 +264,7 @@ export const solarverseEnergyStorageProducts: Product[] = importedProducts.map(
       id: \`energy-storage-system-\${index + 1}\`,
       slug: product.slug,
       title: product.title,
+      sourceUrl: \`https://solarverse.ua/product/\${product.slug}\`,
       direction: "energy-solutions",
       category: "energy-storage-systems",
       price: product.price

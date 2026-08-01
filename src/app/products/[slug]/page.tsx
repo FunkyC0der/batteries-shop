@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 
 import { ActionButtons } from "@/components/action-buttons";
 import { CtaPanel } from "@/components/cta-panel";
@@ -8,9 +8,11 @@ import { ProductGallery } from "@/components/product-gallery";
 import { getProductBySlug, getStatusLabel } from "@/lib/catalog";
 import { products } from "@/lib/data";
 import { productToOrderable } from "@/lib/order-actions";
+import { getSafeCatalogReturnHref } from "@/lib/catalog-navigation";
 
 type ProductPageProps = {
   params: Promise<{ slug: string }>;
+  searchParams: Promise<{ from?: string | string[] }>;
 };
 
 export function generateStaticParams() {
@@ -35,18 +37,43 @@ export async function generateMetadata({
   };
 }
 
-export default async function ProductPage({ params }: ProductPageProps) {
+export default async function ProductPage({
+  params,
+  searchParams,
+}: ProductPageProps) {
   const { slug } = await params;
+  const resolvedSearchParams = await searchParams;
+  const requestedReturnHref = Array.isArray(resolvedSearchParams.from)
+    ? resolvedSearchParams.from[0]
+    : resolvedSearchParams.from;
+  const returnHref = getSafeCatalogReturnHref(requestedReturnHref);
   const product = getProductBySlug(slug);
 
   if (!product) {
     notFound();
   }
 
+  if (slug !== product.slug) {
+    const canonicalSearchParams = new URLSearchParams();
+
+    if (requestedReturnHref) {
+      canonicalSearchParams.set("from", requestedReturnHref);
+    }
+
+    const canonicalQuery = canonicalSearchParams.toString();
+    redirect(
+      `/products/${product.slug}${canonicalQuery ? `?${canonicalQuery}` : ""}`,
+    );
+  }
+
   return (
     <>
       <article className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
-        <Link className="text-sm font-semibold text-primary" href="/products">
+        <Link
+          className="text-sm font-semibold text-primary"
+          href={returnHref}
+          scroll={false}
+        >
           ← До товарів
         </Link>
 
@@ -59,7 +86,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           title={product.title}
         />
 
-        <p className="mt-8 text-lg leading-8 text-muted-foreground">
+        <p className="mt-8 whitespace-pre-line text-lg leading-8 text-muted-foreground">
           {product.description}
         </p>
 
@@ -97,6 +124,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   <h3 className="text-lg font-semibold text-foreground">
                     {configuration.label}
                   </h3>
+                  {configuration.price ? (
+                    <p className="mt-2 text-sm font-semibold text-primary">
+                      {configuration.price}
+                    </p>
+                  ) : null}
                   <ul className="mt-4 grid gap-2 text-sm leading-6 text-muted-foreground">
                     {configuration.equipment.map((item) => (
                       <li className="flex gap-2" key={item}>

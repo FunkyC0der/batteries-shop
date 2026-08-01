@@ -101,7 +101,34 @@ export function getFeaturedServices(direction?: ServiceDirection) {
 }
 
 export function getProductBySlug(slug: string) {
-  return products.find((product) => product.slug === slug);
+  let decodedSlug = slug;
+
+  try {
+    decodedSlug = decodeURIComponent(slug);
+  } catch {
+    // Keep the original value when a malformed URL segment reaches the route.
+  }
+
+  return products.find(
+    (product) =>
+      product.slug === decodedSlug ||
+      product.legacySlugs?.includes(decodedSlug),
+  );
+}
+
+export function formatProductCount(count: number) {
+  const remainder100 = count % 100;
+  const remainder10 = count % 10;
+  const noun =
+    remainder100 >= 11 && remainder100 <= 14
+      ? "товарів"
+      : remainder10 === 1
+        ? "товар"
+        : remainder10 >= 2 && remainder10 <= 4
+          ? "товари"
+          : "товарів";
+
+  return `${count.toLocaleString("uk-UA")} ${noun}`;
 }
 
 export function getServiceBySlug(slug: string) {

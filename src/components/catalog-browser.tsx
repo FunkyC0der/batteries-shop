@@ -1,6 +1,13 @@
 "use client";
 
-import { type FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import {
+  type FormEvent,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 
 import type {
   Product,
@@ -9,6 +16,7 @@ import type {
 } from "@/lib/types";
 
 import { ProductCard } from "./product-card";
+import { CatalogPagination } from "./catalog-pagination";
 import { ProductFacetControls } from "./product-facet-controls";
 import { ServiceCard } from "./service-card";
 import {
@@ -17,6 +25,17 @@ import {
   getProductFacetConfig,
   type ProductFacetSelection,
 } from "@/lib/product-facets";
+import {
+  buildCatalogHref,
+  buildProductDetailHref,
+  clampCatalogPage,
+  getCatalogPageForIndex,
+  getProductAnchorId,
+  parseCatalogPage,
+  parseFacetSelection,
+  parseReturnProductSlug,
+  PRODUCTS_PER_PAGE,
+} from "@/lib/catalog-navigation";
 
 type CategoryOption = {
   value: string;
@@ -62,6 +81,8 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
   const [query, setQuery] = useState(props.initialQuery ?? "");
   const [facetSelection, setFacetSelection] =
     useState<ProductFacetSelection>({});
+  const [page, setPage] = useState(1);
+  const [returnProductSlug, setReturnProductSlug] = useState<string>();
   const resultSummaryRef = useRef<HTMLParagraphElement>(null);
   const directions = props.directions;
   const categories = props.categories;
@@ -84,45 +105,53 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
           option.direction === resolvedDirection,
       );
 
+      const resolvedCategory = validCategory ? (nextCategory ?? "all") : "all";
+      const nextFacetConfig =
+        props.kind === "products"
+          ? getProductFacetConfig(resolvedCategory)
+          : undefined;
+
       setDirection(resolvedDirection);
       setQuery(searchParams.get("q") ?? "");
-      setCategory(validCategory ? (nextCategory ?? "all") : "all");
-      setFacetSelection({});
+      setCategory(resolvedCategory);
+      setFacetSelection(
+        nextFacetConfig
+          ? parseFacetSelection(
+              searchParams,
+              nextFacetConfig.facets.map((facet) => facet.id),
+            )
+          : {},
+      );
+      setPage(parseCatalogPage(searchParams.get("page")));
+      setReturnProductSlug(
+        props.kind === "products"
+          ? parseReturnProductSlug(searchParams, window.location.hash)
+          : undefined,
+      );
     };
 
     syncFromUrl();
     window.addEventListener("popstate", syncFromUrl);
     return () => window.removeEventListener("popstate", syncFromUrl);
-  }, [categories, directions]);
+  }, [categories, directions, props.kind]);
 
   function updateCatalogUrl(
     nextDirection: ServiceDirection | "all",
     nextQuery: string,
     mode: "push" | "replace",
     nextCategory = category,
+    nextPage = page,
+    nextFacetSelection = facetSelection,
+    nextReturnProductSlug?: string,
   ) {
-    const url = new URL(window.location.href);
-    const normalizedQuery = nextQuery.trim();
-
-    if (nextDirection === "all") {
-      url.searchParams.delete("direction");
-    } else {
-      url.searchParams.set("direction", nextDirection);
-    }
-
-    if (normalizedQuery) {
-      url.searchParams.set("q", normalizedQuery);
-    } else {
-      url.searchParams.delete("q");
-    }
-
-    if (nextDirection !== "all" && nextCategory !== "all") {
-      url.searchParams.set("category", nextCategory);
-    } else {
-      url.searchParams.delete("category");
-    }
-
-    const nextUrl = `${url.pathname}${url.search}${url.hash}`;
+    const nextUrl = buildCatalogHref({
+      direction: nextDirection,
+      category: nextCategory,
+      query: nextQuery,
+      page: nextPage,
+      facetSelection: nextFacetSelection,
+      returnToSlug: nextReturnProductSlug,
+    });
     if (mode === "push") {
       window.history.pushState({}, "", nextUrl);
     } else {
@@ -214,6 +243,66 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
         : baseFiltered,
     [baseFiltered, facetConfig, facetSelection, props.kind],
   );
+  const totalPages =
+    props.kind === "products"
+      ? Math.max(1, Math.ceil(filtered.length / PRODUCTS_PER_PAGE))
+      : 1;
+  const returnProductIndex =
+    props.kind === "products" && returnProductSlug
+      ? (filtered as Product[]).findIndex(
+          (product) => product.slug === returnProductSlug,
+        )
+      : -1;
+  const currentPage =
+    returnProductIndex >= 0
+      ? getCatalogPageForIndex(returnProductIndex)
+      : clampCatalogPage(page, totalPages);
+  const paginatedResults =
+    props.kind === "products"
+      ? filtered.slice(
+          (currentPage - 1) * PRODUCTS_PER_PAGE,
+          currentPage * PRODUCTS_PER_PAGE,
+        )
+      : filtered;
+
+  useEffect(() => {
+    if (
+      props.kind !== "products" ||
+      !returnProductSlug ||
+      returnProductIndex >= 0
+    ) {
+      return;
+    }
+
+    const fallbackPage = clampCatalogPage(page, totalPages);
+    window.history.replaceState(
+      {},
+      "",
+      buildCatalogHref({
+        direction,
+        category,
+        query,
+        page: fallbackPage,
+        facetSelection,
+      }),
+    );
+    window.requestAnimationFrame(() => {
+      setPage(fallbackPage);
+      setReturnProductSlug(undefined);
+      resultSummaryRef.current?.focus({ preventScroll: true });
+      resultSummaryRef.current?.scrollIntoView({ block: "start" });
+    });
+  }, [
+    category,
+    direction,
+    facetSelection,
+    page,
+    props.kind,
+    query,
+    returnProductIndex,
+    returnProductSlug,
+    totalPages,
+  ]);
   const activeFacetCount = Object.values(facetSelection).reduce(
     (count, values) => count + values.length,
     0,
@@ -235,7 +324,9 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
 
   function handleSearchSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    updateCatalogUrl(direction, query, "replace");
+    setPage(1);
+    setReturnProductSlug(undefined);
+    updateCatalogUrl(direction, query, "replace", category, 1);
     resultSummaryRef.current?.focus();
   }
 
@@ -243,31 +334,105 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
     setDirection(nextDirection);
     setCategory("all");
     setFacetSelection({});
-    updateCatalogUrl(nextDirection, query, "push", "all");
+    setPage(1);
+    setReturnProductSlug(undefined);
+    updateCatalogUrl(nextDirection, query, "push", "all", 1, {});
   }
 
   function selectCategory(nextCategory: string) {
     setCategory(nextCategory);
     setFacetSelection({});
-    updateCatalogUrl(direction, query, "push", nextCategory);
+    setPage(1);
+    setReturnProductSlug(undefined);
+    updateCatalogUrl(direction, query, "push", nextCategory, 1, {});
   }
 
   function toggleFacetValue(facetId: string, value: string) {
-    setFacetSelection((current) => {
-      const selectedValues = current[facetId] ?? [];
-      const nextValues = selectedValues.includes(value)
-        ? selectedValues.filter((selectedValue) => selectedValue !== value)
-        : [...selectedValues, value];
+    const selectedValues = facetSelection[facetId] ?? [];
+    const nextValues = selectedValues.includes(value)
+      ? selectedValues.filter((selectedValue) => selectedValue !== value)
+      : [...selectedValues, value];
+    const nextSelection = { ...facetSelection };
 
-      if (nextValues.length === 0) {
-        const nextSelection = { ...current };
-        delete nextSelection[facetId];
-        return nextSelection;
+    if (nextValues.length === 0) {
+      delete nextSelection[facetId];
+    } else {
+      nextSelection[facetId] = nextValues;
+    }
+
+    setFacetSelection(nextSelection);
+    setPage(1);
+    setReturnProductSlug(undefined);
+    updateCatalogUrl(
+      direction,
+      query,
+      "replace",
+      category,
+      1,
+      nextSelection,
+    );
+  }
+
+  function resetFacets() {
+    setFacetSelection({});
+    setPage(1);
+    setReturnProductSlug(undefined);
+    updateCatalogUrl(direction, query, "replace", category, 1, {});
+  }
+
+  function selectPage(nextPage: number) {
+    const resolvedPage = clampCatalogPage(nextPage, totalPages);
+    setPage(resolvedPage);
+    setReturnProductSlug(undefined);
+    updateCatalogUrl(
+      direction,
+      query,
+      "push",
+      category,
+      resolvedPage,
+      facetSelection,
+    );
+    resultSummaryRef.current?.focus({ preventScroll: true });
+    resultSummaryRef.current?.scrollIntoView({ block: "start" });
+  }
+
+  const handleReturnTargetMount = useCallback(
+    (element: HTMLElement | null) => {
+      if (!element || !returnProductSlug) {
+        return;
       }
 
-      return { ...current, [facetId]: nextValues };
-    });
-  }
+      window.requestAnimationFrame(() => {
+        if (!element.isConnected) {
+          return;
+        }
+
+        window.history.replaceState(
+          {},
+          "",
+          buildCatalogHref({
+            direction,
+            category,
+            query,
+            page: currentPage,
+            facetSelection,
+            anchorSlug: returnProductSlug,
+          }),
+        );
+        setPage(currentPage);
+        setReturnProductSlug(undefined);
+
+        window.requestAnimationFrame(() => {
+          if (!element.isConnected) {
+            return;
+          }
+
+          element.focus({ preventScroll: true });
+          element.scrollIntoView({ block: "center" });
+        });
+      });
+    }, [category, currentPage, direction, facetSelection, query, returnProductSlug],
+  );
 
   function searchAllItems() {
     selectDirection("all");
@@ -275,23 +440,63 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
   }
 
   function renderResults() {
-    if (filtered.length > 0) {
+    if (paginatedResults.length > 0) {
       return (
-        <div
-          className={
-            facetConfig
-              ? "grid gap-5 sm:grid-cols-2 xl:grid-cols-3"
-              : "grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
-          }
-        >
-          {props.kind === "products"
-            ? filtered.map((item) => (
-                <ProductCard key={item.id} product={item as Product} />
-              ))
-            : filtered.map((item) => (
-                <ServiceCard key={item.id} service={item as Service} />
-              ))}
-        </div>
+        <>
+          <div
+            className={
+              facetConfig
+                ? "grid gap-5 sm:grid-cols-2 xl:grid-cols-3"
+                : "grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+            }
+          >
+            {props.kind === "products"
+              ? paginatedResults.map((item) => {
+                  const product = item as Product;
+                  const returnHref = buildCatalogHref({
+                    direction,
+                    category,
+                    query,
+                    page: currentPage,
+                    facetSelection,
+                    returnToSlug: product.slug,
+                  });
+
+                  return (
+                    <ProductCard
+                      cardId={getProductAnchorId(product.slug)}
+                      detailHref={buildProductDetailHref(
+                        product.slug,
+                        returnHref,
+                      )}
+                      isReturnTarget={returnProductSlug === product.slug}
+                      key={product.id}
+                      onReturnTargetMount={handleReturnTargetMount}
+                      product={product}
+                    />
+                  );
+                })
+              : paginatedResults.map((item) => (
+                  <ServiceCard key={item.id} service={item as Service} />
+                ))}
+          </div>
+          {props.kind === "products" ? (
+            <CatalogPagination
+              currentPage={currentPage}
+              getPageHref={(nextPage) =>
+                buildCatalogHref({
+                  direction,
+                  category,
+                  query,
+                  page: nextPage,
+                  facetSelection,
+                })
+              }
+              onPageChange={selectPage}
+              totalPages={totalPages}
+            />
+          ) : null}
+        </>
       );
     }
 
@@ -306,7 +511,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
         {activeFacetCount ? (
           <button
             className="mt-5 min-h-12 rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground"
-            onClick={() => setFacetSelection({})}
+            onClick={resetFacets}
             type="button"
           >
             Очистити фільтри характеристик
@@ -405,7 +610,16 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
                 onChange={(event) => {
                   const nextQuery = event.target.value;
                   setQuery(nextQuery);
-                  updateCatalogUrl(direction, nextQuery, "replace");
+                  setPage(1);
+                  setReturnProductSlug(undefined);
+                  updateCatalogUrl(
+                    direction,
+                    nextQuery,
+                    "replace",
+                    category,
+                    1,
+                    facetSelection,
+                  );
                 }}
                 placeholder={
                   props.kind === "products"
@@ -467,6 +681,11 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
             : `Знайдено послуг: ${filtered.length}`}
         </span>
         <span>{categoryPath}</span>
+        {props.kind === "products" && totalPages > 1 ? (
+          <span>
+            Сторінка {currentPage} з {totalPages}
+          </span>
+        ) : null}
       </p>
 
       {props.kind === "products" && facetConfig ? (
@@ -474,7 +693,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
           <ProductFacetControls
             config={facetConfig}
             models={facetModels}
-            onReset={() => setFacetSelection({})}
+            onReset={resetFacets}
             onToggle={toggleFacetValue}
             resultCount={filtered.length}
             selection={facetSelection}
