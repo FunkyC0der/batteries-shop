@@ -6,6 +6,7 @@ import {
   filterProductsByFacets,
   getProductFacetConfig,
   matchesProductFacetSelection,
+  productFacetConfigs,
   type ProductFacetDefinition,
 } from "../src/lib/product-facets";
 
@@ -227,6 +228,26 @@ describe("product facets", () => {
     expect(brandModel?.options.some((option) => option.value === "DEYE")).toBe(
       false,
     );
+  });
+
+  it("keeps every facet option short and free of leaked description text", () => {
+    const embeddedLabel = /\s\p{Lu}\p{Ll}{2,}[\p{L}’'\- ]*:/u;
+
+    for (const category of Object.keys(productFacetConfigs)) {
+      const categoryConfig = getProductFacetConfig(category);
+      const models = buildProductFacetModels(
+        products.filter((product) => product.category === category),
+        categoryConfig?.facets ?? [],
+        {},
+      );
+
+      for (const model of models) {
+        for (const option of model.options) {
+          expect(option.value).not.toMatch(embeddedLabel);
+          expect(option.value.length).toBeLessThanOrEqual(60);
+        }
+      }
+    }
   });
 
   it("enables declarative filters for Namato backup and station categories", () => {

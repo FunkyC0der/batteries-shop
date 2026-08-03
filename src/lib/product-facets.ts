@@ -178,6 +178,9 @@ export const productFacetConfigs: Partial<
         label: "Виробник (бренд)",
         specLabels: ["Бренд", "Виробник (бренд)"],
         sort: "count",
+        valueAliases: {
+          DEYE: "Deye",
+        },
       },
       {
         id: "battery-technology",
@@ -238,6 +241,9 @@ export const productFacetConfigs: Partial<
         label: "Виробник (бренд)",
         specLabels: ["Бренд", "Виробник (бренд)"],
         sort: "count",
+        valueAliases: {
+          Longi: "Longi Solar",
+        },
       },
       {
         id: "panel-power",

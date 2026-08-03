@@ -163,13 +163,24 @@ function extractProductJsonLd(html, sourceUrl) {
   throw new Error(`На сторінці ${sourceUrl} не знайдено Product JSON-LD.`);
 }
 
+function decodeJsonText(value) {
+  try {
+    return JSON.parse(`"${value}"`);
+  } catch {
+    return value;
+  }
+}
+
 function extractSourceOptions(html) {
   const options = new Map();
   const optionPattern =
     /"title":"([^"]+)","optionType":"[^"]+","key":"[^"]+","selections":\[\{"id":[^,]+,"value":"([^"]*)"/g;
 
   for (const match of html.matchAll(optionPattern)) {
-    options.set(decodeHtml(match[1]), decodeHtml(match[2]));
+    options.set(
+      decodeHtml(decodeJsonText(match[1])),
+      decodeHtml(decodeJsonText(match[2])),
+    );
   }
 
   return options;
@@ -213,47 +224,39 @@ function classifyProduct(fallbackCategory, title) {
   return fallbackCategory;
 }
 
-function findDescriptionValue(description, labels) {
-  const allLabels = [
-    "Тип",
-    "Потужність AC",
-    "Номінальна потужність",
-    "Пікова потужність",
-    "Номінальна енергія",
-    "Корисна енергія",
-    "Ємність",
-    "Номінальна напруга",
-    "Робоча напруга",
-    "Напруга",
-    "Акумулятори",
-    "Кількість циклів",
-    "Ресурс",
-    "Струм заряду/розряду",
-    "Максимальний струм заряду",
-    "Фази",
-    "ККД",
-    "Захист",
-    "Гарантія",
-    "Розміри / вага",
-    "Розміри",
-    "Вага",
-    "Монтаж",
-    "Зв’язок",
-    "PV-вхід",
-    "Сумісність",
-  ];
-  const escapedLabels = allLabels
-    .map((label) => label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
-    .join("|");
+// Partner descriptions are a single paragraph where every characteristic is written
+// as "Назва: значення". A value therefore ends where the next capitalised label starts.
+// A label is a capitalised word (optionally a short phrase) ending with a colon. Units such
+// as "В", "DC" or "кВт·год" are excluded by requiring at least two lowercase letters, so a
+// value keeps its unit instead of being cut in half.
+const NEXT_LABEL_PATTERN =
+  /(?<=[\s\d%+)\p{Ll}])\p{Lu}\p{Ll}{2,}[\p{L}’'-]*(?:\s+[\p{L}’'-]+){0,3}\s*:/u;
+const EXPLANATION_SEPARATOR = /\s[—–]\s/;
+const MAX_SPEC_VALUE_LENGTH = 60;
 
+function cutAtNextLabel(value) {
+  const boundary = value.match(NEXT_LABEL_PATTERN);
+  const untilNextLabel = boundary?.index ? value.slice(0, boundary.index) : value;
+
+  return untilNextLabel.split(EXPLANATION_SEPARATOR)[0].trim();
+}
+
+function findDescriptionValue(description, labels) {
   for (const label of labels) {
     const escapedLabel = label.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     const match = description.match(
-      new RegExp(`${escapedLabel}\\s*[:–-]\\s*(.+?)(?=(?:${escapedLabels})\\s*[:–-]|$)`, "i"),
+      new RegExp(`${escapedLabel}\\s*[:–-]\\s*(.+)$`, "i"),
     );
 
-    if (match?.[1]) {
-      return match[1].trim();
+    if (!match?.[1]) {
+      continue;
+    }
+
+    const value = cutAtNextLabel(match[1]);
+
+    // Anything longer is prose that leaked past the label boundary, not a spec value.
+    if (value && !value.includes(":") && value.length <= MAX_SPEC_VALUE_LENGTH) {
+      return value;
     }
   }
 
