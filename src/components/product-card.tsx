@@ -56,7 +56,7 @@ export function ProductCard({
               {getStatusLabel(product.status)}
             </span>
             {product.showPrice && product.price ? (
-              <span className="rounded-full bg-muted px-3 py-1 text-xs font-semibold text-muted-foreground">
+              <span className="rounded-full bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground">
                 {product.price}
               </span>
             ) : null}
