@@ -1,0 +1,50 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "invertor-powmr-2000w-dc-24v-ac-220v-pow-hv2k-24v",
+  "title": "Інвертор PowMr 2000W DC 24V AC 220V POW-HV2K-24V",
+  "sourceUrl": "https://solarverse.ua/product/invertor-powmr-2000w-dc-24v-ac-220v-pow-hv2k-24v",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор PowMr: 2000 W.",
+  "description": "Інвертор PowMr 2000W DC 24V AC 220V POW-HV2K-24V. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "PowMr"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "PowMr"
+    },
+    {
+      "label": "Тип",
+      "value": "Автономний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "2000 W"
+    },
+    {
+      "label": "Гарантія",
+      "value": "12 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/invertor-powmr-2000w-dc-24v-ac-220v-pow-hv2k-24v/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/invertor-powmr-2000w-dc-24v-ac-220v-pow-hv2k-24v/1.webp",
+    "/images/products/solarverse/equipment/inverters/invertor-powmr-2000w-dc-24v-ac-220v-pow-hv2k-24v/2.webp",
+    "/images/products/solarverse/equipment/inverters/invertor-powmr-2000w-dc-24v-ac-220v-pow-hv2k-24v/3.webp",
+    "/images/products/solarverse/equipment/inverters/invertor-powmr-2000w-dc-24v-ac-220v-pow-hv2k-24v/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

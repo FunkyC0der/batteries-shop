@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "rozumna-rozetka-deye-sun-smart-plug01-f-16a-lora",
+  "title": "Розумна розетка DEYE SUN-SMART-PLUG01-F 16A, LoRa",
+  "sourceUrl": "https://solarverse.ua/product/rozumna-rozetka-deye-sun-smart-plug01-f-16a-lora",
+  "direction": "energy-solutions",
+  "price": "1 980 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "аксесуар Deye: Інвертори DEYE.",
+  "description": "Розумна розетка DEYE SUN-SMART-PLUG01-F 16A, LoRa. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Deye"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Deye"
+    },
+    {
+      "label": "Гарантія",
+      "value": "24 міс."
+    },
+    {
+      "label": "Сумісність",
+      "value": "Інвертори DEYE"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "монтажу та підключення енергетичного обладнання",
+    "сумісних інверторів, батарей і систем моніторингу",
+    "сервісного дооснащення після перевірки моделі обладнання"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-accessories/rozumna-rozetka-deye-sun-smart-plug01-f-16a-lora/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-accessories/rozumna-rozetka-deye-sun-smart-plug01-f-16a-lora/1.webp",
+    "/images/products/solarverse/equipment/solar-accessories/rozumna-rozetka-deye-sun-smart-plug01-f-16a-lora/2.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

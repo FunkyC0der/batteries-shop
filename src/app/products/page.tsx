@@ -4,16 +4,13 @@ import { CatalogBrowser } from "@/components/catalog-browser";
 import { CtaPanel } from "@/components/cta-panel";
 import { SectionHeading } from "@/components/section-heading";
 import {
+  getInitialCatalogProducts,
+} from "@/lib/catalog/list-projection";
+import {
   productCategories,
   productDirections,
-  products,
-} from "@/lib/data";
-
-const catalogProducts = [...products].sort(
-  (first, second) =>
-    Number(Boolean(second.configurations)) -
-    Number(Boolean(first.configurations)),
-);
+} from "@/lib/catalog";
+import { products } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Товари",
@@ -22,6 +19,8 @@ export const metadata: Metadata = {
 };
 
 export default function ProductsPage() {
+  const initialItems = getInitialCatalogProducts(products);
+
   return (
     <>
       <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
@@ -34,7 +33,7 @@ export default function ProductsPage() {
           <CatalogBrowser
             categories={productCategories}
             directions={productDirections}
-            items={catalogProducts}
+            items={initialItems}
             kind="products"
           />
         </div>

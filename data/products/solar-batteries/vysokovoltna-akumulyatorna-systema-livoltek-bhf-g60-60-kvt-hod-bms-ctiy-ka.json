@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "vysokovoltna-akumulyatorna-systema-livoltek-bhf-g60-60-kvt-hod-bms-ctiy-ka",
+  "legacySlugs": [
+    "високовольтна-акумуляторна-система-livoltek-bhf-g60-60-квт-год-bms-cтійка"
+  ],
+  "title": "Високовольтна акумуляторна система Livoltek BHF-G60 (60 кВт·год)+BMS",
+  "sourceUrl": "https://www.namato.net/product-page/високовольтна-акумуляторна-система-livoltek-bhf-g60-60-квт-год-bms-cтійка",
+  "direction": "energy-solutions",
+  "price": "579 479 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея Livoltek, модель BHF-G60-BMS-MR30.",
+  "description": "Високовольтна акумуляторна система Livoltek BHF-G60 (60 кВт·год)+BMS — акумуляторна батарея для комплектації енергосистеми відповідно до параметрів об’єкта.\n\nОсновні характеристики:\n• Бренд: Livoltek\n• Модель: BHF-G60-BMS-MR30\n\nПеред замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Livoltek"
+    },
+    {
+      "label": "Модель",
+      "value": "BHF-G60-BMS-MR30"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково. Актуальну ціну, наявність, комплектацію, гарантію та сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/namato/високовольтна-акумуляторна-система-livoltek-bhf-g60-60-квт-год-bms-cтійка/1.webp",
+  "images": [
+    "/images/products/namato/високовольтна-акумуляторна-система-livoltek-bhf-g60-60-квт-год-bms-cтійка/1.webp",
+    "/images/products/namato/високовольтна-акумуляторна-система-livoltek-bhf-g60-60-квт-год-bms-cтійка/2.webp"
+  ],
+  "featured": false,
+  "source": "namato"
+}

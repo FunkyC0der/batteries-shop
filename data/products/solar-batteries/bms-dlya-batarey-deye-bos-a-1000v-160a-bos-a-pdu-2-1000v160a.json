@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "bms-dlya-batarey-deye-bos-a-1000v-160a-bos-a-pdu-2-1000v160a",
+  "title": "BMS для батарей Deye BOS-A 1000V 160A (BOS-A-PDU-2 1000V/160A)",
+  "sourceUrl": "https://solarverse.ua/product/bms-dlya-batarey-deye-bos-a-1000v-160a-bos-a-pdu-2-1000v160a",
+  "direction": "energy-solutions",
+  "price": "54 990 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея DEYE: характеристики за запитом.",
+  "description": "BMS для батарей Deye BOS-A 1000V 160A (BOS-A-PDU-2 1000V/160A). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "235.2~919.8V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "160 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/bms-dlya-batarey-deye-bos-a-1000v-160a-bos-a-pdu-2-1000v160a/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/bms-dlya-batarey-deye-bos-a-1000v-160a-bos-a-pdu-2-1000v160a/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/bms-dlya-batarey-deye-bos-a-1000v-160a-bos-a-pdu-2-1000v160a/2.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

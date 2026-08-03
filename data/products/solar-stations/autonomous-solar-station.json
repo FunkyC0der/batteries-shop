@@ -1,0 +1,64 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "autonomous-solar-station",
+  "title": "Автономна сонячна електростанція",
+  "direction": "energy-solutions",
+  "showPrice": false,
+  "status": "consult",
+  "shortDescription": "Система для обʼєктів без стабільної мережі: сонячні панелі, автономний інвертор і акумулятори в одному рішенні.",
+  "description": "Автономна СЕС накопичує сонячну енергію та живить підключені навантаження незалежно від зовнішньої мережі. Остаточну кількість панелей, ємність батарей і схему захисту визначаємо після аналізу добового споживання та пікових навантажень.",
+  "specs": [
+    {
+      "label": "Потужність",
+      "value": "3 / 5 / 10 кВт"
+    },
+    {
+      "label": "Панелі",
+      "value": "JA Solar 595 Вт"
+    },
+    {
+      "label": "Інвертори",
+      "value": "LuxPower SNA5000 Wide PV або Deye SUN-10K"
+    },
+    {
+      "label": "Акумулятори",
+      "value": "Dyness DL5.0C / Dyness 5,1 кВт·год"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "будинків і дач без стабільної електромережі",
+    "критичних побутових та офісних навантажень",
+    "обʼєктів, де важлива енергетична автономність"
+  ],
+  "configurations": [
+    {
+      "label": "3 кВт",
+      "equipment": [
+        "сонячні панелі JA Solar 595 Вт",
+        "інвертор LuxPower SNA5000 Wide PV",
+        "акумулятор Dyness DL5.0C"
+      ]
+    },
+    {
+      "label": "5 кВт",
+      "equipment": [
+        "сонячні панелі JA Solar 595 Вт",
+        "інвертор LuxPower SNA5000 Wide PV",
+        "акумулятор Dyness DL5.0C"
+      ]
+    },
+    {
+      "label": "10 кВт",
+      "equipment": [
+        "сонячні панелі JA Solar 595 Вт",
+        "інвертор Deye SUN-10K",
+        "2 × акумулятори Dyness 5,1 кВт·год"
+      ]
+    }
+  ],
+  "notice": "Кількість панелей, захист і монтажні матеріали розраховуються під конкретний обʼєкт.",
+  "image": "/images/products/autonomous-solar-station.webp",
+  "featured": true,
+  "source": "manual"
+}

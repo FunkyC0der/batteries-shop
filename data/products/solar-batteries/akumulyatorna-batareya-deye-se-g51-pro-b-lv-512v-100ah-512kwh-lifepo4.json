@@ -1,0 +1,64 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "akumulyatorna-batareya-deye-se-g51-pro-b-lv-512v-100ah-512kwh-lifepo4",
+  "title": "Акумуляторна батарея DEYE SE-G5.1 Pro-B LV 51.2V 100AH 5.12kWh LiFePO4",
+  "sourceUrl": "https://solarverse.ua/product/akumulyatorna-batareya-deye-se-g51-pro-b-lv-512v-100ah-512kwh-lifepo4",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея DEYE: 5.12 kW⋅h.",
+  "description": "Акумуляторна батарея DEYE SE-G5.1 Pro-B LV 51.2V 100AH 5.12kWh LiFePO4. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "100 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "5.12 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "51.2 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "100 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "120 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-se-g51-pro-b-lv-512v-100ah-512kwh-lifepo4/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-se-g51-pro-b-lv-512v-100ah-512kwh-lifepo4/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-se-g51-pro-b-lv-512v-100ah-512kwh-lifepo4/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-se-g51-pro-b-lv-512v-100ah-512kwh-lifepo4/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-se-g51-pro-b-lv-512v-100ah-512kwh-lifepo4/4.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-se-g51-pro-b-lv-512v-100ah-512kwh-lifepo4/5.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-se-g51-pro-b-lv-512v-100ah-512kwh-lifepo4/6.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

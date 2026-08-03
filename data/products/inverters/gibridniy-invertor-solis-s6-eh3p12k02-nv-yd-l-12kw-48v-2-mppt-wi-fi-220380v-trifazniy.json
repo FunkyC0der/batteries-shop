@@ -1,0 +1,50 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "gibridniy-invertor-solis-s6-eh3p12k02-nv-yd-l-12kw-48v-2-mppt-wi-fi-220380v-trifazniy",
+  "title": "Гібридний інвертор Solis S6-EH3P12K02-NV-YD-L 12KW 48V 2 MPPT Wi-Fi 220/380V Трифазний",
+  "sourceUrl": "https://solarverse.ua/product/gibridniy-invertor-solis-s6-eh3p12k02-nv-yd-l-12kw-48v-2-mppt-wi-fi-220380v-trifazniy",
+  "direction": "energy-solutions",
+  "price": "85 500 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Solis: 12000 W.",
+  "description": "Гібридний інвертор Solis S6-EH3P12K02-NV-YD-L 12KW 48V 2 MPPT Wi-Fi 220/380V Трифазний. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Solis"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "12000 W"
+    },
+    {
+      "label": "Вихідна напруга АКБ",
+      "value": "48 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "120 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/gibridniy-invertor-solis-s6-eh3p12k02-nv-yd-l-12kw-48v-2-mppt-wi-fi-220380v-trifazniy/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-solis-s6-eh3p12k02-nv-yd-l-12kw-48v-2-mppt-wi-fi-220380v-trifazniy/1.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-solis-s6-eh3p12k02-nv-yd-l-12kw-48v-2-mppt-wi-fi-220380v-trifazniy/2.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-solis-s6-eh3p12k02-nv-yd-l-12kw-48v-2-mppt-wi-fi-220380v-trifazniy/3.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-solis-s6-eh3p12k02-nv-yd-l-12kw-48v-2-mppt-wi-fi-220380v-trifazniy/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

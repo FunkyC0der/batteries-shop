@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "blok-batarey-solis-flexcore-id-200kwh-640v-314ah-lifepo4-flexcore-id-200kwh",
+  "title": "Блок батарей Solis FlexCore-ID 200kWh 640V 314Ah LiFePO4 (FlexCore-ID-200kWh)",
+  "sourceUrl": "https://solarverse.ua/product/blok-batarey-solis-flexcore-id-200kwh-640v-314ah-lifepo4-flexcore-id-200kwh",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея Solis: 200.96 kW⋅h.",
+  "description": "Блок батарей Solis FlexCore-ID 200kWh 640V 314Ah LiFePO4 (FlexCore-ID-200kWh). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Solis"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "314 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "200.96 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "8000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "640 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "157 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/blok-batarey-solis-flexcore-id-200kwh-640v-314ah-lifepo4-flexcore-id-200kwh/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-solis-flexcore-id-200kwh-640v-314ah-lifepo4-flexcore-id-200kwh/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-solis-flexcore-id-200kwh-640v-314ah-lifepo4-flexcore-id-200kwh/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-solis-flexcore-id-200kwh-640v-314ah-lifepo4-flexcore-id-200kwh/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

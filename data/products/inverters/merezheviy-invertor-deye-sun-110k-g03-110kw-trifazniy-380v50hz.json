@@ -1,0 +1,50 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "merezheviy-invertor-deye-sun-110k-g03-110kw-trifazniy-380v50hz",
+  "title": "Мережевий інвертор DEYE SUN-110K-G03 110KW Трифазний 380V/50hz",
+  "sourceUrl": "https://solarverse.ua/product/merezheviy-invertor-deye-sun-110k-g03-110kw-trifazniy-380v50hz",
+  "direction": "energy-solutions",
+  "price": "148 278 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Deye: 110000 W.",
+  "description": "Мережевий інвертор DEYE SUN-110K-G03 110KW Трифазний 380V/50hz. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Deye"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Deye"
+    },
+    {
+      "label": "Тип",
+      "value": "Мережевий"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "110000 W"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/merezheviy-invertor-deye-sun-110k-g03-110kw-trifazniy-380v50hz/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-deye-sun-110k-g03-110kw-trifazniy-380v50hz/1.webp",
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-deye-sun-110k-g03-110kw-trifazniy-380v50hz/2.webp",
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-deye-sun-110k-g03-110kw-trifazniy-380v50hz/3.webp",
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-deye-sun-110k-g03-110kw-trifazniy-380v50hz/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

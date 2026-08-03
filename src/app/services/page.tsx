@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 import { CatalogBrowser } from "@/components/catalog-browser";
 import { CtaPanel } from "@/components/cta-panel";
 import { SectionHeading } from "@/components/section-heading";
+import { buildServiceCatalogProjection } from "@/lib/catalog/list-projection";
 import {
   serviceCategories,
   serviceDirections,
-  services,
-} from "@/lib/data";
-import type { ServiceDirection } from "@/lib/types";
+} from "@/lib/catalog";
+import { services } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Послуги",
@@ -16,26 +16,8 @@ export const metadata: Metadata = {
     "Сервіс лічильників і сантехніки, енергоаудит, проєктування, сонячні електростанції, накопичення енергії, автоматизація та сервіс енергетичного обладнання.",
 };
 
-type ServicesPageProps = {
-  searchParams: Promise<{
-    direction?: string | string[];
-    q?: string | string[];
-  }>;
-};
-
-export default async function ServicesPage({
-  searchParams,
-}: ServicesPageProps) {
-  const params = await searchParams;
-  const requestedDirection = Array.isArray(params.direction)
-    ? params.direction[0]
-    : params.direction;
-  const requestedQuery = Array.isArray(params.q) ? params.q[0] : params.q;
-  const initialDirection = serviceDirections.some(
-    (option) => option.value === requestedDirection,
-  )
-    ? (requestedDirection as ServiceDirection | "all")
-    : "all";
+export default function ServicesPage() {
+  const initialItems = buildServiceCatalogProjection(services);
 
   return (
     <>
@@ -49,9 +31,7 @@ export default async function ServicesPage({
           <CatalogBrowser
             categories={serviceCategories}
             directions={serviceDirections}
-            initialDirection={initialDirection}
-            initialQuery={requestedQuery}
-            items={services}
+            items={initialItems}
             kind="services"
           />
         </div>

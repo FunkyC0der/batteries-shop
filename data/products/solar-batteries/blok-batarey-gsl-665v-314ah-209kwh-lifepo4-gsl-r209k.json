@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "blok-batarey-gsl-665v-314ah-209kwh-lifepo4-gsl-r209k",
+  "title": "Блок батарей GSL 665V 314AH 209kWh LiFePO4 (GSL-R209K)",
+  "sourceUrl": "https://solarverse.ua/product/blok-batarey-gsl-665v-314ah-209kwh-lifepo4-gsl-r209k",
+  "direction": "energy-solutions",
+  "price": "1 399 230 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея GSL ENERGY: 209 kW⋅h.",
+  "description": "Блок батарей GSL 665V 314AH 209kWh LiFePO4 (GSL-R209K). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "GSL ENERGY"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "314 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "209 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "10000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "665.6 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "200 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-665v-314ah-209kwh-lifepo4-gsl-r209k/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-665v-314ah-209kwh-lifepo4-gsl-r209k/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-665v-314ah-209kwh-lifepo4-gsl-r209k/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-665v-314ah-209kwh-lifepo4-gsl-r209k/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

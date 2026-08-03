@@ -1,0 +1,53 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "invertor-deye-bos-b-125kw-hv-battery-220380v-trekhfaznyy-sun-125k-pcs01hp3sun-125k-pcsl01hp3",
+  "title": "Інвертор DEYE BOS-B 125KW HV-battery 220/380V Трифазний (SUN-125K-PCS01HP3/SUN-125K-PCSL01HP3)",
+  "sourceUrl": "https://solarverse.ua/product/invertor-deye-bos-b-125kw-hv-battery-220380v-trekhfaznyy-sun-125k-pcs01hp3sun-125k-pcsl01hp3",
+  "direction": "energy-solutions",
+  "price": "241 734 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Deye: 125000 W.",
+  "description": "Інвертор DEYE BOS-B 125KW HV-battery 220/380V Трифазний (SUN-125K-PCS01HP3/SUN-125K-PCSL01HP3). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Deye"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Deye"
+    },
+    {
+      "label": "Тип",
+      "value": "PCS (AC/DC перетворювач)"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "125000 W"
+    },
+    {
+      "label": "Вихідна напруга АКБ",
+      "value": "630 - 1000 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/invertor-deye-bos-b-125kw-hv-battery-220380v-trekhfaznyy-sun-125k-pcs01hp3sun-125k-pcsl01hp3/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/invertor-deye-bos-b-125kw-hv-battery-220380v-trekhfaznyy-sun-125k-pcs01hp3sun-125k-pcsl01hp3/1.webp",
+    "/images/products/solarverse/equipment/inverters/invertor-deye-bos-b-125kw-hv-battery-220380v-trekhfaznyy-sun-125k-pcs01hp3sun-125k-pcsl01hp3/2.webp",
+    "/images/products/solarverse/equipment/inverters/invertor-deye-bos-b-125kw-hv-battery-220380v-trekhfaznyy-sun-125k-pcs01hp3sun-125k-pcsl01hp3/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

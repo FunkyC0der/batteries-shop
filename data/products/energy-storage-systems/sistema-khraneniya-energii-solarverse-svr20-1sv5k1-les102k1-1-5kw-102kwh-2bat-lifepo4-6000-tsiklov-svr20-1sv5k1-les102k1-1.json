@@ -1,0 +1,93 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "sistema-khraneniya-energii-solarverse-svr20-1sv5k1-les102k1-1-5kw-102kwh-2bat-lifepo4-6000-tsiklov-svr20-1sv5k1-les102k1-1",
+  "title": "Система зберігання енергії Solarverse SVR20-1SV5K1-LES10.2K1-1 5kW 10.2kWh 2BAT LiFePO4 6000 циклів (SVR20-1SV5K1-LES10.2K1-1)",
+  "sourceUrl": "https://solarverse.ua/product/sistema-khraneniya-energii-solarverse-svr20-1sv5k1-les102k1-1-5kw-102kwh-2bat-lifepo4-6000-tsiklov-svr20-1sv5k1-les102k1-1",
+  "direction": "energy-solutions",
+  "price": "132 930 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "Готова система Solarverse: потужність 5000 W, запас енергії 10.24 kWh, батарея LiFePO4.",
+  "description": "Готова система зберігання енергії Solarverse для резервного та автономного живлення. Конфігурація розрахована на номінальну потужність 5000 W і запас енергії 10.24 kWh. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію та сумісність із мережею об’єкта.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Solarverse"
+    },
+    {
+      "label": "Сумарна енергія, що зберігається в блоку батарей",
+      "value": "10.24 kWh"
+    },
+    {
+      "label": "Номінальна потужність АС",
+      "value": "5000 W"
+    },
+    {
+      "label": "Сумарна ємність блоку батарей",
+      "value": "200 Ah"
+    },
+    {
+      "label": "Номінальна напруга батарей",
+      "value": "51.2 V"
+    },
+    {
+      "label": "Тип батареї",
+      "value": "LiFePO4"
+    },
+    {
+      "label": "Життевий цикл",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Тип",
+      "value": "Автономний"
+    },
+    {
+      "label": "Кількість батарей",
+      "value": "2"
+    },
+    {
+      "label": "Кількість фаз",
+      "value": "1"
+    },
+    {
+      "label": "Кількість MPPT",
+      "value": "1"
+    },
+    {
+      "label": "Макс. вхідна потужність PV (сонячного масиву)",
+      "value": "4 kW"
+    },
+    {
+      "label": "Орієнтовний час до повного заряду стеку батарей",
+      "value": "1.7 год"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "резервного живлення приватних будинків і квартир",
+    "офісів, магазинів та інших комерційних об’єктів",
+    "інтеграції із сонячною генерацією після технічного розрахунку"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і склад комплекту потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/sistema-khraneniya-energii-solarverse-svr20-1sv5k1-les102k1-1-5kw-102kwh-2bat-lifepo4-6000-tsiklov-svr20-1sv5k1-les102k1-1/1.webp",
+  "images": [
+    "/images/products/solarverse/sistema-khraneniya-energii-solarverse-svr20-1sv5k1-les102k1-1-5kw-102kwh-2bat-lifepo4-6000-tsiklov-svr20-1sv5k1-les102k1-1/1.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solarverse-svr20-1sv5k1-les102k1-1-5kw-102kwh-2bat-lifepo4-6000-tsiklov-svr20-1sv5k1-les102k1-1/2.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solarverse-svr20-1sv5k1-les102k1-1-5kw-102kwh-2bat-lifepo4-6000-tsiklov-svr20-1sv5k1-les102k1-1/3.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solarverse-svr20-1sv5k1-les102k1-1-5kw-102kwh-2bat-lifepo4-6000-tsiklov-svr20-1sv5k1-les102k1-1/4.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solarverse-svr20-1sv5k1-les102k1-1-5kw-102kwh-2bat-lifepo4-6000-tsiklov-svr20-1sv5k1-les102k1-1/5.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solarverse-svr20-1sv5k1-les102k1-1-5kw-102kwh-2bat-lifepo4-6000-tsiklov-svr20-1sv5k1-les102k1-1/6.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solarverse-svr20-1sv5k1-les102k1-1-5kw-102kwh-2bat-lifepo4-6000-tsiklov-svr20-1sv5k1-les102k1-1/7.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solarverse-svr20-1sv5k1-les102k1-1-5kw-102kwh-2bat-lifepo4-6000-tsiklov-svr20-1sv5k1-les102k1-1/8.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solarverse-svr20-1sv5k1-les102k1-1-5kw-102kwh-2bat-lifepo4-6000-tsiklov-svr20-1sv5k1-les102k1-1/9.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solarverse-svr20-1sv5k1-les102k1-1-5kw-102kwh-2bat-lifepo4-6000-tsiklov-svr20-1sv5k1-les102k1-1/10.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solarverse-svr20-1sv5k1-les102k1-1-5kw-102kwh-2bat-lifepo4-6000-tsiklov-svr20-1sv5k1-les102k1-1/11.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

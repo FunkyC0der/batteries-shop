@@ -1,0 +1,55 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "sonyachna-panel-longi-hi-mo-x10-lr8-66hvd-650m-bifitsial-bifacial",
+  "legacySlugs": [
+    "сонячна-панель-longi-hi-mo-x10-lr8-66hvd-650m-біфіціал-bifacial"
+  ],
+  "title": "Сонячна панель Longi HI-MO X10 LR7-72HVD-650M Bifacial",
+  "sourceUrl": "https://www.namato.net/product-page/сонячна-панель-longi-hi-mo-x10-lr8-66hvd-650m-біфіціал-bifacial",
+  "direction": "energy-solutions",
+  "price": "5 400 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "сонячна панель Longi, модель LR7-72HVD.",
+  "description": "Сонячна панель Longi HI-MO X10 LR7-72HVD-650M Bifacial — сонячна панель для комплектації енергосистеми відповідно до параметрів об’єкта.\n\nОсновні характеристики:\n• Бренд: Longi\n• Модель: LR7-72HVD\n• Тип панелі: Двостороння (bifacial)\n• Номінальна напруга: 1500 В DC\n• Ступінь захисту від вологи та пилу: IP68\n\nПеред замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Longi"
+    },
+    {
+      "label": "Модель",
+      "value": "LR7-72HVD"
+    },
+    {
+      "label": "Тип панелі",
+      "value": "Двостороння (bifacial)"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "1500 В DC"
+    },
+    {
+      "label": "Ступінь захисту від вологи та пилу",
+      "value": "IP68"
+    },
+    {
+      "label": "Гарантія",
+      "value": "15 років"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "дахових і наземних сонячних електростанцій",
+    "мережевих, гібридних та автономних систем",
+    "приватних і комерційних об’єктів після проєктного розрахунку"
+  ],
+  "notice": "Ціна наведена довідково. Актуальну ціну, наявність, комплектацію, гарантію та сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/namato/сонячна-панель-longi-hi-mo-x10-lr8-66hvd-650m-біфіціал-bifacial/1.webp",
+  "images": [
+    "/images/products/namato/сонячна-панель-longi-hi-mo-x10-lr8-66hvd-650m-біфіціал-bifacial/1.webp",
+    "/images/products/namato/сонячна-панель-longi-hi-mo-x10-lr8-66hvd-650m-біфіціал-bifacial/2.webp"
+  ],
+  "featured": false,
+  "source": "namato"
+}

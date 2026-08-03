@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "komutatsiyna-shafa-avr-deye-ms-ts500-2-500kw-10ms-dlya-ms-gs215-ms-ts500-2",
+  "title": "Комутаційна шафа АВР DEYE MS-TS500-2 500KW 10ms для MS-GS215 (MS-TS500-2)",
+  "sourceUrl": "https://solarverse.ua/product/komutatsiyna-shafa-avr-deye-ms-ts500-2-500kw-10ms-dlya-ms-gs215-ms-ts500-2",
+  "direction": "energy-solutions",
+  "price": "725 268 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор DEYE: 500000 W.",
+  "description": "Комутаційна шафа АВР DEYE MS-TS500-2 500KW 10ms для MS-GS215 (MS-TS500-2). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "500000 W"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/komutatsiyna-shafa-avr-deye-ms-ts500-2-500kw-10ms-dlya-ms-gs215-ms-ts500-2/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/komutatsiyna-shafa-avr-deye-ms-ts500-2-500kw-10ms-dlya-ms-gs215-ms-ts500-2/1.webp",
+    "/images/products/solarverse/equipment/inverters/komutatsiyna-shafa-avr-deye-ms-ts500-2-500kw-10ms-dlya-ms-gs215-ms-ts500-2/2.webp",
+    "/images/products/solarverse/equipment/inverters/komutatsiyna-shafa-avr-deye-ms-ts500-2-500kw-10ms-dlya-ms-gs215-ms-ts500-2/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

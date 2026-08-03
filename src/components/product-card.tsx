@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { getStatusLabel } from "@/lib/catalog";
+import { getStatusLabel } from "@/lib/catalog-labels";
+import type { ProductListItem } from "@/lib/catalog/list-projection";
 import { productToOrderable } from "@/lib/order-actions";
-import type { Product } from "@/lib/types";
 
 import { ActionButtons } from "./action-buttons";
 
 type ProductCardProps = {
-  product: Product;
+  product: ProductListItem;
   detailHref?: string;
   cardId?: string;
   isReturnTarget?: boolean;
@@ -38,11 +38,7 @@ export function ProductCard({
         <div className="relative aspect-[4/3] overflow-hidden bg-muted">
           <Image
             alt={product.title}
-            className={
-              product.images?.length
-                ? "object-contain p-4 transition duration-500 group-hover:scale-105"
-                : "object-cover transition duration-500 group-hover:scale-105"
-            }
+            className="object-contain p-4 transition duration-500 group-hover:scale-105"
             fill
             sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
             src={product.image}

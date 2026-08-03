@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "bms-dlya-batarey-deye-bos-g-pro-200-1000vdc-120a-bos-g-pdu-2",
+  "title": "BMS для батарей Deye BOS-G PRO 200-1000Vdc 120A (BOS-G-PDU-2)",
+  "sourceUrl": "https://solarverse.ua/product/bms-dlya-batarey-deye-bos-g-pro-200-1000vdc-120a-bos-g-pdu-2",
+  "direction": "energy-solutions",
+  "price": "39 999 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея DEYE: характеристики за запитом.",
+  "description": "BMS для батарей Deye BOS-G PRO 200-1000Vdc 120A (BOS-G-PDU-2). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "120 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "120 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/bms-dlya-batarey-deye-bos-g-pro-200-1000vdc-120a-bos-g-pdu-2/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/bms-dlya-batarey-deye-bos-g-pro-200-1000vdc-120a-bos-g-pdu-2/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/bms-dlya-batarey-deye-bos-g-pro-200-1000vdc-120a-bos-g-pdu-2/2.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "blok-batarey-gsl-4096v-280ah-1147kwh-lifepo4-gsl-r115k",
+  "title": "Блок батарей GSL 409.6V 280Ah 114.7kWh LiFePO4 (GSL-R115K)",
+  "sourceUrl": "https://solarverse.ua/product/blok-batarey-gsl-4096v-280ah-1147kwh-lifepo4-gsl-r115k",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея GSL ENERGY: 114.69 kW⋅h.",
+  "description": "Блок батарей GSL 409.6V 280Ah 114.7kWh LiFePO4 (GSL-R115K). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "GSL ENERGY"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "280 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "114.69 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "8000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "409.6 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "125 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-4096v-280ah-1147kwh-lifepo4-gsl-r115k/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-4096v-280ah-1147kwh-lifepo4-gsl-r115k/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-4096v-280ah-1147kwh-lifepo4-gsl-r115k/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-4096v-280ah-1147kwh-lifepo4-gsl-r115k/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

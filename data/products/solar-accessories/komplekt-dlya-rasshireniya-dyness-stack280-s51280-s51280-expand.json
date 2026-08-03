@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "komplekt-dlya-rasshireniya-dyness-stack280-s51280-s51280-expand",
+  "title": "Комплект для расширения Dyness STACK280 S51280 (S51280 Expand)",
+  "sourceUrl": "https://solarverse.ua/product/komplekt-dlya-rasshireniya-dyness-stack280-s51280-s51280-expand",
+  "direction": "energy-solutions",
+  "price": "10 308 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "аксесуар Dyness: Для встановлення акумуляторних батарей.",
+  "description": "Комплект для расширения Dyness STACK280 S51280 (S51280 Expand). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Dyness"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Dyness"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    },
+    {
+      "label": "Призначення",
+      "value": "Для встановлення акумуляторних батарей"
+    },
+    {
+      "label": "Сумісність",
+      "value": "Dyness STACK280"
+    },
+    {
+      "label": "Матеріал",
+      "value": "Метал"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "монтажу та підключення енергетичного обладнання",
+    "сумісних інверторів, батарей і систем моніторингу",
+    "сервісного дооснащення після перевірки моделі обладнання"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-accessories/komplekt-dlya-rasshireniya-dyness-stack280-s51280-s51280-expand/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-accessories/komplekt-dlya-rasshireniya-dyness-stack280-s51280-s51280-expand/1.webp",
+    "/images/products/solarverse/equipment/solar-accessories/komplekt-dlya-rasshireniya-dyness-stack280-s51280-s51280-expand/2.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

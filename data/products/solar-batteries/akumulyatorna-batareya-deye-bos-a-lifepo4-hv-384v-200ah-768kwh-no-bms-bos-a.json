@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "akumulyatorna-batareya-deye-bos-a-lifepo4-hv-384v-200ah-768kwh-no-bms-bos-a",
+  "title": "Акумуляторна батарея Deye BOS-A LiFePO4 HV 38.4V 200Ah 7.68kWh no BMS (BOS-A)",
+  "sourceUrl": "https://solarverse.ua/product/akumulyatorna-batareya-deye-bos-a-lifepo4-hv-384v-200ah-768kwh-no-bms-bos-a",
+  "direction": "energy-solutions",
+  "price": "63 270 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея DEYE: 7.68 kW⋅h.",
+  "description": "Акумуляторна батарея Deye BOS-A LiFePO4 HV 38.4V 200Ah 7.68kWh no BMS (BOS-A). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "200 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "7.68 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "38.4 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "160 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-bos-a-lifepo4-hv-384v-200ah-768kwh-no-bms-bos-a/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-bos-a-lifepo4-hv-384v-200ah-768kwh-no-bms-bos-a/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-bos-a-lifepo4-hv-384v-200ah-768kwh-no-bms-bos-a/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-bos-a-lifepo4-hv-384v-200ah-768kwh-no-bms-bos-a/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-bos-a-lifepo4-hv-384v-200ah-768kwh-no-bms-bos-a/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

@@ -1,22 +1,26 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { notFound, redirect } from "next/navigation";
+import { Suspense } from "react";
+import { notFound } from "next/navigation";
 
 import { ActionButtons } from "@/components/action-buttons";
+import { CatalogBackLink } from "@/components/catalog-back-link";
 import { CtaPanel } from "@/components/cta-panel";
 import { ProductGallery } from "@/components/product-gallery";
 import { getProductBySlug, getStatusLabel } from "@/lib/catalog";
 import { products } from "@/lib/data";
 import { productToOrderable } from "@/lib/order-actions";
-import { getSafeCatalogReturnHref } from "@/lib/catalog-navigation";
 
 type ProductPageProps = {
   params: Promise<{ slug: string }>;
-  searchParams: Promise<{ from?: string | string[] }>;
 };
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
-  return products.map((product) => ({ slug: product.slug }));
+  return products.flatMap((product) => [
+    { slug: product.slug },
+    ...(product.legacySlugs ?? []).map((slug) => ({ slug })),
+  ]);
 }
 
 export async function generateMetadata({
@@ -34,48 +38,34 @@ export async function generateMetadata({
   return {
     title: product.title,
     description: product.shortDescription,
+    alternates: {
+      canonical: `/products/${product.slug}`,
+    },
   };
 }
 
-export default async function ProductPage({
-  params,
-  searchParams,
-}: ProductPageProps) {
+function CatalogBackLinkFallback() {
+  return (
+    <a className="text-sm font-semibold text-primary" href="/products">
+      ← До товарів
+    </a>
+  );
+}
+
+export default async function ProductPage({ params }: ProductPageProps) {
   const { slug } = await params;
-  const resolvedSearchParams = await searchParams;
-  const requestedReturnHref = Array.isArray(resolvedSearchParams.from)
-    ? resolvedSearchParams.from[0]
-    : resolvedSearchParams.from;
-  const returnHref = getSafeCatalogReturnHref(requestedReturnHref);
   const product = getProductBySlug(slug);
 
   if (!product) {
     notFound();
   }
 
-  if (slug !== product.slug) {
-    const canonicalSearchParams = new URLSearchParams();
-
-    if (requestedReturnHref) {
-      canonicalSearchParams.set("from", requestedReturnHref);
-    }
-
-    const canonicalQuery = canonicalSearchParams.toString();
-    redirect(
-      `/products/${product.slug}${canonicalQuery ? `?${canonicalQuery}` : ""}`,
-    );
-  }
-
   return (
     <>
       <article className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
-        <Link
-          className="text-sm font-semibold text-primary"
-          href={returnHref}
-          scroll={false}
-        >
-          ← До товарів
-        </Link>
+        <Suspense fallback={<CatalogBackLinkFallback />}>
+          <CatalogBackLink />
+        </Suspense>
 
         <h1 className="mt-5 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
           {product.title}

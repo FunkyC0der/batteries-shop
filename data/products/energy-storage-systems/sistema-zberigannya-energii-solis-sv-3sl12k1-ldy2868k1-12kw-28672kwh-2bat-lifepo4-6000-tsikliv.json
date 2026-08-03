@@ -1,0 +1,83 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "sistema-zberigannya-energii-solis-sv-3sl12k1-ldy2868k1-12kw-28672kwh-2bat-lifepo4-6000-tsikliv",
+  "title": "Система зберігання енергії Solis SV-3SL12K1-LDY28.68K1 12kW 28.672kWh 2BAT LiFePO4 6000 циклів",
+  "sourceUrl": "https://solarverse.ua/product/sistema-zberigannya-energii-solis-sv-3sl12k1-ldy2868k1-12kw-28672kwh-2bat-lifepo4-6000-tsikliv",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "Готова система Solis Solar: потужність 12000 W, запас енергії 28.672 kWh, батарея LiFePO4.",
+  "description": "Готова система зберігання енергії Solis Solar для резервного та автономного живлення. Конфігурація розрахована на номінальну потужність 12000 W і запас енергії 28.672 kWh. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію та сумісність із мережею об’єкта.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Solis Solar"
+    },
+    {
+      "label": "Сумарна енергія, що зберігається в блоку батарей",
+      "value": "28.672 kWh"
+    },
+    {
+      "label": "Номінальна потужність АС",
+      "value": "12000 W"
+    },
+    {
+      "label": "Сумарна ємність блоку батарей",
+      "value": "560 Ah"
+    },
+    {
+      "label": "Тип батареї",
+      "value": "LiFePO4"
+    },
+    {
+      "label": "Життевий цикл",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Кількість батарей",
+      "value": "2"
+    },
+    {
+      "label": "Кількість фаз",
+      "value": "3"
+    },
+    {
+      "label": "Кількість MPPT",
+      "value": "2"
+    },
+    {
+      "label": "Макс. вхідна потужність PV (сонячного масиву)",
+      "value": "19.2 kW"
+    },
+    {
+      "label": "Орієнтовний час до повного заряду стеку батарей",
+      "value": "2.2 год"
+    },
+    {
+      "label": "Гарантія",
+      "value": "36 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "резервного живлення приватних будинків і квартир",
+    "офісів, магазинів та інших комерційних об’єктів",
+    "інтеграції із сонячною генерацією після технічного розрахунку"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і склад комплекту потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/sistema-zberigannya-energii-solis-sv-3sl12k1-ldy2868k1-12kw-28672kwh-2bat-lifepo4-6000-tsikliv/1.webp",
+  "images": [
+    "/images/products/solarverse/sistema-zberigannya-energii-solis-sv-3sl12k1-ldy2868k1-12kw-28672kwh-2bat-lifepo4-6000-tsikliv/1.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-solis-sv-3sl12k1-ldy2868k1-12kw-28672kwh-2bat-lifepo4-6000-tsikliv/2.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-solis-sv-3sl12k1-ldy2868k1-12kw-28672kwh-2bat-lifepo4-6000-tsikliv/3.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-solis-sv-3sl12k1-ldy2868k1-12kw-28672kwh-2bat-lifepo4-6000-tsikliv/4.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-solis-sv-3sl12k1-ldy2868k1-12kw-28672kwh-2bat-lifepo4-6000-tsikliv/5.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "akumulyatorna-batareya-deye-se-f5-plus-lifepo4-lv-512v-100ah-512kwh-se-f5-plus-l",
+  "title": "Акумуляторна батарея DEYE SE-F5 Plus LiFePO4 LV 51.2V 100Ah 5.12kWh (SE-F5 Plus-L)",
+  "sourceUrl": "https://solarverse.ua/product/akumulyatorna-batareya-deye-se-f5-plus-lifepo4-lv-512v-100ah-512kwh-se-f5-plus-l",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея DEYE: 5.12 kW⋅h.",
+  "description": "Акумуляторна батарея DEYE SE-F5 Plus LiFePO4 LV 51.2V 100Ah 5.12kWh (SE-F5 Plus-L). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "100 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "5.12 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "51.2 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "100 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-se-f5-plus-lifepo4-lv-512v-100ah-512kwh-se-f5-plus-l/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-se-f5-plus-lifepo4-lv-512v-100ah-512kwh-se-f5-plus-l/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-se-f5-plus-lifepo4-lv-512v-100ah-512kwh-se-f5-plus-l/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-se-f5-plus-lifepo4-lv-512v-100ah-512kwh-se-f5-plus-l/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-se-f5-plus-lifepo4-lv-512v-100ah-512kwh-se-f5-plus-l/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

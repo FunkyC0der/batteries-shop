@@ -1,5 +1,7 @@
 import type { Product, ProductCategory } from "./types";
 
+type FacetableProduct = Pick<Product, "specs">;
+
 export type ProductFacetDefinition = {
   id: string;
   label: string;
@@ -379,7 +381,7 @@ export function getProductFacetConfig(category: string) {
 }
 
 export function getProductFacetValue(
-  product: Product,
+  product: FacetableProduct,
   definition: ProductFacetDefinition,
 ) {
   const spec = product.specs.find((candidate) =>
@@ -395,7 +397,7 @@ export function getProductFacetValue(
 }
 
 export function matchesProductFacetSelection(
-  product: Product,
+  product: FacetableProduct,
   definitions: readonly ProductFacetDefinition[],
   selection: ProductFacetSelection,
   excludedFacetId?: string,
@@ -415,8 +417,8 @@ export function matchesProductFacetSelection(
   });
 }
 
-export function filterProductsByFacets(
-  products: readonly Product[],
+export function filterProductsByFacets<T extends FacetableProduct>(
+  products: readonly T[],
   definitions: readonly ProductFacetDefinition[],
   selection: ProductFacetSelection,
   excludedFacetId?: string,
@@ -447,7 +449,7 @@ function compareOptions(
 }
 
 export function buildProductFacetModels(
-  products: readonly Product[],
+  products: readonly FacetableProduct[],
   definitions: readonly ProductFacetDefinition[],
   selection: ProductFacetSelection,
 ): ProductFacetModel[] {

@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "modul-keruvannya-bms-dlya-batarey-deye-bos-g-120-750vdc-100a",
+  "title": "Модуль керування (BMS) для батарей DEYE BOS-G 120-750Vdc 100A",
+  "sourceUrl": "https://solarverse.ua/product/modul-keruvannya-bms-dlya-batarey-deye-bos-g-120-750vdc-100a",
+  "direction": "energy-solutions",
+  "price": "40 500 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея DEYE: характеристики за запитом.",
+  "description": "Модуль керування (BMS) для батарей DEYE BOS-G 120-750Vdc 100A. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "120-750 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "125 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "120 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/modul-keruvannya-bms-dlya-batarey-deye-bos-g-120-750vdc-100a/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/modul-keruvannya-bms-dlya-batarey-deye-bos-g-120-750vdc-100a/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/modul-keruvannya-bms-dlya-batarey-deye-bos-g-120-750vdc-100a/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/modul-keruvannya-bms-dlya-batarey-deye-bos-g-120-750vdc-100a/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "gibridniy-invertor-deye-sun-6k-sg05lp1-eu-am2-p-6kw-lv-battery-2-mppt-wi-fi-220v-odnofazniy-sun-6k-sg05lp1-eu-am2-p",
+  "title": "Гібридний інвертор DEYE SUN-6K-SG05LP1-EU-AM2-P 6KW LV-battery 2 MPPT Wi-Fi 220V Однофазний (SUN-6K-SG05LP1-EU-AM2-P)",
+  "sourceUrl": "https://solarverse.ua/product/gibridniy-invertor-deye-sun-6k-sg05lp1-eu-am2-p-6kw-lv-battery-2-mppt-wi-fi-220v-odnofazniy-sun-6k-sg05lp1-eu-am2-p",
+  "direction": "energy-solutions",
+  "price": "40 998 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Solarverse: 6000 W.",
+  "description": "Гібридний інвертор DEYE SUN-6K-SG05LP1-EU-AM2-P 6KW LV-battery 2 MPPT Wi-Fi 220V Однофазний (SUN-6K-SG05LP1-EU-AM2-P). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "6000 W"
+    },
+    {
+      "label": "Вихідна напруга АКБ",
+      "value": "40 - 60 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-6k-sg05lp1-eu-am2-p-6kw-lv-battery-2-mppt-wi-fi-220v-odnofazniy-sun-6k-sg05lp1-eu-am2-p/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-6k-sg05lp1-eu-am2-p-6kw-lv-battery-2-mppt-wi-fi-220v-odnofazniy-sun-6k-sg05lp1-eu-am2-p/1.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-6k-sg05lp1-eu-am2-p-6kw-lv-battery-2-mppt-wi-fi-220v-odnofazniy-sun-6k-sg05lp1-eu-am2-p/2.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-6k-sg05lp1-eu-am2-p-6kw-lv-battery-2-mppt-wi-fi-220v-odnofazniy-sun-6k-sg05lp1-eu-am2-p/3.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-6k-sg05lp1-eu-am2-p-6kw-lv-battery-2-mppt-wi-fi-220v-odnofazniy-sun-6k-sg05lp1-eu-am2-p/4.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-6k-sg05lp1-eu-am2-p-6kw-lv-battery-2-mppt-wi-fi-220v-odnofazniy-sun-6k-sg05lp1-eu-am2-p/5.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

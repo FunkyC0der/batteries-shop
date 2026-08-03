@@ -1,0 +1,55 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "gibridniy-invertor-deye-sun-10k-sg02lp1-eu-am3",
+  "title": "Гібридний інвертор DEYE SUN-10K-SG02LP1-EU-AM3",
+  "sourceUrl": "https://solarverse.ua/product/gibridniy-invertor-deye-sun-10k-sg02lp1-eu-am3",
+  "direction": "energy-solutions",
+  "price": "79 248 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Deye: 10000 W.",
+  "description": "Гібридний інвертор DEYE SUN-10K-SG02LP1-EU-AM3. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Deye"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Deye"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "10000 W"
+    },
+    {
+      "label": "Вихідна напруга АКБ",
+      "value": "48 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-10k-sg02lp1-eu-am3/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-10k-sg02lp1-eu-am3/1.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-10k-sg02lp1-eu-am3/2.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-10k-sg02lp1-eu-am3/3.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-10k-sg02lp1-eu-am3/4.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-10k-sg02lp1-eu-am3/5.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

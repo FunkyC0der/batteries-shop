@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "bezdrotoviy-vimikach-deye-sun-smart-switch01p3-25a-3-ph-lora",
+  "title": "Бездротовий вимикач DEYE SUN-SMART-SWITCH01P3 25A, 3-Ph, LoRa",
+  "sourceUrl": "https://solarverse.ua/product/bezdrotoviy-vimikach-deye-sun-smart-switch01p3-25a-3-ph-lora",
+  "direction": "energy-solutions",
+  "price": "3 960 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "аксесуар Deye: Інвертори DEYE.",
+  "description": "Бездротовий вимикач DEYE SUN-SMART-SWITCH01P3 25A, 3-Ph, LoRa. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Deye"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Deye"
+    },
+    {
+      "label": "Гарантія",
+      "value": "24 міс."
+    },
+    {
+      "label": "Сумісність",
+      "value": "Інвертори DEYE"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "монтажу та підключення енергетичного обладнання",
+    "сумісних інверторів, батарей і систем моніторингу",
+    "сервісного дооснащення після перевірки моделі обладнання"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-accessories/bezdrotoviy-vimikach-deye-sun-smart-switch01p3-25a-3-ph-lora/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-accessories/bezdrotoviy-vimikach-deye-sun-smart-switch01p3-25a-3-ph-lora/1.webp",
+    "/images/products/solarverse/equipment/solar-accessories/bezdrotoviy-vimikach-deye-sun-smart-switch01p3-25a-3-ph-lora/2.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

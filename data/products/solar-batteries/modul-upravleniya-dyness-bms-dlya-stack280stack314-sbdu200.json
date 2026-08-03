@@ -1,0 +1,46 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "modul-upravleniya-dyness-bms-dlya-stack280stack314-sbdu200",
+  "title": "Модуль керування Dyness BMS для STACK280/STACK314 (SBDU200)",
+  "sourceUrl": "https://solarverse.ua/product/modul-upravleniya-dyness-bms-dlya-stack280stack314-sbdu200",
+  "direction": "energy-solutions",
+  "price": "67 278 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея Dyness: характеристики за запитом.",
+  "description": "Модуль керування Dyness BMS для STACK280/STACK314 (SBDU200). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Dyness"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "134-876 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/modul-upravleniya-dyness-bms-dlya-stack280stack314-sbdu200/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/modul-upravleniya-dyness-bms-dlya-stack280stack314-sbdu200/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/modul-upravleniya-dyness-bms-dlya-stack280stack314-sbdu200/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/modul-upravleniya-dyness-bms-dlya-stack280stack314-sbdu200/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/modul-upravleniya-dyness-bms-dlya-stack280stack314-sbdu200/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

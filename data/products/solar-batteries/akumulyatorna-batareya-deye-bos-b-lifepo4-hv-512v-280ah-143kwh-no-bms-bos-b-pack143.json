@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "akumulyatorna-batareya-deye-bos-b-lifepo4-hv-512v-280ah-143kwh-no-bms-bos-b-pack143",
+  "title": "Акумуляторна батарея Deye BOS-B LiFePO4 HV 51.2V 280Ah 14.3kWh no BMS (BOS-B-Pack14.3)",
+  "sourceUrl": "https://solarverse.ua/product/akumulyatorna-batareya-deye-bos-b-lifepo4-hv-512v-280ah-143kwh-no-bms-bos-b-pack143",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея DEYE: 14.34 kW⋅h.",
+  "description": "Акумуляторна батарея Deye BOS-B LiFePO4 HV 51.2V 280Ah 14.3kWh no BMS (BOS-B-Pack14.3). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "280 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "14.34 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "51.2 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "168 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "120 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-bos-b-lifepo4-hv-512v-280ah-143kwh-no-bms-bos-b-pack143/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-bos-b-lifepo4-hv-512v-280ah-143kwh-no-bms-bos-b-pack143/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-bos-b-lifepo4-hv-512v-280ah-143kwh-no-bms-bos-b-pack143/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-bos-b-lifepo4-hv-512v-280ah-143kwh-no-bms-bos-b-pack143/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-bos-b-lifepo4-hv-512v-280ah-143kwh-no-bms-bos-b-pack143/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

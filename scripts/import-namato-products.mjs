@@ -2,10 +2,67 @@ import { createHash } from "node:crypto";
 import { access, mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, extname, relative, resolve } from "node:path";
 
+import {
+  deleteStaleProducts,
+  formatPriceLabel,
+  listProductFiles,
+  resolveUpsert,
+  writeProductFile,
+} from "./lib/catalog-files.mjs";
+
 const SITE_URL = "https://www.namato.net";
-const OUTPUT_PATH = resolve("src/lib/namato-products.ts");
+const SOURCE = "namato";
 const IMAGES_DIRECTORY = resolve("public/images/products/namato");
 const RESPONSE_CACHE_DIRECTORY = "/private/tmp/namato-import-cache";
+
+const CYRILLIC_TO_LATIN = {
+  а: "a",
+  б: "b",
+  в: "v",
+  г: "h",
+  ґ: "g",
+  д: "d",
+  е: "e",
+  є: "ye",
+  ё: "yo",
+  ж: "zh",
+  з: "z",
+  и: "y",
+  і: "i",
+  ї: "yi",
+  й: "y",
+  к: "k",
+  л: "l",
+  м: "m",
+  н: "n",
+  о: "o",
+  п: "p",
+  р: "r",
+  с: "s",
+  т: "t",
+  у: "u",
+  ф: "f",
+  х: "kh",
+  ц: "ts",
+  ч: "ch",
+  ш: "sh",
+  щ: "shch",
+  ъ: "",
+  ы: "y",
+  ь: "",
+  э: "e",
+  ю: "yu",
+  я: "ya",
+};
+
+function toLatinSlug(value) {
+  return [...value.normalize("NFKD").toLocaleLowerCase("uk-UA")]
+    .map((character) => CYRILLIC_TO_LATIN[character] ?? character)
+    .join("")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .replace(/-{2,}/g, "-");
+}
 
 const sourceCategories = [
   { sourcePath: "/category/акумулятори", fallbackCategory: "solar-batteries" },
@@ -18,6 +75,81 @@ const sourceCategories = [
 ];
 
 const additionalProductPaths = [];
+
+const categoryCopy = {
+  "solar-batteries": {
+    itemName: "акумуляторна батарея",
+    fallbackImage: "/images/products/energy-storage-system.png",
+    compatibility: [
+      "систем резервного й автономного живлення",
+      "сонячних електростанцій із накопиченням енергії",
+      "сумісних інверторів після перевірки протоколу зв’язку та напруги",
+    ],
+  },
+  "backup-power": {
+    itemName: "комплект резервного живлення",
+    fallbackImage: "/images/products/energy-storage-system.png",
+    compatibility: [
+      "резервного живлення будинку, офісу або невеликого бізнесу",
+      "критичних навантажень після розрахунку їхньої потужності",
+      "подальшого масштабування після перевірки конфігурації",
+    ],
+  },
+  inverters: {
+    itemName: "інвертор",
+    fallbackImage: "/images/products/hybrid-solar-station.png",
+    compatibility: [
+      "сонячних електростанцій і систем резервного живлення",
+      "приватних та комерційних об’єктів після розрахунку навантаження",
+      "сумісних акумуляторних систем відповідної напруги",
+    ],
+  },
+  "solar-panels": {
+    itemName: "сонячна панель",
+    fallbackImage: "/images/products/grid-tied-solar-station.png",
+    compatibility: [
+      "дахових і наземних сонячних електростанцій",
+      "мережевих, гібридних та автономних систем",
+      "приватних і комерційних об’єктів після проєктного розрахунку",
+    ],
+  },
+  "solar-accessories": {
+    itemName: "аксесуар",
+    fallbackImage: "/images/products/energy-storage-system.png",
+    compatibility: [
+      "сумісних акумуляторних систем",
+      "монтажу й керування енергетичним обладнанням",
+      "дооснащення після перевірки конкретної моделі",
+    ],
+  },
+  "energy-storage-systems": {
+    itemName: "система зберігання енергії",
+    fallbackImage: "/images/products/energy-storage-system.png",
+    compatibility: [
+      "резервного та автономного живлення",
+      "комерційних і промислових об’єктів після енергетичного розрахунку",
+      "інтеграції з сонячною генерацією та мережею",
+    ],
+  },
+  "ev-charging": {
+    itemName: "зарядна станція для електромобіля",
+    fallbackImage: "/images/products/ev-charging-station.png",
+    compatibility: [
+      "приватного або комерційного заряджання електромобілів",
+      "об’єктів із відповідною доступною потужністю мережі",
+      "інтеграції з енергосистемою після перевірки типу роз’єму й фазності",
+    ],
+  },
+  "solar-stations": {
+    itemName: "комплект сонячної електростанції",
+    fallbackImage: "/images/products/hybrid-solar-station.png",
+    compatibility: [
+      "приватних і комерційних об’єктів після енергетичного розрахунку",
+      "автономного, резервного або гібридного живлення",
+      "монтажу після перевірки комплектації та умов об’єкта",
+    ],
+  },
+};
 
 function decodeHtml(value) {
   const namedEntities = {
@@ -226,9 +358,6 @@ function classifyProduct(fallbackCategory, title) {
 
 // Partner descriptions are a single paragraph where every characteristic is written
 // as "Назва: значення". A value therefore ends where the next capitalised label starts.
-// A label is a capitalised word (optionally a short phrase) ending with a colon. Units such
-// as "В", "DC" or "кВт·год" are excluded by requiring at least two lowercase letters, so a
-// value keeps its unit instead of being cut in half.
 const NEXT_LABEL_PATTERN =
   /(?<=[\s\d%+)\p{Ll}])\p{Lu}\p{Ll}{2,}[\p{L}’'-]*(?:\s+[\p{L}’'-]+){0,3}\s*:/u;
 const EXPLANATION_SEPARATOR = /\s[—–]\s/;
@@ -254,7 +383,6 @@ function findDescriptionValue(description, labels) {
 
     const value = cutAtNextLabel(match[1]);
 
-    // Anything longer is prose that leaked past the label boundary, not a spec value.
     if (value && !value.includes(":") && value.length <= MAX_SPEC_VALUE_LENGTH) {
       return value;
     }
@@ -293,39 +421,100 @@ function canonicalSpecs(product, options) {
     addSpec("Кількість фаз", options.get("Фази"));
     addSpec("Вихідна напруга АКБ", sourceVoltage);
   } else if (category === "solar-batteries") {
-    addSpec("Технологія", /lifepo4|літій-залізо-фосфат/i.test(description) ? "LiFePO4" : undefined);
+    addSpec(
+      "Технологія",
+      /lifepo4|літій-залізо-фосфат/i.test(description) ? "LiFePO4" : undefined,
+    );
     addSpec("Енергія батареї", sourcePower);
     addSpec("Номінальна напруга", sourceVoltage);
   } else if (category === "solar-panels") {
-    addSpec("Потужність", sourcePower ?? product.title.match(/\b(\d{3,4})\s*(?:Вт|W)\b/i)?.[0]);
-    addSpec("Тип панелі", /bifacial|біфіціал|двосторон/i.test(product.title) ? "Двостороння (bifacial)" : "Монокристалічна");
+    addSpec(
+      "Потужність",
+      sourcePower ?? product.title.match(/\b(\d{3,4})\s*(?:Вт|W)\b/i)?.[0],
+    );
+    addSpec(
+      "Тип панелі",
+      /bifacial|біфіціал|двосторон/i.test(product.title)
+        ? "Двостороння (bifacial)"
+        : "Монокристалічна",
+    );
   } else if (category === "backup-power") {
-    addSpec("Потужність інвертора", sourcePower ?? product.title.match(/(\d+[,.]?\d*)\s*квт/i)?.[1]?.concat(" кВт"));
-    addSpec("Запас енергії батарей", product.title.match(/акб\D{0,10}(\d+[,.]?\d*)\s*квт[·\s/-]*год/i)?.[1]?.concat(" кВт·год"));
+    addSpec(
+      "Потужність інвертора",
+      sourcePower ?? product.title.match(/(\d+[,.]?\d*)\s*квт/i)?.[1]?.concat(" кВт"),
+    );
+    addSpec(
+      "Запас енергії батарей",
+      product.title
+        .match(/акб\D{0,10}(\d+[,.]?\d*)\s*квт[·\s/-]*год/i)?.[1]
+        ?.concat(" кВт·год"),
+    );
     addSpec("Кількість фаз", options.get("Фази"));
   } else if (category === "energy-storage-systems") {
-    addSpec("Номінальна потужність АС", sourcePower ?? product.title.match(/(\d+[,.]?\d*)\s*квт/i)?.[1]?.concat(" кВт"));
-    addSpec("Сумарна енергія, що зберігається в блоку батарей", product.title.match(/(\d+[,.]?\d*)\s*квт[·\s/-]*год/i)?.[1]?.concat(" кВт·год"));
+    addSpec(
+      "Номінальна потужність АС",
+      sourcePower ?? product.title.match(/(\d+[,.]?\d*)\s*квт/i)?.[1]?.concat(" кВт"),
+    );
+    addSpec(
+      "Сумарна енергія, що зберігається в блоку батарей",
+      product.title
+        .match(/(\d+[,.]?\d*)\s*квт[·\s/-]*год/i)?.[1]
+        ?.concat(" кВт·год"),
+    );
     addSpec("Кількість фаз", options.get("Фази"));
   } else if (category === "ev-charging") {
-    addSpec("Потужність", sourcePower ?? product.title.match(/(\d+[,.]?\d*)\s*квт/i)?.[1]?.concat(" кВт"));
+    addSpec(
+      "Потужність",
+      sourcePower ?? product.title.match(/(\d+[,.]?\d*)\s*квт/i)?.[1]?.concat(" кВт"),
+    );
     addSpec("Кількість фаз", options.get("Фази"));
     addSpec("Тип роз’єму", product.title.match(/\bType\s*[12]\b/i)?.[0]);
   } else if (category === "solar-stations") {
-    addSpec("Потужність станції", sourcePower ?? product.title.match(/(\d+[,.]?\d*)\s*квт/i)?.[1]?.concat(" кВт"));
-    addSpec("Запас енергії батарей", product.title.match(/акб\D{0,10}(\d+[,.]?\d*)\s*квт[·\s/-]*год/i)?.[1]?.concat(" кВт·год"));
+    addSpec(
+      "Потужність станції",
+      sourcePower ?? product.title.match(/(\d+[,.]?\d*)\s*квт/i)?.[1]?.concat(" кВт"),
+    );
+    addSpec(
+      "Запас енергії батарей",
+      product.title
+        .match(/акб\D{0,10}(\d+[,.]?\d*)\s*квт[·\s/-]*год/i)?.[1]
+        ?.concat(" кВт·год"),
+    );
     addSpec("Кількість фаз", options.get("Фази"));
   } else if (category === "solar-accessories") {
-    addSpec("Призначення", product.title.toLocaleLowerCase("uk-UA").includes("стійка") ? "Для встановлення акумуляторних батарей" : "Керування акумуляторною системою");
+    addSpec(
+      "Призначення",
+      product.title.toLocaleLowerCase("uk-UA").includes("стійка")
+        ? "Для встановлення акумуляторних батарей"
+        : "Керування акумуляторною системою",
+    );
     addSpec("Сумісність", findDescriptionValue(description, ["Сумісність"]));
   }
 
   addSpec("Ємність батареї", findDescriptionValue(description, ["Ємність"]));
-  addSpec("Енергія батареї", findDescriptionValue(description, ["Номінальна енергія", "Корисна енергія"]));
-  addSpec("Цикл життя", findDescriptionValue(description, ["Кількість циклів", "Ресурс"]));
-  addSpec("Номінальна напруга", findDescriptionValue(description, ["Номінальна напруга", "Напруга"]));
-  addSpec("Зарядний струм (макс.)", findDescriptionValue(description, ["Максимальний струм заряду", "Струм заряду/розряду"]));
-  addSpec("Ступінь захисту від вологи та пилу", description.match(/\bIP\d{2}\b/i)?.[0]?.toUpperCase());
+  addSpec(
+    "Енергія батареї",
+    findDescriptionValue(description, ["Номінальна енергія", "Корисна енергія"]),
+  );
+  addSpec(
+    "Цикл життя",
+    findDescriptionValue(description, ["Кількість циклів", "Ресурс"]),
+  );
+  addSpec(
+    "Номінальна напруга",
+    findDescriptionValue(description, ["Номінальна напруга", "Напруга"]),
+  );
+  addSpec(
+    "Зарядний струм (макс.)",
+    findDescriptionValue(description, [
+      "Максимальний струм заряду",
+      "Струм заряду/розряду",
+    ]),
+  );
+  addSpec(
+    "Ступінь захисту від вологи та пилу",
+    description.match(/\bIP\d{2}\b/i)?.[0]?.toUpperCase(),
+  );
   addSpec("Гарантія", findDescriptionValue(description, ["Гарантія"]));
 
   return specs;
@@ -342,7 +531,9 @@ function parseProduct(html, sourcePath, fallbackCategory) {
   const remoteImages = imageObjects
     .map((image) => (typeof image === "string" ? image : image?.contentUrl))
     .filter(Boolean)
-    .map((url) => url.replace(/\/v1\/fit\/w_500,h_500,q_90\//, "/v1/fit/w_1400,h_1400,q_90/"));
+    .map((url) =>
+      url.replace(/\/v1\/fit\/w_500,h_500,q_90\//, "/v1/fit/w_1400,h_1400,q_90/"),
+    );
   const offer = jsonLd.Offers ?? jsonLd.offers;
   const price = Number.parseFloat(offer?.price);
 
@@ -356,7 +547,9 @@ function parseProduct(html, sourcePath, fallbackCategory) {
     model,
     price: Number.isFinite(price) ? price : undefined,
     remoteImages,
-    slug: decodeURIComponent(new URL(sourceUrl).pathname.split("/").filter(Boolean).at(-1)),
+    slug: decodeURIComponent(
+      new URL(sourceUrl).pathname.split("/").filter(Boolean).at(-1),
+    ),
     sourceUrl,
     specs: [],
     title,
@@ -405,9 +598,7 @@ function parseListingProduct(listingHtml, sourcePath, fallbackCategory) {
   const title = readValue(/"name":"([^"]+)"/);
   const model = readValue(/"sku":"([^"]+)"/);
   const price = Number.parseFloat(block.match(/"price":([\d.]+)/)?.[1]);
-  const remoteImages = [
-    ...block.matchAll(/"fullUrl":"([^"]+)"/g),
-  ].map((match) =>
+  const remoteImages = [...block.matchAll(/"fullUrl":"([^"]+)"/g)].map((match) =>
     decodeJsonString(match[1]).replace(
       /\/v1\/fit\/w_500,h_500,q_90\//,
       "/v1/fit/w_1400,h_1400,q_90/",
@@ -435,14 +626,7 @@ function parseListingProduct(listingHtml, sourcePath, fallbackCategory) {
   };
 }
 
-async function loadExistingCatalogText() {
-  return [
-    await readFile(resolve("src/lib/data.ts"), "utf8"),
-    await readFile(resolve("src/lib/solarverse-equipment-products.ts"), "utf8"),
-  ].join("\n");
-}
-
-function findDuplicate(product, existingCatalogText) {
+function findDuplicateTitle(product, otherTitles) {
   const panelModel =
     product.category === "solar-panels"
       ? product.title.match(/\bLR[0-9A-ZА-ЯІЇЄҐ-]*-\d{3,4}M\b/i)?.[0] ??
@@ -454,11 +638,9 @@ function findDuplicate(product, existingCatalogText) {
     return undefined;
   }
 
-  return existingCatalogText
-    .match(/"title":\s*"([^"]+)"|title:\s*"([^"]+)"/g)
-    ?.map((line) => line.match(/"([^"]+)"\s*[,}]?$/)?.[1] ?? line.match(/title:\s*"([^"]+)"/)?.[1])
-    .filter(Boolean)
-    .find((title) => normalizeModel(title).includes(normalizedModel));
+  return otherTitles.find((title) =>
+    normalizeModel(title).includes(normalizedModel),
+  );
 }
 
 function imageExtension(remoteUrl) {
@@ -489,7 +671,7 @@ async function importImages(products) {
     }),
   );
 
-  console.log(`Завантажую ${downloads.length} зображень нових товарів Namato...`);
+  console.log(`Завантажую ${downloads.length} зображень товарів Namato...`);
   await mapWithConcurrency(downloads, 10, async (download, index) => {
     try {
       await access(download.filePath);
@@ -499,6 +681,17 @@ async function importImages(products) {
 
       await mkdir(dirname(download.filePath), { recursive: true });
       await writeFile(download.filePath, image);
+      const { optimizeDownloadedImage } = await import("./lib/optimize-image.mjs");
+      download.publicPath = await optimizeDownloadedImage(
+        download.filePath,
+        download.publicPath,
+      );
+      if (!download.filePath.endsWith(".webp") && download.publicPath.endsWith(".webp")) {
+        download.filePath = download.filePath.replace(
+          /\.(png|jpe?g|gif|avif)$/i,
+          ".webp",
+        );
+      }
     }
 
     if ((index + 1) % 25 === 0 || index + 1 === downloads.length) {
@@ -513,41 +706,7 @@ async function importImages(products) {
   }
 }
 
-function serialize(products) {
-  const data = JSON.stringify(
-    products.map(({ category, description, images, model, price, slug, specs, title }) => ({
-      category,
-      slug,
-      title,
-      model,
-      price,
-      description,
-      specs,
-      images,
-    })),
-    null,
-    2,
-  );
-
-  return `// Generated from the Namato partner catalog.
-// Products whose model already existed in the local catalog were excluded.
-import type { Product, ProductCategory } from "./types";
-import { toLatinSlug } from "./slugs";
-
-type NamatoProduct = {
-  category: ProductCategory;
-  slug: string;
-  title: string;
-  model: string;
-  price?: number;
-  description: string;
-  specs: Array<{ label: string; value: string }>;
-  images: string[];
-};
-
-const importedProducts: NamatoProduct[] = ${data};
-
-function sanitizePartnerCopy(value: string) {
+function sanitizePartnerCopy(value) {
   return value
     .replace(
       /комплексне рішення від namato install/giu,
@@ -561,118 +720,71 @@ function sanitizePartnerCopy(value: string) {
     )
     .replace(/namato install/giu, "наша команда")
     .replace(/namato/giu, "")
-    .replace(/\\s{2,}/g, " ")
+    .replace(/\s{2,}/g, " ")
     .trim();
 }
 
-function shorten(value: string, limit = 140) {
-  const normalized = sanitizePartnerCopy(value).replace(/\\s+/g, " ").trim();
+function shorten(value, limit = 140) {
+  const normalized = sanitizePartnerCopy(value).replace(/\s+/g, " ").trim();
 
   return normalized.length > limit
-    ? \`\${normalized.slice(0, limit - 1).trimEnd()}…\`
+    ? `${normalized.slice(0, limit - 1).trimEnd()}…`
     : normalized;
 }
 
-function buildProductDescription(product: NamatoProduct, itemName: string) {
+function buildProductDescription(product, itemName) {
   const keySpecs = product.specs
     .filter((spec) => spec.label.trim() && spec.value.trim())
     .slice(0, 5)
-    .map((spec) => \`• \${shorten(spec.label, 55)}: \${shorten(spec.value)}\`);
+    .map((spec) => `• ${shorten(spec.label, 55)}: ${shorten(spec.value)}`);
 
   return [
-    \`\${shorten(product.title, 180)} — \${itemName} для комплектації енергосистеми відповідно до параметрів об’єкта.\`,
-    keySpecs.length
-      ? \`Основні характеристики:\\n\${keySpecs.join("\\n")}\`
-      : undefined,
+    `${shorten(product.title, 180)} — ${itemName} для комплектації енергосистеми відповідно до параметрів об’єкта.`,
+    keySpecs.length ? `Основні характеристики:\n${keySpecs.join("\n")}` : undefined,
     "Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
   ]
     .filter(Boolean)
-    .join("\\n\\n");
+    .join("\n\n");
 }
 
-const categoryCopy: Record<
-  NamatoProduct["category"],
-  { itemName: string; fallbackImage: string; compatibility: string[] }
-> = {
-  "solar-batteries": {
-    itemName: "акумуляторна батарея",
-    fallbackImage: "/images/products/energy-storage-system.png",
-    compatibility: ["систем резервного й автономного живлення", "сонячних електростанцій із накопиченням енергії", "сумісних інверторів після перевірки протоколу зв’язку та напруги"],
-  },
-  "backup-power": {
-    itemName: "комплект резервного живлення",
-    fallbackImage: "/images/products/energy-storage-system.png",
-    compatibility: ["резервного живлення будинку, офісу або невеликого бізнесу", "критичних навантажень після розрахунку їхньої потужності", "подальшого масштабування після перевірки конфігурації"],
-  },
-  inverters: {
-    itemName: "інвертор",
-    fallbackImage: "/images/products/hybrid-solar-station.png",
-    compatibility: ["сонячних електростанцій і систем резервного живлення", "приватних та комерційних об’єктів після розрахунку навантаження", "сумісних акумуляторних систем відповідної напруги"],
-  },
-  "solar-panels": {
-    itemName: "сонячна панель",
-    fallbackImage: "/images/products/grid-tied-solar-station.png",
-    compatibility: ["дахових і наземних сонячних електростанцій", "мережевих, гібридних та автономних систем", "приватних і комерційних об’єктів після проєктного розрахунку"],
-  },
-  "solar-accessories": {
-    itemName: "аксесуар",
-    fallbackImage: "/images/products/energy-storage-system.png",
-    compatibility: ["сумісних акумуляторних систем", "монтажу й керування енергетичним обладнанням", "дооснащення після перевірки конкретної моделі"],
-  },
-  "energy-storage-systems": {
-    itemName: "система зберігання енергії",
-    fallbackImage: "/images/products/energy-storage-system.png",
-    compatibility: ["резервного та автономного живлення", "комерційних і промислових об’єктів після енергетичного розрахунку", "інтеграції з сонячною генерацією та мережею"],
-  },
-  "ev-charging": {
-    itemName: "зарядна станція для електромобіля",
-    fallbackImage: "/images/products/ev-charging-station.png",
-    compatibility: ["приватного або комерційного заряджання електромобілів", "об’єктів із відповідною доступною потужністю мережі", "інтеграції з енергосистемою після перевірки типу роз’єму й фазності"],
-  },
-  "solar-stations": {
-    itemName: "комплект сонячної електростанції",
-    fallbackImage: "/images/products/hybrid-solar-station.png",
-    compatibility: ["приватних і комерційних об’єктів після енергетичного розрахунку", "автономного, резервного або гібридного живлення", "монтажу після перевірки комплектації та умов об’єкта"],
-  },
-} as Record<NamatoProduct["category"], { itemName: string; fallbackImage: string; compatibility: string[] }>;
+function toCatalogProduct(raw) {
+  const copy = categoryCopy[raw.category];
+  if (!copy) {
+    throw new Error(`Невідома категорія Namato: ${raw.category}`);
+  }
 
-export const namatoProducts: Product[] = importedProducts
-  .filter((product) => product.category !== "solar-stations")
-  .map((product, index) => {
-    const copy = categoryCopy[product.category];
-    const publicSlug = toLatinSlug(product.slug);
-    const brand = product.specs.find(
-      (spec) => spec.label === "Бренд",
-    )?.value;
+  const publicSlug = toLatinSlug(raw.slug);
+  const brand = raw.specs.find((spec) => spec.label === "Бренд")?.value;
 
-    return {
-      id: \`namato-product-\${index + 1}\`,
-      slug: publicSlug,
-      legacySlugs: publicSlug === product.slug ? undefined : [product.slug],
-      title: product.title,
-      sourceUrl: \`https://www.namato.net/product-page/\${product.slug}\`,
-      direction: "energy-solutions",
-      category: product.category,
-      price: product.price
-        ? \`\${product.price.toLocaleString("uk-UA")} грн · Ціну уточнюйте\`
-        : "Ціну уточнюйте",
-      showPrice: true,
-      status: "consult",
-      shortDescription: brand
-        ? \`\${copy.itemName} \${brand}, модель \${product.model}.\`
-        : \`\${copy.itemName}, модель \${product.model}.\`,
-      description: buildProductDescription(product, copy.itemName),
-      specs: product.specs,
-      compatibilityTitle: "Підходить для",
-      compatibility: copy.compatibility,
-      notice:
-        "Ціна наведена довідково. Актуальну ціну, наявність, комплектацію, гарантію та сумісність потрібно уточнити перед замовленням.",
-      image: product.images[0] ?? copy.fallbackImage,
-      images: product.images,
-      featured: false,
-    };
-  });
-`;
+  /** @type {Record<string, unknown>} */
+  const product = {
+    slug: publicSlug,
+    source: SOURCE,
+    title: raw.title,
+    sourceUrl: `https://www.namato.net/product-page/${raw.slug}`,
+    direction: "energy-solutions",
+    price: formatPriceLabel(raw.price),
+    showPrice: true,
+    status: "consult",
+    shortDescription: brand
+      ? `${copy.itemName} ${brand}, модель ${raw.model}.`
+      : `${copy.itemName}, модель ${raw.model}.`,
+    description: buildProductDescription(raw, copy.itemName),
+    specs: raw.specs,
+    compatibilityTitle: "Підходить для",
+    compatibility: [...copy.compatibility],
+    notice:
+      "Ціна наведена довідково. Актуальну ціну, наявність, комплектацію, гарантію та сумісність потрібно уточнити перед замовленням.",
+    image: raw.images?.[0] ?? copy.fallbackImage,
+    images: raw.images,
+    featured: false,
+  };
+
+  if (publicSlug !== raw.slug) {
+    product.legacySlugs = [raw.slug];
+  }
+
+  return { category: raw.category, product };
 }
 
 const productsByPath = new Map();
@@ -731,15 +843,17 @@ const fetchedProducts = await mapWithConcurrency(
         brand: { name: "Deye" },
         options: new Map(),
       };
-    } else try {
-      const html = await fetchTextWithCache(
-        new URL(sourcePath, SITE_URL),
-        additionalProduct ? 6 : 2,
-      );
-      product = parseProduct(html, sourcePath, fallbackCategory);
-    } catch {
-      console.warn(`Сторінка ${sourcePath} недоступна, читаю картку каталогу.`);
-      product = parseListingProduct(listingHtml, sourcePath, fallbackCategory);
+    } else {
+      try {
+        const html = await fetchTextWithCache(
+          new URL(sourcePath, SITE_URL),
+          additionalProduct ? 6 : 2,
+        );
+        product = parseProduct(html, sourcePath, fallbackCategory);
+      } catch {
+        console.warn(`Сторінка ${sourcePath} недоступна, читаю картку каталогу.`);
+        product = parseListingProduct(listingHtml, sourcePath, fallbackCategory);
+      }
     }
 
     product.specs = canonicalSpecs(product, product.options);
@@ -752,30 +866,98 @@ const fetchedProducts = await mapWithConcurrency(
   },
 );
 
-const existingCatalogText = await loadExistingCatalogText();
-const skipped = [];
+const existingFiles = await listProductFiles();
+const otherSourceTitles = existingFiles
+  .filter((entry) => entry.data.source !== SOURCE)
+  .map((entry) => String(entry.data.title ?? ""))
+  .filter(Boolean);
+
+const skippedStations = [];
+const skippedDuplicates = [];
 const products = [];
 
 for (const product of fetchedProducts) {
-  const existingTitle = findDuplicate(product, existingCatalogText);
+  if (product.category === "solar-stations") {
+    skippedStations.push(product);
+    continue;
+  }
+
+  const existingTitle = findDuplicateTitle(product, otherSourceTitles);
 
   if (existingTitle) {
-    skipped.push({ model: product.model, title: product.title, existingTitle });
-  } else {
-    products.push(product);
+    skippedDuplicates.push({
+      model: product.model,
+      title: product.title,
+      existingTitle,
+    });
+    continue;
   }
+
+  products.push(product);
 }
 
-console.log(`Пропущено наявних моделей: ${skipped.length}.`);
-for (const duplicate of skipped) {
-  console.log(`  ${duplicate.model}: ${duplicate.title} → ${duplicate.existingTitle}`);
+console.log(`Пропущено solar-stations: ${skippedStations.length}.`);
+console.log(`Пропущено наявних моделей: ${skippedDuplicates.length}.`);
+for (const duplicate of skippedDuplicates) {
+  console.log(
+    `  ${duplicate.model}: ${duplicate.title} → ${duplicate.existingTitle}`,
+  );
 }
 
 await importImages(products);
-await writeFile(OUTPUT_PATH, serialize(products));
 
-for (const category of [...new Set(products.map((product) => product.category))]) {
-  console.log(`${category}: ${products.filter((product) => product.category === category).length} нових товарів.`);
+const built = products.map(toCatalogProduct);
+let written = 0;
+let skippedLocked = 0;
+let skippedSource = 0;
+/** @type {string[]} */
+const importedSlugs = [];
+
+for (const { category, product } of built) {
+  const decision = await resolveUpsert(product.slug, SOURCE, existingFiles);
+
+  if (decision.action === "skip") {
+    if (decision.reason === "locked") {
+      skippedLocked += 1;
+      importedSlugs.push(product.slug);
+      console.log(`Пропущено (locked): ${product.slug}`);
+    } else {
+      skippedSource += 1;
+      console.log(
+        `Пропущено (source=${decision.existing.data.source}): ${product.slug}`,
+      );
+    }
+    continue;
+  }
+
+  await writeProductFile(category, product, {
+    existing: decision.action === "update" ? decision.existing : undefined,
+  });
+  importedSlugs.push(product.slug);
+  written += 1;
 }
 
-console.log(`Імпортовано ${products.length} нових товарів у ${OUTPUT_PATH}.`);
+for (const entry of existingFiles) {
+  if (
+    entry.data.source === SOURCE &&
+    entry.data.locked === true &&
+    !importedSlugs.includes(entry.slug)
+  ) {
+    importedSlugs.push(entry.slug);
+  }
+}
+
+const deleted = await deleteStaleProducts(SOURCE, importedSlugs);
+
+for (const category of [
+  ...new Set(built.map(({ category: productCategory }) => productCategory)),
+]) {
+  console.log(
+    `${category}: ${built.filter(({ category: productCategory }) => productCategory === category).length} товарів.`,
+  );
+}
+
+console.log(
+  `Namato: записано ${written}, пропущено locked ${skippedLocked}, ` +
+    `пропущено інше джерело ${skippedSource}, видалено застарілих ${deleted.length}.`,
+);

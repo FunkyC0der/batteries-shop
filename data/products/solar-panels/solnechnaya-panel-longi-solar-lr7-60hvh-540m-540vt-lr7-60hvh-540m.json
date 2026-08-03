@@ -1,0 +1,54 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "solnechnaya-panel-longi-solar-lr7-60hvh-540m-540vt-lr7-60hvh-540m",
+  "title": "Сонячна панель Longi Solar LR7-60HVH-540M 540Вт (LR7-60HVH-540M)",
+  "sourceUrl": "https://solarverse.ua/product/solnechnaya-panel-longi-solar-lr7-60hvh-540m-540vt-lr7-60hvh-540m",
+  "direction": "energy-solutions",
+  "price": "6 200 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "сонячна панель Longi Solar: 540 W.",
+  "description": "Сонячна панель Longi Solar LR7-60HVH-540M 540Вт (LR7-60HVH-540M). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Longi Solar"
+    },
+    {
+      "label": "Тип напівпровідника",
+      "value": "Монокристал"
+    },
+    {
+      "label": "Потужність",
+      "value": "540 W"
+    },
+    {
+      "label": "Конектори",
+      "value": "MC4"
+    },
+    {
+      "label": "Ступінь захисту від вологи та пилу",
+      "value": "IP68"
+    },
+    {
+      "label": "Гарантія",
+      "value": "15 років"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "дахових і наземних сонячних електростанцій",
+    "мережевих, гібридних та автономних систем",
+    "приватних і комерційних об’єктів після проєктного розрахунку"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-panels/solnechnaya-panel-longi-solar-lr7-60hvh-540m-540vt-lr7-60hvh-540m/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-panels/solnechnaya-panel-longi-solar-lr7-60hvh-540m-540vt-lr7-60hvh-540m/1.webp",
+    "/images/products/solarverse/equipment/solar-panels/solnechnaya-panel-longi-solar-lr7-60hvh-540m-540vt-lr7-60hvh-540m/2.webp",
+    "/images/products/solarverse/equipment/solar-panels/solnechnaya-panel-longi-solar-lr7-60hvh-540m-540vt-lr7-60hvh-540m/3.webp",
+    "/images/products/solarverse/equipment/solar-panels/solnechnaya-panel-longi-solar-lr7-60hvh-540m-540vt-lr7-60hvh-540m/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

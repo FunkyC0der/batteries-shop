@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "blok-batarey-gsl-6144v-280ah-172kwh-lifepo4-ip67-fire-extinguisher-air-conditioner-gsl-bess-170",
+  "title": "Блок батарей GSL 614.4V 280Ah 172kWh LiFePO4 IP67 Fire Extinguisher Air Conditioner (GSL-BESS-170)",
+  "sourceUrl": "https://solarverse.ua/product/blok-batarey-gsl-6144v-280ah-172kwh-lifepo4-ip67-fire-extinguisher-air-conditioner-gsl-bess-170",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея GSL ENERGY: 172.03 kW⋅h.",
+  "description": "Блок батарей GSL 614.4V 280Ah 172kWh LiFePO4 IP67 Fire Extinguisher Air Conditioner (GSL-BESS-170). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "GSL ENERGY"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-іонна (Li-ion)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "280 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "172.03 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "10000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "614.4 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "100 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-6144v-280ah-172kwh-lifepo4-ip67-fire-extinguisher-air-conditioner-gsl-bess-170/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-6144v-280ah-172kwh-lifepo4-ip67-fire-extinguisher-air-conditioner-gsl-bess-170/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-6144v-280ah-172kwh-lifepo4-ip67-fire-extinguisher-air-conditioner-gsl-bess-170/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-6144v-280ah-172kwh-lifepo4-ip67-fire-extinguisher-air-conditioner-gsl-bess-170/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

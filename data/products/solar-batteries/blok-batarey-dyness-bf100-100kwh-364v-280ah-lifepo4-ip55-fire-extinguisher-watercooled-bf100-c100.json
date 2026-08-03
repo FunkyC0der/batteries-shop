@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "blok-batarey-dyness-bf100-100kwh-364v-280ah-lifepo4-ip55-fire-extinguisher-watercooled-bf100-c100",
+  "title": "Блок батарей Dyness BF100 100kWh 364V 280AH LiFePO4 IP55 Fire Extinguisher, WaterCooled (BF100-C100)",
+  "sourceUrl": "https://solarverse.ua/product/blok-batarey-dyness-bf100-100kwh-364v-280ah-lifepo4-ip55-fire-extinguisher-watercooled-bf100-c100",
+  "direction": "energy-solutions",
+  "price": "900 000 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея Dyness: 101.92 kW⋅h.",
+  "description": "Блок батарей Dyness BF100 100kWh 364V 280AH LiFePO4 IP55 Fire Extinguisher, WaterCooled (BF100-C100). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Dyness"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "280 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "101.92 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "8000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "364 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "160 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/blok-batarey-dyness-bf100-100kwh-364v-280ah-lifepo4-ip55-fire-extinguisher-watercooled-bf100-c100/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-dyness-bf100-100kwh-364v-280ah-lifepo4-ip55-fire-extinguisher-watercooled-bf100-c100/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-dyness-bf100-100kwh-364v-280ah-lifepo4-ip55-fire-extinguisher-watercooled-bf100-c100/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-dyness-bf100-100kwh-364v-280ah-lifepo4-ip55-fire-extinguisher-watercooled-bf100-c100/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

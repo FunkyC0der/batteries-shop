@@ -1,0 +1,83 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "ustanovka-zberigannya-energii-deye-ms-gs215-100kw-768v-280ah-215kwh-lifepo4-ip54-200kw-mppt-fire-extinguisher-air-conditioner-ms-gs215-2h3",
+  "title": "Установка зберігання енергії DEYE MS-GS215 100kW 768V 280Ah 215kWh LiFePO4 IP54, 200kW MPPT, Fire Extinguisher, Air conditioner (MS-GS215-2H3)",
+  "sourceUrl": "https://solarverse.ua/product/ustanovka-zberigannya-energii-deye-ms-gs215-100kw-768v-280ah-215kwh-lifepo4-ip54-200kw-mppt-fire-extinguisher-air-conditioner-ms-gs215-2h3",
+  "direction": "energy-solutions",
+  "price": "2 090 748 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "Готова система DEYE: потужність 100000 W, запас енергії 215 kWh, батарея LiFePO4.",
+  "description": "Готова система зберігання енергії DEYE для резервного та автономного живлення. Конфігурація розрахована на номінальну потужність 100000 W і запас енергії 215 kWh. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію та сумісність із мережею об’єкта.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Сумарна енергія, що зберігається в блоку батарей",
+      "value": "215 kWh"
+    },
+    {
+      "label": "Номінальна потужність АС",
+      "value": "100000 W"
+    },
+    {
+      "label": "Сумарна ємність блоку батарей",
+      "value": "280 Ah"
+    },
+    {
+      "label": "Номінальна напруга батарей",
+      "value": "768 V"
+    },
+    {
+      "label": "Тип батареї",
+      "value": "LiFePO4"
+    },
+    {
+      "label": "Життевий цикл",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Кількість батарей",
+      "value": "15"
+    },
+    {
+      "label": "Кількість фаз",
+      "value": "3"
+    },
+    {
+      "label": "Кількість MPPT",
+      "value": "8"
+    },
+    {
+      "label": "Макс. вхідна потужність PV (сонячного масиву)",
+      "value": "200 kW"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "резервного живлення приватних будинків і квартир",
+    "офісів, магазинів та інших комерційних об’єктів",
+    "інтеграції із сонячною генерацією після технічного розрахунку"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і склад комплекту потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/ustanovka-zberigannya-energii-deye-ms-gs215-100kw-768v-280ah-215kwh-lifepo4-ip54-200kw-mppt-fire-extinguisher-air-conditioner-ms-gs215-2h3/1.webp",
+  "images": [
+    "/images/products/solarverse/ustanovka-zberigannya-energii-deye-ms-gs215-100kw-768v-280ah-215kwh-lifepo4-ip54-200kw-mppt-fire-extinguisher-air-conditioner-ms-gs215-2h3/1.webp",
+    "/images/products/solarverse/ustanovka-zberigannya-energii-deye-ms-gs215-100kw-768v-280ah-215kwh-lifepo4-ip54-200kw-mppt-fire-extinguisher-air-conditioner-ms-gs215-2h3/2.webp",
+    "/images/products/solarverse/ustanovka-zberigannya-energii-deye-ms-gs215-100kw-768v-280ah-215kwh-lifepo4-ip54-200kw-mppt-fire-extinguisher-air-conditioner-ms-gs215-2h3/3.webp",
+    "/images/products/solarverse/ustanovka-zberigannya-energii-deye-ms-gs215-100kw-768v-280ah-215kwh-lifepo4-ip54-200kw-mppt-fire-extinguisher-air-conditioner-ms-gs215-2h3/4.webp",
+    "/images/products/solarverse/ustanovka-zberigannya-energii-deye-ms-gs215-100kw-768v-280ah-215kwh-lifepo4-ip54-200kw-mppt-fire-extinguisher-air-conditioner-ms-gs215-2h3/5.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "sistema-khraneniya-energii-gsl-bess-209k-6656v-314ah-208kwh-lifepo4-ip65-fire-extinguisher-airconditioner-with-air-channel-gsl-bess-209k",
+  "title": "Система збереження енергії GSL-BESS-209K 665.6V 314Ah 208kWh LiFePO4 IP65, Fire Extinguisher, AirConditioner with Air channel (GSL-BESS-209K)",
+  "sourceUrl": "https://solarverse.ua/product/sistema-khraneniya-energii-gsl-bess-209k-6656v-314ah-208kwh-lifepo4-ip65-fire-extinguisher-airconditioner-with-air-channel-gsl-bess-209k",
+  "direction": "energy-solutions",
+  "price": "1 698 348 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея GSL ENERGY: 209 kW⋅h.",
+  "description": "Система збереження енергії GSL-BESS-209K 665.6V 314Ah 208kWh LiFePO4 IP65, Fire Extinguisher, AirConditioner with Air channel (GSL-BESS-209K). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "GSL ENERGY"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "314 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "209 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6500 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "665.6 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "157 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/sistema-khraneniya-energii-gsl-bess-209k-6656v-314ah-208kwh-lifepo4-ip65-fire-extinguisher-airconditioner-with-air-channel-gsl-bess-209k/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/sistema-khraneniya-energii-gsl-bess-209k-6656v-314ah-208kwh-lifepo4-ip65-fire-extinguisher-airconditioner-with-air-channel-gsl-bess-209k/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/sistema-khraneniya-energii-gsl-bess-209k-6656v-314ah-208kwh-lifepo4-ip65-fire-extinguisher-airconditioner-with-air-channel-gsl-bess-209k/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/sistema-khraneniya-energii-gsl-bess-209k-6656v-314ah-208kwh-lifepo4-ip65-fire-extinguisher-airconditioner-with-air-channel-gsl-bess-209k/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/sistema-khraneniya-energii-gsl-bess-209k-6656v-314ah-208kwh-lifepo4-ip65-fire-extinguisher-airconditioner-with-air-channel-gsl-bess-209k/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

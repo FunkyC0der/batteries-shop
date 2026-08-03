@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "gibridnyy-invertor-solis-s6-eh3p100k10-nv-yd-h-100kw-hv-battery-10-mppt-wi-fi-220380v-trekhfaznyy-s6-eh3p100k10-nv-yd-h",
+  "title": "Гібридний інвертор SOLIS S6-EH3P100K10-NV-YD-H 100KW HV-battery 10 MPPT Wi-Fi 220/380V Трифазний (S6-EH3P100K10-NV-YD-H)",
+  "sourceUrl": "https://solarverse.ua/product/gibridnyy-invertor-solis-s6-eh3p100k10-nv-yd-h-100kw-hv-battery-10-mppt-wi-fi-220380v-trekhfaznyy-s6-eh3p100k10-nv-yd-h",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Solis: 100000 W.",
+  "description": "Гібридний інвертор SOLIS S6-EH3P100K10-NV-YD-H 100KW HV-battery 10 MPPT Wi-Fi 220/380V Трифазний (S6-EH3P100K10-NV-YD-H). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Solis"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "100000 W"
+    },
+    {
+      "label": "Вихідна напруга АКБ",
+      "value": "300 - 950 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/gibridnyy-invertor-solis-s6-eh3p100k10-nv-yd-h-100kw-hv-battery-10-mppt-wi-fi-220380v-trekhfaznyy-s6-eh3p100k10-nv-yd-h/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/gibridnyy-invertor-solis-s6-eh3p100k10-nv-yd-h-100kw-hv-battery-10-mppt-wi-fi-220380v-trekhfaznyy-s6-eh3p100k10-nv-yd-h/1.webp",
+    "/images/products/solarverse/equipment/inverters/gibridnyy-invertor-solis-s6-eh3p100k10-nv-yd-h-100kw-hv-battery-10-mppt-wi-fi-220380v-trekhfaznyy-s6-eh3p100k10-nv-yd-h/2.webp",
+    "/images/products/solarverse/equipment/inverters/gibridnyy-invertor-solis-s6-eh3p100k10-nv-yd-h-100kw-hv-battery-10-mppt-wi-fi-220380v-trekhfaznyy-s6-eh3p100k10-nv-yd-h/3.webp",
+    "/images/products/solarverse/equipment/inverters/gibridnyy-invertor-solis-s6-eh3p100k10-nv-yd-h-100kw-hv-battery-10-mppt-wi-fi-220380v-trekhfaznyy-s6-eh3p100k10-nv-yd-h/4.webp",
+    "/images/products/solarverse/equipment/inverters/gibridnyy-invertor-solis-s6-eh3p100k10-nv-yd-h-100kw-hv-battery-10-mppt-wi-fi-220380v-trekhfaznyy-s6-eh3p100k10-nv-yd-h/5.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

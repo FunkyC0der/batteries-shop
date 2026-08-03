@@ -1,0 +1,63 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "akkumulyatornaya-batareya-gsl-48v-100ah-48kwh-lifepo4-zn-p48100esa1",
+  "title": "Акумуляторна батарея GSL 48v 100AH 4.8kwh lifepo4 (ZN-P48100ESA1)",
+  "sourceUrl": "https://solarverse.ua/product/akkumulyatornaya-batareya-gsl-48v-100ah-48kwh-lifepo4-zn-p48100esa1",
+  "direction": "energy-solutions",
+  "price": "36 498 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея GSL ENERGY: 4.8 kW⋅h.",
+  "description": "Акумуляторна батарея GSL 48v 100AH 4.8kwh lifepo4 (ZN-P48100ESA1). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "GSL ENERGY"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "100 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "4.8 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6500 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "48 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "100 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-gsl-48v-100ah-48kwh-lifepo4-zn-p48100esa1/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-gsl-48v-100ah-48kwh-lifepo4-zn-p48100esa1/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-gsl-48v-100ah-48kwh-lifepo4-zn-p48100esa1/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-gsl-48v-100ah-48kwh-lifepo4-zn-p48100esa1/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-gsl-48v-100ah-48kwh-lifepo4-zn-p48100esa1/4.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-gsl-48v-100ah-48kwh-lifepo4-zn-p48100esa1/5.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

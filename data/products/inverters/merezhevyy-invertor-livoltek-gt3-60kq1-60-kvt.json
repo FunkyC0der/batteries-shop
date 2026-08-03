@@ -1,0 +1,56 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "merezhevyy-invertor-livoltek-gt3-60kq1-60-kvt",
+  "legacySlugs": [
+    "мережевий-інвертор-livoltek-gt3-60kq1-60-квт"
+  ],
+  "title": "Мережевий інвертор Livoltek GT3-60KQ1 (60 кВт)",
+  "sourceUrl": "https://www.namato.net/product-page/мережевий-інвертор-livoltek-gt3-60kq1-60-квт",
+  "direction": "energy-solutions",
+  "price": "69 300 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Livoltek, модель GT3-60KQ1.",
+  "description": "Мережевий інвертор Livoltek GT3-60KQ1 (60 кВт) — інвертор для комплектації енергосистеми відповідно до параметрів об’єкта.\n\nОсновні характеристики:\n• Бренд: Livoltek\n• Модель: GT3-60KQ1\n• Тип: Мережевий\n• Номінальна потужність: 60 кВт\n• Кількість фаз: 3\n\nПеред замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Livoltek"
+    },
+    {
+      "label": "Модель",
+      "value": "GT3-60KQ1"
+    },
+    {
+      "label": "Тип",
+      "value": "Мережевий"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "60 кВт"
+    },
+    {
+      "label": "Кількість фаз",
+      "value": "3"
+    },
+    {
+      "label": "Ступінь захисту від вологи та пилу",
+      "value": "IP65"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково. Актуальну ціну, наявність, комплектацію, гарантію та сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/namato/мережевий-інвертор-livoltek-gt3-60kq1-60-квт/1.webp",
+  "images": [
+    "/images/products/namato/мережевий-інвертор-livoltek-gt3-60kq1-60-квт/1.webp",
+    "/images/products/namato/мережевий-інвертор-livoltek-gt3-60kq1-60-квт/2.webp",
+    "/images/products/namato/мережевий-інвертор-livoltek-gt3-60kq1-60-квт/3.webp"
+  ],
+  "featured": false,
+  "source": "namato"
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "avtonomniy-invertor-solarverse-ampere-3kw-24v-1-mppt-220v-odnofazniy-sv3024a",
+  "title": "Автономний інвертор Solarverse Ampere 3kW 24V 1 MPPT 220V Однофазний (SV3024A)",
+  "sourceUrl": "https://solarverse.ua/product/avtonomniy-invertor-solarverse-ampere-3kw-24v-1-mppt-220v-odnofazniy-sv3024a",
+  "direction": "energy-solutions",
+  "price": "17 730 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Solarverse: 3000 W.",
+  "description": "Автономний інвертор Solarverse Ampere 3kW 24V 1 MPPT 220V Однофазний (SV3024A). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Solarverse"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Solarverse"
+    },
+    {
+      "label": "Тип",
+      "value": "Автономний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "3000 W"
+    },
+    {
+      "label": "Вихідна напруга АКБ",
+      "value": "24 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "36 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/avtonomniy-invertor-solarverse-ampere-3kw-24v-1-mppt-220v-odnofazniy-sv3024a/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/avtonomniy-invertor-solarverse-ampere-3kw-24v-1-mppt-220v-odnofazniy-sv3024a/1.webp",
+    "/images/products/solarverse/equipment/inverters/avtonomniy-invertor-solarverse-ampere-3kw-24v-1-mppt-220v-odnofazniy-sv3024a/2.webp",
+    "/images/products/solarverse/equipment/inverters/avtonomniy-invertor-solarverse-ampere-3kw-24v-1-mppt-220v-odnofazniy-sv3024a/3.webp",
+    "/images/products/solarverse/equipment/inverters/avtonomniy-invertor-solarverse-ampere-3kw-24v-1-mppt-220v-odnofazniy-sv3024a/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

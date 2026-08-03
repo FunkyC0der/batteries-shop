@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "akkumulyatornaya-batareya-deye-se-f16-s-lifepo4-lv-512v-314ah-16kwh-se-f16-s",
+  "title": "Акумуляторна батарея DEYE SE-F16-С LiFePO4 LV 51.2v 314Ah 16kwh (SE-F16-С)",
+  "sourceUrl": "https://solarverse.ua/product/akkumulyatornaya-batareya-deye-se-f16-s-lifepo4-lv-512v-314ah-16kwh-se-f16-s",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея DEYE: 16.08 kW⋅h.",
+  "description": "Акумуляторна батарея DEYE SE-F16-С LiFePO4 LV 51.2v 314Ah 16kwh (SE-F16-С). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "314 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "16.08 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "51.2 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "160 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-deye-se-f16-s-lifepo4-lv-512v-314ah-16kwh-se-f16-s/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-deye-se-f16-s-lifepo4-lv-512v-314ah-16kwh-se-f16-s/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-deye-se-f16-s-lifepo4-lv-512v-314ah-16kwh-se-f16-s/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-deye-se-f16-s-lifepo4-lv-512v-314ah-16kwh-se-f16-s/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-deye-se-f16-s-lifepo4-lv-512v-314ah-16kwh-se-f16-s/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

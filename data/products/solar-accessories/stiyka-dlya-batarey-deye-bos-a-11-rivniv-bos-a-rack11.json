@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "stiyka-dlya-batarey-deye-bos-a-11-rivniv-bos-a-rack11",
+  "title": "Стійка для батарей Deye BOS-A 11-рівнів (BOS-A-Rack11)",
+  "sourceUrl": "https://solarverse.ua/product/stiyka-dlya-batarey-deye-bos-a-11-rivniv-bos-a-rack11",
+  "direction": "energy-solutions",
+  "price": "17 508 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "аксесуар Deye: Для встановлення акумуляторних батарей.",
+  "description": "Стійка для батарей Deye BOS-A 11-рівнів (BOS-A-Rack11). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Deye"
+    },
+    {
+      "label": "Матеріал",
+      "value": "Метал"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Deye"
+    },
+    {
+      "label": "Призначення",
+      "value": "Для встановлення акумуляторних батарей"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "монтажу та підключення енергетичного обладнання",
+    "сумісних інверторів, батарей і систем моніторингу",
+    "сервісного дооснащення після перевірки моделі обладнання"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-accessories/stiyka-dlya-batarey-deye-bos-a-11-rivniv-bos-a-rack11/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-accessories/stiyka-dlya-batarey-deye-bos-a-11-rivniv-bos-a-rack11/1.webp",
+    "/images/products/solarverse/equipment/solar-accessories/stiyka-dlya-batarey-deye-bos-a-11-rivniv-bos-a-rack11/2.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

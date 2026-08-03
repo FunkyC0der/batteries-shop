@@ -1,0 +1,89 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "sistema-zberigannya-energii-deye-sun-12k-sg04lp3-eu-4gs2048k-lfp-12kw-2048kwh-4bat-lifepo4-6500-tsikliv",
+  "title": "Система зберігання енергії DEYE SUN-12K-SG04LP3-EU-4GS20.48K-LFP 12kW 20.48kWh 4BAT LiFePO4 6500 циклів",
+  "sourceUrl": "https://solarverse.ua/product/sistema-zberigannya-energii-deye-sun-12k-sg04lp3-eu-4gs2048k-lfp-12kw-2048kwh-4bat-lifepo4-6500-tsikliv",
+  "direction": "energy-solutions",
+  "price": "236 610 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "Готова система DEYE: потужність 12000 W, запас енергії 20.48 kWh, батарея LiFePO4.",
+  "description": "Готова система зберігання енергії DEYE для резервного та автономного живлення. Конфігурація розрахована на номінальну потужність 12000 W і запас енергії 20.48 kWh. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію та сумісність із мережею об’єкта.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Сумарна енергія, що зберігається в блоку батарей",
+      "value": "20.48 kWh"
+    },
+    {
+      "label": "Номінальна потужність АС",
+      "value": "12000 W"
+    },
+    {
+      "label": "Сумарна ємність блоку батарей",
+      "value": "400 Ah"
+    },
+    {
+      "label": "Номінальна напруга батарей",
+      "value": "51.2 V"
+    },
+    {
+      "label": "Тип батареї",
+      "value": "LiFePO4"
+    },
+    {
+      "label": "Життевий цикл",
+      "value": "6500 циклів"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Кількість батарей",
+      "value": "4"
+    },
+    {
+      "label": "Кількість фаз",
+      "value": "3"
+    },
+    {
+      "label": "Кількість MPPT",
+      "value": "2"
+    },
+    {
+      "label": "Макс. вхідна потужність PV (сонячного масиву)",
+      "value": "15.6 kW"
+    },
+    {
+      "label": "Орієнтовний час до повного заряду стеку батарей",
+      "value": "1.9 год"
+    },
+    {
+      "label": "Гарантія",
+      "value": "120 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "резервного живлення приватних будинків і квартир",
+    "офісів, магазинів та інших комерційних об’єктів",
+    "інтеграції із сонячною генерацією після технічного розрахунку"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і склад комплекту потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/sistema-zberigannya-energii-deye-sun-12k-sg04lp3-eu-4gs2048k-lfp-12kw-2048kwh-4bat-lifepo4-6500-tsikliv/1.webp",
+  "images": [
+    "/images/products/solarverse/sistema-zberigannya-energii-deye-sun-12k-sg04lp3-eu-4gs2048k-lfp-12kw-2048kwh-4bat-lifepo4-6500-tsikliv/1.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-deye-sun-12k-sg04lp3-eu-4gs2048k-lfp-12kw-2048kwh-4bat-lifepo4-6500-tsikliv/2.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-deye-sun-12k-sg04lp3-eu-4gs2048k-lfp-12kw-2048kwh-4bat-lifepo4-6500-tsikliv/3.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-deye-sun-12k-sg04lp3-eu-4gs2048k-lfp-12kw-2048kwh-4bat-lifepo4-6500-tsikliv/4.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-deye-sun-12k-sg04lp3-eu-4gs2048k-lfp-12kw-2048kwh-4bat-lifepo4-6500-tsikliv/5.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-deye-sun-12k-sg04lp3-eu-4gs2048k-lfp-12kw-2048kwh-4bat-lifepo4-6500-tsikliv/6.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-deye-sun-12k-sg04lp3-eu-4gs2048k-lfp-12kw-2048kwh-4bat-lifepo4-6500-tsikliv/7.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

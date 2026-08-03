@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "akkumulyatornaya-batareya-solis-flexcore-id-20kwh-64v-314ah-lifepo4-flexcore-id-bat20kwh",
+  "title": "Акумуляторна батарея Solis FlexCore-ID 20kWh 64V 314Ah LiFePO4 (FlexCore-ID-BAT20kWh)",
+  "sourceUrl": "https://solarverse.ua/product/akkumulyatornaya-batareya-solis-flexcore-id-20kwh-64v-314ah-lifepo4-flexcore-id-bat20kwh",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея Solis: 20.1 kW⋅h.",
+  "description": "Акумуляторна батарея Solis FlexCore-ID 20kWh 64V 314Ah LiFePO4 (FlexCore-ID-BAT20kWh). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Solis"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "314 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "20.1 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "8000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "64 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "157 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-solis-flexcore-id-20kwh-64v-314ah-lifepo4-flexcore-id-bat20kwh/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-solis-flexcore-id-20kwh-64v-314ah-lifepo4-flexcore-id-bat20kwh/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-solis-flexcore-id-20kwh-64v-314ah-lifepo4-flexcore-id-bat20kwh/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-solis-flexcore-id-20kwh-64v-314ah-lifepo4-flexcore-id-bat20kwh/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

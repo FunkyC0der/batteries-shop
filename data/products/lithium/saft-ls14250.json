@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "saft-ls14250",
+  "title": "Saft LS14250 для теплолічильників",
+  "direction": "metering-and-comfort",
+  "price": "від 390 грн",
+  "showPrice": false,
+  "status": "in-stock",
+  "shortDescription": "Компактна літієва батарейка 1/2 AA для теплолічильників, модулів пам'яті та промислової автоматики.",
+  "description": "Плейсхолдерний опис товару для майбутньої реальної позиції. Підійде як приклад сторінки з характеристиками, сумісністю та швидким замовленням без онлайн-оплати.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "Li-SOCl2, 1/2 AA"
+    },
+    {
+      "label": "Напруга",
+      "value": "3.6 V"
+    },
+    {
+      "label": "Ємність",
+      "value": "орієнтовно 1200 мАг"
+    },
+    {
+      "label": "Виводи",
+      "value": "без виводів / під пайку за запитом"
+    }
+  ],
+  "compatibility": [
+    "теплолічильники",
+    "модулі обліку",
+    "системи з низьким споживанням"
+  ],
+  "image": "/images/product-lithium-batteries.webp",
+  "featured": true,
+  "source": "manual"
+}

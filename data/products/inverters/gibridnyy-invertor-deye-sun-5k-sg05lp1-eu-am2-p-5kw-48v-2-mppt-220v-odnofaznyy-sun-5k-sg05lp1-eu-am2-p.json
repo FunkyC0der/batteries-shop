@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "gibridnyy-invertor-deye-sun-5k-sg05lp1-eu-am2-p-5kw-48v-2-mppt-220v-odnofaznyy-sun-5k-sg05lp1-eu-am2-p",
+  "title": "Гібридний інвертор DEYE SUN-5K-SG05LP1-EU-AM2-P 5KW 48V 2 MPPT 220V Однофазний (SUN-5K-SG05LP1-EU-AM2-P)",
+  "sourceUrl": "https://solarverse.ua/product/gibridnyy-invertor-deye-sun-5k-sg05lp1-eu-am2-p-5kw-48v-2-mppt-220v-odnofaznyy-sun-5k-sg05lp1-eu-am2-p",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор DEYE: 5000 W.",
+  "description": "Гібридний інвертор DEYE SUN-5K-SG05LP1-EU-AM2-P 5KW 48V 2 MPPT 220V Однофазний (SUN-5K-SG05LP1-EU-AM2-P). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "5000 W"
+    },
+    {
+      "label": "Вихідна напруга АКБ",
+      "value": "40 - 60 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/gibridnyy-invertor-deye-sun-5k-sg05lp1-eu-am2-p-5kw-48v-2-mppt-220v-odnofaznyy-sun-5k-sg05lp1-eu-am2-p/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/gibridnyy-invertor-deye-sun-5k-sg05lp1-eu-am2-p-5kw-48v-2-mppt-220v-odnofaznyy-sun-5k-sg05lp1-eu-am2-p/1.webp",
+    "/images/products/solarverse/equipment/inverters/gibridnyy-invertor-deye-sun-5k-sg05lp1-eu-am2-p-5kw-48v-2-mppt-220v-odnofaznyy-sun-5k-sg05lp1-eu-am2-p/2.webp",
+    "/images/products/solarverse/equipment/inverters/gibridnyy-invertor-deye-sun-5k-sg05lp1-eu-am2-p-5kw-48v-2-mppt-220v-odnofaznyy-sun-5k-sg05lp1-eu-am2-p/3.webp",
+    "/images/products/solarverse/equipment/inverters/gibridnyy-invertor-deye-sun-5k-sg05lp1-eu-am2-p-5kw-48v-2-mppt-220v-odnofaznyy-sun-5k-sg05lp1-eu-am2-p/4.webp",
+    "/images/products/solarverse/equipment/inverters/gibridnyy-invertor-deye-sun-5k-sg05lp1-eu-am2-p-5kw-48v-2-mppt-220v-odnofaznyy-sun-5k-sg05lp1-eu-am2-p/5.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "avtonomniy-invertor-sumry-sp-4200h-24-3800w-24v-1-mppt-220v-odnofazniy-sp-4200h-24",
+  "title": "Автономний інвертор Sumry SP-4200H-24 3800W 24V 1 MPPT 220V Однофазний (SP-4200H-24)",
+  "sourceUrl": "https://solarverse.ua/product/avtonomniy-invertor-sumry-sp-4200h-24-3800w-24v-1-mppt-220v-odnofazniy-sp-4200h-24",
+  "direction": "energy-solutions",
+  "price": "15 078 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор SUMRY: 3800 W.",
+  "description": "Автономний інвертор Sumry SP-4200H-24 3800W 24V 1 MPPT 220V Однофазний (SP-4200H-24). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "SUMRY"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "SUMRY"
+    },
+    {
+      "label": "Тип",
+      "value": "Автономний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "3800 W"
+    },
+    {
+      "label": "Вихідна напруга АКБ",
+      "value": "24 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "36 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/avtonomniy-invertor-sumry-sp-4200h-24-3800w-24v-1-mppt-220v-odnofazniy-sp-4200h-24/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/avtonomniy-invertor-sumry-sp-4200h-24-3800w-24v-1-mppt-220v-odnofazniy-sp-4200h-24/1.webp",
+    "/images/products/solarverse/equipment/inverters/avtonomniy-invertor-sumry-sp-4200h-24-3800w-24v-1-mppt-220v-odnofazniy-sp-4200h-24/2.webp",
+    "/images/products/solarverse/equipment/inverters/avtonomniy-invertor-sumry-sp-4200h-24-3800w-24v-1-mppt-220v-odnofazniy-sp-4200h-24/3.webp",
+    "/images/products/solarverse/equipment/inverters/avtonomniy-invertor-sumry-sp-4200h-24-3800w-24v-1-mppt-220v-odnofazniy-sp-4200h-24/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

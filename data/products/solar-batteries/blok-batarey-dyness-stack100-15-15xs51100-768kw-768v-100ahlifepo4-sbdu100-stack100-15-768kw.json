@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "blok-batarey-dyness-stack100-15-15xs51100-768kw-768v-100ahlifepo4-sbdu100-stack100-15-768kw",
+  "title": "Блок батарей Dyness STACK100-15 15xS51100 76.8kW 768V 100AhLiFePO4 SBDU100 (STACK100-15-76.8kW)",
+  "sourceUrl": "https://solarverse.ua/product/blok-batarey-dyness-stack100-15-15xs51100-768kw-768v-100ahlifepo4-sbdu100-stack100-15-768kw",
+  "direction": "energy-solutions",
+  "price": "679 230 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея Dyness: 76.8 kW⋅h.",
+  "description": "Блок батарей Dyness STACK100-15 15xS51100 76.8kW 768V 100AhLiFePO4 SBDU100 (STACK100-15-76.8kW). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Dyness"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "100 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "76.8 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "768 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "100 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/blok-batarey-dyness-stack100-15-15xs51100-768kw-768v-100ahlifepo4-sbdu100-stack100-15-768kw/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-dyness-stack100-15-15xs51100-768kw-768v-100ahlifepo4-sbdu100-stack100-15-768kw/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-dyness-stack100-15-15xs51100-768kw-768v-100ahlifepo4-sbdu100-stack100-15-768kw/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-dyness-stack100-15-15xs51100-768kw-768v-100ahlifepo4-sbdu100-stack100-15-768kw/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

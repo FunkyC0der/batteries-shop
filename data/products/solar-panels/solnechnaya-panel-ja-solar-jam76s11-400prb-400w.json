@@ -1,0 +1,55 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "solnechnaya-panel-ja-solar-jam76s11-400prb-400w",
+  "title": "Сонячна панель JA Solar JAM76S11-400/PR(B) 400W",
+  "sourceUrl": "https://solarverse.ua/product/solnechnaya-panel-ja-solar-jam76s11-400prb-400w",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "сонячна панель JA Solar: 400 W.",
+  "description": "Сонячна панель JA Solar JAM76S11-400/PR(B) 400W. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "JA Solar"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "JA Solar"
+    },
+    {
+      "label": "Тип напівпровідника",
+      "value": "Монокристал"
+    },
+    {
+      "label": "Потужність",
+      "value": "400 W"
+    },
+    {
+      "label": "Конектори",
+      "value": "MC4"
+    },
+    {
+      "label": "Ступінь захисту від вологи та пилу",
+      "value": "IP68"
+    },
+    {
+      "label": "Гарантія",
+      "value": "12 років"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "дахових і наземних сонячних електростанцій",
+    "мережевих, гібридних та автономних систем",
+    "приватних і комерційних об’єктів після проєктного розрахунку"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-panels/solnechnaya-panel-ja-solar-jam76s11-400prb-400w/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-panels/solnechnaya-panel-ja-solar-jam76s11-400prb-400w/1.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

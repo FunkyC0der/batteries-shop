@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "blok-batarey-dyness-stack100-10-10xs51100-512kw-512v-100ah-lifepo4-sbdu100-stack100-10-512kw",
+  "title": "Блок батарей Dyness STACK100-10 10xS51100 51.2kW 512V 100Ah LiFePO4 SBDU100 (STACK100-10-51.2kW)",
+  "sourceUrl": "https://solarverse.ua/product/blok-batarey-dyness-stack100-10-10xs51100-512kw-512v-100ah-lifepo4-sbdu100-stack100-10-512kw",
+  "direction": "energy-solutions",
+  "price": "465 888 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея Dyness: 51.20 kW⋅h.",
+  "description": "Блок батарей Dyness STACK100-10 10xS51100 51.2kW 512V 100Ah LiFePO4 SBDU100 (STACK100-10-51.2kW). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Dyness"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "100 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "51.20 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "512 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "100 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/blok-batarey-dyness-stack100-10-10xs51100-512kw-512v-100ah-lifepo4-sbdu100-stack100-10-512kw/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-dyness-stack100-10-10xs51100-512kw-512v-100ah-lifepo4-sbdu100-stack100-10-512kw/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-dyness-stack100-10-10xs51100-512kw-512v-100ah-lifepo4-sbdu100-stack100-10-512kw/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-dyness-stack100-10-10xs51100-512kw-512v-100ah-lifepo4-sbdu100-stack100-10-512kw/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

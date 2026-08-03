@@ -1,0 +1,55 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "gibridniy-invertor-deye-sun-50k-sg01hp3-eu-bm4",
+  "title": "Гібридний інвертор DEYE SUN-50K-SG01HP3-EU-BM4",
+  "sourceUrl": "https://solarverse.ua/product/gibridniy-invertor-deye-sun-50k-sg01hp3-eu-bm4",
+  "direction": "energy-solutions",
+  "price": "232 518 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Deye: 50000 W.",
+  "description": "Гібридний інвертор DEYE SUN-50K-SG01HP3-EU-BM4. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Deye"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Deye"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "50000 W"
+    },
+    {
+      "label": "Гарантія",
+      "value": "120 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-50k-sg01hp3-eu-bm4/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-50k-sg01hp3-eu-bm4/1.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-50k-sg01hp3-eu-bm4/2.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-50k-sg01hp3-eu-bm4/3.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-50k-sg01hp3-eu-bm4/4.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-50k-sg01hp3-eu-bm4/5.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-50k-sg01hp3-eu-bm4/6.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-50k-sg01hp3-eu-bm4/7.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-50k-sg01hp3-eu-bm4/8.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-50k-sg01hp3-eu-bm4/9.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

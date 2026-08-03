@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "blok-batarey-deye-bos-a7-5376kw-2688v-200ah-lifepo4-hvb1000v-rack",
+  "title": "Блок батарей Deye BOS-A7 53.76kW 268.8V 200Ah LiFePO4 HVB1000V RACK",
+  "sourceUrl": "https://solarverse.ua/product/blok-batarey-deye-bos-a7-5376kw-2688v-200ah-lifepo4-hvb1000v-rack",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея DEYE: 53.76 kW⋅h.",
+  "description": "Блок батарей Deye BOS-A7 53.76kW 268.8V 200Ah LiFePO4 HVB1000V RACK. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "200 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "53.76 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "268.8 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "160 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/blok-batarey-deye-bos-a7-5376kw-2688v-200ah-lifepo4-hvb1000v-rack/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-deye-bos-a7-5376kw-2688v-200ah-lifepo4-hvb1000v-rack/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-deye-bos-a7-5376kw-2688v-200ah-lifepo4-hvb1000v-rack/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-deye-bos-a7-5376kw-2688v-200ah-lifepo4-hvb1000v-rack/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-deye-bos-a7-5376kw-2688v-200ah-lifepo4-hvb1000v-rack/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

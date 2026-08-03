@@ -1,0 +1,50 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "gibridniy-invertor-solis-s6-eh1p6k-l-plus-6kw-48v-2-mppt-wi-fi-220v-odnofazniy",
+  "title": "Гібридний інвертор Solis S6-EH1P6K-L-PLUS 6KW 48V 2 MPPT Wi-Fi 220V Однофазний",
+  "sourceUrl": "https://solarverse.ua/product/gibridniy-invertor-solis-s6-eh1p6k-l-plus-6kw-48v-2-mppt-wi-fi-220v-odnofazniy",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Solis: 6000 W.",
+  "description": "Гібридний інвертор Solis S6-EH1P6K-L-PLUS 6KW 48V 2 MPPT Wi-Fi 220V Однофазний. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Solis"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "6000 W"
+    },
+    {
+      "label": "Вихідна напруга АКБ",
+      "value": "48 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "120 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/gibridniy-invertor-solis-s6-eh1p6k-l-plus-6kw-48v-2-mppt-wi-fi-220v-odnofazniy/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-solis-s6-eh1p6k-l-plus-6kw-48v-2-mppt-wi-fi-220v-odnofazniy/1.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-solis-s6-eh1p6k-l-plus-6kw-48v-2-mppt-wi-fi-220v-odnofazniy/2.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-solis-s6-eh1p6k-l-plus-6kw-48v-2-mppt-wi-fi-220v-odnofazniy/3.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-solis-s6-eh1p6k-l-plus-6kw-48v-2-mppt-wi-fi-220v-odnofazniy/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

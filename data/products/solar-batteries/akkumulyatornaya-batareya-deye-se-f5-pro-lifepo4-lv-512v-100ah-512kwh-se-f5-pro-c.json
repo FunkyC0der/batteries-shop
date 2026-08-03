@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "akkumulyatornaya-batareya-deye-se-f5-pro-lifepo4-lv-512v-100ah-512kwh-se-f5-pro-c",
+  "title": "Акумуляторна батарея DEYE SE-F5 Pro LiFePO4 LV 51.2v 100Ah 5.12kwh (SE-F5 Pro-C)",
+  "sourceUrl": "https://solarverse.ua/product/akkumulyatornaya-batareya-deye-se-f5-pro-lifepo4-lv-512v-100ah-512kwh-se-f5-pro-c",
+  "direction": "energy-solutions",
+  "price": "39 060 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея DEYE: 5.12 kW⋅h.",
+  "description": "Акумуляторна батарея DEYE SE-F5 Pro LiFePO4 LV 51.2v 100Ah 5.12kwh (SE-F5 Pro-C). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "100 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "5.12 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "51.2 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "100 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-deye-se-f5-pro-lifepo4-lv-512v-100ah-512kwh-se-f5-pro-c/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-deye-se-f5-pro-lifepo4-lv-512v-100ah-512kwh-se-f5-pro-c/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-deye-se-f5-pro-lifepo4-lv-512v-100ah-512kwh-se-f5-pro-c/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-deye-se-f5-pro-lifepo4-lv-512v-100ah-512kwh-se-f5-pro-c/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-deye-se-f5-pro-lifepo4-lv-512v-100ah-512kwh-se-f5-pro-c/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

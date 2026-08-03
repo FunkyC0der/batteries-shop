@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "sistema-zberigannya-energii-deye-bos-b-215kw-768v-280ah-lifepo4-bos-b-pdu-2-bos-b-215kw",
+  "title": "Система зберігання енергії Deye BOS-B 215kW 768V 280Ah LiFePO4 BOS-B-PDU-2 (BOS-B-215kW)",
+  "sourceUrl": "https://solarverse.ua/product/sistema-zberigannya-energii-deye-bos-b-215kw-768v-280ah-lifepo4-bos-b-pdu-2-bos-b-215kw",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея DEYE: 220.08 kW⋅h.",
+  "description": "Система зберігання енергії Deye BOS-B 215kW 768V 280Ah LiFePO4 BOS-B-PDU-2 (BOS-B-215kW). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "280 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "220.08 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "786 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "168 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "120 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/sistema-zberigannya-energii-deye-bos-b-215kw-768v-280ah-lifepo4-bos-b-pdu-2-bos-b-215kw/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/sistema-zberigannya-energii-deye-bos-b-215kw-768v-280ah-lifepo4-bos-b-pdu-2-bos-b-215kw/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/sistema-zberigannya-energii-deye-bos-b-215kw-768v-280ah-lifepo4-bos-b-pdu-2-bos-b-215kw/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/sistema-zberigannya-energii-deye-bos-b-215kw-768v-280ah-lifepo4-bos-b-pdu-2-bos-b-215kw/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/sistema-zberigannya-energii-deye-bos-b-215kw-768v-280ah-lifepo4-bos-b-pdu-2-bos-b-215kw/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

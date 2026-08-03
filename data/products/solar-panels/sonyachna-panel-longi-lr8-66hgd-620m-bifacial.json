@@ -1,0 +1,56 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "sonyachna-panel-longi-lr8-66hgd-620m-bifacial",
+  "legacySlugs": [
+    "сонячна-панель-longi-lr8-66hgd-620m-bifacial"
+  ],
+  "title": "Сонячна панель Longi LR8-66HGD-620M bifacial",
+  "sourceUrl": "https://www.namato.net/product-page/сонячна-панель-longi-lr8-66hgd-620m-bifacial",
+  "direction": "energy-solutions",
+  "price": "5 050 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "сонячна панель Longi, модель LR8-66HGD.",
+  "description": "Сонячна панель Longi LR8-66HGD-620M bifacial — сонячна панель для комплектації енергосистеми відповідно до параметрів об’єкта.\n\nОсновні характеристики:\n• Бренд: Longi\n• Модель: LR8-66HGD\n• Тип панелі: Двостороння (bifacial)\n• Номінальна напруга: 1500 В DC\n• Ступінь захисту від вологи та пилу: IP68\n\nПеред замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Longi"
+    },
+    {
+      "label": "Модель",
+      "value": "LR8-66HGD"
+    },
+    {
+      "label": "Тип панелі",
+      "value": "Двостороння (bifacial)"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "1500 В DC"
+    },
+    {
+      "label": "Ступінь захисту від вологи та пилу",
+      "value": "IP68"
+    },
+    {
+      "label": "Гарантія",
+      "value": "12 років"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "дахових і наземних сонячних електростанцій",
+    "мережевих, гібридних та автономних систем",
+    "приватних і комерційних об’єктів після проєктного розрахунку"
+  ],
+  "notice": "Ціна наведена довідково. Актуальну ціну, наявність, комплектацію, гарантію та сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/namato/сонячна-панель-longi-lr8-66hgd-620m-bifacial/1.webp",
+  "images": [
+    "/images/products/namato/сонячна-панель-longi-lr8-66hgd-620m-bifacial/1.webp",
+    "/images/products/namato/сонячна-панель-longi-lr8-66hgd-620m-bifacial/2.webp",
+    "/images/products/namato/сонячна-панель-longi-lr8-66hgd-620m-bifacial/3.webp"
+  ],
+  "featured": false,
+  "source": "namato"
+}

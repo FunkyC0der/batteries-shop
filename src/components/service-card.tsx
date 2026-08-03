@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import type { ServiceListItem } from "@/lib/catalog/list-projection";
 import { serviceToOrderable } from "@/lib/order-actions";
-import type { Service } from "@/lib/types";
 
 import { ActionButtons } from "./action-buttons";
 
-export function ServiceCard({ service }: { service: Service }) {
+export function ServiceCard({ service }: { service: ServiceListItem }) {
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card">
       <Link className="group block" href={`/services/${service.slug}`}>

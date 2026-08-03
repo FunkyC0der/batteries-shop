@@ -1,0 +1,56 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "systema-zberihannya-enerhii-ess-livoltek-aes-ac-coupled",
+  "legacySlugs": [
+    "система-зберігання-енергії-ess-livoltek-aes-ac-coupled"
+  ],
+  "title": "Система зберігання енергії ESS Livoltek AES — AC-Coupled",
+  "sourceUrl": "https://www.namato.net/product-page/система-зберігання-енергії-ess-livoltek-aes-ac-coupled",
+  "direction": "energy-solutions",
+  "price": "81 000 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "система зберігання енергії Livoltek, модель AES1-5KG1.",
+  "description": "Система зберігання енергії ESS Livoltek AES — AC-Coupled — система зберігання енергії для комплектації енергосистеми відповідно до параметрів об’єкта.\n\nОсновні характеристики:\n• Бренд: Livoltek\n• Модель: AES1-5KG1\n• Тип: ESS\n• Номінальна потужність АС: 5 кВт\n• Кількість фаз: 1\n\nПеред замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Livoltek"
+    },
+    {
+      "label": "Модель",
+      "value": "AES1-5KG1"
+    },
+    {
+      "label": "Тип",
+      "value": "ESS"
+    },
+    {
+      "label": "Номінальна потужність АС",
+      "value": "5 кВт"
+    },
+    {
+      "label": "Кількість фаз",
+      "value": "1"
+    },
+    {
+      "label": "Ступінь захисту від вологи та пилу",
+      "value": "IP65"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "резервного та автономного живлення",
+    "комерційних і промислових об’єктів після енергетичного розрахунку",
+    "інтеграції з сонячною генерацією та мережею"
+  ],
+  "notice": "Ціна наведена довідково. Актуальну ціну, наявність, комплектацію, гарантію та сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/namato/система-зберігання-енергії-ess-livoltek-aes-ac-coupled/1.webp",
+  "images": [
+    "/images/products/namato/система-зберігання-енергії-ess-livoltek-aes-ac-coupled/1.webp",
+    "/images/products/namato/система-зберігання-енергії-ess-livoltek-aes-ac-coupled/2.webp",
+    "/images/products/namato/система-зберігання-енергії-ess-livoltek-aes-ac-coupled/3.webp"
+  ],
+  "featured": false,
+  "source": "namato"
+}

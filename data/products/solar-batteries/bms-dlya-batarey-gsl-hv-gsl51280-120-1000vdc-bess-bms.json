@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "bms-dlya-batarey-gsl-hv-gsl51280-120-1000vdc-bess-bms",
+  "title": "BMS для батарей GSL HV GSL51280 120-1000Vdc (BESS_BMS)",
+  "sourceUrl": "https://solarverse.ua/product/bms-dlya-batarey-gsl-hv-gsl51280-120-1000vdc-bess-bms",
+  "direction": "energy-solutions",
+  "price": "49 998 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея GSL ENERGY: характеристики за запитом.",
+  "description": "BMS для батарей GSL HV GSL51280 120-1000Vdc (BESS_BMS). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "GSL ENERGY"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-іонна (Li-ion)"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "80-900 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "100 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/bms-dlya-batarey-gsl-hv-gsl51280-120-1000vdc-bess-bms/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/bms-dlya-batarey-gsl-hv-gsl51280-120-1000vdc-bess-bms/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/bms-dlya-batarey-gsl-hv-gsl51280-120-1000vdc-bess-bms/2.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

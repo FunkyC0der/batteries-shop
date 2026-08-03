@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "akumulyatorna-batareya-dyness-dl50c-512v-100ah-lifepo4",
+  "title": "Акумуляторна батарея Dyness DL5.0C 51.2V 100Ah LiFePO4",
+  "sourceUrl": "https://solarverse.ua/product/akumulyatorna-batareya-dyness-dl50c-512v-100ah-lifepo4",
+  "direction": "energy-solutions",
+  "price": "38 520 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея Dyness: 5.12 kW⋅h.",
+  "description": "Акумуляторна батарея Dyness DL5.0C 51.2V 100Ah LiFePO4. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Dyness"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "100 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "5.12 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "51.2 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "75 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "120 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-dyness-dl50c-512v-100ah-lifepo4/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-dyness-dl50c-512v-100ah-lifepo4/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-dyness-dl50c-512v-100ah-lifepo4/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-dyness-dl50c-512v-100ah-lifepo4/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

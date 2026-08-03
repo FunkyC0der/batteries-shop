@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "lithium-aa-meter",
+  "title": "Літієва AA батарейка для лічильників",
+  "direction": "metering-and-comfort",
+  "price": "від 450 грн",
+  "showPrice": false,
+  "status": "in-stock",
+  "shortDescription": "Універсальна літієва батарейка формату AA для приладів обліку з довгим циклом роботи.",
+  "description": "Плейсхолдер для товару з детальним описом. Тут можна буде додати бренд, точну модель, datasheet та умови поставки.",
+  "specs": [
+    {
+      "label": "Тип",
+      "value": "Li-SOCl2, AA"
+    },
+    {
+      "label": "Напруга",
+      "value": "3.6 V"
+    },
+    {
+      "label": "Температура",
+      "value": "широкий робочий діапазон"
+    },
+    {
+      "label": "Призначення",
+      "value": "лічильники води, тепла, газу"
+    }
+  ],
+  "compatibility": [
+    "лічильники води",
+    "теплолічильники",
+    "газові модулі"
+  ],
+  "image": "/images/product-lithium-batteries.webp",
+  "featured": true,
+  "source": "manual"
+}

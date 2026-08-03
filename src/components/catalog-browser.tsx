@@ -9,11 +9,15 @@ import {
   useState,
 } from "react";
 
+import type { ServiceDirection } from "@/lib/types";
 import type {
-  Product,
-  Service,
-  ServiceDirection,
-} from "@/lib/types";
+  ProductListItem,
+  ServiceListItem,
+} from "@/lib/catalog/list-projection";
+import {
+  PRODUCTS_CATALOG_URL,
+  SERVICES_CATALOG_URL,
+} from "@/lib/catalog/list-projection";
 
 import { ProductCard } from "./product-card";
 import { CatalogPagination } from "./catalog-pagination";
@@ -51,7 +55,8 @@ type DirectionOption = {
 
 type ProductCatalogProps = {
   kind: "products";
-  items: Product[];
+  items: ProductListItem[];
+  catalogUrl?: string;
   categories: readonly CategoryOption[];
   directions: readonly DirectionOption[];
   initialDirection?: ServiceDirection | "all";
@@ -60,7 +65,8 @@ type ProductCatalogProps = {
 
 type ServiceCatalogProps = {
   kind: "services";
-  items: Service[];
+  items: ServiceListItem[];
+  catalogUrl?: string;
   categories: readonly CategoryOption[];
   directions: readonly DirectionOption[];
   initialDirection?: ServiceDirection | "all";
@@ -74,6 +80,12 @@ function normalize(value: string) {
 }
 
 export function CatalogBrowser(props: CatalogBrowserProps) {
+  const catalogUrl =
+    props.catalogUrl ??
+    (props.kind === "products" ? PRODUCTS_CATALOG_URL : SERVICES_CATALOG_URL);
+  const [items, setItems] = useState(props.items);
+  const [catalogLoaded, setCatalogLoaded] = useState(false);
+  const catalogLoadPromise = useRef<Promise<void> | null>(null);
   const [category, setCategory] = useState("all");
   const [direction, setDirection] = useState<ServiceDirection | "all">(
     props.initialDirection ?? "all",
@@ -86,6 +98,58 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
   const resultSummaryRef = useRef<HTMLParagraphElement>(null);
   const directions = props.directions;
   const categories = props.categories;
+
+  const ensureCatalogLoaded = useCallback(() => {
+    if (catalogLoaded || catalogLoadPromise.current) {
+      return catalogLoadPromise.current ?? Promise.resolve();
+    }
+
+    catalogLoadPromise.current = fetch(catalogUrl)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Failed to load catalog: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((payload: ProductListItem[] | ServiceListItem[]) => {
+        setItems(payload);
+        setCatalogLoaded(true);
+      })
+      .catch((error) => {
+        console.error(error);
+        catalogLoadPromise.current = null;
+      });
+
+    return catalogLoadPromise.current;
+  }, [catalogLoaded, catalogUrl]);
+
+  useEffect(() => {
+    let cancelled = false;
+    let idleId: number | undefined;
+    let timeoutId: ReturnType<typeof setTimeout> | undefined;
+
+    const run = () => {
+      if (!cancelled) {
+        void ensureCatalogLoaded();
+      }
+    };
+
+    if ("requestIdleCallback" in window) {
+      idleId = window.requestIdleCallback(run);
+    } else {
+      timeoutId = setTimeout(run, 1_000);
+    }
+
+    return () => {
+      cancelled = true;
+      if (idleId !== undefined && "cancelIdleCallback" in window) {
+        window.cancelIdleCallback(idleId);
+      }
+      if (timeoutId !== undefined) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, [ensureCatalogLoaded]);
 
   useEffect(() => {
     const syncFromUrl = () => {
@@ -128,12 +192,22 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
           ? parseReturnProductSlug(searchParams, window.location.hash)
           : undefined,
       );
+
+      if (
+        resolvedDirection !== "all" ||
+        resolvedCategory !== "all" ||
+        searchParams.get("q") ||
+        searchParams.get("page") ||
+        [...searchParams.keys()].some((key) => key.startsWith("facet."))
+      ) {
+        void ensureCatalogLoaded();
+      }
     };
 
     syncFromUrl();
     window.addEventListener("popstate", syncFromUrl);
     return () => window.removeEventListener("popstate", syncFromUrl);
-  }, [categories, directions, props.kind]);
+  }, [categories, directions, ensureCatalogLoaded, props.kind]);
 
   function updateCatalogUrl(
     nextDirection: ServiceDirection | "all",
@@ -174,50 +248,32 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
     const normalizedQuery = normalize(query);
 
     if (props.kind === "products") {
-      return props.items.filter((item) => {
+      return (items as ProductListItem[]).filter((item) => {
         const directionMatches =
           direction === "all" || item.direction === direction;
         const categoryMatches =
           category === "all" || item.category === category;
-        const text = [
-          item.title,
-          item.shortDescription,
-          item.description,
-          ...item.compatibility,
-          ...(item.configurations?.flatMap((configuration) => [
-            configuration.label,
-            ...configuration.equipment,
-          ]) ?? []),
-          ...item.specs.map((spec) => `${spec.label} ${spec.value}`),
-        ].join(" ");
 
         return (
           directionMatches &&
           categoryMatches &&
-          (!normalizedQuery || normalize(text).includes(normalizedQuery))
+          (!normalizedQuery || item.searchText.includes(normalizedQuery))
         );
       });
     }
 
-    return props.items.filter((item) => {
+    return (items as ServiceListItem[]).filter((item) => {
       const directionMatches =
         direction === "all" || item.direction === direction;
       const categoryMatches = category === "all" || item.category === category;
-      const text = [
-        item.title,
-        item.shortDescription,
-        item.description,
-        item.duration,
-        ...item.includes,
-      ].join(" ");
 
       return (
         directionMatches &&
         categoryMatches &&
-        (!normalizedQuery || normalize(text).includes(normalizedQuery))
+        (!normalizedQuery || item.searchText.includes(normalizedQuery))
       );
     });
-  }, [category, direction, props.items, props.kind, query]);
+  }, [category, direction, items, props.kind, query]);
 
   const facetConfig =
     props.kind === "products" ? getProductFacetConfig(category) : undefined;
@@ -225,7 +281,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
     () =>
       props.kind === "products" && facetConfig
         ? buildProductFacetModels(
-            baseFiltered as Product[],
+            baseFiltered as ProductListItem[],
             facetConfig.facets,
             facetSelection,
           )
@@ -236,7 +292,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
     () =>
       props.kind === "products" && facetConfig
         ? filterProductsByFacets(
-            baseFiltered as Product[],
+            baseFiltered as ProductListItem[],
             facetConfig.facets,
             facetSelection,
           )
@@ -249,7 +305,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
       : 1;
   const returnProductIndex =
     props.kind === "products" && returnProductSlug
-      ? (filtered as Product[]).findIndex(
+      ? (filtered as ProductListItem[]).findIndex(
           (product) => product.slug === returnProductSlug,
         )
       : -1;
@@ -324,6 +380,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
 
   function handleSearchSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    void ensureCatalogLoaded();
     setPage(1);
     setReturnProductSlug(undefined);
     updateCatalogUrl(direction, query, "replace", category, 1);
@@ -331,6 +388,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
   }
 
   function selectDirection(nextDirection: ServiceDirection | "all") {
+    void ensureCatalogLoaded();
     setDirection(nextDirection);
     setCategory("all");
     setFacetSelection({});
@@ -340,6 +398,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
   }
 
   function selectCategory(nextCategory: string) {
+    void ensureCatalogLoaded();
     setCategory(nextCategory);
     setFacetSelection({});
     setPage(1);
@@ -348,6 +407,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
   }
 
   function toggleFacetValue(facetId: string, value: string) {
+    void ensureCatalogLoaded();
     const selectedValues = facetSelection[facetId] ?? [];
     const nextValues = selectedValues.includes(value)
       ? selectedValues.filter((selectedValue) => selectedValue !== value)
@@ -381,6 +441,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
   }
 
   function selectPage(nextPage: number) {
+    void ensureCatalogLoaded();
     const resolvedPage = clampCatalogPage(nextPage, totalPages);
     setPage(resolvedPage);
     setReturnProductSlug(undefined);
@@ -431,7 +492,15 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
           element.scrollIntoView({ block: "center" });
         });
       });
-    }, [category, currentPage, direction, facetSelection, query, returnProductSlug],
+    },
+    [
+      category,
+      currentPage,
+      direction,
+      facetSelection,
+      query,
+      returnProductSlug,
+    ],
   );
 
   function searchAllItems() {
@@ -452,7 +521,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
           >
             {props.kind === "products"
               ? paginatedResults.map((item) => {
-                  const product = item as Product;
+                  const product = item as ProductListItem;
                   const returnHref = buildCatalogHref({
                     direction,
                     category,
@@ -477,7 +546,10 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
                   );
                 })
               : paginatedResults.map((item) => (
-                  <ServiceCard key={item.id} service={item as Service} />
+                  <ServiceCard
+                    key={item.id}
+                    service={item as ServiceListItem}
+                  />
                 ))}
           </div>
           {props.kind === "products" ? (
@@ -522,7 +594,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
             onClick={searchAllItems}
             type="button"
           >
-            Шукати серед усіх {props.items.length}{" "}
+            Шукати серед усіх {items.length}{" "}
             {props.kind === "products" ? "товарів" : "послуг"}
           </button>
         ) : null}
@@ -540,8 +612,8 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
           {directions.map((option) => {
               const count =
                 option.value === "all"
-                  ? props.items.length
-                  : props.items.filter(
+                  ? items.length
+                  : items.filter(
                       (item) => item.direction === option.value,
                     ).length;
               const selected = direction === option.value;
@@ -609,6 +681,7 @@ export function CatalogBrowser(props: CatalogBrowserProps) {
                 className="min-h-12 min-w-0 flex-1 rounded-full border border-border bg-background px-4 text-base outline-none transition placeholder:text-muted-foreground focus:border-primary"
                 onChange={(event) => {
                   const nextQuery = event.target.value;
+                  void ensureCatalogLoaded();
                   setQuery(nextQuery);
                   setPage(1);
                   setReturnProductSlug(undefined);

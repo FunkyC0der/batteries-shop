@@ -1,0 +1,63 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "akkumulyatornaya-batareya-ecosolex-rs-r51100a-512v-100ah-512kwh-lifepo4-rs-r51100a",
+  "title": "Акумуляторна батарея Ecosolex RS-R51100A 51.2V 100Ah 5.12kWh LiFePo4 (RS-R51100A)",
+  "sourceUrl": "https://solarverse.ua/product/akkumulyatornaya-batareya-ecosolex-rs-r51100a-512v-100ah-512kwh-lifepo4-rs-r51100a",
+  "direction": "energy-solutions",
+  "price": "38 520 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея Ecosolex: 5.12 kW⋅h.",
+  "description": "Акумуляторна батарея Ecosolex RS-R51100A 51.2V 100Ah 5.12kWh LiFePo4 (RS-R51100A). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Ecosolex"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "100 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "5.12 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "51.2 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "70 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-ecosolex-rs-r51100a-512v-100ah-512kwh-lifepo4-rs-r51100a/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-ecosolex-rs-r51100a-512v-100ah-512kwh-lifepo4-rs-r51100a/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-ecosolex-rs-r51100a-512v-100ah-512kwh-lifepo4-rs-r51100a/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-ecosolex-rs-r51100a-512v-100ah-512kwh-lifepo4-rs-r51100a/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-ecosolex-rs-r51100a-512v-100ah-512kwh-lifepo4-rs-r51100a/4.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-ecosolex-rs-r51100a-512v-100ah-512kwh-lifepo4-rs-r51100a/5.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

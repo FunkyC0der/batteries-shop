@@ -1,0 +1,55 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "gibridniy-invertor-deye-sun-40k-sg01hp3-eu-bm4",
+  "title": "Гібридний інвертор DEYE SUN-40K-SG01HP3-EU-BM4",
+  "sourceUrl": "https://solarverse.ua/product/gibridniy-invertor-deye-sun-40k-sg01hp3-eu-bm4",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Deye: 40000 W.",
+  "description": "Гібридний інвертор DEYE SUN-40K-SG01HP3-EU-BM4. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Deye"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Deye"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "40000 W"
+    },
+    {
+      "label": "Вихідна напруга АКБ",
+      "value": "160 - 800 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "120 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-40k-sg01hp3-eu-bm4/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-40k-sg01hp3-eu-bm4/1.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-40k-sg01hp3-eu-bm4/2.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-40k-sg01hp3-eu-bm4/3.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-40k-sg01hp3-eu-bm4/4.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-40k-sg01hp3-eu-bm4/5.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

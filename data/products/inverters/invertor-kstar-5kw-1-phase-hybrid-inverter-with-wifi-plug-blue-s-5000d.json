@@ -1,0 +1,53 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "invertor-kstar-5kw-1-phase-hybrid-inverter-with-wifi-plug-blue-s-5000d",
+  "title": "Інвертор KSTAR 5kW 1-Phase Hybrid inverter, with WiFi plug (BluE-S 5000D)",
+  "sourceUrl": "https://solarverse.ua/product/invertor-kstar-5kw-1-phase-hybrid-inverter-with-wifi-plug-blue-s-5000d",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор KSTAR: 4600 W.",
+  "description": "Інвертор KSTAR 5kW 1-Phase Hybrid inverter, with WiFi plug (BluE-S 5000D). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "KSTAR"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "KSTAR"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "4600 W"
+    },
+    {
+      "label": "Вихідна напруга АКБ",
+      "value": "48 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/invertor-kstar-5kw-1-phase-hybrid-inverter-with-wifi-plug-blue-s-5000d/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/invertor-kstar-5kw-1-phase-hybrid-inverter-with-wifi-plug-blue-s-5000d/1.webp",
+    "/images/products/solarverse/equipment/inverters/invertor-kstar-5kw-1-phase-hybrid-inverter-with-wifi-plug-blue-s-5000d/2.webp",
+    "/images/products/solarverse/equipment/inverters/invertor-kstar-5kw-1-phase-hybrid-inverter-with-wifi-plug-blue-s-5000d/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

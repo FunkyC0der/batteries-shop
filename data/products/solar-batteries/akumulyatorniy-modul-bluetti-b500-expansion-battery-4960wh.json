@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "akumulyatorniy-modul-bluetti-b500-expansion-battery-4960wh",
+  "title": "Акумуляторний модуль Bluetti B500 Expansion Battery 4960Wh",
+  "sourceUrl": "https://solarverse.ua/product/akumulyatorniy-modul-bluetti-b500-expansion-battery-4960wh",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея Bluetti: 4.96 kW⋅h.",
+  "description": "Акумуляторний модуль Bluetti B500 Expansion Battery 4960Wh. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Bluetti"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "50 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "4.96 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "3500 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "99.2 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "25 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/akumulyatorniy-modul-bluetti-b500-expansion-battery-4960wh/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorniy-modul-bluetti-b500-expansion-battery-4960wh/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorniy-modul-bluetti-b500-expansion-battery-4960wh/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorniy-modul-bluetti-b500-expansion-battery-4960wh/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorniy-modul-bluetti-b500-expansion-battery-4960wh/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

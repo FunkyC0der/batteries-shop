@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "akumulyator-deye-se-g5-1pro-l-5-kvt-h-lifepo4-51-2v-100ah",
+  "legacySlugs": [
+    "акумулятор-deye-se-g5-1pro-l-5-квт-г-lifepo4-51-2v-100ah"
+  ],
+  "title": "Акумулятор Deye SE-F5 Pro-L (5,12 кВт·год)",
+  "sourceUrl": "https://www.namato.net/product-page/акумулятор-deye-se-g5-1pro-l-5-квт-г-lifepo4-51-2v-100ah",
+  "direction": "energy-solutions",
+  "price": "33 750 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея Deye, модель SE-G5.1Pro-L.",
+  "description": "Акумулятор Deye SE-F5 Pro-L (5,12 кВт·год) — акумуляторна батарея для комплектації енергосистеми відповідно до параметрів об’єкта.\n\nОсновні характеристики:\n• Бренд: Deye\n• Модель: SE-G5.1Pro-L\n• Тип: Батарея\n• Технологія: Літій-залізо-фосфатна (LiFePO4)\n• Енергія батареї: 5,12 кВт·год\n\nПеред замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Deye"
+    },
+    {
+      "label": "Модель",
+      "value": "SE-G5.1Pro-L"
+    },
+    {
+      "label": "Тип",
+      "value": "Батарея"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "5,12 кВт·год"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "5,12 кВт·год"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "51,2 В"
+    },
+    {
+      "label": "Ступінь захисту від вологи та пилу",
+      "value": "IP21"
+    },
+    {
+      "label": "Гарантія",
+      "value": "5 років"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково. Актуальну ціну, наявність, комплектацію, гарантію та сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/namato/акумулятор-deye-se-g5-1pro-l-5-квт-г-lifepo4-51-2v-100ah/1.webp",
+  "images": [
+    "/images/products/namato/акумулятор-deye-se-g5-1pro-l-5-квт-г-lifepo4-51-2v-100ah/1.webp",
+    "/images/products/namato/акумулятор-deye-se-g5-1pro-l-5-квт-г-lifepo4-51-2v-100ah/2.webp",
+    "/images/products/namato/акумулятор-deye-se-g5-1pro-l-5-квт-г-lifepo4-51-2v-100ah/3.webp"
+  ],
+  "featured": false,
+  "source": "namato"
+}

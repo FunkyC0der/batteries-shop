@@ -1,0 +1,90 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "sistema-zberigannya-energii-deye-sun-6k-sg03lp1-eu-1de512k-lfp-6000w-512kwh-1bat-lifepo4-6000-tsikliv",
+  "title": "Система зберігання енергії DEYE SUN-6K-SG03LP1-EU-1DE5.12K-LFP 6000W 5.12kWh 1BAT LiFePO4 6000 циклів",
+  "sourceUrl": "https://solarverse.ua/product/sistema-zberigannya-energii-deye-sun-6k-sg03lp1-eu-1de512k-lfp-6000w-512kwh-1bat-lifepo4-6000-tsikliv",
+  "direction": "energy-solutions",
+  "price": "82 938 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "Готова система DEYE: потужність 6000 W, запас енергії 5.12 kWh, батарея LiFePO4.",
+  "description": "Готова система зберігання енергії DEYE для резервного та автономного живлення. Конфігурація розрахована на номінальну потужність 6000 W і запас енергії 5.12 kWh. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію та сумісність із мережею об’єкта.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Сумарна енергія, що зберігається в блоку батарей",
+      "value": "5.12 kWh"
+    },
+    {
+      "label": "Номінальна потужність АС",
+      "value": "6000 W"
+    },
+    {
+      "label": "Сумарна ємність блоку батарей",
+      "value": "100 Ah"
+    },
+    {
+      "label": "Номінальна напруга батарей",
+      "value": "51.2 V"
+    },
+    {
+      "label": "Тип батареї",
+      "value": "LiFePO4"
+    },
+    {
+      "label": "Життевий цикл",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Кількість батарей",
+      "value": "1"
+    },
+    {
+      "label": "Кількість фаз",
+      "value": "1"
+    },
+    {
+      "label": "Кількість MPPT",
+      "value": "2"
+    },
+    {
+      "label": "Макс. вхідна потужність PV (сонячного масиву)",
+      "value": "7.8 kW"
+    },
+    {
+      "label": "Орієнтовний час до повного заряду стеку батарей",
+      "value": "1.1 год"
+    },
+    {
+      "label": "Гарантія",
+      "value": "120 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "резервного живлення приватних будинків і квартир",
+    "офісів, магазинів та інших комерційних об’єктів",
+    "інтеграції із сонячною генерацією після технічного розрахунку"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і склад комплекту потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/sistema-zberigannya-energii-deye-sun-6k-sg03lp1-eu-1de512k-lfp-6000w-512kwh-1bat-lifepo4-6000-tsikliv/1.webp",
+  "images": [
+    "/images/products/solarverse/sistema-zberigannya-energii-deye-sun-6k-sg03lp1-eu-1de512k-lfp-6000w-512kwh-1bat-lifepo4-6000-tsikliv/1.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-deye-sun-6k-sg03lp1-eu-1de512k-lfp-6000w-512kwh-1bat-lifepo4-6000-tsikliv/2.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-deye-sun-6k-sg03lp1-eu-1de512k-lfp-6000w-512kwh-1bat-lifepo4-6000-tsikliv/3.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-deye-sun-6k-sg03lp1-eu-1de512k-lfp-6000w-512kwh-1bat-lifepo4-6000-tsikliv/4.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-deye-sun-6k-sg03lp1-eu-1de512k-lfp-6000w-512kwh-1bat-lifepo4-6000-tsikliv/5.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-deye-sun-6k-sg03lp1-eu-1de512k-lfp-6000w-512kwh-1bat-lifepo4-6000-tsikliv/6.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-deye-sun-6k-sg03lp1-eu-1de512k-lfp-6000w-512kwh-1bat-lifepo4-6000-tsikliv/7.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-deye-sun-6k-sg03lp1-eu-1de512k-lfp-6000w-512kwh-1bat-lifepo4-6000-tsikliv/8.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

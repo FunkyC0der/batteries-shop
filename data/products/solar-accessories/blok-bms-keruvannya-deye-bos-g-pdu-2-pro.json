@@ -1,0 +1,58 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "blok-bms-keruvannya-deye-bos-g-pdu-2-pro",
+  "legacySlugs": [
+    "блок-bms-керування-deye-bos-g-pdu-2-pro"
+  ],
+  "title": "Блок BMS керування Deye BOS-G-PDU-2 (PRO)",
+  "sourceUrl": "https://www.namato.net/product-page/блок-bms-керування-deye-bos-g-pdu-2-pro",
+  "direction": "energy-solutions",
+  "price": "37 700 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "аксесуар Deye, модель BOS-G-PDU-2 (PRO).",
+  "description": "Блок BMS керування Deye BOS-G-PDU-2 (PRO) — аксесуар для комплектації енергосистеми відповідно до параметрів об’єкта.\n\nОсновні характеристики:\n• Бренд: Deye\n• Модель: BOS-G-PDU-2 (PRO)\n• Тип: Батарея\n• Призначення: Керування акумуляторною системою\n• Сумісність: акумуляторні модулі Deye BOS-GM5.1 PRO\n\nПеред замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Deye"
+    },
+    {
+      "label": "Модель",
+      "value": "BOS-G-PDU-2 (PRO)"
+    },
+    {
+      "label": "Тип",
+      "value": "Батарея"
+    },
+    {
+      "label": "Призначення",
+      "value": "Керування акумуляторною системою"
+    },
+    {
+      "label": "Сумісність",
+      "value": "акумуляторні модулі Deye BOS-GM5.1 PRO"
+    },
+    {
+      "label": "Ступінь захисту від вологи та пилу",
+      "value": "IP20"
+    },
+    {
+      "label": "Гарантія",
+      "value": "5 років"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сумісних акумуляторних систем",
+    "монтажу й керування енергетичним обладнанням",
+    "дооснащення після перевірки конкретної моделі"
+  ],
+  "notice": "Ціна наведена довідково. Актуальну ціну, наявність, комплектацію, гарантію та сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/namato/блок-bms-керування-deye-bos-g-pdu-2-pro/1.webp",
+  "images": [
+    "/images/products/namato/блок-bms-керування-deye-bos-g-pdu-2-pro/1.webp"
+  ],
+  "featured": false,
+  "source": "namato"
+}

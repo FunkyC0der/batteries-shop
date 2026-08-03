@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "blok-batarey-gsl-768v-314ah-240kwh-lifepo4-gsl-r240k",
+  "title": "Блок батарей GSL 768V 314AH 240kWh LiFePO4 (GSL-R240K)",
+  "sourceUrl": "https://solarverse.ua/product/blok-batarey-gsl-768v-314ah-240kwh-lifepo4-gsl-r240k",
+  "direction": "energy-solutions",
+  "price": "1 592 190 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея GSL ENERGY: 241.15 kW⋅h.",
+  "description": "Блок батарей GSL 768V 314AH 240kWh LiFePO4 (GSL-R240K). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "GSL ENERGY"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "314 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "241.15 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "10000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "768 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "200 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-768v-314ah-240kwh-lifepo4-gsl-r240k/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-768v-314ah-240kwh-lifepo4-gsl-r240k/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-768v-314ah-240kwh-lifepo4-gsl-r240k/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-768v-314ah-240kwh-lifepo4-gsl-r240k/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

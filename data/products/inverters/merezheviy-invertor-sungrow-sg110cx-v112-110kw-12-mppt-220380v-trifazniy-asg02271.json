@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "merezheviy-invertor-sungrow-sg110cx-v112-110kw-12-mppt-220380v-trifazniy-asg02271",
+  "title": "Мережевий інвертор SUNGROW SG110CX-V112 110kW 12 MPPT 220/380V Трифазний (ASG02271)",
+  "sourceUrl": "https://solarverse.ua/product/merezheviy-invertor-sungrow-sg110cx-v112-110kw-12-mppt-220380v-trifazniy-asg02271",
+  "direction": "energy-solutions",
+  "price": "221 940 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Sungrow: 110000 W.",
+  "description": "Мережевий інвертор SUNGROW SG110CX-V112 110kW 12 MPPT 220/380V Трифазний (ASG02271). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Sungrow"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Sungrow"
+    },
+    {
+      "label": "Тип",
+      "value": "Мережевий"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "110000 W"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg110cx-v112-110kw-12-mppt-220380v-trifazniy-asg02271/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg110cx-v112-110kw-12-mppt-220380v-trifazniy-asg02271/1.webp",
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg110cx-v112-110kw-12-mppt-220380v-trifazniy-asg02271/2.webp",
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg110cx-v112-110kw-12-mppt-220380v-trifazniy-asg02271/3.webp",
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg110cx-v112-110kw-12-mppt-220380v-trifazniy-asg02271/4.webp",
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg110cx-v112-110kw-12-mppt-220380v-trifazniy-asg02271/5.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

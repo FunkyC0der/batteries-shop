@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "setevoy-invertor-solis-s5-gc30k-30kw-3-mppt-220380v-trekhfaznyy-s5-gc30k",
+  "title": "Мережевий інвертор SOLIS S5-GC30K 30KW 3 MPPT 220/380V трифазний (S5-GC30K)",
+  "sourceUrl": "https://solarverse.ua/product/setevoy-invertor-solis-s5-gc30k-30kw-3-mppt-220380v-trekhfaznyy-s5-gc30k",
+  "direction": "energy-solutions",
+  "price": "65 208 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Solis: 30000 W.",
+  "description": "Мережевий інвертор SOLIS S5-GC30K 30KW 3 MPPT 220/380V трифазний (S5-GC30K). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Solis"
+    },
+    {
+      "label": "Тип",
+      "value": "Мережевий"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "30000 W"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/setevoy-invertor-solis-s5-gc30k-30kw-3-mppt-220380v-trekhfaznyy-s5-gc30k/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/setevoy-invertor-solis-s5-gc30k-30kw-3-mppt-220380v-trekhfaznyy-s5-gc30k/1.webp",
+    "/images/products/solarverse/equipment/inverters/setevoy-invertor-solis-s5-gc30k-30kw-3-mppt-220380v-trekhfaznyy-s5-gc30k/2.webp",
+    "/images/products/solarverse/equipment/inverters/setevoy-invertor-solis-s5-gc30k-30kw-3-mppt-220380v-trekhfaznyy-s5-gc30k/3.webp",
+    "/images/products/solarverse/equipment/inverters/setevoy-invertor-solis-s5-gc30k-30kw-3-mppt-220380v-trekhfaznyy-s5-gc30k/4.webp",
+    "/images/products/solarverse/equipment/inverters/setevoy-invertor-solis-s5-gc30k-30kw-3-mppt-220380v-trekhfaznyy-s5-gc30k/5.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

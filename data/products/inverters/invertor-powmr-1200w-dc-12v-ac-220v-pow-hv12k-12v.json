@@ -1,0 +1,57 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "invertor-powmr-1200w-dc-12v-ac-220v-pow-hv12k-12v",
+  "title": "Інвертор PowMr 1200W DC 12V AC 220V POW-HV1.2K-12V",
+  "sourceUrl": "https://solarverse.ua/product/invertor-powmr-1200w-dc-12v-ac-220v-pow-hv12k-12v",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор PowMr: 1200 W.",
+  "description": "Інвертор PowMr 1200W DC 12V AC 220V POW-HV1.2K-12V. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "PowMr"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "PowMr"
+    },
+    {
+      "label": "Тип",
+      "value": "Автономний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "1200 W"
+    },
+    {
+      "label": "Гарантія",
+      "value": "12 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/invertor-powmr-1200w-dc-12v-ac-220v-pow-hv12k-12v/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/invertor-powmr-1200w-dc-12v-ac-220v-pow-hv12k-12v/1.webp",
+    "/images/products/solarverse/equipment/inverters/invertor-powmr-1200w-dc-12v-ac-220v-pow-hv12k-12v/2.webp",
+    "/images/products/solarverse/equipment/inverters/invertor-powmr-1200w-dc-12v-ac-220v-pow-hv12k-12v/3.webp",
+    "/images/products/solarverse/equipment/inverters/invertor-powmr-1200w-dc-12v-ac-220v-pow-hv12k-12v/4.webp",
+    "/images/products/solarverse/equipment/inverters/invertor-powmr-1200w-dc-12v-ac-220v-pow-hv12k-12v/5.webp",
+    "/images/products/solarverse/equipment/inverters/invertor-powmr-1200w-dc-12v-ac-220v-pow-hv12k-12v/6.webp",
+    "/images/products/solarverse/equipment/inverters/invertor-powmr-1200w-dc-12v-ac-220v-pow-hv12k-12v/7.webp",
+    "/images/products/solarverse/equipment/inverters/invertor-powmr-1200w-dc-12v-ac-220v-pow-hv12k-12v/8.webp",
+    "/images/products/solarverse/equipment/inverters/invertor-powmr-1200w-dc-12v-ac-220v-pow-hv12k-12v/9.webp",
+    "/images/products/solarverse/equipment/inverters/invertor-powmr-1200w-dc-12v-ac-220v-pow-hv12k-12v/10.webp",
+    "/images/products/solarverse/equipment/inverters/invertor-powmr-1200w-dc-12v-ac-220v-pow-hv12k-12v/11.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

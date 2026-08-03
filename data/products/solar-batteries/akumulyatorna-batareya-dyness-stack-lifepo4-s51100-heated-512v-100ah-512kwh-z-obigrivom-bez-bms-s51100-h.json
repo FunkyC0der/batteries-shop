@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "akumulyatorna-batareya-dyness-stack-lifepo4-s51100-heated-512v-100ah-512kwh-z-obigrivom-bez-bms-s51100-h",
+  "title": "Акумуляторна батарея Dyness STACK LiFePO4 S51100 Heated 51.2V 100Ah 5.12kWh з обігрівом без BMS (S51100-H)",
+  "sourceUrl": "https://solarverse.ua/product/akumulyatorna-batareya-dyness-stack-lifepo4-s51100-heated-512v-100ah-512kwh-z-obigrivom-bez-bms-s51100-h",
+  "direction": "energy-solutions",
+  "price": "42 888 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея Dyness: 5.12 kW⋅h.",
+  "description": "Акумуляторна батарея Dyness STACK LiFePO4 S51100 Heated 51.2V 100Ah 5.12kWh з обігрівом без BMS (S51100-H). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Dyness"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "100 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "5.12 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "51.2 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "100 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-dyness-stack-lifepo4-s51100-heated-512v-100ah-512kwh-z-obigrivom-bez-bms-s51100-h/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-dyness-stack-lifepo4-s51100-heated-512v-100ah-512kwh-z-obigrivom-bez-bms-s51100-h/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-dyness-stack-lifepo4-s51100-heated-512v-100ah-512kwh-z-obigrivom-bez-bms-s51100-h/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-dyness-stack-lifepo4-s51100-heated-512v-100ah-512kwh-z-obigrivom-bez-bms-s51100-h/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

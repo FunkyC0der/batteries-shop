@@ -1,0 +1,63 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "akkumulyatornaya-batareya-gsl-512v-200ah-1024kwh-lifepo4-gsl051200ab-gbp2",
+  "title": "Акумуляторна батарея GSL 51.2v 200AH 10.24kwh lifepo4 (GSL051200AB-GBP2)",
+  "sourceUrl": "https://solarverse.ua/product/akkumulyatornaya-batareya-gsl-512v-200ah-1024kwh-lifepo4-gsl051200ab-gbp2",
+  "direction": "energy-solutions",
+  "price": "79 698 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея GSL ENERGY: 10.24 kW⋅h.",
+  "description": "Акумуляторна батарея GSL 51.2v 200AH 10.24kwh lifepo4 (GSL051200AB-GBP2). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "GSL ENERGY"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "200 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "10.24 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6500 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "48 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "150 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-gsl-512v-200ah-1024kwh-lifepo4-gsl051200ab-gbp2/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-gsl-512v-200ah-1024kwh-lifepo4-gsl051200ab-gbp2/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-gsl-512v-200ah-1024kwh-lifepo4-gsl051200ab-gbp2/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-gsl-512v-200ah-1024kwh-lifepo4-gsl051200ab-gbp2/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-gsl-512v-200ah-1024kwh-lifepo4-gsl051200ab-gbp2/4.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-gsl-512v-200ah-1024kwh-lifepo4-gsl051200ab-gbp2/5.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "avr-peremikach-deye-bos-b-500kw-10ms-sun-sts500l",
+  "title": "АВР перемикач Deye BOS-B 500KW 10ms (SUN-STS500L)",
+  "sourceUrl": "https://solarverse.ua/product/avr-peremikach-deye-bos-b-500kw-10ms-sun-sts500l",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Deye: 500000 W.",
+  "description": "АВР перемикач Deye BOS-B 500KW 10ms (SUN-STS500L). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Deye"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Deye"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "500000 W"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/avr-peremikach-deye-bos-b-500kw-10ms-sun-sts500l/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/avr-peremikach-deye-bos-b-500kw-10ms-sun-sts500l/1.webp",
+    "/images/products/solarverse/equipment/inverters/avr-peremikach-deye-bos-b-500kw-10ms-sun-sts500l/2.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "sistema-khraneniya-energii-solarverse-sv-1sv6k2-les51k1-6kw-51kwh-1bat-lifepo4-6000-tsiklov-sv-1sv6k2-les51k1",
+  "title": "Система зберігання енергії Solarverse SV-1SV6K2-LES5.1K1 6kW 5.1kWh 1BAT LiFePO4 6000 циклів (SV-1SV6K2-LES5.1K1)",
+  "sourceUrl": "https://solarverse.ua/product/sistema-khraneniya-energii-solarverse-sv-1sv6k2-les51k1-6kw-51kwh-1bat-lifepo4-6000-tsiklov-sv-1sv6k2-les51k1",
+  "direction": "energy-solutions",
+  "price": "65 340 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "Готова система Solarverse: потужність 6000 W, запас енергії 5.12 kWh, батарея LiFePO4.",
+  "description": "Готова система зберігання енергії Solarverse для резервного та автономного живлення. Конфігурація розрахована на номінальну потужність 6000 W і запас енергії 5.12 kWh. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію та сумісність із мережею об’єкта.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Solarverse"
+    },
+    {
+      "label": "Сумарна енергія, що зберігається в блоку батарей",
+      "value": "5.12 kWh"
+    },
+    {
+      "label": "Номінальна потужність АС",
+      "value": "6000 W"
+    },
+    {
+      "label": "Сумарна ємність блоку батарей",
+      "value": "100 Ah"
+    },
+    {
+      "label": "Номінальна напруга батарей",
+      "value": "51.2 V"
+    },
+    {
+      "label": "Тип батареї",
+      "value": "LiFePO4"
+    },
+    {
+      "label": "Життевий цикл",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Тип",
+      "value": "Автономний"
+    },
+    {
+      "label": "Кількість батарей",
+      "value": "1"
+    },
+    {
+      "label": "Кількість фаз",
+      "value": "1"
+    },
+    {
+      "label": "Кількість MPPT",
+      "value": "1"
+    },
+    {
+      "label": "Макс. вхідна потужність PV (сонячного масиву)",
+      "value": "6 kW"
+    },
+    {
+      "label": "Орієнтовний час до повного заряду стеку батарей",
+      "value": "1.6 год"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "резервного живлення приватних будинків і квартир",
+    "офісів, магазинів та інших комерційних об’єктів",
+    "інтеграції із сонячною генерацією після технічного розрахунку"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і склад комплекту потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/sistema-khraneniya-energii-solarverse-sv-1sv6k2-les51k1-6kw-51kwh-1bat-lifepo4-6000-tsiklov-sv-1sv6k2-les51k1/1.webp",
+  "images": [
+    "/images/products/solarverse/sistema-khraneniya-energii-solarverse-sv-1sv6k2-les51k1-6kw-51kwh-1bat-lifepo4-6000-tsiklov-sv-1sv6k2-les51k1/1.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solarverse-sv-1sv6k2-les51k1-6kw-51kwh-1bat-lifepo4-6000-tsiklov-sv-1sv6k2-les51k1/2.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solarverse-sv-1sv6k2-les51k1-6kw-51kwh-1bat-lifepo4-6000-tsiklov-sv-1sv6k2-les51k1/3.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solarverse-sv-1sv6k2-les51k1-6kw-51kwh-1bat-lifepo4-6000-tsiklov-sv-1sv6k2-les51k1/4.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solarverse-sv-1sv6k2-les51k1-6kw-51kwh-1bat-lifepo4-6000-tsiklov-sv-1sv6k2-les51k1/5.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

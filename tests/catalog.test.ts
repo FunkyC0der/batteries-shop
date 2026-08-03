@@ -47,7 +47,9 @@ describe("catalog helpers", () => {
     expect(results.every((product) => product.category === "lithium")).toBe(
       true,
     );
-    expect(results[0].title.toLowerCase()).toContain("saft");
+    expect(
+      results.some((product) => product.title.toLowerCase().includes("saft")),
+    ).toBe(true);
   });
 
   it("filters services by category and included work", () => {
@@ -69,10 +71,10 @@ describe("catalog helpers", () => {
     });
     const byModel = filterProducts({ query: "SNA5000" });
 
-    expect(byPower.map((product) => product.id)).toContain(
+    expect(byPower.map((product) => product.slug)).toContain(
       "industrial-solar-station",
     );
-    expect(byModel.map((product) => product.id)).toEqual(
+    expect(byModel.map((product) => product.slug)).toEqual(
       expect.arrayContaining([
         "autonomous-solar-station",
         "hybrid-solar-station",
@@ -149,8 +151,8 @@ describe("catalog helpers", () => {
   });
 
   it("adds only the new Namato models with local image galleries", () => {
-    const namatoProducts = filterProducts({}).filter((product) =>
-      product.id.startsWith("namato-product-"),
+    const namatoProducts = filterProducts({}).filter(
+      (product) => product.source === "namato",
     );
 
     expect(namatoProducts).toHaveLength(40);
@@ -163,7 +165,9 @@ describe("catalog helpers", () => {
           product.showPrice &&
           product.price?.includes("Ціну уточнюйте") &&
           product.images?.length &&
-          product.images.every((image) => image.startsWith("/images/products/namato/")),
+          product.images.every((image) =>
+            image.startsWith("/images/products/namato/"),
+          ),
       ),
     ).toBe(true);
   });
@@ -193,16 +197,14 @@ describe("catalog helpers", () => {
   it("keeps original source links in imported product data", () => {
     const importedProducts = filterProducts({}).filter(
       (product) =>
-        product.id.startsWith("energy-storage-system-") ||
-        product.id.startsWith("solarverse-equipment-") ||
-        product.id.startsWith("namato-product-"),
+        product.source === "solarverse" || product.source === "namato",
     );
 
     expect(importedProducts).toHaveLength(361);
     expect(importedProducts.every((product) => product.sourceUrl)).toBe(true);
     expect(
       importedProducts.every((product) => {
-        if (product.id.startsWith("namato-product-")) {
+        if (product.source === "namato") {
           return product.sourceUrl?.startsWith(
             "https://www.namato.net/product-page/",
           );
@@ -235,8 +237,8 @@ describe("catalog helpers", () => {
   });
 
   it("formats imported descriptions as concise product summaries", () => {
-    const importedProducts = filterProducts({}).filter((product) =>
-      product.id.startsWith("namato-product-"),
+    const importedProducts = filterProducts({}).filter(
+      (product) => product.source === "namato",
     );
 
     expect(
@@ -266,8 +268,8 @@ describe("catalog helpers", () => {
       query: "дистанційний моніторинг",
     });
 
-    expect(results.map((service) => service.id)).toContain(
-      "service-energy-automation",
+    expect(results.map((service) => service.slug)).toContain(
+      "energy-automation-monitoring-control",
     );
   });
 

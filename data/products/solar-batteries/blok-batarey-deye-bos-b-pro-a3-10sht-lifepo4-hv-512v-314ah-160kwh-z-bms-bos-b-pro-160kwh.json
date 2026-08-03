@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "blok-batarey-deye-bos-b-pro-a3-10sht-lifepo4-hv-512v-314ah-160kwh-z-bms-bos-b-pro-160kwh",
+  "title": "Блок батарей DEYE BOS-B Pro-A3 10шт LiFePO4 HV 512V 314Ah 160kWh з BMS (BOS-B-PRO-160kWh)",
+  "sourceUrl": "https://solarverse.ua/product/blok-batarey-deye-bos-b-pro-a3-10sht-lifepo4-hv-512v-314ah-160kwh-z-bms-bos-b-pro-160kwh",
+  "direction": "energy-solutions",
+  "price": "1 070 550 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея DEYE: 160.77 kW⋅h.",
+  "description": "Блок батарей DEYE BOS-B Pro-A3 10шт LiFePO4 HV 512V 314Ah 160kWh з BMS (BOS-B-PRO-160kWh). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "314 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "160.77 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "512 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "180 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/blok-batarey-deye-bos-b-pro-a3-10sht-lifepo4-hv-512v-314ah-160kwh-z-bms-bos-b-pro-160kwh/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-deye-bos-b-pro-a3-10sht-lifepo4-hv-512v-314ah-160kwh-z-bms-bos-b-pro-160kwh/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-deye-bos-b-pro-a3-10sht-lifepo4-hv-512v-314ah-160kwh-z-bms-bos-b-pro-160kwh/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-deye-bos-b-pro-a3-10sht-lifepo4-hv-512v-314ah-160kwh-z-bms-bos-b-pro-160kwh/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-deye-bos-b-pro-a3-10sht-lifepo4-hv-512v-314ah-160kwh-z-bms-bos-b-pro-160kwh/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

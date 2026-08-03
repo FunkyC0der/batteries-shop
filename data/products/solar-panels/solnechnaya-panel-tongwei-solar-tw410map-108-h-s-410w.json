@@ -1,0 +1,57 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "solnechnaya-panel-tongwei-solar-tw410map-108-h-s-410w",
+  "title": "Сонячна панель Tongwei Solar TW410MAP-108-H-S 410W",
+  "sourceUrl": "https://solarverse.ua/product/solnechnaya-panel-tongwei-solar-tw410map-108-h-s-410w",
+  "direction": "energy-solutions",
+  "price": "5 015 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "сонячна панель Tongwei Solar: 410 W.",
+  "description": "Сонячна панель Tongwei Solar TW410MAP-108-H-S 410W. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Tongwei Solar"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Tongwei Solar"
+    },
+    {
+      "label": "Тип напівпровідника",
+      "value": "Монокристал"
+    },
+    {
+      "label": "Потужність",
+      "value": "410 W"
+    },
+    {
+      "label": "Конектори",
+      "value": "MC4"
+    },
+    {
+      "label": "Ступінь захисту від вологи та пилу",
+      "value": "IP68"
+    },
+    {
+      "label": "Гарантія",
+      "value": "12 років"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "дахових і наземних сонячних електростанцій",
+    "мережевих, гібридних та автономних систем",
+    "приватних і комерційних об’єктів після проєктного розрахунку"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-panels/solnechnaya-panel-tongwei-solar-tw410map-108-h-s-410w/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-panels/solnechnaya-panel-tongwei-solar-tw410map-108-h-s-410w/1.webp",
+    "/images/products/solarverse/equipment/solar-panels/solnechnaya-panel-tongwei-solar-tw410map-108-h-s-410w/2.webp",
+    "/images/products/solarverse/equipment/solar-panels/solnechnaya-panel-tongwei-solar-tw410map-108-h-s-410w/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

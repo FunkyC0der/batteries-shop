@@ -1,0 +1,54 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "gibridniy-invertor-afore-af15k-th-15kw-hv-battery-2-mppt-wi-fi-220380v-trifazniy",
+  "title": "Гібридний інвертор Afore AF15K-TH 15KW HV-battery 2 MPPT Wi-Fi 220/380V Трифазний",
+  "sourceUrl": "https://solarverse.ua/product/gibridniy-invertor-afore-af15k-th-15kw-hv-battery-2-mppt-wi-fi-220380v-trifazniy",
+  "direction": "energy-solutions",
+  "price": "84 378 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Afore: 15000 W.",
+  "description": "Гібридний інвертор Afore AF15K-TH 15KW HV-battery 2 MPPT Wi-Fi 220/380V Трифазний. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Afore"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Afore"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "15000 W"
+    },
+    {
+      "label": "Вихідна напруга АКБ",
+      "value": "150 - 800 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/gibridniy-invertor-afore-af15k-th-15kw-hv-battery-2-mppt-wi-fi-220380v-trifazniy/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-afore-af15k-th-15kw-hv-battery-2-mppt-wi-fi-220380v-trifazniy/1.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-afore-af15k-th-15kw-hv-battery-2-mppt-wi-fi-220380v-trifazniy/2.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-afore-af15k-th-15kw-hv-battery-2-mppt-wi-fi-220380v-trifazniy/3.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-afore-af15k-th-15kw-hv-battery-2-mppt-wi-fi-220380v-trifazniy/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

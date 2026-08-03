@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "modul-upravlinnya-bms-dlya-dyness-stack-heated-z-obigrivom-sbdu100-h",
+  "title": "Модуль управління (BMS) для Dyness STACK Heated з обігрівом (SBDU100-H)",
+  "sourceUrl": "https://solarverse.ua/product/modul-upravlinnya-bms-dlya-dyness-stack-heated-z-obigrivom-sbdu100-h",
+  "direction": "energy-solutions",
+  "price": "39 690 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея Dyness: характеристики за запитом.",
+  "description": "Модуль управління (BMS) для Dyness STACK Heated з обігрівом (SBDU100-H). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Dyness"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "100 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/modul-upravlinnya-bms-dlya-dyness-stack-heated-z-obigrivom-sbdu100-h/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/modul-upravlinnya-bms-dlya-dyness-stack-heated-z-obigrivom-sbdu100-h/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/modul-upravlinnya-bms-dlya-dyness-stack-heated-z-obigrivom-sbdu100-h/2.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

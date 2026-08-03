@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "wifi-stick-dlya-solis-s5-4pin-soliscloud-s5-wifi-st-4pin",
+  "title": "WIFI Stick для Solis S5, 4PIN, SolisCloud (S5-WiFi-ST-4Pin)",
+  "sourceUrl": "https://solarverse.ua/product/wifi-stick-dlya-solis-s5-4pin-soliscloud-s5-wifi-st-4pin",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "аксесуар Solis: Для підключення до інвертора.",
+  "description": "WIFI Stick для Solis S5, 4PIN, SolisCloud (S5-WiFi-ST-4Pin). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Solis"
+    },
+    {
+      "label": "Гарантія",
+      "value": "12 міс."
+    },
+    {
+      "label": "Призначення",
+      "value": "Для підключення до інвертора"
+    },
+    {
+      "label": "Сумісність",
+      "value": "Інвертор Solis"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "монтажу та підключення енергетичного обладнання",
+    "сумісних інверторів, батарей і систем моніторингу",
+    "сервісного дооснащення після перевірки моделі обладнання"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-accessories/wifi-stick-dlya-solis-s5-4pin-soliscloud-s5-wifi-st-4pin/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-accessories/wifi-stick-dlya-solis-s5-4pin-soliscloud-s5-wifi-st-4pin/1.webp",
+    "/images/products/solarverse/equipment/solar-accessories/wifi-stick-dlya-solis-s5-4pin-soliscloud-s5-wifi-st-4pin/2.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

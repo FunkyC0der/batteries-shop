@@ -1,0 +1,63 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "akumulyatorna-batareya-deye-rw-f16-lifepo4-lv-512v-314ah-16kwh",
+  "title": "Акумуляторна батарея DEYE RW-F16 LiFePO4 LV 51.2V 314Ah 16kWh",
+  "sourceUrl": "https://solarverse.ua/product/akumulyatorna-batareya-deye-rw-f16-lifepo4-lv-512v-314ah-16kwh",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея DEYE: 16.08 kW⋅h.",
+  "description": "Акумуляторна батарея DEYE RW-F16 LiFePO4 LV 51.2V 314Ah 16kWh. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "314 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "16.08 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "51.2 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "300 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "120 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-rw-f16-lifepo4-lv-512v-314ah-16kwh/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-rw-f16-lifepo4-lv-512v-314ah-16kwh/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-rw-f16-lifepo4-lv-512v-314ah-16kwh/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-rw-f16-lifepo4-lv-512v-314ah-16kwh/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-rw-f16-lifepo4-lv-512v-314ah-16kwh/4.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akumulyatorna-batareya-deye-rw-f16-lifepo4-lv-512v-314ah-16kwh/5.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

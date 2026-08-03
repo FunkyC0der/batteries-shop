@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "lithium-battery-tabs",
+  "title": "Батарейка з пелюстками під пайку",
+  "direction": "metering-and-comfort",
+  "price": "від 520 грн",
+  "showPrice": false,
+  "status": "in-stock",
+  "shortDescription": "Позиція для випадків, коли потрібна батарейка з виводами для акуратного монтажу.",
+  "description": "Опис-плейсхолдер для товару, де перед продажем варто уточнити розташування виводів, габарити та сумісність.",
+  "specs": [
+    {
+      "label": "Виводи",
+      "value": "пелюстки під пайку"
+    },
+    {
+      "label": "Формат",
+      "value": "залежить від моделі"
+    },
+    {
+      "label": "Підбір",
+      "value": "за фото або маркуванням старої батарейки"
+    },
+    {
+      "label": "Замовлення",
+      "value": "після консультації"
+    }
+  ],
+  "compatibility": [
+    "плати живлення",
+    "модулі пам'яті",
+    "контролери обліку"
+  ],
+  "image": "/images/product-lithium-batteries.webp",
+  "featured": false,
+  "source": "manual"
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "merezheviy-invertor-sungrow-sg30cx-p2-v1-30kw-3-mppt-220380v-trifazniy-asg01763",
+  "title": "Мережевий інвертор SUNGROW SG30CX-P2_V1+ 30kW 3 MPPT 220/380V Трифазний (ASG01763)",
+  "sourceUrl": "https://solarverse.ua/product/merezheviy-invertor-sungrow-sg30cx-p2-v1-30kw-3-mppt-220380v-trifazniy-asg01763",
+  "direction": "energy-solutions",
+  "price": "100 980 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Sungrow: 30000 W.",
+  "description": "Мережевий інвертор SUNGROW SG30CX-P2_V1+ 30kW 3 MPPT 220/380V Трифазний (ASG01763). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Sungrow"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Sungrow"
+    },
+    {
+      "label": "Тип",
+      "value": "Мережевий"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "30000 W"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg30cx-p2-v1-30kw-3-mppt-220380v-trifazniy-asg01763/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg30cx-p2-v1-30kw-3-mppt-220380v-trifazniy-asg01763/1.webp",
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg30cx-p2-v1-30kw-3-mppt-220380v-trifazniy-asg01763/2.webp",
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg30cx-p2-v1-30kw-3-mppt-220380v-trifazniy-asg01763/3.webp",
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg30cx-p2-v1-30kw-3-mppt-220380v-trifazniy-asg01763/4.webp",
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg30cx-p2-v1-30kw-3-mppt-220380v-trifazniy-asg01763/5.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

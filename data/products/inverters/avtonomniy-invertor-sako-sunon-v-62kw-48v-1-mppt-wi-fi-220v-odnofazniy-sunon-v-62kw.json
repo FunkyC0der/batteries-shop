@@ -1,0 +1,54 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "avtonomniy-invertor-sako-sunon-v-62kw-48v-1-mppt-wi-fi-220v-odnofazniy-sunon-v-62kw",
+  "title": "Автономний інвертор SAKO SUNON V 6.2kW 48V 1 MPPT Wi-Fi 220V Однофазний (SUNON V 6.2kW)",
+  "sourceUrl": "https://solarverse.ua/product/avtonomniy-invertor-sako-sunon-v-62kw-48v-1-mppt-wi-fi-220v-odnofazniy-sunon-v-62kw",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор SAKO: 5000 W.",
+  "description": "Автономний інвертор SAKO SUNON V 6.2kW 48V 1 MPPT Wi-Fi 220V Однофазний (SUNON V 6.2kW). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "SAKO"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "SAKO"
+    },
+    {
+      "label": "Тип",
+      "value": "Автономний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "5000 W"
+    },
+    {
+      "label": "Вихідна напруга АКБ",
+      "value": "48 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "24 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/avtonomniy-invertor-sako-sunon-v-62kw-48v-1-mppt-wi-fi-220v-odnofazniy-sunon-v-62kw/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/avtonomniy-invertor-sako-sunon-v-62kw-48v-1-mppt-wi-fi-220v-odnofazniy-sunon-v-62kw/1.webp",
+    "/images/products/solarverse/equipment/inverters/avtonomniy-invertor-sako-sunon-v-62kw-48v-1-mppt-wi-fi-220v-odnofazniy-sunon-v-62kw/2.webp",
+    "/images/products/solarverse/equipment/inverters/avtonomniy-invertor-sako-sunon-v-62kw-48v-1-mppt-wi-fi-220v-odnofazniy-sunon-v-62kw/3.webp",
+    "/images/products/solarverse/equipment/inverters/avtonomniy-invertor-sako-sunon-v-62kw-48v-1-mppt-wi-fi-220v-odnofazniy-sunon-v-62kw/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

@@ -1,0 +1,83 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "sistema-zberigannya-energii-solarverse-sun-14k-sg05lp3-eu-4dy2048k-lfp-w-14kw-2048kwh-4bat-lifepo4-6000-tsikliv",
+  "title": "Система зберігання енергії Solarverse SUN-14K-SG05LP3-EU-4DY20.48K-LFP-W 14kW 20.48kWh 4BAT LiFePO4 6000 циклів",
+  "sourceUrl": "https://solarverse.ua/product/sistema-zberigannya-energii-solarverse-sun-14k-sg05lp3-eu-4dy2048k-lfp-w-14kw-2048kwh-4bat-lifepo4-6000-tsikliv",
+  "direction": "energy-solutions",
+  "price": "250 248 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "Готова система Solarverse: потужність 14000 W, запас енергії 20.48 kWh, батарея LiFePO4.",
+  "description": "Готова система зберігання енергії Solarverse для резервного та автономного живлення. Конфігурація розрахована на номінальну потужність 14000 W і запас енергії 20.48 kWh. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію та сумісність із мережею об’єкта.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Solarverse"
+    },
+    {
+      "label": "Сумарна енергія, що зберігається в блоку батарей",
+      "value": "20.48 kWh"
+    },
+    {
+      "label": "Номінальна потужність АС",
+      "value": "14000 W"
+    },
+    {
+      "label": "Сумарна ємність блоку батарей",
+      "value": "400 Ah"
+    },
+    {
+      "label": "Тип батареї",
+      "value": "LiFePO4"
+    },
+    {
+      "label": "Життевий цикл",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Кількість батарей",
+      "value": "4"
+    },
+    {
+      "label": "Кількість фаз",
+      "value": "3"
+    },
+    {
+      "label": "Кількість MPPT",
+      "value": "2"
+    },
+    {
+      "label": "Макс. вхідна потужність PV (сонячного масиву)",
+      "value": "21 kW"
+    },
+    {
+      "label": "Орієнтовний час до повного заряду стеку батарей",
+      "value": "1.7 год"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "резервного живлення приватних будинків і квартир",
+    "офісів, магазинів та інших комерційних об’єктів",
+    "інтеграції із сонячною генерацією після технічного розрахунку"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і склад комплекту потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/sistema-zberigannya-energii-solarverse-sun-14k-sg05lp3-eu-4dy2048k-lfp-w-14kw-2048kwh-4bat-lifepo4-6000-tsikliv/1.webp",
+  "images": [
+    "/images/products/solarverse/sistema-zberigannya-energii-solarverse-sun-14k-sg05lp3-eu-4dy2048k-lfp-w-14kw-2048kwh-4bat-lifepo4-6000-tsikliv/1.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-solarverse-sun-14k-sg05lp3-eu-4dy2048k-lfp-w-14kw-2048kwh-4bat-lifepo4-6000-tsikliv/2.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-solarverse-sun-14k-sg05lp3-eu-4dy2048k-lfp-w-14kw-2048kwh-4bat-lifepo4-6000-tsikliv/3.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-solarverse-sun-14k-sg05lp3-eu-4dy2048k-lfp-w-14kw-2048kwh-4bat-lifepo4-6000-tsikliv/4.webp",
+    "/images/products/solarverse/sistema-zberigannya-energii-solarverse-sun-14k-sg05lp3-eu-4dy2048k-lfp-w-14kw-2048kwh-4bat-lifepo4-6000-tsikliv/5.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

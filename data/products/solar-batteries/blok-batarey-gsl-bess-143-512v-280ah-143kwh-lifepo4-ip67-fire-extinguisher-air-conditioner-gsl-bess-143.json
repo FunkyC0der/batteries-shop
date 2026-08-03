@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "blok-batarey-gsl-bess-143-512v-280ah-143kwh-lifepo4-ip67-fire-extinguisher-air-conditioner-gsl-bess-143",
+  "title": "Блок батарей GSL-BESS-143 512V 280Ah 143kWh LiFePO4 IP67 Fire Extinguisher Air Conditioner (GSL-BESS-143)",
+  "sourceUrl": "https://solarverse.ua/product/blok-batarey-gsl-bess-143-512v-280ah-143kwh-lifepo4-ip67-fire-extinguisher-air-conditioner-gsl-bess-143",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея GSL ENERGY: 143 kW⋅h.",
+  "description": "Блок батарей GSL-BESS-143 512V 280Ah 143kWh LiFePO4 IP67 Fire Extinguisher Air Conditioner (GSL-BESS-143). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "GSL ENERGY"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "280 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "143 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "10000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "512 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "100 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "120 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-bess-143-512v-280ah-143kwh-lifepo4-ip67-fire-extinguisher-air-conditioner-gsl-bess-143/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-bess-143-512v-280ah-143kwh-lifepo4-ip67-fire-extinguisher-air-conditioner-gsl-bess-143/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-bess-143-512v-280ah-143kwh-lifepo4-ip67-fire-extinguisher-air-conditioner-gsl-bess-143/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-bess-143-512v-280ah-143kwh-lifepo4-ip67-fire-extinguisher-air-conditioner-gsl-bess-143/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-gsl-bess-143-512v-280ah-143kwh-lifepo4-ip67-fire-extinguisher-air-conditioner-gsl-bess-143/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

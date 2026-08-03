@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "stoyka-dlya-15-batarey-deye-bos-b-rack-bos-b-rackbos-b-pdu-2",
+  "title": "Стійка для 15 батарей DEYE BOS-B RACK-BOS-B (RACK/BOS-B-PDU-2)",
+  "sourceUrl": "https://solarverse.ua/product/stoyka-dlya-15-batarey-deye-bos-b-rack-bos-b-rackbos-b-pdu-2",
+  "direction": "energy-solutions",
+  "price": "31 458 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "аксесуар DEYE: Для встановлення акумуляторних батарей.",
+  "description": "Стійка для 15 батарей DEYE BOS-B RACK-BOS-B (RACK/BOS-B-PDU-2). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "DEYE"
+    },
+    {
+      "label": "Гарантія",
+      "value": "6 міс."
+    },
+    {
+      "label": "Призначення",
+      "value": "Для встановлення акумуляторних батарей"
+    },
+    {
+      "label": "Матеріал",
+      "value": "Метал"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "монтажу та підключення енергетичного обладнання",
+    "сумісних інверторів, батарей і систем моніторингу",
+    "сервісного дооснащення після перевірки моделі обладнання"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-accessories/stoyka-dlya-15-batarey-deye-bos-b-rack-bos-b-rackbos-b-pdu-2/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-accessories/stoyka-dlya-15-batarey-deye-bos-b-rack-bos-b-rackbos-b-pdu-2/1.webp",
+    "/images/products/solarverse/equipment/solar-accessories/stoyka-dlya-15-batarey-deye-bos-b-rack-bos-b-rackbos-b-pdu-2/2.webp",
+    "/images/products/solarverse/equipment/solar-accessories/stoyka-dlya-15-batarey-deye-bos-b-rack-bos-b-rackbos-b-pdu-2/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

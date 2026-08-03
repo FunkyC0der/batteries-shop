@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "akkumulyatornaya-batareya-revention-powercube-eco-reveco59kwh-24v-230ah-59kwh-lifepo4",
+  "title": "Акумуляторна батарея Revention PowerCube ECO REVECO5.9KWH 24V 230Ah 5.9kWh LiFePO4",
+  "sourceUrl": "https://solarverse.ua/product/akkumulyatornaya-batareya-revention-powercube-eco-reveco59kwh-24v-230ah-59kwh-lifepo4",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея Revention: 5.52 kW⋅h.",
+  "description": "Акумуляторна батарея Revention PowerCube ECO REVECO5.9KWH 24V 230Ah 5.9kWh LiFePO4. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Revention"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "230 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "5.52 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "6000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "24 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "115 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "12 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-revention-powercube-eco-reveco59kwh-24v-230ah-59kwh-lifepo4/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-revention-powercube-eco-reveco59kwh-24v-230ah-59kwh-lifepo4/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-revention-powercube-eco-reveco59kwh-24v-230ah-59kwh-lifepo4/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/akkumulyatornaya-batareya-revention-powercube-eco-reveco59kwh-24v-230ah-59kwh-lifepo4/3.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

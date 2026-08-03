@@ -1,0 +1,56 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "gibridniy-invertor-deye-sun-8k-sg01lp1",
+  "title": "Гібридний інвертор DEYE SUN-8K-SG01LP1",
+  "sourceUrl": "https://solarverse.ua/product/gibridniy-invertor-deye-sun-8k-sg01lp1",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Deye: 8000 W.",
+  "description": "Гібридний інвертор DEYE SUN-8K-SG01LP1. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Deye"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Deye"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "8000 W"
+    },
+    {
+      "label": "Вихідна напруга АКБ",
+      "value": "48 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "120 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-8k-sg01lp1/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-8k-sg01lp1/1.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-8k-sg01lp1/2.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-8k-sg01lp1/3.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-8k-sg01lp1/4.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-8k-sg01lp1/5.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-deye-sun-8k-sg01lp1/6.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

@@ -11,6 +11,10 @@ import {
   getFeaturedProducts,
   getFeaturedServices,
 } from "@/lib/catalog";
+import {
+  toProductListItem,
+  toServiceListItem,
+} from "@/lib/catalog/list-projection";
 
 const deliverySteps = [
   {
@@ -42,12 +46,16 @@ const deliverySteps = [
 export default function Home() {
   const featuredMeteringProducts = getFeaturedProducts(
     "metering-and-comfort",
+  ).map(toProductListItem);
+  const featuredEnergyProducts = getFeaturedProducts("energy-solutions").map(
+    toProductListItem,
   );
-  const featuredEnergyProducts = getFeaturedProducts("energy-solutions");
   const featuredMeteringServices = getFeaturedServices(
     "metering-and-comfort",
+  ).map(toServiceListItem);
+  const featuredEnergyServices = getFeaturedServices("energy-solutions").map(
+    toServiceListItem,
   );
-  const featuredEnergyServices = getFeaturedServices("energy-solutions");
   const meteringProductCount = filterProducts({
     direction: "metering-and-comfort",
   }).length;
@@ -71,7 +79,7 @@ export default function Home() {
           linkLabel: "Товари для тепла й обліку",
           image:
             featuredMeteringProducts[0]?.image ??
-            "/images/product-lithium-batteries.png",
+            "/images/product-lithium-batteries.webp",
           imageAlt: "Батарейки й комплектуючі для приладів обліку",
         },
         {
@@ -83,7 +91,7 @@ export default function Home() {
           linkLabel: "Енергетичні товари",
           image:
             featuredEnergyProducts[0]?.image ??
-            "/images/products/autonomous-solar-station.png",
+            "/images/products/autonomous-solar-station.webp",
           imageAlt:
             "Сонячні панелі, інвертор і акумулятор енергетичної системи",
         },
@@ -105,7 +113,7 @@ export default function Home() {
           linkLabel: "Послуги для тепла й обліку",
           image:
             featuredMeteringServices[0]?.image ??
-            "/images/services/battery-replacement-workshop-v2.png",
+            "/images/services/battery-replacement-workshop-v2.webp",
           imageAlt: "Сервіс інженерного обладнання та приладів обліку",
         },
         {
@@ -117,7 +125,7 @@ export default function Home() {
           linkLabel: "Енергетичні послуги",
           image:
             featuredEnergyServices[1]?.image ??
-            "/images/services/turnkey-solar-power-plant.jpg",
+            "/images/services/turnkey-solar-power-plant.webp",
           imageAlt: "Сонячна електростанція та енергетичне обладнання",
         },
       ],
@@ -164,7 +172,7 @@ export default function Home() {
                 fill
                 priority
                 sizes="(min-width: 1024px) 50vw, 100vw"
-                src="/images/home-energy-engineering-hero.jpg"
+                src="/images/home-energy-engineering-hero.webp"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/45 via-transparent to-transparent lg:bg-gradient-to-r lg:from-foreground/20 lg:via-transparent lg:to-transparent" />
             </div>

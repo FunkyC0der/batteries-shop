@@ -1,0 +1,84 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "sistema-khraneniya-energii-solis-evercore-125kw-261kwh-832v-314ah-lifepo4-ip55-fire-extinguisher-airconditioner-with-air-channel-evercore-261kwh-pro-c5",
+  "title": "Система збереження енергії Solis Evercore 125kW 261kWh 832v 314AH lifepo4 IP55 Fire Extinguisher AirConditioner with air channel (EverCore-261kWh-PRO-C5)",
+  "sourceUrl": "https://solarverse.ua/product/sistema-khraneniya-energii-solis-evercore-125kw-261kwh-832v-314ah-lifepo4-ip55-fire-extinguisher-airconditioner-with-air-channel-evercore-261kwh-pro-c5",
+  "direction": "energy-solutions",
+  "price": "2 890 578 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "Готова система Solis Solar: потужність 125000 W, запас енергії 261.2 kWh, батарея LiFePO4.",
+  "description": "Готова система зберігання енергії Solis Solar для резервного та автономного живлення. Конфігурація розрахована на номінальну потужність 125000 W і запас енергії 261.2 kWh. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію та сумісність із мережею об’єкта.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Solis Solar"
+    },
+    {
+      "label": "Сумарна енергія, що зберігається в блоку батарей",
+      "value": "261.2 kWh"
+    },
+    {
+      "label": "Номінальна потужність АС",
+      "value": "125000 W"
+    },
+    {
+      "label": "Сумарна ємність блоку батарей",
+      "value": "314 Ah"
+    },
+    {
+      "label": "Номінальна напруга батарей",
+      "value": "754-936 V"
+    },
+    {
+      "label": "Тип батареї",
+      "value": "LiFePO4"
+    },
+    {
+      "label": "Життевий цикл",
+      "value": "10000 циклів"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Кількість батарей",
+      "value": "13"
+    },
+    {
+      "label": "Кількість фаз",
+      "value": "3"
+    },
+    {
+      "label": "Кількість MPPT",
+      "value": "20"
+    },
+    {
+      "label": "Макс. вхідна потужність PV (сонячного масиву)",
+      "value": "250 kW"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "резервного живлення приватних будинків і квартир",
+    "офісів, магазинів та інших комерційних об’єктів",
+    "інтеграції із сонячною генерацією після технічного розрахунку"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і склад комплекту потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/sistema-khraneniya-energii-solis-evercore-125kw-261kwh-832v-314ah-lifepo4-ip55-fire-extinguisher-airconditioner-with-air-channel-evercore-261kwh-pro-c5/1.webp",
+  "images": [
+    "/images/products/solarverse/sistema-khraneniya-energii-solis-evercore-125kw-261kwh-832v-314ah-lifepo4-ip55-fire-extinguisher-airconditioner-with-air-channel-evercore-261kwh-pro-c5/1.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solis-evercore-125kw-261kwh-832v-314ah-lifepo4-ip55-fire-extinguisher-airconditioner-with-air-channel-evercore-261kwh-pro-c5/2.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solis-evercore-125kw-261kwh-832v-314ah-lifepo4-ip55-fire-extinguisher-airconditioner-with-air-channel-evercore-261kwh-pro-c5/3.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solis-evercore-125kw-261kwh-832v-314ah-lifepo4-ip55-fire-extinguisher-airconditioner-with-air-channel-evercore-261kwh-pro-c5/4.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solis-evercore-125kw-261kwh-832v-314ah-lifepo4-ip55-fire-extinguisher-airconditioner-with-air-channel-evercore-261kwh-pro-c5/5.webp",
+    "/images/products/solarverse/sistema-khraneniya-energii-solis-evercore-125kw-261kwh-832v-314ah-lifepo4-ip55-fire-extinguisher-airconditioner-with-air-channel-evercore-261kwh-pro-c5/6.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

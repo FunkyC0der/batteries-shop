@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "merezheviy-invertor-sungrow-sg50cx-p2-v12-50kw-4-mppt-220380v-trifazniy-asg01767",
+  "title": "Мережевий інвертор SUNGROW SG50CX-P2_V12 50kW 4 MPPT 220/380V Трифазний (ASG01767)",
+  "sourceUrl": "https://solarverse.ua/product/merezheviy-invertor-sungrow-sg50cx-p2-v12-50kw-4-mppt-220380v-trifazniy-asg01767",
+  "direction": "energy-solutions",
+  "price": "133 968 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Sungrow: 50000 W.",
+  "description": "Мережевий інвертор SUNGROW SG50CX-P2_V12 50kW 4 MPPT 220/380V Трифазний (ASG01767). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Sungrow"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Sungrow"
+    },
+    {
+      "label": "Тип",
+      "value": "Мережевий"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "50000 W"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg50cx-p2-v12-50kw-4-mppt-220380v-trifazniy-asg01767/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg50cx-p2-v12-50kw-4-mppt-220380v-trifazniy-asg01767/1.webp",
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg50cx-p2-v12-50kw-4-mppt-220380v-trifazniy-asg01767/2.webp",
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg50cx-p2-v12-50kw-4-mppt-220380v-trifazniy-asg01767/3.webp",
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg50cx-p2-v12-50kw-4-mppt-220380v-trifazniy-asg01767/4.webp",
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg50cx-p2-v12-50kw-4-mppt-220380v-trifazniy-asg01767/5.webp",
+    "/images/products/solarverse/equipment/inverters/merezheviy-invertor-sungrow-sg50cx-p2-v12-50kw-4-mppt-220380v-trifazniy-asg01767/6.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

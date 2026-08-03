@@ -1,0 +1,58 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "hibrydnyy-invertor-livoltek-hp3-15kt2",
+  "legacySlugs": [
+    "гібридний-інвертор-livoltek-hp3-15kt2"
+  ],
+  "title": "Гібридний інвертор Livoltek HP3-15KT2 (15 кВт)",
+  "sourceUrl": "https://www.namato.net/product-page/гібридний-інвертор-livoltek-hp3-15kt2",
+  "direction": "energy-solutions",
+  "price": "89 940 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Livoltek, модель HP3-15KT2.",
+  "description": "Гібридний інвертор Livoltek HP3-15KT2 (15 кВт) — інвертор для комплектації енергосистеми відповідно до параметрів об’єкта.\n\nОсновні характеристики:\n• Бренд: Livoltek\n• Модель: HP3-15KT2\n• Тип: Гібридний\n• Номінальна потужність: 15 кВт\n• Кількість фаз: 3\n\nПеред замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Livoltek"
+    },
+    {
+      "label": "Модель",
+      "value": "HP3-15KT2"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "15 кВт"
+    },
+    {
+      "label": "Кількість фаз",
+      "value": "3"
+    },
+    {
+      "label": "Ступінь захисту від вологи та пилу",
+      "value": "IP65"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково. Актуальну ціну, наявність, комплектацію, гарантію та сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/namato/гібридний-інвертор-livoltek-hp3-15kt2/1.webp",
+  "images": [
+    "/images/products/namato/гібридний-інвертор-livoltek-hp3-15kt2/1.webp",
+    "/images/products/namato/гібридний-інвертор-livoltek-hp3-15kt2/2.webp",
+    "/images/products/namato/гібридний-інвертор-livoltek-hp3-15kt2/3.webp",
+    "/images/products/namato/гібридний-інвертор-livoltek-hp3-15kt2/4.webp",
+    "/images/products/namato/гібридний-інвертор-livoltek-hp3-15kt2/5.webp"
+  ],
+  "featured": false,
+  "source": "namato"
+}

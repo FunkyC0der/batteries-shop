@@ -1,0 +1,55 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "gibridniy-invertor-sungrow-sh60rs-v11-6kw-hv-2-mppt-220v-odnofazniy-ash00099",
+  "title": "Гібридний інвертор SUNGROW SH6.0RS-V11 6kW HV 2 MPPT 220V Однофазний (ASH00099)",
+  "sourceUrl": "https://solarverse.ua/product/gibridniy-invertor-sungrow-sh60rs-v11-6kw-hv-2-mppt-220v-odnofazniy-ash00099",
+  "direction": "energy-solutions",
+  "price": "58 548 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Sungrow: 6000 W.",
+  "description": "Гібридний інвертор SUNGROW SH6.0RS-V11 6kW HV 2 MPPT 220V Однофазний (ASH00099). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Sungrow"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Sungrow"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "6000 W"
+    },
+    {
+      "label": "Вихідна напруга АКБ",
+      "value": "80 - 460 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/gibridniy-invertor-sungrow-sh60rs-v11-6kw-hv-2-mppt-220v-odnofazniy-ash00099/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-sungrow-sh60rs-v11-6kw-hv-2-mppt-220v-odnofazniy-ash00099/1.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-sungrow-sh60rs-v11-6kw-hv-2-mppt-220v-odnofazniy-ash00099/2.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-sungrow-sh60rs-v11-6kw-hv-2-mppt-220v-odnofazniy-ash00099/3.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-sungrow-sh60rs-v11-6kw-hv-2-mppt-220v-odnofazniy-ash00099/4.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-sungrow-sh60rs-v11-6kw-hv-2-mppt-220v-odnofazniy-ash00099/5.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

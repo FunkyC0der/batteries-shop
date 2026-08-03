@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "mppt-modul-deye-bos-b-200kw-8-mppt-sun-mppt-l01-eu-am8",
+  "title": "MPPT модуль Deye BOS-B 200KW 8 MPPT (SUN-MPPT-L01-EU-AM8)",
+  "sourceUrl": "https://solarverse.ua/product/mppt-modul-deye-bos-b-200kw-8-mppt-sun-mppt-l01-eu-am8",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Deye: характеристики за запитом.",
+  "description": "MPPT модуль Deye BOS-B 200KW 8 MPPT (SUN-MPPT-L01-EU-AM8). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Deye"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Deye"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/mppt-modul-deye-bos-b-200kw-8-mppt-sun-mppt-l01-eu-am8/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/mppt-modul-deye-bos-b-200kw-8-mppt-sun-mppt-l01-eu-am8/1.webp",
+    "/images/products/solarverse/equipment/inverters/mppt-modul-deye-bos-b-200kw-8-mppt-sun-mppt-l01-eu-am8/2.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

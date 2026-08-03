@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "battery-pack-connector",
+  "title": "Батарейний блок з конектором",
+  "direction": "metering-and-comfort",
+  "price": "від 620 грн",
+  "showPrice": false,
+  "status": "in-stock",
+  "shortDescription": "Готовий батарейний блок для заміни у модулі лічильника з підготовленим конектором.",
+  "description": "Плейсхолдерний товар для позицій, де важлива не лише батарейка, а й правильний конектор, довжина проводу та полярність.",
+  "specs": [
+    {
+      "label": "Комплектація",
+      "value": "батарейка, провід, конектор"
+    },
+    {
+      "label": "Підготовка",
+      "value": "під модель лічильника"
+    },
+    {
+      "label": "Статус",
+      "value": "під замовлення"
+    },
+    {
+      "label": "Перевірка",
+      "value": "контроль напруги перед відправкою"
+    }
+  ],
+  "compatibility": [
+    "модулі лічильників",
+    "прилади з конекторним живленням"
+  ],
+  "image": "/images/product-lithium-batteries.webp",
+  "featured": true,
+  "source": "manual"
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "universalna-stiyka-artline-z-trimachem-dlya-avtomobilnogo-zaryadnogo-pristroyu-bulk-black-artline-car-chr-holder",
+  "title": "Універсальна стійка ARTLINE з тримачем для автомобільного зарядного пристрою Bulk Black (ARTLINE_CAR_CHR_HOLDER)",
+  "sourceUrl": "https://solarverse.ua/product/universalna-stiyka-artline-z-trimachem-dlya-avtomobilnogo-zaryadnogo-pristroyu-bulk-black-artline-car-chr-holder",
+  "direction": "energy-solutions",
+  "price": "5 999 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "аксесуар Artline: Для заряджання електромобілів.",
+  "description": "Універсальна стійка ARTLINE з тримачем для автомобільного зарядного пристрою Bulk Black (ARTLINE_CAR_CHR_HOLDER). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Artline"
+    },
+    {
+      "label": "Гарантія",
+      "value": "1 міс."
+    },
+    {
+      "label": "Призначення",
+      "value": "Для заряджання електромобілів"
+    },
+    {
+      "label": "Матеріал",
+      "value": "Метал"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "монтажу та підключення енергетичного обладнання",
+    "сумісних інверторів, батарей і систем моніторингу",
+    "сервісного дооснащення після перевірки моделі обладнання"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-accessories/universalna-stiyka-artline-z-trimachem-dlya-avtomobilnogo-zaryadnogo-pristroyu-bulk-black-artline-car-chr-holder/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-accessories/universalna-stiyka-artline-z-trimachem-dlya-avtomobilnogo-zaryadnogo-pristroyu-bulk-black-artline-car-chr-holder/1.webp",
+    "/images/products/solarverse/equipment/solar-accessories/universalna-stiyka-artline-z-trimachem-dlya-avtomobilnogo-zaryadnogo-pristroyu-bulk-black-artline-car-chr-holder/2.webp",
+    "/images/products/solarverse/equipment/solar-accessories/universalna-stiyka-artline-z-trimachem-dlya-avtomobilnogo-zaryadnogo-pristroyu-bulk-black-artline-car-chr-holder/3.webp",
+    "/images/products/solarverse/equipment/solar-accessories/universalna-stiyka-artline-z-trimachem-dlya-avtomobilnogo-zaryadnogo-pristroyu-bulk-black-artline-car-chr-holder/4.webp",
+    "/images/products/solarverse/equipment/solar-accessories/universalna-stiyka-artline-z-trimachem-dlya-avtomobilnogo-zaryadnogo-pristroyu-bulk-black-artline-car-chr-holder/5.webp",
+    "/images/products/solarverse/equipment/solar-accessories/universalna-stiyka-artline-z-trimachem-dlya-avtomobilnogo-zaryadnogo-pristroyu-bulk-black-artline-car-chr-holder/6.webp",
+    "/images/products/solarverse/equipment/solar-accessories/universalna-stiyka-artline-z-trimachem-dlya-avtomobilnogo-zaryadnogo-pristroyu-bulk-black-artline-car-chr-holder/7.webp",
+    "/images/products/solarverse/equipment/solar-accessories/universalna-stiyka-artline-z-trimachem-dlya-avtomobilnogo-zaryadnogo-pristroyu-bulk-black-artline-car-chr-holder/8.webp",
+    "/images/products/solarverse/equipment/solar-accessories/universalna-stiyka-artline-z-trimachem-dlya-avtomobilnogo-zaryadnogo-pristroyu-bulk-black-artline-car-chr-holder/9.webp",
+    "/images/products/solarverse/equipment/solar-accessories/universalna-stiyka-artline-z-trimachem-dlya-avtomobilnogo-zaryadnogo-pristroyu-bulk-black-artline-car-chr-holder/10.webp",
+    "/images/products/solarverse/equipment/solar-accessories/universalna-stiyka-artline-z-trimachem-dlya-avtomobilnogo-zaryadnogo-pristroyu-bulk-black-artline-car-chr-holder/11.webp",
+    "/images/products/solarverse/equipment/solar-accessories/universalna-stiyka-artline-z-trimachem-dlya-avtomobilnogo-zaryadnogo-pristroyu-bulk-black-artline-car-chr-holder/12.webp",
+    "/images/products/solarverse/equipment/solar-accessories/universalna-stiyka-artline-z-trimachem-dlya-avtomobilnogo-zaryadnogo-pristroyu-bulk-black-artline-car-chr-holder/13.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "zaryadniy-pristriy-dlya-elektromobiliv-deye-sun-evse22k01-eu-type2-22kvt-32a-3-ph-wi-filorable",
+  "title": "Зарядний пристрій для електромобілів DEYE SUN-EVSE22K01-EU Type2, 22кВт, 32A, 3-Ph, Wi-Fi/LoRa/BLE",
+  "sourceUrl": "https://solarverse.ua/product/zaryadniy-pristriy-dlya-elektromobiliv-deye-sun-evse22k01-eu-type2-22kvt-32a-3-ph-wi-filorable",
+  "direction": "energy-solutions",
+  "price": "15 528 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "аксесуар Deye: Для заряджання електромобілів.",
+  "description": "Зарядний пристрій для електромобілів DEYE SUN-EVSE22K01-EU Type2, 22кВт, 32A, 3-Ph, Wi-Fi/LoRa/BLE. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Deye"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Deye"
+    },
+    {
+      "label": "Гарантія",
+      "value": "24 міс."
+    },
+    {
+      "label": "Призначення",
+      "value": "Для заряджання електромобілів"
+    },
+    {
+      "label": "Сумісність",
+      "value": "Інвертори DEYE"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "монтажу та підключення енергетичного обладнання",
+    "сумісних інверторів, батарей і систем моніторингу",
+    "сервісного дооснащення після перевірки моделі обладнання"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-accessories/zaryadniy-pristriy-dlya-elektromobiliv-deye-sun-evse22k01-eu-type2-22kvt-32a-3-ph-wi-filorable/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-accessories/zaryadniy-pristriy-dlya-elektromobiliv-deye-sun-evse22k01-eu-type2-22kvt-32a-3-ph-wi-filorable/1.webp",
+    "/images/products/solarverse/equipment/solar-accessories/zaryadniy-pristriy-dlya-elektromobiliv-deye-sun-evse22k01-eu-type2-22kvt-32a-3-ph-wi-filorable/2.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

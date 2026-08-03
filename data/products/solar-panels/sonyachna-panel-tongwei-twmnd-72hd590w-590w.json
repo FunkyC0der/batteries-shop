@@ -1,0 +1,55 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "sonyachna-panel-tongwei-twmnd-72hd590w-590w",
+  "title": "Сонячна панель Tongwei TWMND-72HD590W 590W",
+  "sourceUrl": "https://solarverse.ua/product/sonyachna-panel-tongwei-twmnd-72hd590w-590w",
+  "direction": "energy-solutions",
+  "price": "5 669 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "сонячна панель Tongwei Solar: 590 W.",
+  "description": "Сонячна панель Tongwei TWMND-72HD590W 590W. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Tongwei Solar"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Tongwei Solar"
+    },
+    {
+      "label": "Тип напівпровідника",
+      "value": "Монокристал"
+    },
+    {
+      "label": "Потужність",
+      "value": "590 W"
+    },
+    {
+      "label": "Конектори",
+      "value": "MC4"
+    },
+    {
+      "label": "Ступінь захисту від вологи та пилу",
+      "value": "IP68"
+    },
+    {
+      "label": "Гарантія",
+      "value": "12 років"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "дахових і наземних сонячних електростанцій",
+    "мережевих, гібридних та автономних систем",
+    "приватних і комерційних об’єктів після проєктного розрахунку"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-panels/sonyachna-panel-tongwei-twmnd-72hd590w-590w/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-panels/sonyachna-panel-tongwei-twmnd-72hd590w-590w/1.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

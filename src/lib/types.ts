@@ -26,9 +26,13 @@ export type ServiceCategory =
 
 export type AvailabilityStatus = "in-stock" | "preorder" | "consult";
 
+export type CatalogSourceId = "manual" | "solarverse" | "namato";
+
 export type Product = {
   id: string;
   slug: string;
+  source: CatalogSourceId;
+  locked?: boolean;
   title: string;
   sourceUrl?: string;
   sourceUrls?: string[];
@@ -57,6 +61,8 @@ export type Product = {
 export type Service = {
   id: string;
   slug: string;
+  source: CatalogSourceId;
+  locked?: boolean;
   title: string;
   direction: ServiceDirection;
   category: ServiceCategory;
@@ -76,3 +82,9 @@ export type CatalogSearch = {
   category?: ProductCategory | ServiceCategory | "all";
   query?: string;
 };
+
+/** Shape stored in data/products/{category}/{slug}.json */
+export type ProductFile = Omit<Product, "id" | "category">;
+
+/** Shape stored in data/services/{category}/{slug}.json */
+export type ServiceFile = Omit<Service, "id" | "category">;

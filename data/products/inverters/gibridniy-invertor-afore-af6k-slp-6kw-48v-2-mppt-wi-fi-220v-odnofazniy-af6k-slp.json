@@ -1,0 +1,54 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "gibridniy-invertor-afore-af6k-slp-6kw-48v-2-mppt-wi-fi-220v-odnofazniy-af6k-slp",
+  "title": "Гібридний інвертор Afore AF6K-SLP 6KW 48V 2 MPPT Wi-Fi 220V Однофазний (AF6K-SLP)",
+  "sourceUrl": "https://solarverse.ua/product/gibridniy-invertor-afore-af6k-slp-6kw-48v-2-mppt-wi-fi-220v-odnofazniy-af6k-slp",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Afore: 6000 W.",
+  "description": "Гібридний інвертор Afore AF6K-SLP 6KW 48V 2 MPPT Wi-Fi 220V Однофазний (AF6K-SLP). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Afore"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Afore"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "6000 W"
+    },
+    {
+      "label": "Вихідна напруга АКБ",
+      "value": "51.2 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/gibridniy-invertor-afore-af6k-slp-6kw-48v-2-mppt-wi-fi-220v-odnofazniy-af6k-slp/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-afore-af6k-slp-6kw-48v-2-mppt-wi-fi-220v-odnofazniy-af6k-slp/1.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-afore-af6k-slp-6kw-48v-2-mppt-wi-fi-220v-odnofazniy-af6k-slp/2.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-afore-af6k-slp-6kw-48v-2-mppt-wi-fi-220v-odnofazniy-af6k-slp/3.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-afore-af6k-slp-6kw-48v-2-mppt-wi-fi-220v-odnofazniy-af6k-slp/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

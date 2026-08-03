@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "blok-batarey-dyness-stack280-10-10xs51280-143kwh-512v-280ah-lifepo4-sbdu280-stack280-10-143kwh",
+  "title": "Блок батарей Dyness STACK280-10 10xS51280 143kWh 512V 280Ah LiFePO4 SBDU280 (STACK280-10-143kWh)",
+  "sourceUrl": "https://solarverse.ua/product/blok-batarey-dyness-stack280-10-10xs51280-143kwh-512v-280ah-lifepo4-sbdu280-stack280-10-143kwh",
+  "direction": "energy-solutions",
+  "price": "1 007 460 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "акумуляторна батарея Dyness: 143.36 kW⋅h.",
+  "description": "Блок батарей Dyness STACK280-10 10xS51280 143kWh 512V 280Ah LiFePO4 SBDU280 (STACK280-10-143kWh). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Dyness"
+    },
+    {
+      "label": "Технологія",
+      "value": "Літій-залізо-фосфатна (LiFePO4)"
+    },
+    {
+      "label": "Ємність батареї",
+      "value": "280 Ah"
+    },
+    {
+      "label": "Енергія батареї",
+      "value": "143.36 kW⋅h"
+    },
+    {
+      "label": "Цикл життя",
+      "value": "8000 циклів"
+    },
+    {
+      "label": "Номінальна напруга",
+      "value": "512 V"
+    },
+    {
+      "label": "Зарядний струм (макс.)",
+      "value": "280 A"
+    },
+    {
+      "label": "Гарантія",
+      "value": "60 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "систем резервного й автономного живлення",
+    "сонячних електростанцій із накопиченням енергії",
+    "сумісних інверторів після перевірки протоколу зв’язку та напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-batteries/blok-batarey-dyness-stack280-10-10xs51280-143kwh-512v-280ah-lifepo4-sbdu280-stack280-10-143kwh/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-dyness-stack280-10-10xs51280-143kwh-512v-280ah-lifepo4-sbdu280-stack280-10-143kwh/1.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-dyness-stack280-10-10xs51280-143kwh-512v-280ah-lifepo4-sbdu280-stack280-10-143kwh/2.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-dyness-stack280-10-10xs51280-143kwh-512v-280ah-lifepo4-sbdu280-stack280-10-143kwh/3.webp",
+    "/images/products/solarverse/equipment/solar-batteries/blok-batarey-dyness-stack280-10-10xs51280-143kwh-512v-280ah-lifepo4-sbdu280-stack280-10-143kwh/4.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

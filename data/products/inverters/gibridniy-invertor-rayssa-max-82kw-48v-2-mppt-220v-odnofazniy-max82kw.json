@@ -1,0 +1,59 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "gibridniy-invertor-rayssa-max-82kw-48v-2-mppt-220v-odnofazniy-max82kw",
+  "title": "Гібридний інвертор Rayssa MAX 8.2KW 48V 2 MPPT 220V Однофазний (MAX8.2kW)",
+  "sourceUrl": "https://solarverse.ua/product/gibridniy-invertor-rayssa-max-82kw-48v-2-mppt-220v-odnofazniy-max82kw",
+  "direction": "energy-solutions",
+  "price": "Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "інвертор Rayssa: 8200 W.",
+  "description": "Гібридний інвертор Rayssa MAX 8.2KW 48V 2 MPPT 220V Однофазний (MAX8.2kW). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Rayssa"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Rayssa"
+    },
+    {
+      "label": "Тип",
+      "value": "Гібридний"
+    },
+    {
+      "label": "Номінальна потужність",
+      "value": "8200 W"
+    },
+    {
+      "label": "Вихідна напруга АКБ",
+      "value": "48 V"
+    },
+    {
+      "label": "Гарантія",
+      "value": "36 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "сонячних електростанцій і систем резервного живлення",
+    "приватних та комерційних об’єктів після розрахунку навантаження",
+    "сумісних акумуляторних систем відповідної напруги"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/inverters/gibridniy-invertor-rayssa-max-82kw-48v-2-mppt-220v-odnofazniy-max82kw/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-rayssa-max-82kw-48v-2-mppt-220v-odnofazniy-max82kw/1.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-rayssa-max-82kw-48v-2-mppt-220v-odnofazniy-max82kw/2.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-rayssa-max-82kw-48v-2-mppt-220v-odnofazniy-max82kw/3.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-rayssa-max-82kw-48v-2-mppt-220v-odnofazniy-max82kw/4.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-rayssa-max-82kw-48v-2-mppt-220v-odnofazniy-max82kw/5.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-rayssa-max-82kw-48v-2-mppt-220v-odnofazniy-max82kw/6.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-rayssa-max-82kw-48v-2-mppt-220v-odnofazniy-max82kw/7.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-rayssa-max-82kw-48v-2-mppt-220v-odnofazniy-max82kw/8.webp",
+    "/images/products/solarverse/equipment/inverters/gibridniy-invertor-rayssa-max-82kw-48v-2-mppt-220v-odnofazniy-max82kw/9.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "bezdrotoviy-lichilnik-strumu-ct-meter-deye-sun-smart-ct01-50ma-ct-3-ph-lorars485",
+  "title": "Бездротовий лічильник струму (CT-Meter) DEYE SUN-SMART-CT01 50мА CT, 3-Ph, LoRa/RS485",
+  "sourceUrl": "https://solarverse.ua/product/bezdrotoviy-lichilnik-strumu-ct-meter-deye-sun-smart-ct01-50ma-ct-3-ph-lorars485",
+  "direction": "energy-solutions",
+  "price": "3 960 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "аксесуар Deye: Для вимірювання електроенергії у трифазних мережах.",
+  "description": "Бездротовий лічильник струму (CT-Meter) DEYE SUN-SMART-CT01 50мА CT, 3-Ph, LoRa/RS485. Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Deye"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Deye"
+    },
+    {
+      "label": "Гарантія",
+      "value": "24 міс."
+    },
+    {
+      "label": "Призначення",
+      "value": "Для вимірювання електроенергії у трифазних мережах"
+    },
+    {
+      "label": "Сумісність",
+      "value": "Інвертори DEYE"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "монтажу та підключення енергетичного обладнання",
+    "сумісних інверторів, батарей і систем моніторингу",
+    "сервісного дооснащення після перевірки моделі обладнання"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-accessories/bezdrotoviy-lichilnik-strumu-ct-meter-deye-sun-smart-ct01-50ma-ct-3-ph-lorars485/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-accessories/bezdrotoviy-lichilnik-strumu-ct-meter-deye-sun-smart-ct01-50ma-ct-3-ph-lorars485/1.webp",
+    "/images/products/solarverse/equipment/solar-accessories/bezdrotoviy-lichilnik-strumu-ct-meter-deye-sun-smart-ct01-50ma-ct-3-ph-lorars485/2.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

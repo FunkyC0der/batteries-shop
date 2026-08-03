@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "kabel-dlya-pidklyuchennya-do-invertora-dyness-b4850-b4850-p-c",
+  "title": "Кабель для підключення до інвертора DYNESS B4850 (B4850-P-C)",
+  "sourceUrl": "https://solarverse.ua/product/kabel-dlya-pidklyuchennya-do-invertora-dyness-b4850-b4850-p-c",
+  "direction": "energy-solutions",
+  "price": "1 499 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "аксесуар Dyness: Dyness B4850.",
+  "description": "Кабель для підключення до інвертора DYNESS B4850 (B4850-P-C). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Dyness"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Dyness"
+    },
+    {
+      "label": "Сумісність",
+      "value": "Dyness B4850"
+    },
+    {
+      "label": "Призначення",
+      "value": "Для підключення до інвертора"
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "монтажу та підключення енергетичного обладнання",
+    "сумісних інверторів, батарей і систем моніторингу",
+    "сервісного дооснащення після перевірки моделі обладнання"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-accessories/kabel-dlya-pidklyuchennya-do-invertora-dyness-b4850-b4850-p-c/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-accessories/kabel-dlya-pidklyuchennya-do-invertora-dyness-b4850-b4850-p-c/1.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}

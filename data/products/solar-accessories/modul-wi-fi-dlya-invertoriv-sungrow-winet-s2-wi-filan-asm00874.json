@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "modul-wi-fi-dlya-invertoriv-sungrow-winet-s2-wi-filan-asm00874",
+  "title": "Модуль Wi-Fi для інверторів Sungrow WiNet-S2 Wi-Fi/LAN (ASM00874)",
+  "sourceUrl": "https://solarverse.ua/product/modul-wi-fi-dlya-invertoriv-sungrow-winet-s2-wi-filan-asm00874",
+  "direction": "energy-solutions",
+  "price": "4 368 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "consult",
+  "shortDescription": "аксесуар Sungrow: Для підключення до інвертора.",
+  "description": "Модуль Wi-Fi для інверторів Sungrow WiNet-S2 Wi-Fi/LAN (ASM00874). Характеристики наведені за даними джерела. Перед замовленням уточнюємо актуальну ціну, наявність, комплектацію, гарантію та сумісність з іншими компонентами системи.",
+  "specs": [
+    {
+      "label": "Бренд",
+      "value": "Sungrow"
+    },
+    {
+      "label": "Виробник (бренд)",
+      "value": "Sungrow"
+    },
+    {
+      "label": "Призначення",
+      "value": "Для підключення до інвертора"
+    },
+    {
+      "label": "Гарантія",
+      "value": "12 міс."
+    }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "монтажу та підключення енергетичного обладнання",
+    "сумісних інверторів, батарей і систем моніторингу",
+    "сервісного дооснащення після перевірки моделі обладнання"
+  ],
+  "notice": "Ціна наведена довідково за даними джерела. Актуальну ціну, наявність і сумісність потрібно уточнити перед замовленням.",
+  "image": "/images/products/solarverse/equipment/solar-accessories/modul-wi-fi-dlya-invertoriv-sungrow-winet-s2-wi-filan-asm00874/1.webp",
+  "images": [
+    "/images/products/solarverse/equipment/solar-accessories/modul-wi-fi-dlya-invertoriv-sungrow-winet-s2-wi-filan-asm00874/1.webp",
+    "/images/products/solarverse/equipment/solar-accessories/modul-wi-fi-dlya-invertoriv-sungrow-winet-s2-wi-filan-asm00874/2.webp"
+  ],
+  "featured": false,
+  "source": "solarverse"
+}
