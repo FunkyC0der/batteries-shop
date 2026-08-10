@@ -1,5 +1,7 @@
 export type ProductCategory =
   | "lithium"
+  | "heat-meters"
+  | "water-meters"
   | "meter-modules"
   | "accessories"
   | "solar-stations"

@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "lichylnyk-vody-apator-powogaz-js90-1-6-dn15-smart-plus",
+  "title": "Лічильник гарячої води Apator Powogaz JS90 1,6 DN15 Smart+",
+  "sourceUrl": "https://energolider-kh.com.ua/ua/p838073749-schetchik-goryachej-vody.html",
+  "direction": "metering-and-comfort",
+  "price": "980 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "in-stock",
+  "shortDescription": "Одноструминний сухохід Apator Powogaz JS90 1,6 DN15 Smart+ для гарячої води T90, Q₃ 1,6 м³/год, L=110 мм.",
+  "description": "Apator Powogaz JS90 Smart+ — виконання для гарячої води (температурний клас T90) серії JS Smart+. Модель із номінальною витратою Q₃ 1,6 м³/год, DN15, монтажною довжиною 110 мм і муфтовим приєднанням. Поріг запуску — близько 6 л/год, Q1 — 16 л/год, Q4 — 2 м³/год.\n\nКлас точності R100 при горизонтальному встановленні та R50 при вертикальному. Максимальний тиск 1,6 МПа (16 бар). Габарити орієнтовно 110×68,5×72 мм, маса без КМЧ — близько 0,5 кг. Міжповірочний інтервал — 4 роки. Фото — з офіційного каталогу Apator Powogaz (серія JS Smart+).\n\nПеред замовленням уточнюємо актуальну ціну, наявність, комплектацію КМЧ і вимоги водоканалу.",
+  "specs": [
+    { "label": "Бренд", "value": "Apator Powogaz" },
+    { "label": "Модель", "value": "JS90 1,6 DN15 Smart+" },
+    { "label": "Призначення", "value": "Гаряча вода (T90)" },
+    { "label": "Тип", "value": "Механічний, одноструминний, сухохід" },
+    { "label": "Умовний прохід", "value": "DN15" },
+    { "label": "Номінальна витрата, Q₃", "value": "1,6 м³/год" },
+    { "label": "Мінімальна витрата, Q1", "value": "16 л/год" },
+    { "label": "Максимальна витрата, Q4", "value": "2 м³/год" },
+    { "label": "Поріг запуску", "value": "6 л/год" },
+    { "label": "Монтажна довжина", "value": "110 мм" },
+    { "label": "Тип з’єднання", "value": "Муфтовий" },
+    { "label": "Метрологічний клас", "value": "R100 (H) / R50 (V)" },
+    { "label": "Максимальний тиск", "value": "1,6 МПа (16 бар)" },
+    { "label": "Габарити L×B×H", "value": "110 × 68,5 × 72 мм" },
+    { "label": "Маса без КМЧ", "value": "0,5 кг" },
+    { "label": "Міжповірочний інтервал", "value": "4 роки" },
+    { "label": "Країна виробник", "value": "Польща" }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "обліку гарячої води в квартирах і будинках",
+    "вузлів DN15 із монтажною довжиною 110 мм",
+    "горизонтального (R100) або вертикального (R50) монтажу",
+    "систем із комунікаційними накладками серії Smart+"
+  ],
+  "notice": "Ціна наведена довідково. Актуальну ціну, наявність і комплектацію потрібно уточнити перед замовленням.",
+  "image": "/images/products/water-meters/lichylnyk-vody-apator-powogaz-js90-1-6-dn15-smart-plus/1.webp",
+  "images": [
+    "/images/products/water-meters/lichylnyk-vody-apator-powogaz-js90-1-6-dn15-smart-plus/1.webp"
+  ],
+  "featured": true,
+  "source": "manual"
+}

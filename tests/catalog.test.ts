@@ -90,7 +90,7 @@ describe("catalog helpers", () => {
       direction: "energy-solutions",
     });
 
-    expect(heatProducts).toHaveLength(4);
+    expect(heatProducts).toHaveLength(20);
     expect(energyProducts).toHaveLength(368);
     expect(
       heatProducts.every(

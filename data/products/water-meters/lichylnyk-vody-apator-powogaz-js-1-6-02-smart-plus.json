@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "lichylnyk-vody-apator-powogaz-js-1-6-02-smart-plus",
+  "title": "Лічильник води Apator Powogaz JS 1,6-02 Smart+ (холодна)",
+  "sourceUrl": "https://teploalex.com.ua/ua/p2576625382-cchetchik-apator-powogaz.html",
+  "direction": "metering-and-comfort",
+  "price": "980 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "in-stock",
+  "shortDescription": "Одноструминний сухохід Apator Powogaz JS 1,6-02 Smart+ для холодної води, DN15, Q₃ 1,6 м³/год, L=110 мм, під AMR-накладки.",
+  "description": "Apator Powogaz JS Smart+ — польський одноструминний лічильник сухого типу для обліку холодної води. Модель JS 1,6-02: латунний корпус, 8-роликовий лічильний механізм, антимагнітний захист, підготовка до радіо-, імпульсних і M-Bus накладок (AMR).\n\nНомінальна витрата Q₃ 1,6 м³/год, DN15, монтажна довжина 110 мм, різьба G 3/4\", максимальний тиск 16 бар. Монтаж на горизонтальних і вертикальних ділянках. Фото — з офіційного каталогу Apator Powogaz.\n\nПеред замовленням уточнюємо актуальну ціну, наявність, комплектацію КМЧ і вимоги водоканалу.",
+  "specs": [
+    { "label": "Бренд", "value": "Apator Powogaz" },
+    { "label": "Модель", "value": "JS 1,6-02 Smart+" },
+    { "label": "Призначення", "value": "Холодна вода" },
+    { "label": "Тип", "value": "Механічний, одноструминний, сухохід" },
+    { "label": "Умовний прохід", "value": "DN15" },
+    { "label": "Номінальна витрата, Q₃", "value": "1,6 м³/год" },
+    { "label": "Монтажна довжина", "value": "110 мм" },
+    { "label": "Приєднання", "value": "G 3/4\"" },
+    { "label": "Робочий тиск", "value": "16 бар" },
+    { "label": "Метрологічний клас", "value": "R100 (H↑) / R50–R63 (V, H→)" },
+    { "label": "Матеріал корпусу", "value": "Латунь" },
+    { "label": "Особливості", "value": "Антимагнітний захист SN+; під AMR-накладки" },
+    { "label": "Країна виробник", "value": "Польща" }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "обліку холодної води в квартирах і будинках",
+    "вузлів DN15 із довжиною 110 мм і різьбою G 3/4\"",
+    "систем дистанційного зчитування з накладками Smart+",
+    "горизонтального або вертикального монтажу"
+  ],
+  "notice": "Ціна наведена довідково. Актуальну ціну, наявність і комплектацію потрібно уточнити перед замовленням.",
+  "image": "/images/products/water-meters/lichylnyk-vody-apator-powogaz-js-1-6-02-smart-plus/1.webp",
+  "images": [
+    "/images/products/water-meters/lichylnyk-vody-apator-powogaz-js-1-6-02-smart-plus/1.webp"
+  ],
+  "featured": true,
+  "source": "manual"
+}

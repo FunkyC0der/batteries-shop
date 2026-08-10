@@ -57,6 +57,16 @@ export const productCategories = [
     direction: "metering-and-comfort",
   },
   {
+    value: "heat-meters",
+    label: "Теплолічильники",
+    direction: "metering-and-comfort",
+  },
+  {
+    value: "water-meters",
+    label: "Лічильники води",
+    direction: "metering-and-comfort",
+  },
+  {
     value: "meter-modules",
     label: "Для модулів лічильників",
     direction: "metering-and-comfort",

@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../schema/product.schema.json",
+  "slug": "saft-ls14500-cna-axial-nkon",
+  "title": "Saft LS14500 CNA AA 3,6 V з аксіальними виводами",
+  "sourceUrl": "https://www.nkon.nl/ru/saft-sl14500-aa-lithium-battery-3-6v-u-axial-solder-tags.html",
+  "direction": "metering-and-comfort",
+  "price": "від 136 грн · Ціну уточнюйте",
+  "showPrice": true,
+  "status": "in-stock",
+  "shortDescription": "Saft LS14500 CNA — літієва батарейка AA Li-SOCl₂ 3,6 V / 2600 мА·год з аксіальними припійними виводами (не акумулятор).",
+  "description": "Офіційна модель Saft LS14500 у виконанні CNA з аксіальними виводами (axial wires / solder tags). Хімія Li-SOCl₂ (bobbin), номінал 3,6 V, типова ємність 2600 мА·год, типорозмір AA (діаметр ≈ 14,5 мм, висота ≈ 50,5 мм). EAN за даними джерела: 8594052538304.\n\nЦе первинний (одноразовий) елемент — заряджати категорично заборонено. Підходить для приладів обліку, IoT і промислової електроніки, де потрібні виводи під пайку.\n\nПеред замовленням уточнюємо актуальну ціну, наявність і умови доставки.",
+  "specs": [
+    { "label": "Бренд", "value": "Saft" },
+    { "label": "Модель", "value": "LS14500 / CNA" },
+    { "label": "Хімія", "value": "Li-SOCl₂ (bobbin)" },
+    { "label": "Типорозмір", "value": "AA" },
+    { "label": "Напруга", "value": "3,6 V" },
+    { "label": "Ємність", "value": "2600 мА·год" },
+    { "label": "Виводи", "value": "Аксіальні (припійні)" },
+    { "label": "Діаметр", "value": "14,5 мм" },
+    { "label": "Висота", "value": "50,5 мм" },
+    { "label": "EAN", "value": "8594052538304" },
+    { "label": "Тип", "value": "Первинна (не акумулятор)" }
+  ],
+  "compatibilityTitle": "Підходить для",
+  "compatibility": [
+    "приладів із посадкою AA 3,6 V і пайкою аксіальних виводів",
+    "теплолічильників і модулів обліку",
+    "заміни LS14500 CNA у сумісних схемах"
+  ],
+  "notice": "Ціна наведена довідково в гривнях. Первинна батарейка — не заряджати. Актуальну ціну та умови доставки уточнюйте перед замовленням.",
+  "image": "/images/products/lithium/saft-ls14500-cna-axial-nkon/1.webp",
+  "images": [
+    "/images/products/lithium/saft-ls14500-cna-axial-nkon/1.webp"
+  ],
+  "featured": false,
+  "source": "manual"
+}
