@@ -1,14 +1,20 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
 
 import { ActionButtons } from "@/components/action-buttons";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { CatalogBackLink } from "@/components/catalog-back-link";
 import { CtaPanel } from "@/components/cta-panel";
+import { JsonLd } from "@/components/json-ld";
 import { ProductGallery } from "@/components/product-gallery";
-import { getProductBySlug, getStatusLabel } from "@/lib/catalog";
+import { getProductBySlug, getStatusLabel, productCategories } from "@/lib/catalog";
 import { products } from "@/lib/data";
 import { productToOrderable } from "@/lib/order-actions";
+import { buildBreadcrumbJsonLd, buildProductJsonLd } from "@/lib/seo/json-ld";
+import { absoluteUrl, buildPageMetadata } from "@/lib/seo/metadata";
+import { buildProductMetaDescription } from "@/lib/seo/product-seo";
 
 type ProductPageProps = {
   params: Promise<{ slug: string }>;
@@ -35,20 +41,28 @@ export async function generateMetadata({
     };
   }
 
-  return {
+  let decodedSlug = slug;
+  try {
+    decodedSlug = decodeURIComponent(slug);
+  } catch {
+    // Keep the original value when a malformed URL segment reaches the route.
+  }
+  const isLegacySlug = decodedSlug !== product.slug;
+
+  return buildPageMetadata({
     title: product.title,
-    description: product.shortDescription,
-    alternates: {
-      canonical: `/products/${product.slug}`,
-    },
-  };
+    description: buildProductMetaDescription(product),
+    path: `/products/${product.slug}/`,
+    images: [product.image],
+    noindex: isLegacySlug,
+  });
 }
 
 function CatalogBackLinkFallback() {
   return (
-    <a className="text-sm font-semibold text-primary" href="/products">
+    <Link className="text-sm font-semibold text-primary" href="/products">
       ← До товарів
-    </a>
+    </Link>
   );
 }
 
@@ -60,12 +74,39 @@ export default async function ProductPage({ params }: ProductPageProps) {
     notFound();
   }
 
+  const categoryLabel =
+    productCategories.find((item) => item.value === product.category)
+      ?.label ?? product.category;
+  const breadcrumbs = [
+    { label: "Головна", href: "/" },
+    { label: "Товари", href: "/products" },
+    {
+      label: categoryLabel,
+      href: `/products/category/${product.category}`,
+    },
+    { label: product.title },
+  ];
+
   return (
     <>
+      <JsonLd data={buildProductJsonLd(product)} />
+      <JsonLd
+        data={buildBreadcrumbJsonLd(
+          breadcrumbs.map((item) => ({
+            name: item.label,
+            url: absoluteUrl(item.href ?? `/products/${product.slug}/`),
+          })),
+        )}
+      />
+
       <article className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
         <Suspense fallback={<CatalogBackLinkFallback />}>
           <CatalogBackLink />
         </Suspense>
+
+        <div className="mt-4">
+          <Breadcrumbs items={breadcrumbs} />
+        </div>
 
         <h1 className="mt-5 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
           {product.title}

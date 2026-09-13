@@ -1,0 +1,394 @@
+{
+  "redirects": [
+    {
+      "source": "/products/%D0%B0%D0%BA%D0%BA%D1%83%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D0%B1%D0%B0%D1%82%D0%B0%D1%80%D0%B5%D1%8F-deye-bos-gm5-1-pro",
+      "destination": "/products/akkumulyatornaya-batareya-deye-bos-gm5-1-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B0%D0%BA%D0%BA%D1%83%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D0%B1%D0%B0%D1%82%D0%B0%D1%80%D0%B5%D1%8F-deye-bos-gm5-1-pro/",
+      "destination": "/products/akkumulyatornaya-batareya-deye-bos-gm5-1-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B0%D0%BA%D1%83%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80-deye-se-g5-1pro-%D1%81-5-%D0%BA%D0%B2%D1%82-%D0%B3-lifepo4-51-2v-100ah",
+      "destination": "/products/akumulyator-deye-se-g5-1pro-s-5-kvt-h-lifepo4-51-2v-100ah/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B0%D0%BA%D1%83%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80-deye-se-g5-1pro-%D1%81-5-%D0%BA%D0%B2%D1%82-%D0%B3-lifepo4-51-2v-100ah/",
+      "destination": "/products/akumulyator-deye-se-g5-1pro-s-5-kvt-h-lifepo4-51-2v-100ah/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B0%D0%BA%D1%83%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80-deye-se-g5-1pro-l-5-%D0%BA%D0%B2%D1%82-%D0%B3-lifepo4-51-2v-100ah",
+      "destination": "/products/akumulyator-deye-se-g5-1pro-l-5-kvt-h-lifepo4-51-2v-100ah/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B0%D0%BA%D1%83%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80-deye-se-g5-1pro-l-5-%D0%BA%D0%B2%D1%82-%D0%B3-lifepo4-51-2v-100ah/",
+      "destination": "/products/akumulyator-deye-se-g5-1pro-l-5-kvt-h-lifepo4-51-2v-100ah/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B0%D0%BA%D1%83%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80-livoltek-bhf-g-5-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4",
+      "destination": "/products/akumulyator-livoltek-bhf-g-5-kvt-hod/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B0%D0%BA%D1%83%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80-livoltek-bhf-g-5-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4/",
+      "destination": "/products/akumulyator-livoltek-bhf-g-5-kvt-hod/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B1%D0%BB%D0%BE%D0%BA-bms-%D0%BA%D0%B5%D1%80%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-deye-bos-g-pdu-2-pro",
+      "destination": "/products/blok-bms-keruvannya-deye-bos-g-pdu-2-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B1%D0%BB%D0%BE%D0%BA-bms-%D0%BA%D0%B5%D1%80%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-deye-bos-g-pdu-2-pro/",
+      "destination": "/products/blok-bms-keruvannya-deye-bos-g-pdu-2-pro/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B2%D0%B8%D1%81%D0%BE%D0%BA%D0%BE%D0%B2%D0%BE%D0%BB%D1%8C%D1%82%D0%BD%D0%B0-%D0%B0%D0%BA%D1%83%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%BD%D0%B0-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-livoltek-bhf-g20-20-48-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4-bms",
+      "destination": "/products/vysokovoltna-akumulyatorna-systema-livoltek-bhf-g20-20-48-kvt-hod-bms/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B2%D0%B8%D1%81%D0%BE%D0%BA%D0%BE%D0%B2%D0%BE%D0%BB%D1%8C%D1%82%D0%BD%D0%B0-%D0%B0%D0%BA%D1%83%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%BD%D0%B0-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-livoltek-bhf-g20-20-48-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4-bms/",
+      "destination": "/products/vysokovoltna-akumulyatorna-systema-livoltek-bhf-g20-20-48-kvt-hod-bms/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B2%D0%B8%D1%81%D0%BE%D0%BA%D0%BE%D0%B2%D0%BE%D0%BB%D1%8C%D1%82%D0%BD%D0%B0-%D0%B0%D0%BA%D1%83%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%BD%D0%B0-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-livoltek-bhf-g60-60-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4-bms-c%D1%82%D1%96%D0%B9%D0%BA%D0%B0",
+      "destination": "/products/vysokovoltna-akumulyatorna-systema-livoltek-bhf-g60-60-kvt-hod-bms-ctiy-ka/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B2%D0%B8%D1%81%D0%BE%D0%BA%D0%BE%D0%B2%D0%BE%D0%BB%D1%8C%D1%82%D0%BD%D0%B0-%D0%B0%D0%BA%D1%83%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%BD%D0%B0-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-livoltek-bhf-g60-60-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4-bms-c%D1%82%D1%96%D0%B9%D0%BA%D0%B0/",
+      "destination": "/products/vysokovoltna-akumulyatorna-systema-livoltek-bhf-g60-60-kvt-hod-bms-ctiy-ka/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B3%D1%96%D0%B1%D1%80%D0%B8%D0%B4%D0%BD%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-deye-5-%D0%BA%D0%B2%D1%82-sun-5k-sg03lp1-eu",
+      "destination": "/products/hibrydnyy-invertor-deye-5-kvt-sun-5k-sg03lp1-eu/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B3%D1%96%D0%B1%D1%80%D0%B8%D0%B4%D0%BD%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-deye-5-%D0%BA%D0%B2%D1%82-sun-5k-sg03lp1-eu/",
+      "destination": "/products/hibrydnyy-invertor-deye-5-kvt-sun-5k-sg03lp1-eu/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B3%D1%96%D0%B1%D1%80%D0%B8%D0%B4%D0%BD%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-hp3-15kt2",
+      "destination": "/products/hibrydnyy-invertor-livoltek-hp3-15kt2/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B3%D1%96%D0%B1%D1%80%D0%B8%D0%B4%D0%BD%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-hp3-15kt2/",
+      "destination": "/products/hibrydnyy-invertor-livoltek-hp3-15kt2/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B3%D1%96%D0%B1%D1%80%D0%B8%D0%B4%D0%BD%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-hp3-25kt2-25-%D0%BA%D0%B2%D1%82",
+      "destination": "/products/hibrydnyy-invertor-livoltek-hp3-25kt2-25-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%B3%D1%96%D0%B1%D1%80%D0%B8%D0%B4%D0%BD%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-hp3-25kt2-25-%D0%BA%D0%B2%D1%82/",
+      "destination": "/products/hibrydnyy-invertor-livoltek-hp3-25kt2-25-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B6%D0%B8%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-10-%D0%BA%D0%B2%D1%82-%D0%B0%D0%BA%D0%B1-10-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4",
+      "destination": "/products/komplekt-rezervnoho-zhyvlennya-invertor-10-kvt-akb-10-kvt-hod/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B6%D0%B8%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-10-%D0%BA%D0%B2%D1%82-%D0%B0%D0%BA%D0%B1-10-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4/",
+      "destination": "/products/komplekt-rezervnoho-zhyvlennya-invertor-10-kvt-akb-10-kvt-hod/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B6%D0%B8%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-12-%D0%BA%D0%B2%D1%82-%D0%B0%D0%BA%D0%B1-10-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4",
+      "destination": "/products/komplekt-rezervnoho-zhyvlennya-invertor-12-kvt-akb-10-kvt-hod/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B6%D0%B8%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-12-%D0%BA%D0%B2%D1%82-%D0%B0%D0%BA%D0%B1-10-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4/",
+      "destination": "/products/komplekt-rezervnoho-zhyvlennya-invertor-12-kvt-akb-10-kvt-hod/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B6%D0%B8%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-15-%D0%BA%D0%B2%D1%82-%D0%B0%D0%BA%D0%B1-15-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4",
+      "destination": "/products/komplekt-rezervnoho-zhyvlennya-invertor-15-kvt-akb-15-kvt-hod/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B6%D0%B8%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-15-%D0%BA%D0%B2%D1%82-%D0%B0%D0%BA%D0%B1-15-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4/",
+      "destination": "/products/komplekt-rezervnoho-zhyvlennya-invertor-15-kvt-akb-15-kvt-hod/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B6%D0%B8%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-20-%D0%BA%D0%B2%D1%82-%D0%B0%D0%BA%D0%B1-20-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4",
+      "destination": "/products/komplekt-rezervnoho-zhyvlennya-invertor-20-kvt-akb-20-kvt-hod/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B6%D0%B8%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-20-%D0%BA%D0%B2%D1%82-%D0%B0%D0%BA%D0%B1-20-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4/",
+      "destination": "/products/komplekt-rezervnoho-zhyvlennya-invertor-20-kvt-akb-20-kvt-hod/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B6%D0%B8%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-6-%D0%BA%D0%B2%D1%82-%D0%B0%D0%BA%D0%B1-5-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4",
+      "destination": "/products/komplekt-rezervnoho-zhyvlennya-invertor-6-kvt-akb-5-kvt-hod/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B6%D0%B8%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-6-%D0%BA%D0%B2%D1%82-%D0%B0%D0%BA%D0%B1-5-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4/",
+      "destination": "/products/komplekt-rezervnoho-zhyvlennya-invertor-6-kvt-akb-5-kvt-hod/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B6%D0%B8%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-8-%D0%BA%D0%B2%D1%82-%D0%B0%D0%BA%D0%B1-10-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4",
+      "destination": "/products/komplekt-rezervnoho-zhyvlennya-invertor-8-kvt-akb-10-kvt-hod/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82-%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B6%D0%B8%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-8-%D0%BA%D0%B2%D1%82-%D0%B0%D0%BA%D0%B1-10-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4/",
+      "destination": "/products/komplekt-rezervnoho-zhyvlennya-invertor-8-kvt-akb-10-kvt-hod/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-astronergy-n7-chsm66rn-dg-f-bh-625-bifacial",
+      "destination": "/products/kopyya-sonyachna-panel-astronergy-n7-chsm66rn-dg-f-bh-625-bifacial/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F-%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-astronergy-n7-chsm66rn-dg-f-bh-625-bifacial/",
+      "destination": "/products/kopyya-sonyachna-panel-astronergy-n7-chsm66rn-dg-f-bh-625-bifacial/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BF%D1%96%D1%8F-%D0%B3%D1%96%D0%B1%D1%80%D0%B8%D0%B4%D0%BD%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-hp3-12kd2",
+      "destination": "/products/kopiya-hibrydnyy-invertor-livoltek-hp3-12kd2/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BF%D1%96%D1%8F-%D0%B3%D1%96%D0%B1%D1%80%D0%B8%D0%B4%D0%BD%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-hp3-12kd2/",
+      "destination": "/products/kopiya-hibrydnyy-invertor-livoltek-hp3-12kd2/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BF%D1%96%D1%8F-%D0%B3%D1%96%D0%B1%D1%80%D0%B8%D0%B4%D0%BD%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-hp3-20kt2-20-%D0%BA%D0%B2%D1%82",
+      "destination": "/products/kopiya-hibrydnyy-invertor-livoltek-hp3-20kt2-20-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BF%D1%96%D1%8F-%D0%B3%D1%96%D0%B1%D1%80%D0%B8%D0%B4%D0%BD%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-hp3-20kt2-20-%D0%BA%D0%B2%D1%82/",
+      "destination": "/products/kopiya-hibrydnyy-invertor-livoltek-hp3-20kt2-20-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BF%D1%96%D1%8F-%D0%B3%D1%96%D0%B1%D1%80%D0%B8%D0%B4%D0%BD%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-hp3-30kt2-30-%D0%BA%D0%B2%D1%82",
+      "destination": "/products/kopiya-hibrydnyy-invertor-livoltek-hp3-30kt2-30-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BA%D0%BE%D0%BF%D1%96%D1%8F-%D0%B3%D1%96%D0%B1%D1%80%D0%B8%D0%B4%D0%BD%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-hp3-30kt2-30-%D0%BA%D0%B2%D1%82/",
+      "destination": "/products/kopiya-hibrydnyy-invertor-livoltek-hp3-30kt2-30-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-gt3-100k-1-100-%D0%BA%D0%B2%D1%82",
+      "destination": "/products/merezhevyy-invertor-livoltek-gt3-100k-1-100-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-gt3-100k-1-100-%D0%BA%D0%B2%D1%82/",
+      "destination": "/products/merezhevyy-invertor-livoltek-gt3-100k-1-100-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-gt3-30kt1-30-%D0%BA%D0%B2%D1%82",
+      "destination": "/products/merezhevyy-invertor-livoltek-gt3-30kt1-30-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-gt3-30kt1-30-%D0%BA%D0%B2%D1%82/",
+      "destination": "/products/merezhevyy-invertor-livoltek-gt3-30kt1-30-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-gt3-50kq1-50-%D0%BA%D0%B2%D1%82",
+      "destination": "/products/merezhevyy-invertor-livoltek-gt3-50kq1-50-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-gt3-50kq1-50-%D0%BA%D0%B2%D1%82/",
+      "destination": "/products/merezhevyy-invertor-livoltek-gt3-50kq1-50-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-gt3-60kq1-60-%D0%BA%D0%B2%D1%82",
+      "destination": "/products/merezhevyy-invertor-livoltek-gt3-60kq1-60-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-gt3-60kq1-60-%D0%BA%D0%B2%D1%82/",
+      "destination": "/products/merezhevyy-invertor-livoltek-gt3-60kq1-60-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-livoltek-gt3-10kd1-10-%D0%BA%D0%B2%D1%82",
+      "destination": "/products/merezhevyy-invertor-livoltek-livoltek-gt3-10kd1-10-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-livoltek-gt3-10kd1-10-%D0%BA%D0%B2%D1%82/",
+      "destination": "/products/merezhevyy-invertor-livoltek-livoltek-gt3-10kd1-10-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-livoltek-gt3-15kd1-15-%D0%BA%D0%B2%D1%82",
+      "destination": "/products/merezhevyy-invertor-livoltek-livoltek-gt3-15kd1-15-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-livoltek-gt3-15kd1-15-%D0%BA%D0%B2%D1%82/",
+      "destination": "/products/merezhevyy-invertor-livoltek-livoltek-gt3-15kd1-15-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-livoltek-gt3-20kd1-20-%D0%BA%D0%B2%D1%82",
+      "destination": "/products/merezhevyy-invertor-livoltek-livoltek-gt3-20kd1-20-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9-%D1%96%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80-livoltek-livoltek-gt3-20kd1-20-%D0%BA%D0%B2%D1%82/",
+      "destination": "/products/merezhevyy-invertor-livoltek-livoltek-gt3-20kd1-20-kvt/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%B7%D0%B1%D0%B5%D1%80%D1%96%D0%B3%D0%B0%D0%BD%D0%BD%D1%8F-%D0%B5%D0%BD%D0%B5%D1%80%D0%B3%D1%96%D1%97-ess-livoltek-aes-ac-coupled",
+      "destination": "/products/systema-zberihannya-enerhii-ess-livoltek-aes-ac-coupled/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D0%B7%D0%B1%D0%B5%D1%80%D1%96%D0%B3%D0%B0%D0%BD%D0%BD%D1%8F-%D0%B5%D0%BD%D0%B5%D1%80%D0%B3%D1%96%D1%97-ess-livoltek-aes-ac-coupled/",
+      "destination": "/products/systema-zberihannya-enerhii-ess-livoltek-aes-ac-coupled/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-astro-n7-chsm66rn-dg-f-bh",
+      "destination": "/products/sonyachna-panel-astro-n7-chsm66rn-dg-f-bh/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-astro-n7-chsm66rn-dg-f-bh/",
+      "destination": "/products/sonyachna-panel-astro-n7-chsm66rn-dg-f-bh/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-astronergy-n7-chsm66rn-dg-f-bh-630-bifacial",
+      "destination": "/products/sonyachna-panel-astronergy-n7-chsm66rn-dg-f-bh-630-bifacial/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-astronergy-n7-chsm66rn-dg-f-bh-630-bifacial/",
+      "destination": "/products/sonyachna-panel-astronergy-n7-chsm66rn-dg-f-bh-630-bifacial/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-astronergy-n7s-chsm48rn-450-bificial-full-black",
+      "destination": "/products/sonyachna-panel-astronergy-n7s-chsm48rn-450-bificial-full-black/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-astronergy-n7s-chsm48rn-450-bificial-full-black/",
+      "destination": "/products/sonyachna-panel-astronergy-n7s-chsm48rn-450-bificial-full-black/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-astronergy-n7s-chsm48rn-455-bifacialfull-black",
+      "destination": "/products/sonyachna-panel-astronergy-n7s-chsm48rn-455-bifacialfull-black/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-astronergy-n7s-chsm48rn-455-bifacialfull-black/",
+      "destination": "/products/sonyachna-panel-astronergy-n7s-chsm48rn-455-bifacialfull-black/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-longi-hi-mo-x10-lr8-66hvd-650m-%D0%B1%D1%96%D1%84%D1%96%D1%86%D1%96%D0%B0%D0%BB-bifacial",
+      "destination": "/products/sonyachna-panel-longi-hi-mo-x10-lr8-66hvd-650m-bifitsial-bifacial/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-longi-hi-mo-x10-lr8-66hvd-650m-%D0%B1%D1%96%D1%84%D1%96%D1%86%D1%96%D0%B0%D0%BB-bifacial/",
+      "destination": "/products/sonyachna-panel-longi-hi-mo-x10-lr8-66hvd-650m-bifitsial-bifacial/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-longi-lr7-72hv%D0%BD-650m",
+      "destination": "/products/sonyachna-panel-longi-lr7-72hvn-650m/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-longi-lr7-72hv%D0%BD-650m/",
+      "destination": "/products/sonyachna-panel-longi-lr7-72hvn-650m/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-longi-lr8-66hgd-620m-bifacial",
+      "destination": "/products/sonyachna-panel-longi-lr8-66hgd-620m-bifacial/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-longi-lr8-66hgd-620m-bifacial/",
+      "destination": "/products/sonyachna-panel-longi-lr8-66hgd-620m-bifacial/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-longi-lr8-66hyd-645m-bifacial",
+      "destination": "/products/sonyachna-panel-longi-lr8-66hyd-645m-bifacial/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D0%BE%D0%BD%D1%8F%D1%87%D0%BD%D0%B0-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-longi-lr8-66hyd-645m-bifacial/",
+      "destination": "/products/sonyachna-panel-longi-lr8-66hyd-645m-bifacial/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D1%82%D1%96%D0%B9%D0%BA%D0%B0-deye-3u-hrack-19-%D0%B4%D1%8E%D0%B9%D0%BC%D0%BE%D0%B2%D0%B0-%D0%B4%D0%BB%D1%8F-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8-12-%D0%B1%D0%B0%D1%82%D0%B0%D1%80%D0%B5%D0%B9-1-%D0%B1%D0%BB%D0%BE%D0%BA%D1%83-%D0%BA%D0%B5%D1%80%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F",
+      "destination": "/products/stiy-ka-deye-3u-hrack-19-dyuy-mova-dlya-ustanovky-12-batarey-1-bloku-keruvannya/",
+      "permanent": true
+    },
+    {
+      "source": "/products/%D1%81%D1%82%D1%96%D0%B9%D0%BA%D0%B0-deye-3u-hrack-19-%D0%B4%D1%8E%D0%B9%D0%BC%D0%BE%D0%B2%D0%B0-%D0%B4%D0%BB%D1%8F-%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B8-12-%D0%B1%D0%B0%D1%82%D0%B0%D1%80%D0%B5%D0%B9-1-%D0%B1%D0%BB%D0%BE%D0%BA%D1%83-%D0%BA%D0%B5%D1%80%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F/",
+      "destination": "/products/stiy-ka-deye-3u-hrack-19-dyuy-mova-dlya-ustanovky-12-batarey-1-bloku-keruvannya/",
+      "permanent": true
+    },
+    {
+      "source": "/products/bms-livoltek-%D0%B0%D0%BA%D1%83%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%BD%D0%BE%D1%97-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B8-bhf-g",
+      "destination": "/products/bms-livoltek-akumulyatornoi-systemy-bhf-g/",
+      "permanent": true
+    },
+    {
+      "source": "/products/bms-livoltek-%D0%B0%D0%BA%D1%83%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%BD%D0%BE%D1%97-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B8-bhf-g/",
+      "destination": "/products/bms-livoltek-akumulyatornoi-systemy-bhf-g/",
+      "permanent": true
+    },
+    {
+      "source": "/products/livoltek-bess-125-%D0%BA%D0%B2%D1%82-261-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4",
+      "destination": "/products/livoltek-bess-125-kvt-261-kvt-hod/",
+      "permanent": true
+    },
+    {
+      "source": "/products/livoltek-bess-125-%D0%BA%D0%B2%D1%82-261-%D0%BA%D0%B2%D1%82-%D0%B3%D0%BE%D0%B4/",
+      "destination": "/products/livoltek-bess-125-kvt-261-kvt-hod/",
+      "permanent": true
+    }
+  ]
+}

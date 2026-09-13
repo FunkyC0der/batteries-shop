@@ -4,10 +4,14 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { ActionButtons } from "@/components/action-buttons";
+import { Breadcrumbs } from "@/components/breadcrumbs";
 import { CtaPanel } from "@/components/cta-panel";
+import { JsonLd } from "@/components/json-ld";
 import { getServiceBySlug } from "@/lib/catalog";
 import { services } from "@/lib/data";
 import { serviceToOrderable } from "@/lib/order-actions";
+import { buildBreadcrumbJsonLd, buildServiceJsonLd } from "@/lib/seo/json-ld";
+import { absoluteUrl, buildPageMetadata } from "@/lib/seo/metadata";
 
 type ServicePageProps = {
   params: Promise<{ slug: string }>;
@@ -31,10 +35,12 @@ export async function generateMetadata({
     };
   }
 
-  return {
+  return buildPageMetadata({
     title: service.title,
     description: service.shortDescription,
-  };
+    path: `/services/${service.slug}/`,
+    images: [service.image],
+  });
 }
 
 export default async function ServicePage({ params }: ServicePageProps) {
@@ -45,12 +51,32 @@ export default async function ServicePage({ params }: ServicePageProps) {
     notFound();
   }
 
+  const breadcrumbs = [
+    { label: "Головна", href: "/" },
+    { label: "Послуги", href: "/services" },
+    { label: service.title },
+  ];
+
   return (
     <>
+      <JsonLd data={buildServiceJsonLd(service)} />
+      <JsonLd
+        data={buildBreadcrumbJsonLd(
+          breadcrumbs.map((item) => ({
+            name: item.label,
+            url: absoluteUrl(item.href ?? `/services/${service.slug}/`),
+          })),
+        )}
+      />
+
       <article className="mx-auto max-w-5xl px-4 py-10 sm:px-6 lg:px-8">
         <Link className="text-sm font-semibold text-primary" href="/services">
           ← До послуг
         </Link>
+
+        <div className="mt-4">
+          <Breadcrumbs items={breadcrumbs} />
+        </div>
 
         <h1 className="mt-5 text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
           {service.title}

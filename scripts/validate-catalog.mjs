@@ -9,6 +9,8 @@ const SRC_DIR = join(ROOT, "src");
 
 const PRODUCT_CATEGORIES = new Set([
   "lithium",
+  "heat-meters",
+  "water-meters",
   "meter-modules",
   "accessories",
   "solar-stations",

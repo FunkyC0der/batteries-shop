@@ -6,6 +6,8 @@
     "catalog:projection": "vite-node scripts/build-catalog-projection.ts",
     "catalog:validate": "node scripts/validate-catalog.mjs",
     "images:optimize": "node scripts/optimize-images.mjs",
+    "seo:redirects": "vite-node scripts/build-redirects.ts",
+    "seo:og-image": "node scripts/generate-og-image.mjs",
     "build": "npm run catalog:validate && npm run catalog:projection && next build",
     "dev": "npm run catalog:projection && next dev",
     "start": "serve out",

@@ -9,12 +9,14 @@ import {
   serviceDirections,
 } from "@/lib/catalog";
 import { services } from "@/lib/data";
+import { buildPageMetadata } from "@/lib/seo/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "Послуги",
   description:
     "Сервіс лічильників і сантехніки, енергоаудит, проєктування, сонячні електростанції, накопичення енергії, автоматизація та сервіс енергетичного обладнання.",
-};
+  path: "/services/",
+});
 
 export default function ServicesPage() {
   const initialItems = buildServiceCatalogProjection(services);
@@ -23,6 +25,7 @@ export default function ServicesPage() {
     <>
       <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <SectionHeading
+          as="h1"
           description="Спочатку оберіть напрям, а далі звузьте список за категорією або пошуком. Кожна картка веде до опису складу робіт."
           eyebrow="Каталог"
           title="Послуги"

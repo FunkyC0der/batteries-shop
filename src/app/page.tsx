@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,6 +16,19 @@ import {
   toProductListItem,
   toServiceListItem,
 } from "@/lib/catalog/list-projection";
+import { buildPageMetadata } from "@/lib/seo/metadata";
+import { siteConfig } from "@/lib/site-config";
+
+const homeTitle = `${siteConfig.name} | ${siteConfig.tagline}`;
+
+export const metadata: Metadata = {
+  ...buildPageMetadata({
+    title: homeTitle,
+    description: siteConfig.description,
+    path: "/",
+  }),
+  title: { absolute: homeTitle },
+};
 
 const deliverySteps = [
   {

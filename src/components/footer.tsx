@@ -1,11 +1,17 @@
+import Link from "next/link";
+
 import type { MessengerChannel } from "@/lib/order-actions";
 import { BrandName } from "@/components/brand-name";
+import { filterProducts, productCategories } from "@/lib/catalog";
+import { PRODUCT_CATEGORY_VALUES } from "@/lib/catalog/taxonomy";
 import {
   getOrderActions,
   isMessengerAction,
   serviceToOrderable,
 } from "@/lib/order-actions";
 import { siteConfig } from "@/lib/site-config";
+
+const MIN_INDEXABLE_PRODUCTS = 3;
 
 const messengerLabels: Record<MessengerChannel, string> = {
   telegram: "Telegram",
@@ -50,10 +56,18 @@ export function Footer() {
   const actions = getOrderActions(contactItem);
   const phoneAction = actions.find((action) => action.channel === "phone");
   const messengerActions = actions.filter(isMessengerAction);
+  const indexableCategories = PRODUCT_CATEGORY_VALUES.filter(
+    (category) => filterProducts({ category }).length >= MIN_INDEXABLE_PRODUCTS,
+  ).map((category) => ({
+    category,
+    label:
+      productCategories.find((item) => item.value === category)?.label ??
+      category,
+  }));
 
   return (
     <footer className="border-t border-border bg-muted/40">
-      <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-[1.1fr_0.8fr_0.7fr_0.7fr] lg:px-8">
         <div>
           <p>
             <BrandName className="text-xl" />
@@ -61,6 +75,21 @@ export function Footer() {
           <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">
             {siteConfig.description}
           </p>
+        </div>
+
+        <div className="grid content-start gap-3 text-sm text-muted-foreground">
+          <p className="text-xs font-bold uppercase tracking-[0.14em] text-muted-foreground">
+            Каталог
+          </p>
+          {indexableCategories.map((entry) => (
+            <Link
+              className="text-base text-muted-foreground transition hover:text-primary"
+              href={`/products/category/${entry.category}`}
+              key={entry.category}
+            >
+              {entry.label}
+            </Link>
+          ))}
         </div>
 
         <div className="grid content-start gap-3 text-sm text-muted-foreground">
