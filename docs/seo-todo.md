@@ -42,9 +42,9 @@
 
 ## Поза початковим планом (можливі наступні кроки)
 
-- [ ] `public/_headers` працює лише на Cloudflare; на Vercel ігнорується.
-      Якщо потрібні кастомні HTTP-заголовки на Vercel — переносити в
-      `vercel.json` (`headers`).
+- Кастомні HTTP-заголовки на Vercel (якщо колись знадобляться) — додавати в
+      `vercel.json` (`headers`); `public/_headers` (Cloudflare-специфічний
+      файл, ігнорується на Vercel) видалено.
 - [ ] Після наповнення контенту — повторно прогнати Rich Results Test і
       перевірити unique meta description на товарах, де вона зараз
       згенерована автоматично (`buildProductMetaDescription`) через тонкий
