@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next";
 import { JsonLd } from "@/components/json-ld";
 import { FloatingQuickOrder } from "@/components/floating-quick-order";
 import { Footer } from "@/components/footer";
+import { GoogleTag } from "@/components/google-tag";
 import { Header } from "@/components/header";
 import { buildSiteJsonLdGraph } from "@/lib/seo/json-ld";
 import { absoluteUrl } from "@/lib/seo/metadata";
@@ -73,6 +74,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <FloatingQuickOrder />
         <Footer />
+        <GoogleTag />
       </body>
     </html>
   );

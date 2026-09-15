@@ -32,6 +32,7 @@
 | Product/service page | `src/app/products/[slug]/page.tsx`, `src/app/services/[slug]/page.tsx` |
 | SEO (metadata, JSON-LD, sitemap, llms.txt, redirects) | `src/lib/seo/*`, `src/app/{sitemap,robots,manifest}.ts`, `src/app/llms*.txt/route.ts`, `scripts/build-redirects.ts`, `docs/seo-todo.md` |
 | Order/contact actions | `src/lib/order-actions.ts`, `src/lib/site-config.ts` |
+| GA4 / Google Ads tag, lead events | `src/lib/analytics.ts`, `src/components/google-tag.tsx`, `docs/google-ads-analytics.md` |
 | Supplier imports | `scripts/import-namato-products.mjs`, `scripts/import-solarverse.mjs`, `scripts/lib/catalog-files.mjs` |
 | Styling | `src/app/globals.css` tokens, existing components |
 | Historical context | `git log --oneline` (descriptive commit messages), `docs/seo-todo.md`, `.artifacts/` |
@@ -52,8 +53,9 @@
 
 ## Application map
 
-- No provider tree: `src/app/layout.tsx` is a server component rendering site JSON-LD, `Header`, `<main>`, `FloatingQuickOrder`, `Footer`; root `metadata`/`viewport` live there.
-- Routes: `/`, `/products`, `/products/[slug]`, `/products/category/[category]`, `/services`, `/services/[slug]`, `not-found`, `sitemap.ts`, `robots.ts`, `manifest.ts`, `llms.txt` & `llms-full.txt` route handlers.
+- No provider tree: `src/app/layout.tsx` is a server component rendering site JSON-LD, `Header`, `<main>`, `FloatingQuickOrder`, `Footer`, `GoogleTag`; root `metadata`/`viewport` live there.
+- Analytics: `GoogleTag` renders gtag.js only when `NEXT_PUBLIC_GA_MEASUREMENT_ID` / `NEXT_PUBLIC_GOOGLE_ADS_ID` are set in a production, non-preview build (see `.env.example`). `analytics-click-tracker` tracks every `tel:`/messenger link as `generate_lead`; context comes from `data-analytics-{item-id,item-kind,placement}` attributes — keep them when adding new contact CTAs.
+- Routes: `/`, `/products`, `/products/[slug]`, `/products/category/[category]`, `/services`, `/services/[slug]`, `/privacy`, `not-found`, `sitemap.ts`, `robots.ts`, `manifest.ts`, `llms.txt` & `llms-full.txt` route handlers.
 - Data layer (server/build-time only): `src/lib/catalog/loader.ts` (fs read of `data/`, cache, slug maps) → `queries.ts` (filter/featured/by-slug) → `index.ts` barrel; `src/lib/data.ts` exposes module-level `products`/`services`.
 - Client data path: `list-projection.ts` builds slim list items → `scripts/build-catalog-projection.ts` writes `public/catalog/{products,services}.json` → `catalog-browser.tsx` fetches `PRODUCTS_CATALOG_URL`. URL state (page, facets, return anchor) in `catalog-navigation.ts` (`PRODUCTS_PER_PAGE = 24`).
 - Client components: `catalog-browser`, `product-facet-controls`, `product-gallery`, `catalog-back-link`, `floating-quick-order`, `header`.

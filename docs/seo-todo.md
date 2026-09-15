@@ -25,6 +25,20 @@
       з'явився в `<head>` (`verification.google` у `layout.tsx` вже
       підключено).
 
+## Google Analytics і Google Ads
+
+Код готовий (див. [google-ads-analytics.md](google-ads-analytics.md)); лишились
+дії поза кодом:
+
+- [ ] Створити GA4 property, виставити `NEXT_PUBLIC_GA_MEASUREMENT_ID` у Vercel,
+      redeploy, перевірити Tag Assistant / Realtime.
+- [ ] Позначити `generate_lead` як key event у GA4; привʼязати Google Ads.
+- [ ] Створити конверсію в Google Ads, виставити `NEXT_PUBLIC_GOOGLE_ADS_ID` та
+      `NEXT_PUBLIC_GOOGLE_ADS_LEAD_SEND_TO` (або імпорт з GA4 — не обидва).
+- [ ] **Блокер реклами:** реальні контакти замість плейсхолдерів (див. нижче).
+- [ ] Реквізити продавця (ФОП/юрособа) на `/privacy/` і у футері.
+- [ ] Сторінка умов доставки, оплати та повернення (потрібні реальні умови).
+
 ## Контент (окрема робота, не блокує технічну частину)
 
 - [ ] 174 товари з шаблонним описом (`shortDescription`/`description`)

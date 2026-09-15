@@ -28,6 +28,7 @@ export function CtaPanel() {
               title: "Консультація щодо товару або послуги",
               kind: "service",
             }}
+            placement="quick-order"
             variant="inverse"
           />
         </div>

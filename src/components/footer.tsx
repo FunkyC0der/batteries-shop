@@ -66,7 +66,10 @@ export function Footer() {
   }));
 
   return (
-    <footer className="border-t border-border bg-muted/40">
+    <footer
+      className="border-t border-border bg-muted/40"
+      data-analytics-placement="footer"
+    >
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-[1.1fr_0.8fr_0.7fr_0.7fr] lg:px-8">
         <div>
           <p>
@@ -75,6 +78,12 @@ export function Footer() {
           <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">
             {siteConfig.description}
           </p>
+          <Link
+            className="mt-4 inline-block text-sm text-muted-foreground underline-offset-4 transition hover:text-primary hover:underline"
+            href="/privacy"
+          >
+            Політика конфіденційності
+          </Link>
         </div>
 
         <div className="grid content-start gap-3 text-sm text-muted-foreground">

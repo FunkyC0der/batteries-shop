@@ -11,6 +11,8 @@ type ActionButtonsProps = {
   compact?: boolean;
   messengerStyle?: "icon" | "labeled";
   variant?: "default" | "inverse";
+  /** Reported with lead events; defaults to "card" (compact) or "item-page". */
+  placement?: string;
 };
 
 const actionIconPaths: Record<OrderChannel, string> = {
@@ -52,6 +54,7 @@ export function ActionButtons({
   compact = false,
   messengerStyle = "icon",
   variant = "default",
+  placement = compact ? "card" : "item-page",
 }: ActionButtonsProps) {
   const actions = getOrderActions(item);
   const toneClass =
@@ -69,6 +72,9 @@ export function ActionButtons({
           ? "space-y-2"
           : "flex flex-wrap items-center gap-3"
       }
+      data-analytics-item-id={item.id}
+      data-analytics-item-kind={item.kind}
+      data-analytics-placement={placement}
     >
       {phoneAction ? (
         <a

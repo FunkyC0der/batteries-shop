@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl("/") },
     { url: absoluteUrl("/products/") },
     { url: absoluteUrl("/services/") },
+    { url: absoluteUrl("/privacy/") },
     ...indexableCategories.map((category) => ({
       url: absoluteUrl(`/products/category/${category}/`),
     })),
