@@ -9,7 +9,7 @@
 - **Static export**: `next.config.ts` sets `output: "export"`, `trailingSlash: true`, `images.unoptimized`. Build output is `out/`. Every dynamic route uses `generateStaticParams` + `dynamicParams = false`; no server-only runtime features (no API routes beyond static route handlers, no middleware, no `next/image` optimization).
 - **Deploy target**: Vercel (`vercel.json` redirects, `NEXT_PUBLIC_SITE_URL` / `VERCEL_PROJECT_PRODUCTION_URL` in `src/lib/site-config.ts`). Custom HTTP headers, if ever needed, go in `vercel.json` (`headers`) — Vercel ignores Cloudflare's `_headers` file.
 - **UI/style**: no style-guide skill in this repo. Design tokens live in `src/app/globals.css` (`:root` vars mapped through `@theme inline`) — use `bg-primary`, `text-muted-foreground`, `border-border`, etc., not raw hex. Reuse `src/components/*` (section-heading, cta-panel, product-card, breadcrumbs…). UI copy is Ukrainian (`lang="uk"`), brand "СИСТЕМІКА" via `siteConfig`.
-- **Competitor/market research**: start with [docs/competitor-references.md](docs/competitor-references.md). `.artifacts/` (gitignored) holds local UX-audit/redesign research; `graphify-out/` is generated and ignored.
+- **Competitor/market research**: start with [docs/competitor-references.md](docs/competitor-references.md). `.artifacts/` (gitignored) holds local UX-audit/redesign research.
 - **Principle rules**:
   - Catalog "schema" changes (fields, enums, categories) must update together: `src/lib/types.ts`, `schema/*.schema.json`, `scripts/validate-catalog.mjs`, `src/lib/catalog/taxonomy.ts`, `src/lib/catalog/category-content.ts` — plus tests.
   - Client components (`"use client"`) must not import `@/lib/data`, `@/lib/catalog`, or `@/lib/catalog/*` except `list-projection` (enforced by `catalog:validate` and `tests/client-catalog-imports.test.ts`).
@@ -18,7 +18,7 @@
 
 ## Backlog gate
 
-- Source of truth for pending scope: [docs/seo-todo.md](docs/seo-todo.md) (post-deploy SEO checks, content work, follow-ups). There is no active epic/roadmap doc.
+- Source of truth for pending scope: [docs/seo-todo.md](docs/seo-todo.md) (ad-launch blockers, GA4/Ads/Search Console setup, SEO, content, follow-ups). There is no active epic/roadmap doc.
 - Don't tick `[x]` items or rewrite the backlog until the task is finished and verified. Out-of-scope findings → add as new unchecked items, don't silently expand scope.
 
 ## Start here

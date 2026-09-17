@@ -1,65 +1,104 @@
-# SEO: що залишилось зробити
+# Google пошук, реклама, аналітика та SEO: чого не вистачає
 
-Технічна частина (canonical, OG, JSON-LD, robots/sitemap/manifest, llms.txt,
-редіректи зі старих slug'ів, категорійні сторінки) реалізована. Нижче — що
-лишилося і не було зроблено навмисно (потрібні реальні дані або дії поза
-кодовою базою).
+Єдиний список відкритих задач. Технічна частина в коді вже є: canonical, OG,
+JSON-LD, robots/sitemap/manifest, llms.txt, редіректи зі старих slug'ів,
+категорійні сторінки, Google tag (GA4 + Ads), події заявок, `/privacy/`.
+Як налаштувати кабінети Google — [google-ads-analytics.md](google-ads-analytics.md).
 
-## Після деплою на Vercel
+Нижче — те, що потребує реальних даних, дій у кабінетах або окремої роботи.
 
-- [ ] Визначитися з доменом і виставити `NEXT_PUBLIC_SITE_URL` у Vercel
-      (Project Settings → Environment Variables). Без цього сайт працює на
-      `VERCEL_PROJECT_PRODUCTION_URL` / `localhost`.
-- [ ] Прогнати [Rich Results Test](https://search.google.com/test/rich-results)
-      на 2–3 товарах (включно з товаром, що має `configurations`, і товаром
-      без ціни) та на одній послузі.
-- [ ] Google Search Console: підтвердити власність через DNS, надіслати
-      `sitemap.xml`.
-- [ ] Bing Webmaster Tools: імпортувати сайт із Google Search Console (на
-      ньому працює пошук ChatGPT і Copilot).
-- [ ] `curl -I` по одному старому (легасі) URL товару — очікується `308` на
-      канонічний slug.
-- [ ] Якщо увімкнено Vercel Firewall / Bot Protection — перевірити, що
-      AI-краулери (GPTBot, ClaudeBot, PerplexityBot тощо) не заблоковані.
-- [ ] Якщо буде додано `GOOGLE_SITE_VERIFICATION` в env — перевірити, що тег
-      з'явився в `<head>` (`verification.google` у `layout.tsx` вже
-      підключено).
+## 1. Блокери (без них рекламу не запускати)
 
-## Google Analytics і Google Ads
+- [ ] **Реальні контакти.** У `src/lib/site-config.ts` зараз заглушки
+      (`+380000000000`, `placeholder_batteries`, «Ваше місто»). Google Ads
+      відхилить оголошення (неправдиве представлення / непрацююча цільова
+      сторінка), а всі конверсії вестимуть на неробочі контакти. Замінити
+      телефон, Telegram, WhatsApp, Viber, місто, адресу, графік → виставити
+      `contactsPublished: true` (відкриє `contactPoint` у JSON-LD і контакти в
+      `llms.txt`).
+- [ ] **Фінальний домен.** Виставити `NEXT_PUBLIC_SITE_URL` у Vercel
+      (Production). Рекламу й Search Console вести на нього, не на
+      `*.vercel.app`.
+- [ ] **Реквізити продавця** (ФОП/юрособа: назва, ЄДРПОУ/ІПН, адреса) — на
+      `/privacy/` і у футері.
+- [ ] **Сторінка «Доставка, оплата, повернення»** з реальними умовами (не
+      вигадувати). Потрібна для довіри Google Ads і для Merchant Center.
 
-Код готовий (див. [google-ads-analytics.md](google-ads-analytics.md)); лишились
-дії поза кодом:
+## 2. Google Analytics 4
 
-- [ ] Створити GA4 property, виставити `NEXT_PUBLIC_GA_MEASUREMENT_ID` у Vercel,
-      redeploy, перевірити Tag Assistant / Realtime.
-- [ ] Позначити `generate_lead` як key event у GA4; привʼязати Google Ads.
-- [ ] Створити конверсію в Google Ads, виставити `NEXT_PUBLIC_GOOGLE_ADS_ID` та
-      `NEXT_PUBLIC_GOOGLE_ADS_LEAD_SEND_TO` (або імпорт з GA4 — не обидва).
-- [ ] **Блокер реклами:** реальні контакти замість плейсхолдерів (див. нижче).
-- [ ] Реквізити продавця (ФОП/юрособа) на `/privacy/` і у футері.
-- [ ] Сторінка умов доставки, оплати та повернення (потрібні реальні умови).
+- [ ] Створити GA4 property (часовий пояс Київ, валюта UAH) і Web data stream
+      на продакшн-домен.
+- [ ] Виставити `NEXT_PUBLIC_GA_MEASUREMENT_ID` у Vercel → Redeploy.
+- [ ] Перевірити, що в Enhanced Measurement увімкнено «Page changes based on
+      browser history events» (перегляди при клієнтських переходах).
+- [ ] Після першого кліку на контакт позначити `generate_lead` як key event.
+- [ ] (Опційно) custom dimensions `method`, `item_kind`, `placement`.
+- [ ] Перевірити Tag Assistant / Realtime: клік на месенджер → `generate_lead`.
 
-## Контент (окрема робота, не блокує технічну частину)
+## 3. Google Ads (пошук)
+
+- [ ] Привʼязати Google Ads до GA4 (Admin → Product links).
+- [ ] Створити конверсію «Lead», виставити `NEXT_PUBLIC_GOOGLE_ADS_ID` і
+      `NEXT_PUBLIC_GOOGLE_ADS_LEAD_SEND_TO` → Redeploy. **Або** імпортувати
+      `generate_lead` з GA4 — не обидва способи одночасно (подвійний підрахунок).
+- [ ] Увімкнути auto-tagging (gclid).
+- [ ] Цільові сторінки для оголошень: категорії
+      (`/products/category/<category>/`) і сторінки послуг — перевірити, що в
+      потрібних категоріях є товари з цінами й живим описом (див. розділ 5).
+
+## 4. Google Search Console та інші пошуковики
+
+- [ ] Підтвердити власність (DNS або `GOOGLE_SITE_VERIFICATION` в env →
+      перевірити тег у `<head>`), надіслати `sitemap.xml`.
+- [ ] Привʼязати Search Console до GA4 і Google Ads.
+- [ ] Bing Webmaster Tools: імпорт із Search Console (на ньому працює пошук
+      ChatGPT і Copilot).
+- [ ] [Rich Results Test](https://search.google.com/test/rich-results) на 2–3
+      товарах (з `configurations` і без ціни) та одній послузі.
+- [ ] `curl -I` по одному легасі-URL товару — очікується `308` на канонічний
+      slug.
+- [ ] Якщо ввімкнено Vercel Firewall / Bot Protection — перевірити, що
+      Googlebot і AI-краулери (GPTBot, ClaudeBot, PerplexityBot) не
+      заблоковані.
+- [ ] Через 1–2 тижні після запуску — звіт «Сторінки» в Search Console:
+      чи немає масового «Виявлено, але не проіндексовано» / дублів.
+
+## 5. Контент (найбільший вплив на SEO і якість реклами)
 
 - [ ] 174 товари з шаблонним описом (`shortDescription`/`description`)
       потребують живого, унікального тексту.
-- [ ] Частина назв товарів — російською, потрібен переклад/адаптація на
-      українську.
-- [ ] Частина slug'ів — транслітерована з російської, варто звірити з
-      українською транслітерацією (окремо від legacy-редіректів, які вже
-      захищені тестом на синхронізацію з `legacySlugs`).
-- [ ] Реальні контакти (телефон, адреса): зараз у `siteConfig` — плейсхолдери,
-      а `contactsPublished: false` навмисно ховає `contactPoint` у JSON-LD і
-      контакти в `llms.txt`. Коли з'являться реальні дані — виставити
-      `contactsPublished: true` в `src/lib/site-config.ts`; це також відкриє
-      шлях до пізнішого переходу Organization → `LocalBusiness`.
+- [ ] Частина назв товарів — російською, потрібен переклад на українську.
+- [ ] Частина slug'ів транслітерована з російської — звірити з українською
+      транслітерацією (перейменування → `legacySlugs` +
+      `npm run seo:redirects`).
+- [ ] Після наповнення — перевірити meta description на товарах, де вона
+      зараз генерується автоматично (`buildProductMetaDescription`).
+- [ ] Тексти для категорійних сторінок під пошукові запити (що шукають:
+      «акумулятор для інвертора», «теплолічильник купити» тощо) —
+      `src/lib/catalog/category-content.ts`.
 
-## Поза початковим планом (можливі наступні кроки)
+## 6. Технічне SEO — можливі покращення в коді
 
-- Кастомні HTTP-заголовки на Vercel (якщо колись знадобляться) — додавати в
-      `vercel.json` (`headers`); `public/_headers` (Cloudflare-специфічний
-      файл, ігнорується на Vercel) видалено.
-- [ ] Після наповнення контенту — повторно прогнати Rich Results Test і
-      перевірити unique meta description на товарах, де вона зараз
-      згенерована автоматично (`buildProductMetaDescription`) через тонкий
-      `shortDescription`.
+- [ ] Коли будуть реальні дані: Organization → `LocalBusiness` (адреса,
+      графік, `geo`) і `sameAs` із соцмережами / Google Business Profile.
+- [ ] Google Business Profile (Карти) — створити, коли буде адреса/зона
+      обслуговування.
+- [ ] Після появи умов доставки/повернення — додати в `Offer`
+      `shippingDetails` і `hasMerchantReturnPolicy` (прибирає попередження
+      «Merchant listings» у Search Console).
+- [ ] `public/og/default.png` важить ~660 КБ — стиснути (соцмережі й
+      месенджери повільніше тягнуть прев'ю).
+- [ ] Кнопка «Швидке замовлення» нічого не робить на сторінках без блоку
+      `#quick-order` (напр. `/privacy/`, 404) — додати `CtaPanel` або
+      приховувати кнопку.
+- Кастомні HTTP-заголовки на Vercel (якщо знадобляться) — у `vercel.json`
+  (`headers`).
+
+## 7. Поза поточним обсягом (за потреби)
+
+- [ ] Банер згоди на cookie (CMP) — лише якщо таргетувати рекламу на
+      ЄЕЗ/UK/CH (зараз для них Consent Mode за замовчуванням `denied`).
+- [ ] Google Merchant Center / Shopping-реклама — фід товарів із цінами
+      (частина товарів без ціни) + умови повернення.
+- [ ] Дзвінки як конверсії з номерами переадресації Google.
+- [ ] Ecommerce-події GA4 (`view_item`, `view_item_list`) для ремаркетингу.

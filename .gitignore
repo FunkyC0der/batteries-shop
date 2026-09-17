@@ -16,9 +16,6 @@
 # local research and design artifacts
 /.artifacts/
 
-# graphify knowledge graph (regenerated from source)
-/graphify-out/
-
 # next.js
 /.next/
 /out/
