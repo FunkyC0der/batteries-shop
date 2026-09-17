@@ -14,9 +14,18 @@ JSON-LD, robots/sitemap/manifest, llms.txt, редіректи зі старих
       `contactsPublished: true`, `city: "Дніпро"`. Залишилось: точна адреса,
       графік роботи — досі заглушки (`address`, `schedule`), замінити на
       реальні перед запуском реклами.
-- [ ] **Фінальний домен.** Виставити `NEXT_PUBLIC_SITE_URL` у Vercel
-      (Production). Рекламу й Search Console вести на нього, не на
-      `*.vercel.app`.
+- [ ] **Фінальний домен.** `https://systemica.com.ua` (домен куплено на
+      nic.ua). У Vercel обидва домени (`systemica.com.ua`, `www…`) вже
+      додані до проєкту `batteries-shop`, і `NEXT_PUBLIC_SITE_URL` вже
+      виставлено на Production. Залишилось: у nic.ua додати A-записи `@` і
+      `www` → `76.76.21.21` (Vercel просить саме A, не CNAME, для цього
+      акаунта/домену), в Vercel Dashboard → Domains → `www.systemica.com.ua`
+      → Edit → задати редірект (308) на apex, дочекатись поширення DNS і
+      redeploy. Рекламу й Search Console вести на нього, не на
+      `*.vercel.app`. Перевірка: `dig +short A systemica.com.ua` та
+      `dig +short A www.systemica.com.ua` → `76.76.21.21`,
+      `curl -sI https://www.systemica.com.ua` (308 на apex),
+      `curl -s https://systemica.com.ua/robots.txt` та `/sitemap.xml`.
 - [x] **Продавець у футері й на `/privacy/`.** Показуємо лише назву ФОП
       (`siteConfig.seller.name` = «ФОП Красоченко Єгор Юрійович», за
       YouControl) і місто. РНОКПП/ІПН і точну домашню адресу свідомо не
@@ -52,6 +61,9 @@ JSON-LD, robots/sitemap/manifest, llms.txt, редіректи зі старих
 
 - [ ] Підтвердити власність (DNS або `GOOGLE_SITE_VERIFICATION` в env →
       перевірити тег у `<head>`), надіслати `sitemap.xml`.
+- [ ] Верифікація домену `systemica.com.ua` через TXT-запис
+      `google-site-verification=…` у nic.ua (не заважає записам Vercel);
+      надіслати sitemap `https://systemica.com.ua/sitemap.xml`.
 - [ ] Привʼязати Search Console до GA4 і Google Ads.
 - [ ] Bing Webmaster Tools: імпорт із Search Console (на ньому працює пошук
       ChatGPT і Copilot).
