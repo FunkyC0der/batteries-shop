@@ -37,13 +37,13 @@ export const siteConfig = {
   city: "Дніпро",
   address: "Адреса буде додана пізніше",
   /**
-   * taxId (РНОКПП/ІПН) and the exact street address are not public — they
-   * stay placeholders until provided directly. Replace before launching ads.
+   * Only the ФОП name is published. РНОКПП/ІПН and the exact street address
+   * are sensitive personal data (home address, tax ID) and are deliberately
+   * not shown on the site — consumer-protection law requires identifying
+   * the seller by name and location, not disclosing the tax number.
    */
   seller: {
     name: "ФОП Красоченко Єгор Юрійович",
-    taxId: "0000000000",
-    address: "Адреса буде додана пізніше",
   },
 };
 

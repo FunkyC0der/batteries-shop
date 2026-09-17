@@ -136,8 +136,7 @@ export function Footer() {
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-4 text-xs text-muted-foreground sm:px-6 lg:px-8">
           <p>
-            © {new Date().getFullYear()} <BrandName /> · {siteConfig.seller.name}{" "}
-            · РНОКПП {siteConfig.seller.taxId} · {siteConfig.seller.address}
+            © {new Date().getFullYear()} <BrandName /> · {siteConfig.seller.name}
           </p>
           <Link
             className="underline-offset-4 transition hover:text-primary hover:underline"

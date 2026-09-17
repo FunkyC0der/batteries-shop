@@ -15,7 +15,7 @@ const sections: { title: string; paragraphs: React.ReactNode[] }[] = [
   {
     title: "Хто обробляє дані",
     paragraphs: [
-      `${siteConfig.seller.name}, РНОКПП ${siteConfig.seller.taxId}, ${siteConfig.seller.address}. Телефон: ${siteConfig.phoneLabel}.`,
+      `${siteConfig.seller.name}, ${siteConfig.city}. Телефон: ${siteConfig.phoneLabel}.`,
     ],
   },
   {
