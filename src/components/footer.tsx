@@ -78,12 +78,6 @@ export function Footer() {
           <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">
             {siteConfig.description}
           </p>
-          <Link
-            className="mt-4 inline-block text-sm text-muted-foreground underline-offset-4 transition hover:text-primary hover:underline"
-            href="/privacy"
-          >
-            Політика конфіденційності
-          </Link>
         </div>
 
         <div className="grid content-start gap-3 text-sm text-muted-foreground">
@@ -136,6 +130,21 @@ export function Footer() {
               <span>{messengerLabels[action.channel]}</span>
             </a>
           ))}
+        </div>
+      </div>
+
+      <div className="border-t border-border">
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-4 text-xs text-muted-foreground sm:px-6 lg:px-8">
+          <p>
+            © {new Date().getFullYear()} <BrandName /> · {siteConfig.seller.name}{" "}
+            · РНОКПП {siteConfig.seller.taxId} · {siteConfig.seller.address}
+          </p>
+          <Link
+            className="underline-offset-4 transition hover:text-primary hover:underline"
+            href="/privacy"
+          >
+            Політика конфіденційності
+          </Link>
         </div>
       </div>
     </footer>

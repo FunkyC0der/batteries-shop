@@ -21,19 +21,27 @@ export const siteConfig = {
   locale: "uk_UA",
   logo: "/brand/systemika-symbol-original.png",
   /**
-   * Contacts (phone, address) are placeholders until a real office/number is
-   * confirmed. While false, they are withheld from JSON-LD and llms.txt so no
-   * fake data is published; flip once real contacts are set.
+   * Phone is real; city/address/seller details are still placeholders until
+   * the ФОП registration extract is on hand. contactsPublished gates only
+   * phone/schedule into JSON-LD contactPoint and llms.txt — address and
+   * seller fields never feed structured data, so they stay safe to leave
+   * as placeholders while true.
    */
-  contactsPublished: false,
-  phone: "+380000000000",
-  phoneLabel: "+38 (000) 000 00 00",
-  telegram: "placeholder_batteries",
-  whatsapp: "380000000000",
-  viber: "+380000000000",
+  contactsPublished: true,
+  phone: "+380686002626",
+  phoneLabel: "+38 (068) 600 26 26",
+  telegram: "+380686002626",
+  whatsapp: "380686002626",
+  viber: "+380686002626",
   schedule: "Пн-Пт 09:00-18:00",
   city: "Ваше місто",
   address: "Адреса буде додана пізніше",
+  /** Placeholders — replace with real ФОП details from the ЄДР extract before launching ads. */
+  seller: {
+    name: "ФОП Прізвище Ім'я По батькові",
+    taxId: "0000000000",
+    address: "Адреса буде додана пізніше",
+  },
 };
 
 export const navigation = [

@@ -5,6 +5,7 @@ import {
   getOrderActions,
   type OrderableItem,
 } from "../src/lib/order-actions";
+import { siteConfig } from "../src/lib/site-config";
 
 const item: OrderableItem = {
   id: "battery-ls14250",
@@ -35,10 +36,12 @@ describe("order actions", () => {
       "whatsapp",
       "viber",
     ]);
-    expect(actions[0].href).toBe("tel:+380000000000");
-    expect(actions[1].href).toContain("https://t.me/placeholder_batteries");
-    expect(actions[2].href).toContain("https://wa.me/380000000000");
-    expect(actions[3].href).toContain("viber://chat?number=%2B380000000000");
+    expect(actions[0].href).toBe(`tel:${siteConfig.phone}`);
+    expect(actions[1].href).toContain(`https://t.me/${siteConfig.telegram}`);
+    expect(actions[2].href).toContain(`https://wa.me/${siteConfig.whatsapp}`);
+    expect(actions[3].href).toContain(
+      `viber://chat?number=${encodeURIComponent(siteConfig.viber)}`,
+    );
     expect(actions[1].href).toContain(
       encodeURIComponent("Saft LS14250 для лічильників"),
     );

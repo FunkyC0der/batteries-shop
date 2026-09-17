@@ -13,6 +13,12 @@ export const metadata: Metadata = buildPageMetadata({
 
 const sections: { title: string; paragraphs: React.ReactNode[] }[] = [
   {
+    title: "Хто обробляє дані",
+    paragraphs: [
+      `${siteConfig.seller.name}, РНОКПП ${siteConfig.seller.taxId}, ${siteConfig.seller.address}. Телефон: ${siteConfig.phoneLabel}.`,
+    ],
+  },
+  {
     title: "Які дані ми отримуємо",
     paragraphs: [
       "Сайт не має форм реєстрації, особистого кабінету чи онлайн-оплати і не просить вводити персональні дані.",
