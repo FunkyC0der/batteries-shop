@@ -110,9 +110,7 @@ export function Footer() {
             </a>
           ) : null}
           <p>{siteConfig.schedule}</p>
-          <p>
-            {siteConfig.city}, {siteConfig.address}
-          </p>
+          <p>{siteConfig.city}</p>
         </div>
 
         <div className="grid content-start gap-3 text-sm text-muted-foreground">

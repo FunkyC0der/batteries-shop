@@ -9,12 +9,11 @@ JSON-LD, robots/sitemap/manifest, llms.txt, редіректи зі старих
 
 ## 1. Блокери (без них рекламу не запускати)
 
-- [ ] **Реальні контакти.** У `src/lib/site-config.ts` телефон і месенджери
-      (Telegram, WhatsApp, Viber) вже реальні (`+380686002626`),
+- [x] **Реальні контакти.** У `src/lib/site-config.ts` телефон і месенджери
+      (Telegram, WhatsApp, Viber) реальні (`+380686002626`),
       `contactsPublished: true`, `city: "Дніпро"`, `seller.name` — реальний
-      (ФОП з YouControl). Залишилось: точна адреса (`address` — досі
-      заглушка «Адреса буде додана пізніше»), замінити на реальну перед
-      запуском реклами.
+      (ФОП з YouControl). Точну адресу поки не публікуємо (прибрали
+      заглушку з футера) — додати згодом, коли буде реальна.
 - [ ] **Фінальний домен.** `https://systemica.com.ua` (домен куплено на
       nic.ua). У Vercel обидва домени (`systemica.com.ua`, `www…`) вже
       додані до проєкту `batteries-shop`, і `NEXT_PUBLIC_SITE_URL` вже

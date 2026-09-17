@@ -20,13 +20,6 @@ export const siteConfig = {
   url: resolveSiteUrl(),
   locale: "uk_UA",
   logo: "/brand/systemika-symbol-original.png",
-  /**
-   * Phone is real; city/address/seller details are still placeholders until
-   * the ФОП registration extract is on hand. contactsPublished gates only
-   * phone/schedule into JSON-LD contactPoint and llms.txt — address and
-   * seller fields never feed structured data, so they stay safe to leave
-   * as placeholders while true.
-   */
   contactsPublished: true,
   phone: "+380686002626",
   phoneLabel: "+38 (068) 600 26 26",
@@ -35,7 +28,6 @@ export const siteConfig = {
   viber: "+380686002626",
   schedule: "Пн-Пт 09:00-18:00",
   city: "Дніпро",
-  address: "Адреса буде додана пізніше",
   /**
    * Only the ФОП name is published. РНОКПП/ІПН and the exact street address
    * are sensitive personal data (home address, tax ID) and are deliberately
