@@ -34,11 +34,14 @@ export const siteConfig = {
   whatsapp: "380686002626",
   viber: "+380686002626",
   schedule: "Пн-Пт 09:00-18:00",
-  city: "Ваше місто",
+  city: "Дніпро",
   address: "Адреса буде додана пізніше",
-  /** Placeholders — replace with real ФОП details from the ЄДР extract before launching ads. */
+  /**
+   * taxId (РНОКПП/ІПН) and the exact street address are not public — they
+   * stay placeholders until provided directly. Replace before launching ads.
+   */
   seller: {
-    name: "ФОП Прізвище Ім'я По батькові",
+    name: "ФОП Красоченко Єгор Юрійович",
     taxId: "0000000000",
     address: "Адреса буде додана пізніше",
   },
